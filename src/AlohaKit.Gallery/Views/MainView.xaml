@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:BasePage
+    x:Name="MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AlohaKit.Gallery.MainView"
+    xmlns:views="clr-namespace:AlohaKit.Gallery.Views.Base"
+    xmlns:viewmodels="clr-namespace:AlohaKit.Gallery.ViewModels"
+    Title="AlohaKit Gallery">
+    <views:BasePage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="LogoStyle" TargetType="Image">
+                <Setter Property="Aspect" Value="AspectFit" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="Margin" Value="12" />
+            </Style>
+           
+            <Style x:Key="TitleStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="48" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightTextPrimaryColor}, Dark={StaticResource DarkTextPrimaryColor}}" />
+                <Setter Property="FontFamily" Value="Aloha" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="Margin" Value="0, 12, 0, 0" />
+            </Style>
+
+            <Style x:Key="SubTitleStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightTextSecondaryColor}, Dark={StaticResource DarkTextSecondaryColor}}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="Margin" Value="24, 12" />
+            </Style>
+
+            <Style x:Key="SectionItemContainerStyle" TargetType="Border">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource LightBackgroundSecondaryColor}, Dark={StaticResource DarkBackgroundSecondaryColor}}" />
+                <Setter Property="Stroke" Value="{AppThemeBinding Light={StaticResource LightBorderColor}, Dark={StaticResource DarkBorderColor}}" />
+                <Setter Property="HeightRequest" Value="120" />
+                <Setter Property="Padding" Value="12" />
+                <Setter Property="Margin" Value="0, 0, 12, 12" />
+                <Setter Property="FlexLayout.Basis" Value="50%"/>
+                <Setter Property="FlexLayout.Grow" Value="0"/>
+            </Style>
+
+            <Style x:Key="FooterStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="End" />
+                <Setter Property="Margin" Value="24" />
+            </Style>
+            
+        </ResourceDictionary>
+    </views:BasePage.Resources>
+    <ContentPage.BindingContext>
+        <viewmodels:MainViewModel />
+    </ContentPage.BindingContext>
+    <ScrollView>
+        <Grid
+            RowDefinitions="250, *, Auto"
+            RowSpacing="0">
+            <Grid
+                BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundSecondaryColor}, Dark={StaticResource DarkBackgroundSecondaryColor}}"
+                RowSpacing="0"
+                Grid.Row="0"
+                RowDefinitions="100, Auto, *">
+                <Image
+                    Source="hibiscus.png"
+                    Style="{StaticResource LogoStyle}"/>
+                <Label
+                    Grid.Row="1"
+                    Text="AlohaKit"
+                    Style="{StaticResource TitleStyle}" />
+                <Label
+                    Grid.Row="2"
+                    Text="A set of .NET MAUI drawn controls."
+                    Style="{StaticResource SubTitleStyle}"/>
+            </Grid>
+            <!-- SECTIONS -->
+            <Grid
+                Grid.Row="1"
+                Margin="12">
+                <CollectionView 
+                    x:Name="HomeSections"
+                    BackgroundColor="Transparent"
+                    ItemsSource="{Binding Items}"
+                    SelectionMode="Single"    
+                    SelectedItem="{Binding SelectedItem, Source={x:RelativeSource AncestorType={x:Type ContentPage}}, Mode=TwoWay}"
+                    SelectionChangedCommand="{Binding NavigateCommand, Source={x:Reference MainPage}}"
+                    Margin="6, 12, 6, 0">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout
+                            Orientation="Vertical"
+                            Span="2"
+                            HorizontalItemSpacing="6"
+                            VerticalItemSpacing="6"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                               Style="{StaticResource SectionItemContainerStyle}">
+                                <Border.StrokeShape>
+                                    <RoundRectangle 
+                                        CornerRadius="0" />
+                                </Border.StrokeShape>
+                                <Grid
+                                   RowSpacing="0"
+                                   RowDefinitions="Auto, *">
+                                    <Label
+                                       Text="{Binding Title}"
+                                       Style="{StaticResource GalleryItemTitleStyle}"/>
+                                    <Label
+                                       Grid.Row="1"
+                                       Text="{Binding Description}"
+                                       Style="{StaticResource GalleryItemDescriptionStyle}"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+            <!-- FOOTER -->
+            <Label
+                Grid.Row="2"
+                Text="AlohaKit 2022"
+                Style="{StaticResource FooterStyle}" />
+        </Grid>
+    </ScrollView>
+</views:BasePage>
