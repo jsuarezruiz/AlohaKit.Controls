@@ -61,6 +61,22 @@
             set => SetValue(TextColorProperty, value);
         }
 
+        public static readonly BindableProperty FontSizeProperty =
+            BindableProperty.Create(nameof(FontSize), typeof(double), typeof(ProgressRadial), 24.0d, BindingMode.TwoWay,
+                propertyChanged: (bindableObject, oldValue, newValue) =>
+                {
+                    if (newValue != null && bindableObject is ProgressRadial progressRadial)
+                    {
+                        progressRadial.UpdateFontSize();
+                    }
+                });
+
+        public double FontSize
+        {
+            get => (double)GetValue(FontSizeProperty);
+            set => SetValue(FontSizeProperty, value);
+        }
+
         public static readonly BindableProperty MinimumProperty =
            BindableProperty.Create(nameof(Minimum), typeof(int), typeof(ProgressRadial), 0);
 
@@ -86,6 +102,7 @@
                     if (newValue != null && bindableObject is ProgressRadial progressRadial)
                     {
                         progressRadial.UpdateValue();
+                        progressRadial.ValueChanged?.Invoke(progressRadial, new ValueChangedEventArgs((double)oldValue, (double)newValue));
                     }
                 });
 
@@ -94,6 +111,8 @@
             get => (int)GetValue(ValueProperty);
             set => SetValue(ValueProperty, value);
         }
+        
+        public event EventHandler<ValueChangedEventArgs> ValueChanged;
 
         protected override void OnParentChanged()
         {
@@ -105,6 +124,7 @@
                 UpdateStrokeColor(); 
                 UpdateProgressColor();
                 UpdateTextColor();
+                UpdateFontSize();
                 UpdateValue();
             }
         }
@@ -145,6 +165,14 @@
             Invalidate();
         }
 
+        void UpdateFontSize()
+        {
+            if (ProgressRadialDrawable == null)
+                return;
+
+            ProgressRadialDrawable.FontSize = FontSize;
+            Invalidate();
+        }
 
         void UpdateValue()
         {

@@ -6,6 +6,7 @@
         public Color StrokeColor { get; set; }
         public Color ProgressColor { get; set; }
         public Color TextColor { get; set; }
+        public double FontSize { get; set; }
 
         public string ProgressText { get; set; }
         public float ProgressAngle { get; set; }
@@ -97,7 +98,7 @@
             canvas.SaveState();
 
             canvas.FontColor = TextColor;
-            canvas.FontSize = 24;
+            canvas.FontSize = (float)FontSize;
 
             var x = dirtyRect.Width / 2;
             var y = dirtyRect.Height / 2;
