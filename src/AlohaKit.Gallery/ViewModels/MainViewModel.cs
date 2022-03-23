@@ -8,10 +8,13 @@ namespace AlohaKit.Gallery.ViewModels
         protected override IEnumerable<SectionModel> CreateItems() => new[]
         { 
             new SectionModel(typeof(LoadingView), "BusyIndicator",
-                "It can be used to indicate busy status during app loading, data processing, etc."),   
-            
-            new SectionModel(typeof(ProgressRadialView), "ProgressRadial",
+                "It can be used to indicate busy status during app loading, data processing, etc."),
+             
+            new SectionModel(typeof(ProgressBarView), "ProgressBar",
                 "The ProgressRadial is a control that indicates the progress of a task."),
+
+            new SectionModel(typeof(ProgressRadialView), "ProgressRadial",
+                "The ProgressRadial is a control that indicates the progress of a task."),   
         };
     }
 }
