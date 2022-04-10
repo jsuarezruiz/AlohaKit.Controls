@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AlohaKit.Gallery.ButtonView"
+    xmlns:controls="clr-namespace:AlohaKit.Controls;assembly=AlohaKit"
+    Title="Button">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="SettingsSliderStyle" TargetType="Slider">
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="WidthRequest" Value="100" />
+                <Setter Property="MinimumTrackColor" Value="{AppThemeBinding Light={StaticResource LightAccentColor}, Dark={StaticResource DarkAccentColor}}" />
+                <Setter Property="ThumbColor" Value="{AppThemeBinding Light={StaticResource LightAccentColor}, Dark={StaticResource DarkAccentColor}}" />
+                <Setter Property="Margin" Value="0, 0, 12, 0" />
+            </Style>
+
+            <Style x:Key="SettingsTextStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="9" />
+            </Style>
+
+            <Style x:Key="SettingsEntryStyle" TargetType="Entry">
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="WidthRequest" Value="80" />
+                <Setter Property="Margin" Value="6, 0" />
+            </Style>
+
+            <Style x:Key="SettingsPickerStyle" TargetType="Picker">
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="WidthRequest" Value="120" />
+                <Setter Property="Margin" Value="6, 0" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!-- DESCRIPTION -->
+        <StackLayout
+            Style="{StaticResource SectionContainerStyle}">
+            <Label          
+                Text="The Button responds to a tap or click"/>
+        </StackLayout>
+        <!-- FEATURES -->
+        <StackLayout    
+            Grid.Row="1"
+            BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundSecondaryColor}, Dark={StaticResource DarkBackgroundSecondaryColor}}"
+            Style="{StaticResource SectionContainerStyle}">
+            <Label 
+                Text="Features"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label        
+                Text="- Allow to customize the background with a gradient."/>
+            <Label   
+                Text="- Allow to customize the border with a gradient."/>
+            <Label   
+                Text="- Define the border thickness."/>
+            <Label   
+                Text="- Support content alignment."/>
+            <Label   
+                Text="- Provides option to draw a shadow around the control."/>
+        </StackLayout>
+        <!-- SETTINGS -->
+        <StackLayout
+            Grid.Row="2"
+            Style="{StaticResource SectionContainerStyle}">
+            <Label 
+                Text="Settings"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="0, 6">
+                <Label 
+                    Text="Background Start Color"
+                    VerticalOptions="Center"
+                    Style="{StaticResource SettingsTextStyle}"/>
+                <Entry
+                    x:Name="BackgroundStartColorEntry"
+                    Placeholder="Background Color"
+                    Text="#DD5E89"
+                    TextChanged="OnBackgroundStartColorEntryTextChanged"
+                    Style="{StaticResource SettingsEntryStyle}"/>
+                <Label 
+                    Text="Background End Color"
+                    VerticalOptions="Center"
+                    Style="{StaticResource SettingsTextStyle}"/>
+                <Entry 
+                    x:Name="BackgroundEndColorEntry"
+                    Placeholder="Color"
+                    Text="#F7BB97"
+                    TextChanged="OnBackgroundEndColorEntryTextChanged"
+                    Style="{StaticResource SettingsEntryStyle}"/>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="0, 6">
+                <Grid 
+                    RowDefinitions="Auto, *"
+                    Style="{StaticResource SettingsSectionLayoutStyle}">
+                    <Label
+                        Text="StrokeThickness"
+                        Style="{StaticResource SettingsTextStyle}"/>
+                    <Grid
+                        ColumnDefinitions="*, Auto">
+                        <Slider     
+                            x:Name="StrokeThicknessSlider"
+                            Grid.Row="1"
+                            Minimum="0"
+                            Value="4"
+                            Maximum="8"
+                            Style="{StaticResource SettingsSliderStyle}"/>
+                        <Label
+                            Grid.Column="1"
+                            VerticalOptions="Center"
+                            Text="{Binding Source={x:Reference StrokeThicknessSlider}, Path=Value, StringFormat='{0:F2}'}"/>
+                    </Grid>
+                </Grid>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="0, 6">
+                <Label 
+                    Text="Stroke Start Color"
+                    VerticalOptions="Center"
+                    Style="{StaticResource SettingsTextStyle}"/>
+                <Entry
+                    x:Name="StrokeStartColorEntry"
+                    Placeholder="Stroke Color"
+                    Text="#4568DC"
+                    TextChanged="OnStrokeStartColorEntryTextChanged"
+                    Style="{StaticResource SettingsEntryStyle}"/>
+                <Label 
+                    Text="Stroke End Color"
+                    VerticalOptions="Center"
+                    Style="{StaticResource SettingsTextStyle}"/>
+                <Entry 
+                    x:Name="StrokeEndColorEntry"
+                    Placeholder="Color"
+                    Text="#B06AB3"
+                    TextChanged="OnStrokeEndColorEntryTextChanged"
+                    Style="{StaticResource SettingsEntryStyle}"/>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="0, 6">
+                <Label 
+                    Text="Shadow Color"
+                    VerticalOptions="Center"
+                    Style="{StaticResource SettingsTextStyle}"/>
+                <Entry
+                    x:Name="ShadowColorEntry"
+                    Placeholder="Shadow Color"
+                    Text="#FF7E5F"
+                    TextChanged="OnShadowColorEntryTextChanged"
+                    Style="{StaticResource SettingsEntryStyle}"/>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="0, 6">
+                <Label 
+                    Text="HorizontalTextAlignment"
+                    VerticalOptions="Center"
+                    Style="{StaticResource SettingsTextStyle}"/>
+                <Picker  
+                    x:Name="HorizontalAlignPicker"
+                    SelectedIndex="1"
+                    SelectedIndexChanged="OnHorizontalAlignPickerSelectedIndexChanged"
+                    Style="{StaticResource SettingsPickerStyle}">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Start</x:String>
+                            <x:String>Center</x:String>
+                            <x:String>End</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label 
+                    Text="VerticalTextAlignment"
+                    VerticalOptions="Center"
+                    Style="{StaticResource SettingsTextStyle}"/>
+                <Picker
+                    x:Name="VerticalAlignPicker"
+                    SelectedIndex="1" 
+                    SelectedIndexChanged="OnVerticalAlignPickerSelectedIndexChanged"
+                    Style="{StaticResource SettingsPickerStyle}">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Start</x:String>
+                            <x:String>Center</x:String>
+                            <x:String>End</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </StackLayout>
+        </StackLayout>
+        <controls:Button 
+            Grid.Row="3"
+            x:Name="Button"
+            Text="Button"
+            TextColor="White"
+            StrokeThickness="{Binding Source={x:Reference StrokeThicknessSlider}, Path=Value}"
+            Clicked="OnButtonClicked" />
+    </Grid>
+</ContentPage>
