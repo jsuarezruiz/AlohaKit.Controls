@@ -17,7 +17,10 @@ namespace AlohaKit.Gallery.ViewModels
                 "The ProgressRadial is a control that indicates the progress of a task."),
 
             new SectionModel(typeof(ProgressRadialView), "ProgressRadial",
-                "The ProgressRadial is a control that indicates the progress of a task."),   
+                "The ProgressRadial is a control that indicates the progress of a task."),
+            
+            new SectionModel(typeof(ToggleSwitchView), "ToggleSwitch",
+                "The ToggleSwitchView is a horizontal toggle button that can be manipulated by the user to toggle between on and off states."),
         };
     }
 }

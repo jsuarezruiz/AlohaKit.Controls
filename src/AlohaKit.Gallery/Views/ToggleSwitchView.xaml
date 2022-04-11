@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AlohaKit.Gallery.ToggleSwitchView"
+    xmlns:controls="clr-namespace:AlohaKit.Controls;assembly=AlohaKit"
+    Title="ToggleSwitch">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="SettingsCheckBoxStyle" TargetType="CheckBox">
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource LightAccentColor}, Dark={StaticResource DarkAccentColor}}" />
+            </Style>
+
+            <Style x:Key="SettingsTextStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="9" />
+            </Style>
+
+            <Style x:Key="SettingsEntryStyle" TargetType="Entry">
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="WidthRequest" Value="80" />
+                <Setter Property="Margin" Value="6, 0" />
+            </Style>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!-- DESCRIPTION -->
+        <StackLayout
+            Style="{StaticResource SectionContainerStyle}">
+            <Label          
+                Text="The ToggleSwitchView is a horizontal toggle button that can be manipulated by the user to toggle between on and off states."/>
+        </StackLayout>
+        <!-- FEATURES -->
+        <StackLayout    
+            Grid.Row="1"
+            BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundSecondaryColor}, Dark={StaticResource DarkBackgroundSecondaryColor}}"
+            Style="{StaticResource SectionContainerStyle}">
+            <Label 
+                Text="Features"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label   
+                Text="- Allow to customize the track with a gradient."/>
+            <Label   
+                Text="- Allow to customize the thumb with a gradient."/>
+        </StackLayout>
+        <!-- SETTINGS -->
+        <StackLayout
+            Grid.Row="2"
+            Style="{StaticResource SectionContainerStyle}">
+            <Label 
+                Text="Settings"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="0, 6">
+                <Label 
+                    Text="Track Start Color"
+                    VerticalOptions="Center"
+                    Style="{StaticResource SettingsTextStyle}"/>
+                <Entry
+                    x:Name="TrackStartColorEntry"
+                    Placeholder="Track Color"
+                    Text="#DD5E89"
+                    TextChanged="OnTrackStartColorEntryTextChanged"
+                    Style="{StaticResource SettingsEntryStyle}"/>
+                <Label 
+                    Text="Track End Color"
+                    VerticalOptions="Center"
+                    Style="{StaticResource SettingsTextStyle}"/>
+                <Entry 
+                    x:Name="TrackEndColorEntry"
+                    Placeholder="Track Color"
+                    Text="#F7BB97"
+                    TextChanged="OnTrackEndColorEntryTextChanged"
+                    Style="{StaticResource SettingsEntryStyle}"/>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="0, 6">
+                <Label 
+                    Text="Thumb Start Color"
+                    VerticalOptions="Center"
+                    Style="{StaticResource SettingsTextStyle}"/>
+                <Entry
+                    x:Name="ThumbStartColorEntry"
+                    Placeholder="Thumb Color"
+                    Text="#D7E1EC"
+                    TextChanged="OnThumbStartColorEntryTextChanged"
+                    Style="{StaticResource SettingsEntryStyle}"/>
+                <Label 
+                    Text="Thumb End Color"
+                    VerticalOptions="Center"
+                    Style="{StaticResource SettingsTextStyle}"/>
+                <Entry 
+                    x:Name="ThumbEndColorEntry"
+                    Placeholder="Thumb Color"
+                    Text="#FFFFFF"
+                    TextChanged="OnThumbEndColorEntryTextChanged"
+                    Style="{StaticResource SettingsEntryStyle}"/>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="0, 6">
+                <Grid 
+                    RowDefinitions="Auto, *"
+                    Style="{StaticResource SettingsSectionLayoutStyle}">
+                    <Label
+                        Text="HasShadow"
+                        Style="{StaticResource SettingsTextStyle}"/>
+                    <CheckBox        
+                        x:Name="HasShadowCheckBox"  
+                        Grid.Row="1"
+                        IsChecked="True"
+                        Style="{StaticResource SettingsCheckBoxStyle}" />
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+        <controls:ToggleSwitch
+            Grid.Row="3"
+            x:Name="ToggleSwitch"
+            HorizontalOptions="Center"
+            HasShadow="{Binding Source={x:Reference HasShadowCheckBox}, Path=IsChecked}"/>
+    </Grid>
+</ContentPage>
