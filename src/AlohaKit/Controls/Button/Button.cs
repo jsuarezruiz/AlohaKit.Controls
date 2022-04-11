@@ -182,6 +182,24 @@ namespace AlohaKit.Controls
             set => SetValue(ShadowColorProperty, value);
         }
 
+        public static readonly BindableProperty PressedCommandProperty =
+            BindableProperty.Create(nameof(PressedCommand), typeof(ICommand), typeof(Button), null);
+
+        public ICommand PressedCommand
+        {
+            get => (ICommand)GetValue(PressedCommandProperty);
+            set => SetValue(PressedCommandProperty, value);
+        }
+
+        public static readonly BindableProperty PressedCommandParameterProperty =
+            BindableProperty.Create(nameof(PressedCommandParameter), typeof(object), typeof(Button), null);
+
+        public object PressedCommandParameter
+        {
+            get => GetValue(PressedCommandParameterProperty);
+            set => SetValue(PressedCommandParameterProperty, value);
+        }
+
         public static readonly BindableProperty CommandProperty =
             BindableProperty.Create(nameof(Command), typeof(ICommand), typeof(Button), null);
 
@@ -200,6 +218,26 @@ namespace AlohaKit.Controls
             set => SetValue(CommandParameterProperty, value);
         }
 
+        public static readonly BindableProperty ReleasedCommandProperty =
+            BindableProperty.Create(nameof(ReleasedCommand), typeof(ICommand), typeof(Button), null);
+
+        public ICommand ReleasedCommand
+        {
+            get => (ICommand)GetValue(ReleasedCommandProperty);
+            set => SetValue(ReleasedCommandProperty, value);
+        }
+
+        public static readonly BindableProperty ReleasedCommandParameterProperty =
+            BindableProperty.Create(nameof(ReleasedCommandParameter), typeof(object), typeof(Button), null);
+
+        public object ReleasedCommandParameter
+        {
+            get => GetValue(ReleasedCommandParameterProperty);
+            set => SetValue(ReleasedCommandParameterProperty, value);
+        }
+
+        public event EventHandler Pressed;
+        public event EventHandler Released;
         public event EventHandler Clicked;
 
         protected override void OnParentChanged()
@@ -337,6 +375,7 @@ namespace AlohaKit.Controls
             }
 
             AnimateRippleEffect();
+            ButtonPressed();
             ButtonClicked();
         }
 
@@ -347,6 +386,8 @@ namespace AlohaKit.Controls
                 ButtonDrawable.Scale = 1.0f;
                 Invalidate();
             }
+
+            ButtonReleased();
         }
         
         void AnimateRippleEffect()
@@ -368,6 +409,18 @@ namespace AlohaKit.Controls
             {
                 buttonDrawable.AnimationPercent = 0;
             }));
+        }
+
+        void ButtonPressed()
+        {
+            Pressed?.Invoke(this, EventArgs.Empty);
+            PressedCommand?.Execute(PressedCommandParameter);
+        }
+
+        void ButtonReleased()
+        {
+            Released?.Invoke(this, EventArgs.Empty);
+            ReleasedCommand?.Execute(ReleasedCommandParameter);
         }
 
         void ButtonClicked()
