@@ -15,6 +15,8 @@ namespace AlohaKit.Controls
 
         public void Draw(ICanvas canvas, RectF dirtyRect)
         {
+            canvas.Antialias = true;
+
             DrawBackground(canvas, dirtyRect);
             DrawThumb(canvas, dirtyRect);
         }

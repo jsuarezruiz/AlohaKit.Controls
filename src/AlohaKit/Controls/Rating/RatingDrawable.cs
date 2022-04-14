@@ -14,6 +14,8 @@
 
         public void Draw(ICanvas canvas, RectF dirtyRect)
         {
+            canvas.Antialias = true;
+
             DrawBackground(canvas, dirtyRect);
 
             for (int i = 0; i < ItemsCount; i++)

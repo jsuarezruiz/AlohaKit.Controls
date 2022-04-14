@@ -4,7 +4,7 @@
     {
         public HorizontalProgressBar()
         {
-            HeightRequest = 20;
+            HeightRequest = 18;
             WidthRequest = 120;
 
             Drawable = ProgressBarDrawable = new HorizontalProgressBarDrawable();

@@ -8,6 +8,8 @@
 
         public void Draw(ICanvas canvas, RectF dirtyRect)
         {
+            canvas.Antialias = true;
+
             DrawTrack(canvas, dirtyRect);
 
             DrawProgress(canvas, dirtyRect);

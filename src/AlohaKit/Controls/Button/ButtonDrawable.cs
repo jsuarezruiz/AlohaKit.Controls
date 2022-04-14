@@ -28,6 +28,8 @@ namespace AlohaKit.Controls
 
         public void Draw(ICanvas canvas, RectF dirtyRect)
         {
+            canvas.Antialias = true;
+
             DrawShadow(canvas, dirtyRect);
             DrawStroke(canvas, dirtyRect);
             DrawBackground(canvas, dirtyRect);

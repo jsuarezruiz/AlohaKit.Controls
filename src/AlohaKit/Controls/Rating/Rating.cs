@@ -127,7 +127,7 @@
         }
 
         public static readonly BindableProperty SelectedStrokeWidthProperty =
-            BindableProperty.Create(nameof(SelectedStrokeWidth), typeof(double), typeof(Rating), 1.0d,
+            BindableProperty.Create(nameof(SelectedStrokeWidth), typeof(double), typeof(Rating), 2.0d,
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is Rating rating)
@@ -143,7 +143,7 @@
         }
 
         public static readonly BindableProperty UnSelectedStrokeWidthProperty =
-            BindableProperty.Create(nameof(UnSelectedStrokeWidth), typeof(double), typeof(Rating), 1.0d, 
+            BindableProperty.Create(nameof(UnSelectedStrokeWidth), typeof(double), typeof(Rating), 2.0d, 
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is Rating rating)
