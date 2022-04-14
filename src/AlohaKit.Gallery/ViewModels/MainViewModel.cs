@@ -19,6 +19,9 @@ namespace AlohaKit.Gallery.ViewModels
             new SectionModel(typeof(ProgressRadialView), "ProgressRadial",
                 "The ProgressRadial is a control that indicates the progress of a task."),
             
+            new SectionModel(typeof(RatingView), "Rating",
+                "Rating is a control that allows users to rate by selecting number of items from a predefined number of items."),
+
             new SectionModel(typeof(ToggleSwitchView), "ToggleSwitch",
                 "The ToggleSwitch is a horizontal toggle button that can be manipulated by the user to toggle between on and off states."),
         };
