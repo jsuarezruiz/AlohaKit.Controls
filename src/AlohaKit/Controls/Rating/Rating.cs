@@ -14,6 +14,22 @@
 
         public RatingDrawable RatingDrawable { get; set; }
 
+        public static readonly new BindableProperty BackgroundProperty =
+          BindableProperty.Create(nameof(Background), typeof(Brush), typeof(Button), null,
+              propertyChanged: (bindableObject, oldValue, newValue) =>
+              {
+                  if (newValue != null && bindableObject is Rating rating)
+                  {
+                      rating.UpdateBackground();
+                  }
+              });
+
+        public new Brush Background
+        {
+            get => (Brush)GetValue(BackgroundProperty);
+            set => SetValue(BackgroundProperty, value);
+        }
+
         public static readonly BindableProperty ItemsCountProperty =
           BindableProperty.Create(nameof(ItemsCount), typeof(int), typeof(Rating), 5,
               propertyChanged: (bindableObject, oldValue, newValue) =>
@@ -159,6 +175,7 @@
 
             if(Parent != null)
             {
+                UpdateBackground();
                 UpdateItemsCount();
                 UpdateValue();
                 UpdateSelectedFill();
@@ -168,6 +185,16 @@
                 UpdateSelectedStrokeWidth();
                 UpdateUnSelectedStrokeWidth();
             }
+        }
+
+        void UpdateBackground()
+        {
+            if (RatingDrawable == null)
+                return;
+
+            RatingDrawable.BackgroundPaint = Background;
+
+            Invalidate();
         }
 
         void UpdateItemsCount()
@@ -260,7 +287,7 @@
             var touchPoint = args.Touches[0];
             var touchX = touchPoint.X;
 
-            Value = (int)(touchX * ItemsCount / Width);
+            Value = (int)(touchX * ItemsCount / Width) + 1;
         }
     }
 }

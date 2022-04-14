@@ -65,6 +65,31 @@
             <StackLayout
                 Orientation="Horizontal"
                 Margin="0, 6">
+                <Grid 
+                    RowDefinitions="Auto, *"
+                    Style="{StaticResource SettingsSectionLayoutStyle}">
+                    <Label
+                        Text="Value"
+                        Style="{StaticResource SettingsTextStyle}"/>
+                    <Grid
+                        ColumnDefinitions="*, Auto">
+                        <Slider     
+                            x:Name="ValueSlider"
+                            Grid.Row="1"
+                            Minimum="0"
+                            Value="3"
+                            Maximum="5"
+                            Style="{StaticResource SettingsSliderStyle}"/>
+                        <Label
+                            Grid.Column="1"
+                            VerticalOptions="Center"
+                            Text="{Binding Source={x:Reference ValueSlider}, Path=Value, StringFormat='{0:F2}'}"/>
+                    </Grid>
+                </Grid>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="0, 6">
                 <Label 
                     Text="Selected Fill Color"
                     VerticalOptions="Center"
@@ -113,6 +138,7 @@
         </StackLayout>
         <controls:Rating
             Grid.Row="3"
-            x:Name="Rating"/>
+            x:Name="Rating"
+            Value="{Binding Source={x:Reference ValueSlider}, Path=Value}"/>
     </Grid>
 </ContentPage>

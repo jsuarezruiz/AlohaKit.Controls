@@ -37,9 +37,9 @@
         {
             canvas.SaveState();
 
-            canvas.StrokeColor = (index > Value) ? UnSelectedStrokeColor : SelectedStrokeColor;
-            canvas.StrokeSize = (index > Value) ? (float)UnSelectedStrokeWidth: (float)SelectedStrokeWidth;
-            canvas.FillColor = (index > Value) ? UnSelectedFillColor : SelectedFillColor;
+            canvas.StrokeColor = (index >= Value) ? UnSelectedStrokeColor : SelectedStrokeColor;
+            canvas.StrokeSize = (index >= Value) ? (float)UnSelectedStrokeWidth: (float)SelectedStrokeWidth;
+            canvas.FillColor = (index >= Value) ? UnSelectedFillColor : SelectedFillColor;
 
             float scale = 0.85f;
             float itemSize = 36.0f;
