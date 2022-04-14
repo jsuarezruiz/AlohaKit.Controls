@@ -45,7 +45,7 @@
         <StackLayout
             Style="{StaticResource SectionContainerStyle}">
             <Label          
-                Text="The Button responds to a tap or click"/>
+                Text="The Button responds to a tap or click."/>
         </StackLayout>
         <!-- FEATURES -->
         <StackLayout    

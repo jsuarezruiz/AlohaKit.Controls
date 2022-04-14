@@ -2,6 +2,8 @@
 
 namespace AlohaKit.Controls
 {
+    // TODO:
+    // - Include ThumbImage BindableProperty.
     public class ToggleSwitch : GraphicsView
     {
         IAnimationManager _animationManager;
@@ -128,7 +130,7 @@ namespace AlohaKit.Controls
             if (ToggleSwitchDrawable == null)
                 return;
 
-            ToggleSwitchDrawable.IsOn = IsOn; 
+            ToggleSwitchDrawable.IsOn = IsOn;
             Toggled?.Invoke(this, new ToggledEventArgs(IsOn));
 
             Invalidate();
@@ -150,7 +152,7 @@ namespace AlohaKit.Controls
 
             AnimateToggle();
         }
-        
+
         void AnimateToggle()
         {
             if (ToggleSwitchDrawable == null)

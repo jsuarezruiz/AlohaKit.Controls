@@ -1,5 +1,8 @@
 ﻿namespace AlohaKit.Controls
 {
+    // TODO:
+    // - Include ItemSize BindableProperty.
+    // - Include ItemSpacing BindableProperty.
     public class Rating : GraphicsView
     {
         public Rating()

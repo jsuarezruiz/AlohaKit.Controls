@@ -36,7 +36,7 @@
         <StackLayout
             Style="{StaticResource SectionContainerStyle}">
             <Label          
-                Text="The ToggleSwitchView is a horizontal toggle button that can be manipulated by the user to toggle between on and off states."/>
+                Text="The ToggleSwitch is a horizontal toggle button that can be manipulated by the user to toggle between on and off states."/>
         </StackLayout>
         <!-- FEATURES -->
         <StackLayout    
