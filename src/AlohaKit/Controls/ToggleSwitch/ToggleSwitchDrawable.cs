@@ -21,7 +21,7 @@ namespace AlohaKit.Controls
             DrawThumb(canvas, dirtyRect);
         }
 
-        void DrawBackground(ICanvas canvas, RectF dirtyRect)
+        public virtual void DrawBackground(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -47,7 +47,7 @@ namespace AlohaKit.Controls
             canvas.RestoreState();
         }
 
-        public void DrawThumb(ICanvas canvas, RectF dirtyRect)
+        public virtual void DrawThumb(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 

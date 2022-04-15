@@ -15,7 +15,7 @@
             DrawProgress(canvas, dirtyRect);
         }
 
-        void DrawTrack(ICanvas canvas, RectF dirtyRect)
+        public virtual void DrawTrack(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -32,7 +32,7 @@
             canvas.RestoreState();
         }
 
-        void DrawProgress(ICanvas canvas, RectF dirtyRect)
+        public virtual void DrawProgress(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 

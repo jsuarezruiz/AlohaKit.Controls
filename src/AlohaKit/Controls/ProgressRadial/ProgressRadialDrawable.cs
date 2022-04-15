@@ -24,10 +24,10 @@
             DrawText(canvas, dirtyRect);
         }
 
-        void DrawBackground(ICanvas canvas, RectF dirtyRect)
+        public virtual void DrawBackground(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
-            
+
             canvas.FillColor = BackgroundColor;
 
             canvas.FillRectangle(dirtyRect);
@@ -35,7 +35,7 @@
             canvas.RestoreState();
         }
 
-        void DrawStroke(ICanvas canvas, RectF dirtyRect)
+        public virtual void DrawStroke(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -58,14 +58,14 @@
 
             PathF progressPath = new PathF();
             progressPath.AddArc(strokeRect.X, strokeRect.Y, strokeRect.Width, strokeRect.Height, 0, 270, false);
-         
+
             // Draw the background arc
             canvas.DrawPath(progressPath);
 
             canvas.RestoreState();
         }
 
-        void DrawProgress(ICanvas canvas, RectF dirtyRect)
+        public virtual void DrawProgress(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -88,14 +88,14 @@
 
             PathF progressCurrentPath = new PathF();
             progressCurrentPath.AddArc(progressRect.X, progressRect.Y, progressRect.Width, progressRect.Height, 0, ProgressAngle, false);
-          
+
             // Draw the progress arc
             canvas.DrawPath(progressCurrentPath);
 
             canvas.RestoreState();
         }
 
-        void DrawText(ICanvas canvas, RectF dirtyRect)
+        public virtual void DrawText(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -107,7 +107,7 @@
 
             // Draw the progress value text
             canvas.DrawString(ProgressText, x, y, HorizontalAlignment.Center);
-            
+
             canvas.RestoreState();
         }
     }

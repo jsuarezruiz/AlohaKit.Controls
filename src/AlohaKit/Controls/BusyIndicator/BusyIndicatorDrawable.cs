@@ -27,7 +27,7 @@
             DrawArc(canvas, dirtyRect);
         }
 
-        void DrawBackground(ICanvas canvas, RectF dirtyRect)
+        public virtual void DrawBackground(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -47,7 +47,7 @@
             canvas.SaveState();
         }
 
-        void DrawShadow(ICanvas canvas, RectF dirtyRect)
+        public virtual void DrawShadow(ICanvas canvas, RectF dirtyRect)
         {
             if (HasShadow)
             {
@@ -56,7 +56,7 @@
             }
         }
 
-        void DrawArc(ICanvas canvas, RectF dirtyRect)
+        public virtual void DrawArc(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
