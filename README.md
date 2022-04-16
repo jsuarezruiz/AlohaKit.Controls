@@ -10,6 +10,17 @@ A set of .NET MAUI drawn controls.
 
 The **controls** available are:
 
+### Avatar
+
+The Avatar control displays the initials of a person, entity, or group on top of a colored circular background.
+
+<img src="images/alohakit-avatar.png" Width="220" />
+
+Features:
+- Can choose from several predefined sizes.
+- Allow to customize the background with a gradient.
+- Allow to customize the fill with a gradient.
+
 ### Button
 
 The Button responds to a tap or click.
@@ -65,6 +76,15 @@ Features:
 - Exposes a Value property that is used to set and read the number of the selected items.
 - Supports read-only mode.
 - You can control the visual appearance of the shapes.
+
+### Slider
+
+Slider is a horizontal bar that can be manipulated by the user to select a double value from a continuous range.
+
+<img src="images/alohakit-slider.png" Width="220" />
+
+Features:
+- All the colors can be customized supporting gradients.
 
 ### ToggleSwitch
 
