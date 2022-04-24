@@ -15,7 +15,10 @@ namespace AlohaKit.Gallery.ViewModels
                  
             new SectionModel(typeof(ButtonView), "Button",
                 "The Button responds to a tap or click."),
-               
+            
+            new SectionModel(typeof(NumericUpDownView), "NumericUpDown",
+                " NumericUpDown control provides up and down repeat buttons to increase and decrease values."),
+
             new SectionModel(typeof(ProgressBarView), "ProgressBar",
                 "The ProgressRadial is a control that indicates the progress of a task."),
 

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AlohaKit.Gallery.NumericUpDownView"
+    xmlns:controls="clr-namespace:AlohaKit.Controls;assembly=AlohaKit"
+    Title="NumericUpDown">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="SettingsTextStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="9" />
+            </Style>
+
+            <Style x:Key="SettingsEntryStyle" TargetType="Entry">
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="WidthRequest" Value="80" />
+                <Setter Property="Margin" Value="6, 0" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!-- DESCRIPTION -->
+        <StackLayout
+            Style="{StaticResource SectionContainerStyle}">
+            <Label          
+                Text="NumericUpDown control provides up and down repeat buttons to increase and decrease values."/>
+            <!-- FEATURES -->
+            <StackLayout    
+                Grid.Row="1"
+                BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundSecondaryColor}, Dark={StaticResource DarkBackgroundSecondaryColor}}"
+                Style="{StaticResource SectionContainerStyle}">
+                <Label 
+                    Text="Features"
+                    Style="{StaticResource SectionTitleStyle}"/>
+                <Label        
+                    Text="- Can define minimum and maximum values."/>
+                <Label   
+                    Text="- Customizable Incremental Steps"/>
+                <Label   
+                    Text="- Customizable colors and gradients."/>
+            </StackLayout>
+            <!-- SETTINGS -->
+            <StackLayout
+                Grid.Row="2"
+                Style="{StaticResource SectionContainerStyle}">
+                <Label 
+                    Text="Settings"
+                    Style="{StaticResource SectionTitleStyle}"/>
+                <StackLayout
+                    Orientation="Horizontal"
+                    Margin="0, 6">
+                    <Label 
+                        Text="Color"
+                        VerticalOptions="Center"
+                        Style="{StaticResource SettingsTextStyle}"/>
+                    <Entry
+                        x:Name="ColorEntry"
+                        Placeholder="Color"
+                        Text="#F1BECF"
+                        TextChanged="OnColorEntryTextChanged"
+                        Style="{StaticResource SettingsEntryStyle}"/>
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal"
+                    Margin="0, 6">
+                    <Label 
+                        Text="Text Color"
+                        VerticalOptions="Center"
+                        Style="{StaticResource SettingsTextStyle}"/>
+                    <Entry
+                        x:Name="TextColorEntry"
+                        Placeholder="Text Color"
+                        Text="#DD5E89"
+                        TextChanged="OnTextColorEntryTextChanged"
+                        Style="{StaticResource SettingsEntryStyle}"/>
+                </StackLayout>
+            </StackLayout>
+            <controls:NumericUpDown 
+                Grid.Row="3"
+                x:Name="NumericUpDown"
+                Margin="0, 12"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
