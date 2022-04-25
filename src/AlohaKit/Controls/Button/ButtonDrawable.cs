@@ -214,7 +214,10 @@ namespace AlohaKit.Controls
                     height -= ShadowOffset * 2;
                 }
 
-                canvas.ClipRectangle(new Rect(x, y, width, height));
+                var clippingPath = new PathF();
+                clippingPath.AppendRoundedRectangle(x, y, width, height, (float)CornerRadius.TopLeft, (float)CornerRadius.TopRight, (float)CornerRadius.BottomLeft, (float)CornerRadius.BottomRight);
+                
+                canvas.ClipPath(clippingPath);
 
                 canvas.FillColor = Colors.White.WithAlpha(0.75f);
 
