@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AlohaKit.Gallery.PulseIconView"
+    xmlns:controls="clr-namespace:AlohaKit.Controls;assembly=AlohaKit"
+    Title="PulseIcon">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!-- DESCRIPTION -->
+        <StackLayout
+            Style="{StaticResource SectionContainerStyle}">
+            <Label          
+                Text="PulseIcon generates pulsation relative to your icon."/>
+        </StackLayout>
+        <!-- FEATURES -->
+        <StackLayout    
+            Grid.Row="1"
+            BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundSecondaryColor}, Dark={StaticResource DarkBackgroundSecondaryColor}}"
+            Style="{StaticResource SectionContainerStyle}">
+            <Label 
+                Text="Features"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label   
+                Text="- All the colors can be customized supporting gradients."/>
+            <Label   
+                Text="- Can easily manage the animation."/>
+        </StackLayout>
+        <controls:PulseIcon 
+            Grid.Row="3"
+            x:Name="PulseIcon"
+            Source="M15.927021,17.931004C17.584003,17.931004 18.927021,19.290011 18.927021,20.966004 18.927021,22.641997 17.584003,24.001004 15.927021,24.001004 14.270039,24.001004 12.927021,22.641997 12.927021,20.966004 12.927021,19.290011 14.270039,17.931004 15.927021,17.931004z M16.020968,12.330998C18.468986,12.330998 20.790003,13.497001 22.557015,15.615006 22.911018,16.040007 22.853018,16.670009 22.430015,17.024009 22.242014,17.18001 22.016012,17.25601 21.79001,17.25601 21.503008,17.25601 21.219006,17.13301 21.021005,16.897009 19.640995,15.242005 17.864981,14.331003 16.020968,14.331003 14.242955,14.331003 12.514942,15.187005 11.154932,16.740009 10.788929,17.15601 10.156925,17.19701 9.7439218,16.835009 9.3279188,16.471008 9.2859185,15.839006 9.6489213,15.424005 11.393934,13.429 13.656951,12.330998 16.020968,12.330998z M16.020306,6.197011C20.150259,6.197011 24.103215,8.1410112 27.152182,11.673012 27.513178,12.091012 27.466178,12.722013 27.048182,13.083013 26.860185,13.246013 26.626187,13.326013 26.39519,13.326013 26.115193,13.326013 25.835196,13.209013 25.638198,12.979013 22.975228,9.8950119 19.559266,8.197011 16.020306,8.197011 12.550345,8.197011 9.1863821,9.8370123 6.5464115,12.814013 6.1794157,13.228013 5.5474229,13.264013 5.1354275,12.899013 4.7224321,12.533013 4.684432,11.901012 5.0504284,11.487012 8.0753946,8.0760117 11.970351,6.197011 16.020306,6.197011z M16.020912,0C21.831923,0 27.417933,2.7169971 31.750942,7.6519928 32.115942,8.0669928 32.074942,8.6989918 31.659943,9.0629911 31.244942,9.4259911 30.61294,9.3859911 30.24894,8.9709911 26.300932,4.475996 21.247922,1.9999981 16.020912,1.9999981 10.773902,1.9999981 5.7068925,4.4919958 1.7528849,9.0169916 1.5558844,9.2429914 1.2778835,9.3589907 0.99988365,9.3589907 0.76588249,9.3589907 0.53088284,9.2779913 0.34188175,9.1119909 -0.074118614,8.748992 -0.11611843,8.116992 0.24688148,7.7009926 4.5868902,2.7349977 10.187901,0 16.020912,0z"
+            Background="#EE9CA7"
+            PulseColor="#DD5E89"/>
+    </Grid>
+</ContentPage>

@@ -28,9 +28,11 @@
             canvas.SaveState();
 
             if (BackgroundPaint != null)
+            {
                 canvas.SetFillPaint(BackgroundPaint, dirtyRect);
 
-            canvas.FillRectangle(dirtyRect);
+                canvas.FillRectangle(dirtyRect);
+            }
 
             canvas.RestoreState();
         }
