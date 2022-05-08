@@ -15,7 +15,10 @@ namespace AlohaKit.Gallery.ViewModels
                  
             new SectionModel(typeof(ButtonView), "Button",
                 "The Button responds to a tap or click."),
-            
+           
+            new SectionModel(typeof(CheckBoxView), "CheckBox",
+                "CheckBox is a type of button that can either be checked or empty."),
+
             new SectionModel(typeof(NumericUpDownView), "NumericUpDown",
                 " NumericUpDown control provides up and down repeat buttons to increase and decrease values."),
               

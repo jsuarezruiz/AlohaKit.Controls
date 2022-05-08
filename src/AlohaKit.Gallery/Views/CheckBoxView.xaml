@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AlohaKit.Gallery.CheckBoxView"
+    xmlns:controls="clr-namespace:AlohaKit.Controls;assembly=AlohaKit"
+    Title="CheckBox">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!-- DESCRIPTION -->
+        <StackLayout
+            Style="{StaticResource SectionContainerStyle}">
+            <Label          
+                Text="CheckBox is a type of button that can either be checked or empty."/>
+        </StackLayout>
+        <!-- FEATURES -->
+        <StackLayout    
+            Grid.Row="1"
+            BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundSecondaryColor}, Dark={StaticResource DarkBackgroundSecondaryColor}}"
+            Style="{StaticResource SectionContainerStyle}">
+            <Label 
+                Text="Features"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label        
+                Text="- Checked/Unchecked state when IsChecked is true/false respectively."/>
+            <Label   
+                Text="- Customize the width of the lines with which the Checkbox element is drawn."/>
+            <Label   
+                Text="- Defines the Brush applied to the control when it is checked."/>
+            <Label   
+                Text="- Defines the Brush applied to the control when it is unchecked."/>
+            <Label   
+                Text="- Exposes Commands that allows you to manage actions when Checkbox state changes."/>
+        </StackLayout>
+        <controls:CheckBox
+            Grid.Row="3"
+            x:Name="CheckBox"
+            CheckedBrush="#EE9CA7"
+            UncheckedBrush="Transparent"
+            Stroke="#DD5E89"
+            StrokeThickness="3"
+            HorizontalOptions="Center" />
+    </Grid>
+</ContentPage>
