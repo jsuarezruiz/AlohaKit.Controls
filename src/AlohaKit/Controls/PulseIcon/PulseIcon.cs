@@ -22,6 +22,8 @@ namespace AlohaKit.Controls
             _stopwatch = new Stopwatch();
             _pulses = new float[3]; 
             _cycleTime = 5000;
+
+            StartInteraction += OnPulseIconStartInteraction;
         }
 
         public PulseIconDrawable PulseIconDrawable { get; set; }
@@ -82,6 +84,8 @@ namespace AlohaKit.Controls
             get => (Color)GetValue(PulseColorProperty);
             set => SetValue(PulseColorProperty, value);
         }
+
+        public event EventHandler Clicked;
 
         protected override void OnParentChanged()
         {
@@ -153,6 +157,16 @@ namespace AlohaKit.Controls
 
                 return IsPulsing;
             });
+        }
+
+        void OnPulseIconStartInteraction(object sender, TouchEventArgs e)
+        {
+            PulseIconClicked();
+        }
+
+        void PulseIconClicked()
+        {
+            Clicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

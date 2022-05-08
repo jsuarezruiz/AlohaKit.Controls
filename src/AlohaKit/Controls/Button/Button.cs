@@ -158,7 +158,6 @@ namespace AlohaKit.Controls
                     }
                 });
 
-
         public bool HasShadow
         {
             get => (bool)GetValue(HasShadowProperty);
@@ -174,7 +173,6 @@ namespace AlohaKit.Controls
                         button.UpdateShadowColor();
                     }
                 });
-
 
         public Color ShadowColor
         {
