@@ -45,6 +45,18 @@ Features:
 - All the colors can be customized.
 - Provides option to draw a shadow around the control.
 
+### CheckBox
+
+CheckBox is a type of button that can either be checked or empty.
+
+<img src="images/alohakit-checkbox.png" Width="220" />
+
+### PulseIcon
+
+PulseIcon generates pulsation relative to your icon.
+
+<img src="images/alohakit-pulseicon.png" Width="220" />
+
 ### ProgressBar
 
 The ProgressBar visually represents progress as a horizontal or vertical bar that is filled to a percentage represented by a float value.

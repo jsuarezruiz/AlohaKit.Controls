@@ -26,7 +26,7 @@ namespace AlohaKit.Gallery.ViewModels
                 "PulseIcon generates pulsation relative to your icon."),
 
             new SectionModel(typeof(ProgressBarView), "ProgressBar",
-                "The ProgressRadial is a control that indicates the progress of a task."),
+                "The ProgressBar is a control that indicates the progress of a task."),
 
             new SectionModel(typeof(ProgressRadialView), "ProgressRadial",
                 "The ProgressRadial is a control that indicates the progress of a task."),
