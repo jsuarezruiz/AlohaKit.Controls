@@ -51,11 +51,22 @@ CheckBox is a type of button that can either be checked or empty.
 
 <img src="images/alohakit-checkbox.png" Width="220" />
 
+Features:
+- Checked/Unchecked state when IsChecked is true/false respectively.
+- Customize the width of the lines with which the Checkbox element is drawn.
+- Defines the Brush applied to the control when it is checked.
+- Defines the Brush applied to the control when it is unchecked.
+- Exposes Commands that allows you to manage actions when Checkbox state changes.
+      
 ### PulseIcon
 
 PulseIcon generates pulsation relative to your icon.
 
 <img src="images/alohakit-pulseicon.png" Width="220" />
+
+Features:
+- All the colors can be customized supporting gradients.
+- Can easily manage the animation.
 
 ### ProgressBar
 
