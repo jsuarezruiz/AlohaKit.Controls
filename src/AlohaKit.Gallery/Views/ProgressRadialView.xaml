@@ -14,11 +14,11 @@
                 <Setter Property="ThumbColor" Value="{AppThemeBinding Light={StaticResource LightAccentColor}, Dark={StaticResource DarkAccentColor}}" />
                 <Setter Property="Margin" Value="0, 0, 12, 0" />
             </Style>
-            
+
             <Style x:Key="SettingsTextStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="9" />
             </Style>
-            
+
             <Style x:Key="SettingsEntryStyle" TargetType="Entry">
                 <Setter Property="VerticalOptions" Value="Center" />
                 <Setter Property="WidthRequest" Value="80" />
@@ -124,11 +124,23 @@
                     TextChanged="OnTextColorEntryTextChanged"
                     Style="{StaticResource SettingsEntryStyle}"/>
             </StackLayout>
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="0, 6">
+                <Label 
+                    Text="LeftToRight"
+                    VerticalOptions="Center"
+                    Style="{StaticResource SettingsTextStyle}"/>
+                <controls:CheckBox
+                    x:Name="checkBox"
+                    StrokeThickness="3"/>
+            </StackLayout>
         </StackLayout>
         <controls:ProgressRadial 
             Grid.Row="3"
             x:Name="ProgressRadial"
             Maximum="10"
+            Direction="RightToLeft"
             Value="{Binding Source={x:Reference ValueSlider}, Path=Value}"
             HorizontalOptions="Center"
             VerticalOptions="Center"/>

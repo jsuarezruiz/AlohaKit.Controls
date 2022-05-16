@@ -1,12 +1,20 @@
+using AlohaKit.Controls;
+
 namespace AlohaKit.Gallery;
 
 public partial class ProgressRadialView : ContentPage
 {
-	public ProgressRadialView()
-	{
-		InitializeComponent();
-
+    public ProgressRadialView()
+    {
+        InitializeComponent();
         UpdateColors();
+        checkBox.CheckedChanged += CheckBox_CheckedChanged;
+        checkBox.IsChecked = ProgressRadial.Direction == ProgressRadialDirection.LeftToRight ? true : false;
+    }
+
+    private void CheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
+    {
+        ProgressRadial.Direction = e.Value ? ProgressRadialDirection.LeftToRight : ProgressRadialDirection.RightToLeft;
     }
 
     void OnBackgroundColorEntryTextChanged(object sender, TextChangedEventArgs e)

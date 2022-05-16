@@ -10,6 +10,7 @@
 
         public string ProgressText { get; set; }
         public float ProgressAngle { get; set; }
+        public ProgressRadialDirection Direction { get; set; }
 
         public void Draw(ICanvas canvas, RectF dirtyRect)
         {
@@ -73,7 +74,10 @@
             var rY = dirtyRect.Height / 2;
 
             // Rotate the canvas
-            canvas.Rotate((float)45.0f, rX, rY);
+            var degrees = Direction == ProgressRadialDirection.RightToLeft ? (float)45.0f : (float)135.0f;
+            rX = Direction == ProgressRadialDirection.RightToLeft ? rX : rX - (float)2.4f;
+            rY = Direction == ProgressRadialDirection.RightToLeft ? rY : rY - (float)6f;
+            canvas.Rotate(degrees, rX, rY);
 
             canvas.StrokeColor = ProgressColor;
             canvas.StrokeLineJoin = LineJoin.Round;
@@ -87,7 +91,9 @@
             };
 
             PathF progressCurrentPath = new PathF();
-            progressCurrentPath.AddArc(progressRect.X, progressRect.Y, progressRect.Width, progressRect.Height, 0, ProgressAngle, false);
+            var startAngle = Direction == ProgressRadialDirection.RightToLeft ? (float)0.0f : (float)ProgressAngle * -1;
+            var endAngle = Direction == ProgressRadialDirection.RightToLeft ? (float)ProgressAngle : (float)0.0f;
+            progressCurrentPath.AddArc(progressRect.X, progressRect.Y, progressRect.Width, progressRect.Height, startAngle, endAngle, false);
 
             // Draw the progress arc
             canvas.DrawPath(progressCurrentPath);
