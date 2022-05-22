@@ -6,7 +6,7 @@
         {
             HeightRequest = 150;
             WidthRequest = 150;
-            
+
             Drawable = ProgressRadialDrawable = new ProgressRadialDrawable();
         }
 
@@ -45,7 +45,7 @@
             set => SetValue(ProgressColorProperty, value);
         }
 
-        public static readonly BindableProperty TextColorProperty =   
+        public static readonly BindableProperty TextColorProperty =
             BindableProperty.Create(nameof(TextColor), typeof(Color), typeof(ProgressRadial), Colors.Black, BindingMode.TwoWay,
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
@@ -77,6 +77,22 @@
             set => SetValue(FontSizeProperty, value);
         }
 
+        public static readonly BindableProperty DirectionProperty =
+            BindableProperty.Create(nameof(Direction), typeof(ProgressRadialDirection), typeof(ProgressRadial), ProgressRadialDirection.RightToLeft,
+                propertyChanged: (bindableObject, oldValue, newValue) =>
+                {
+                    if (newValue != null && bindableObject is ProgressRadial progressRadial)
+                    {
+                        progressRadial.UpdateDirection();
+                    }
+                });
+
+        public ProgressRadialDirection Direction
+        {
+            get => (ProgressRadialDirection)GetValue(DirectionProperty);
+            set => SetValue(DirectionProperty, value);
+        }
+
         public static readonly BindableProperty MinimumProperty =
            BindableProperty.Create(nameof(Minimum), typeof(int), typeof(ProgressRadial), 0);
 
@@ -95,8 +111,8 @@
             set => SetValue(MaximumProperty, value);
         }
 
-        public static readonly BindableProperty ValueProperty = 
-            BindableProperty.Create(nameof(Value), typeof(int), typeof(ProgressRadial), 0, BindingMode.TwoWay, 
+        public static readonly BindableProperty ValueProperty =
+            BindableProperty.Create(nameof(Value), typeof(int), typeof(ProgressRadial), 0, BindingMode.TwoWay,
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is ProgressRadial progressRadial)
@@ -111,7 +127,7 @@
             get => (int)GetValue(ValueProperty);
             set => SetValue(ValueProperty, value);
         }
-        
+
         public event EventHandler<ValueChangedEventArgs> ValueChanged;
 
         protected override void OnParentChanged()
@@ -121,10 +137,11 @@
             if (Parent != null)
             {
                 UpdateBackgroundColor();
-                UpdateStrokeColor(); 
+                UpdateStrokeColor();
                 UpdateProgressColor();
                 UpdateTextColor();
                 UpdateFontSize();
+                UpdateDirection();
                 UpdateValue();
             }
         }
@@ -171,6 +188,15 @@
                 return;
 
             ProgressRadialDrawable.FontSize = FontSize;
+            Invalidate();
+        }
+
+        void UpdateDirection()
+        {
+            if (ProgressRadialDrawable == null)
+                return;
+
+            ProgressRadialDrawable.Direction = Direction;
             Invalidate();
         }
 
