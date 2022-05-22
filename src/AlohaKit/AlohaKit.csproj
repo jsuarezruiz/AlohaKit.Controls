@@ -12,6 +12,16 @@
 		<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</TargetPlatformMinVersion>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>AlohaKit</Title>
+		<Company>Javier Suárez Ruiz</Company>
+		<Description>A set of .NET MAUI drawn controls.</Description>
+		<PackageProjectUrl>https://github.com/jsuarezruiz/AlohaKit</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/jsuarezruiz/AlohaKit</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>dotnet,dotnet-maui,maui, controls,drawn-controls,graphics</PackageTags>
+		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -19,6 +29,17 @@
 	  <Folder Include="Platforms\iOS\" />
 	  <Folder Include="Platforms\MacCatalyst\" />
 	  <Folder Include="Platforms\Windows\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\icon.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>

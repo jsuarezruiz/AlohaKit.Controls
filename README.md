@@ -1,6 +1,6 @@
 # AlohaKit
 
-![AlohaKit](images/alohakit.png)
+![AlohaKit](images/alohakit-promo.png)
 
 A set of .NET MAUI drawn controls.
 
