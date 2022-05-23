@@ -23,7 +23,7 @@
 		<PackageTags>dotnet,dotnet-maui,maui, controls,drawn-controls,graphics</PackageTags>
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<PackageId>jsuarezruiz.alohakit</PackageId>
+		<PackageId>AlohaKit</PackageId>
 		<Copyright>Javier Suárez Ruiz</Copyright>
 	</PropertyGroup>
 
