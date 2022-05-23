@@ -1,10 +1,10 @@
 # AlohaKit
 
-![AlohaKit](images/alohakit-promo.png)
+![AlohaKit](https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-promo.png)
 
 A set of .NET MAUI drawn controls.
 
-<img src="images/alohakit-gallery.png" Width="220" />
+<img src="https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-gallery.png" Width="220" />
 
 #### Controls
 
@@ -14,7 +14,7 @@ The **controls** available are:
 
 The Avatar control displays the initials of a person, entity, or group on top of a colored circular background.
 
-<img src="images/alohakit-avatar.png" Width="220" />
+<img src="https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-avatar.png" Width="220" />
 
 Features:
 - Can choose from several predefined sizes.
@@ -25,7 +25,7 @@ Features:
 
 The Button responds to a tap or click.
 
-<img src="images/alohakit-button.png" Width="220" />
+<img src="https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-button.png" Width="220" />
 
 Features:
 - Allow to customize the background with a gradient.
@@ -38,7 +38,7 @@ Features:
 
 It can be used to indicate busy status during app loading, data processing, etc.
 
-<img src="images/alohakit-busyindicator.png" Width="220" />
+<img src="https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-busyindicator.png" Width="220" />
 
 Features:
 - Supports to show/hide busy indicator.
@@ -49,7 +49,7 @@ Features:
 
 CheckBox is a type of button that can either be checked or empty.
 
-<img src="images/alohakit-checkbox.png" Width="220" />
+<img src="https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-checkbox.png" Width="220" />
 
 Features:
 - Checked/Unchecked state when IsChecked is true/false respectively.
@@ -62,7 +62,7 @@ Features:
 
 PulseIcon generates pulsation relative to your icon.
 
-<img src="images/alohakit-pulseicon.png" Width="220" />
+<img src="https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-pulseicon.png" Width="220" />
 
 Features:
 - All the colors can be customized supporting gradients.
@@ -72,7 +72,7 @@ Features:
 
 The ProgressBar visually represents progress as a horizontal or vertical bar that is filled to a percentage represented by a float value.
 
-<img src="images/alohakit-progressbar.png" Width="220" />
+<img src="https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-progressbar.png" Width="220" />
 
 Features:
 - Can use horizontal or vertical bar.
@@ -83,7 +83,7 @@ Features:
 
 The ProgressRadial is a control that indicates the progress of a task.
 
-<img src="images/alohakit-progressradial.png" Width="220" />
+<img src="https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-progressradial.png" Width="220" />
 
 Features:
 - Provide elegance in representing progression.
@@ -93,7 +93,7 @@ Features:
 
 Rating is a control that allows users to rate by selecting number of items (stars) from a predefined number of items.
 
-<img src="images/alohakit-rating.png" Width="220" />
+<img src="https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-rating.png" Width="220" />
 
 Features:
 - Exposes a Value property that is used to set and read the number of the selected items.
@@ -104,7 +104,7 @@ Features:
 
 Slider is a horizontal bar that can be manipulated by the user to select a double value from a continuous range.
 
-<img src="images/alohakit-slider.png" Width="220" />
+<img src="https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-slider.png" Width="220" />
 
 Features:
 - All the colors can be customized supporting gradients.
@@ -113,7 +113,7 @@ Features:
 
 The ToggleSwitch is a horizontal toggle button that can be manipulated by the user to toggle between on and off states.
 
-<img src="images/alohakit-toggleswitch.png" Width="220" />
+<img src="https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-toggleswitch.png" Width="220" />
 
 Features:
 - Allow to customize the track with a gradient.

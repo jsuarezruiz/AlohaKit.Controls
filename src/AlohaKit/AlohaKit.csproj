@@ -22,6 +22,9 @@
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>dotnet,dotnet-maui,maui, controls,drawn-controls,graphics</PackageTags>
 		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageId>jsuarezruiz.alohakit</PackageId>
+		<Copyright>Javier Suárez Ruiz</Copyright>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -33,6 +36,10 @@
 
 	<ItemGroup>
 	  <None Include="..\..\icon.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\..\LICENSE">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>
