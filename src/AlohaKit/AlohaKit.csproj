@@ -25,6 +25,7 @@
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageId>AlohaKit</PackageId>
 		<Copyright>Javier Suárez Ruiz</Copyright>
+		<Authors>Javier Suárez Ruiz</Authors>
 	</PropertyGroup>
 
 	<ItemGroup>
