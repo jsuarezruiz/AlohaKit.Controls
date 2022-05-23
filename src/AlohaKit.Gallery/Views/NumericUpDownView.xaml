@@ -82,6 +82,34 @@
                         TextChanged="OnTextColorEntryTextChanged"
                         Style="{StaticResource SettingsEntryStyle}"/>
                 </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal"
+                    Margin="0, 6">
+                    <Label 
+                        Text="Maximum Color"
+                        VerticalOptions="Center"
+                        Style="{StaticResource SettingsTextStyle}"/>
+                    <Entry
+                        x:Name="MaximumColorEntry"
+                        Placeholder="Maximum Color"
+                        Text="#eb4034"
+                        TextChanged="OnMaximumColorEntryTextChanged"
+                        Style="{StaticResource SettingsEntryStyle}"/>
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal"
+                    Margin="0, 6">
+                    <Label 
+                        Text="Minus Color"
+                        VerticalOptions="Center"
+                        Style="{StaticResource SettingsTextStyle}"/>
+                    <Entry
+                        x:Name="MinusColorEntry"
+                        Placeholder="Minus Color"
+                        Text="#34eb4f"
+                        TextChanged="OnMinusColorEntryTextChanged"
+                        Style="{StaticResource SettingsEntryStyle}"/>
+                </StackLayout>
             </StackLayout>
             <controls:NumericUpDown 
                 Grid.Row="3"
