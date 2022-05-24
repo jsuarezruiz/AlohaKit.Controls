@@ -6,6 +6,7 @@
         public Color Color { get; set; }
         public Color ColorMinus { get; set; }
         public Color ColorMaximum { get; set; }
+        public Color MaximumTextColor { get; set; }
         public Color TextColor { get; set; }
         public double FontSize { get; set; }
         public double Minimum { get; set; }
