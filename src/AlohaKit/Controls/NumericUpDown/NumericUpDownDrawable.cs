@@ -4,8 +4,9 @@
     {
         public Paint BackgroundPaint { get; set; }
         public Color Color { get; set; }
-        public Color ColorMinus { get; set; }
-        public Color ColorMaximum { get; set; }
+        public Paint MinimumColorPaint { get; set; }
+        public Paint MaximumColorPaint { get; set; }
+        public Color MinimumTextColor { get; set; }
         public Color MaximumTextColor { get; set; }
         public Color TextColor { get; set; }
         public double FontSize { get; set; }
@@ -65,7 +66,10 @@
         {
             canvas.SaveState();
 
-            canvas.FillColor = ColorMinus ?? Color;
+            if (MinimumColorPaint != null)
+            {
+                canvas.SetFillPaint(MinimumColorPaint, dirtyRect);
+            }
 
             float strokeThickness = 4.0f;
 
@@ -85,7 +89,7 @@
             canvas.SaveState();
 
             canvas.FillColor = Colors.Red;
-            canvas.FontColor = Colors.White;
+            canvas.FontColor = MinimumTextColor;
 
             canvas.FontSize = 24.0f;
 
@@ -98,7 +102,10 @@
         {
             canvas.SaveState();
 
-            canvas.FillColor = ColorMaximum ?? Color;
+            if (MaximumColorPaint != null)
+            {
+                canvas.SetFillPaint(MaximumColorPaint, dirtyRect);
+            }
 
             float strokeThickness = 4.0f;
 
@@ -117,7 +124,7 @@
 
             canvas.SaveState();
 
-            canvas.FontColor = Colors.White;
+            canvas.FontColor = MaximumTextColor;
 
             canvas.FontSize = 24.0f;
 

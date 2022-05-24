@@ -24,7 +24,17 @@ public partial class NumericUpDownView : ContentPage
         UpdateColors();
     }
 
-    void OnMinusColorEntryTextChanged(object sender, TextChangedEventArgs e)
+    void OnMinimumColorEntryTextChanged(object sender, TextChangedEventArgs e)
+    {
+        UpdateColors();
+    }    
+    
+    void OnMaximumTextColorEntryTextChanged(object sender, TextChangedEventArgs e)
+    {
+        UpdateColors();
+    }    
+    
+    void OnMinimumTextColorTextChanged(object sender, TextChangedEventArgs e)
     {
         UpdateColors();
     }
@@ -55,16 +65,34 @@ public partial class NumericUpDownView : ContentPage
         {
             MaximumColorEntry.BackgroundColor = maximumColor;
 
-            NumericUpDown.ColorMaximum = maximumColor;
+            NumericUpDown.MaximumColor = maximumColor;
         }
 
-        var minusColor = GetColorFromString(MinusColorEntry.Text);
+        var minimumColor = GetColorFromString(MinimumColorEntry.Text);
 
-        if (minusColor != null)
+        if (minimumColor != null)
         {
-            MinusColorEntry.BackgroundColor = minusColor;
+            MinimumColorEntry.BackgroundColor = minimumColor;
 
-            NumericUpDown.ColorMinus = minusColor;
+            NumericUpDown.MinimumColor = minimumColor;
+        }        
+        
+        var maximumTextColor = GetColorFromString(MaximumTextColorEntry.Text);
+
+        if (maximumTextColor != null)
+        {
+            MaximumTextColorEntry.BackgroundColor = maximumTextColor;
+
+            NumericUpDown.MaximumTextColor = maximumTextColor;
+        }
+
+        var minimumTextColor = GetColorFromString(MinimumTextColorEntry.Text);
+
+        if (minimumTextColor != null)
+        {
+            MinimumTextColorEntry.BackgroundColor = minimumTextColor;
+
+            NumericUpDown.MinimumTextColor = minimumTextColor;
         }
     }
 

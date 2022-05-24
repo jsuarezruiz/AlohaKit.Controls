@@ -48,36 +48,68 @@ namespace AlohaKit.Controls
             set { SetValue(ColorProperty, value); }
         }
 
-        public static readonly BindableProperty ColorMinusProperty =
-            BindableProperty.Create(nameof(ColorMinus), typeof(Color), typeof(NumericUpDown), null,
+        public static readonly BindableProperty MinimumColorProperty =
+            BindableProperty.Create(nameof(MinimumColor), typeof(Brush), typeof(NumericUpDown), null,
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is NumericUpDown numericUpDown)
                     {
-                        numericUpDown.UpdateColorMinus();
+                        numericUpDown.UpdateMinimumColor();
                     }
                 });
 
-        public Color ColorMinus
+        public Brush MinimumColor
         {
-            get { return (Color)GetValue(ColorMinusProperty); }
-            set { SetValue(ColorMinusProperty, value); }
+            get { return (Brush)GetValue(MinimumColorProperty); }
+            set { SetValue(MinimumColorProperty, value); }
         }
 
-        public static readonly BindableProperty ColorMaximumProperty =
-            BindableProperty.Create(nameof(ColorMinus), typeof(Color), typeof(NumericUpDown), null,
+        public static readonly BindableProperty MaximumColorProperty =
+            BindableProperty.Create(nameof(MaximumColor), typeof(Brush), typeof(NumericUpDown), null,
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is NumericUpDown numericUpDown)
                     {
-                        numericUpDown.UpdateColorMaximum();
+                        numericUpDown.UpdateMaximumColor();
                     }
                 });
 
-        public Color ColorMaximum
+        public Brush MaximumColor
         {
-            get { return (Color)GetValue(ColorMaximumProperty); }
-            set { SetValue(ColorMaximumProperty, value); }
+            get { return (Brush)GetValue(MaximumColorProperty); }
+            set { SetValue(MaximumColorProperty, value); }
+        }        
+        
+        public static readonly BindableProperty MinimumTextColorProperty =
+            BindableProperty.Create(nameof(MinimumTextColor), typeof(Color), typeof(NumericUpDown), null,
+                propertyChanged: (bindableObject, oldValue, newValue) =>
+                {
+                    if (newValue != null && bindableObject is NumericUpDown numericUpDown)
+                    {
+                        numericUpDown.UpdateMinimumTextColor();
+                    }
+                });
+
+        public Color MinimumTextColor
+        {
+            get { return (Color)GetValue(MinimumTextColorProperty); }
+            set { SetValue(MinimumTextColorProperty, value); }
+        }        
+        
+        public static readonly BindableProperty MaximumTextColorProperty =
+            BindableProperty.Create(nameof(MaximumTextColor), typeof(Color), typeof(NumericUpDown), null,
+                propertyChanged: (bindableObject, oldValue, newValue) =>
+                {
+                    if (newValue != null && bindableObject is NumericUpDown numericUpDown)
+                    {
+                        numericUpDown.UpdateMaximumTextColor();
+                    }
+                });
+
+        public Color MaximumTextColor
+        {
+            get { return (Color)GetValue(MaximumTextColorProperty); }
+            set { SetValue(MaximumTextColorProperty, value); }
         }
 
         public static readonly BindableProperty TextColorProperty =
@@ -222,22 +254,42 @@ namespace AlohaKit.Controls
             Invalidate();
         }
 
-        void UpdateColorMinus()
+        void UpdateMinimumColor()
         {
             if (NumericUpDownDrawable == null)
                 return;
 
-            NumericUpDownDrawable.ColorMinus = ColorMinus;
+            NumericUpDownDrawable.MinimumColorPaint = MinimumColor;
 
             Invalidate();
         }
 
-        void UpdateColorMaximum()
+        void UpdateMaximumColor()
         {
             if (NumericUpDownDrawable == null)
                 return;
 
-            NumericUpDownDrawable.ColorMaximum = ColorMaximum;
+            NumericUpDownDrawable.MaximumColorPaint = MaximumColor;
+
+            Invalidate();
+        }        
+        
+        void UpdateMinimumTextColor()
+        {
+            if (NumericUpDownDrawable == null)
+                return;
+
+            NumericUpDownDrawable.MinimumTextColor = MinimumTextColor;
+
+            Invalidate();
+        }        
+        
+        void UpdateMaximumTextColor()
+        {
+            if (NumericUpDownDrawable == null)
+                return;
+
+            NumericUpDownDrawable.MaximumTextColor = MaximumTextColor;
 
             Invalidate();
         }
