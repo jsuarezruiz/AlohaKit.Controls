@@ -82,6 +82,62 @@
                         TextChanged="OnTextColorEntryTextChanged"
                         Style="{StaticResource SettingsEntryStyle}"/>
                 </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal"
+                    Margin="0, 6">
+                    <Label 
+                        Text="Maximum Color"
+                        VerticalOptions="Center"
+                        Style="{StaticResource SettingsTextStyle}"/>
+                    <Entry
+                        x:Name="MaximumColorEntry"
+                        Placeholder="Maximum Color"
+                        Text="#ff2b2b"
+                        TextChanged="OnMaximumColorEntryTextChanged"
+                        Style="{StaticResource SettingsEntryStyle}"/>
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal"
+                    Margin="0, 6">
+                    <Label 
+                        Text="Minimum Color"
+                        VerticalOptions="Center"
+                        Style="{StaticResource SettingsTextStyle}"/>
+                    <Entry
+                        x:Name="MinimumColorEntry"
+                        Placeholder="Minimum Color"
+                        Text="#07a649"
+                        TextChanged="OnMinimumColorEntryTextChanged"
+                        Style="{StaticResource SettingsEntryStyle}"/>
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal"
+                    Margin="0, 6">
+                    <Label 
+                        Text="Maximum Text Color"
+                        VerticalOptions="Center"
+                        Style="{StaticResource SettingsTextStyle}"/>
+                    <Entry
+                        x:Name="MaximumTextColorEntry"
+                        Placeholder="Maximum Text Color"
+                        Text="#000000"
+                        TextChanged="OnMaximumTextColorEntryTextChanged"
+                        Style="{StaticResource SettingsEntryStyle}"/>
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal"
+                    Margin="0, 6">
+                    <Label 
+                        Text="Minimum Text Color"
+                        VerticalOptions="Center"
+                        Style="{StaticResource SettingsTextStyle}"/>
+                    <Entry
+                        x:Name="MinimumTextColorEntry"
+                        Placeholder="Minimum Text Color"
+                        Text="#ffffff"
+                        TextChanged="OnMinimumTextColorTextChanged"
+                        Style="{StaticResource SettingsEntryStyle}"/>
+                </StackLayout>
             </StackLayout>
             <controls:NumericUpDown 
                 Grid.Row="3"
