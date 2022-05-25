@@ -18,7 +18,7 @@
             ProgressRadialDrawable.IsAnimating = true;
             IsInitialized = true;
             this.FadeTo(1, 1000, Easing.SinIn);
-            AnimateProgress(Value + 1);
+            AnimateProgress(Value);
         }
 
 
@@ -38,7 +38,7 @@
                 Invalidate();
 
                 ProgressRadialDrawable.IsAnimating = false;
-            }, 0, progress, easing: Easing.SinIn);
+            }, 0, progress, easing: Easing.SinInOut);
             animation.Commit(this, "ProgressAngle", length: (uint)250);
         }
 
@@ -247,7 +247,7 @@
             ProgressRadialDrawable.ProgressText = Value.ToString();
 
             if (!ProgressRadialDrawable.IsAnimating && IsInitialized)
-                AnimateProgress(Value + 1);
+                AnimateProgress(Value);
         }
     }
 }
