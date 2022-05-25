@@ -4,6 +4,10 @@
     {
         public Paint BackgroundPaint { get; set; }
         public Color Color { get; set; }
+        public Paint MinimumColorPaint { get; set; }
+        public Paint MaximumColorPaint { get; set; }
+        public Color MinimumTextColor { get; set; }
+        public Color MaximumTextColor { get; set; }
         public Color TextColor { get; set; }
         public double FontSize { get; set; }
         public double Minimum { get; set; }
@@ -36,7 +40,7 @@
 
             canvas.RestoreState();
         }
-         
+
         void DrawBorder(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
@@ -44,9 +48,9 @@
             var width = dirtyRect.Width;
             var height = dirtyRect.Height;
             float radius = height / 2;
-             
+
             canvas.StrokeColor = Color;
-            
+
             float strokeThickness = 4.0f;
 
             canvas.StrokeSize = strokeThickness;
@@ -54,15 +58,18 @@
             float margin = strokeThickness;
 
             canvas.DrawRoundedRectangle(margin, margin, width - margin * 2, height - margin * 2, radius);
-        
+
             canvas.RestoreState();
         }
 
         void DrawMinus(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
-          
-            canvas.FillColor = Color;
+
+            if (MinimumColorPaint != null)
+            {
+                canvas.SetFillPaint(MinimumColorPaint, dirtyRect);
+            }
 
             float strokeThickness = 4.0f;
 
@@ -82,12 +89,12 @@
             canvas.SaveState();
 
             canvas.FillColor = Colors.Red;
-            canvas.FontColor = Colors.White;
+            canvas.FontColor = MinimumTextColor;
 
             canvas.FontSize = 24.0f;
 
             canvas.DrawString("-", cX, cY + margin, HorizontalAlignment.Center);
-  
+
             canvas.RestoreState();
         }
 
@@ -95,7 +102,10 @@
         {
             canvas.SaveState();
 
-            canvas.FillColor = Color;
+            if (MaximumColorPaint != null)
+            {
+                canvas.SetFillPaint(MaximumColorPaint, dirtyRect);
+            }
 
             float strokeThickness = 4.0f;
 
@@ -103,7 +113,7 @@
 
             float margin = 6.0f;
             float radius = (dirtyRect.Height - strokeThickness * 2) / 2 - margin;
-            float cX = dirtyRect.Width -(strokeThickness + radius + margin);
+            float cX = dirtyRect.Width - (strokeThickness + radius + margin);
             float cY = dirtyRect.Y + strokeThickness + radius + margin;
 
             canvas.FillCircle(cX, cY, radius);
@@ -114,7 +124,7 @@
 
             canvas.SaveState();
 
-            canvas.FontColor = Colors.White;
+            canvas.FontColor = MaximumTextColor;
 
             canvas.FontSize = 24.0f;
 
