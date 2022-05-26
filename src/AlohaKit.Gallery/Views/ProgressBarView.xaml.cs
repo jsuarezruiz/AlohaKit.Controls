@@ -2,12 +2,14 @@ namespace AlohaKit.Gallery;
 
 public partial class ProgressBarView : ContentPage
 {
-	public ProgressBarView()
-	{
-		InitializeComponent();
+    public ProgressBarView()
+    {
+        InitializeComponent();
 
         UpdateBrushes();
-	}
+        StylePicker.SelectedItem = "Rounded";
+        CheckAnimate.IsChecked = true;
+    }
 
     void OnBackgroundStartColorEntryTextChanged(object sender, TextChangedEventArgs e)
     {
@@ -84,5 +86,19 @@ public partial class ProgressBarView : ContentPage
         {
             return null;
         }
+    }
+
+    private void stylePicker_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        var selectedItem = (sender as Picker).SelectedItem as string;
+        HorizontalProgressBar.RoundCorners = selectedItem == "Rounded" ? true : false;
+        VerticalProgressBar.RoundCorners = selectedItem == "Rounded" ? true : false;
+    }
+
+    private void CheckAnimate_CheckedChanged(object sender, CheckedChangedEventArgs e)
+    {
+        var isChecked = (sender as CheckBox).IsChecked;
+        HorizontalProgressBar.EnableAnimations = isChecked;
+        VerticalProgressBar.EnableAnimations = isChecked;
     }
 }

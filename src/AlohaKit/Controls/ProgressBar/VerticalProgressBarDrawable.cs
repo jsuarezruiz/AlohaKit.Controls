@@ -1,12 +1,10 @@
-﻿namespace AlohaKit.Controls
-{
-    public class VerticalProgressBarDrawable : IDrawable
-    {
-        public Paint BackgroundPaint { get; set; }
-        public Paint ProgressPaint { get; set; }
-        public double Progress { get; set; }
+﻿using AlohaKit.Controls.ProgressBar;
 
-        public void Draw(ICanvas canvas, RectF dirtyRect)
+namespace AlohaKit.Controls
+{
+    public class VerticalProgressBarDrawable : BaseProgressBarDrawable
+    {
+        public override void DrawChart(ICanvas canvas, RectF dirtyRect)
         {
             canvas.Antialias = true;
 
@@ -27,7 +25,10 @@
             var width = dirtyRect.Width;
             var height = dirtyRect.Height;
 
-            canvas.FillRectangle(x, y, width, height);
+            if (Style == ProgressBarStyle.Square)
+                canvas.FillRectangle(x, y, width, height);
+            else
+                canvas.FillRoundedRectangle(x, y, width, height, CornerRadius);
 
             canvas.RestoreState();
         }
@@ -44,7 +45,10 @@
             var width = dirtyRect.Width;
             var height = dirtyRect.Height;
 
-            canvas.FillRectangle(x, y, width, -(float)(height * Progress));
+            if (Style == ProgressBarStyle.Square)
+                canvas.FillRectangle(x, y, width, -(float)(height * Progress));
+            else
+                canvas.FillRoundedRectangle(x, y, width, -(float)(height * Progress), CornerRadius);
 
             canvas.RestoreState();
         }
