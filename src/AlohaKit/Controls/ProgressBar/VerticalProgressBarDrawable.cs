@@ -25,7 +25,7 @@ namespace AlohaKit.Controls
             var width = dirtyRect.Width;
             var height = dirtyRect.Height;
 
-            if (Style == ProgressBarStyle.Squared)
+            if (Style == ProgressBarStyle.Square)
                 canvas.FillRectangle(x, y, width, height);
             else
                 canvas.FillRoundedRectangle(x, y, width, height, CornerRadius);
@@ -45,7 +45,7 @@ namespace AlohaKit.Controls
             var width = dirtyRect.Width;
             var height = dirtyRect.Height;
 
-            if (Style == ProgressBarStyle.Squared)
+            if (Style == ProgressBarStyle.Square)
                 canvas.FillRectangle(x, y, width, -(float)(height * Progress));
             else
                 canvas.FillRoundedRectangle(x, y, width, -(float)(height * Progress), CornerRadius);
