@@ -143,7 +143,7 @@ namespace AlohaKit.Controls.ProgressBar
             if (ProgressBarDrawable == null)
                 return;
 
-            ProgressBarDrawable.Style = RoundCorners ? ProgressBarStyle.Rounded : ProgressBarStyle.Square;
+            ProgressBarDrawable.Style = RoundCorners ? ProgressBarStyle.Rounded : ProgressBarStyle.Squared;
             ProgressBarDrawable.CornerRadius = CornerRadius;
             Invalidate();
         }

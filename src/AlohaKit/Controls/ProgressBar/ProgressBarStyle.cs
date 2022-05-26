@@ -8,7 +8,7 @@ namespace AlohaKit.Controls.ProgressBar
 {
     public enum ProgressBarStyle
     {
-        Square = default,
+        Squared = default,
         Rounded = 1
     }
 }
