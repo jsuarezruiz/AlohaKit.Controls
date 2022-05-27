@@ -29,8 +29,12 @@
 	  <Folder Include="Platforms\iOS\" />
 	  <Folder Include="Platforms\MacCatalyst\" />
 	  <Folder Include="Platforms\Windows\" />
+	  <Folder Include="Controls\ProgressBar\Drawable\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Controls\ProgressBar\Drawable\" />
+	</ItemGroup>
 	<ItemGroup>
 	  <None Include="..\..\icon.png">
 	    <Pack>True</Pack>

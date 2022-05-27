@@ -148,18 +148,25 @@
                         TextChanged="OnProgressEndColorEntryTextChanged" />
                 </StackLayout>
             </StackLayout>
+           
             <Grid
                 Grid.Row="3"
                 ColumnDefinitions="Auto, Auto"
                 HorizontalOptions="Center"
                 VerticalOptions="Center">
-                <controls:HorizontalProgressBar
+                <controls:ProgressBar
+                    IsVertical="False"
+                    WidthRequest="120"
+                    HeightRequest="18"
                     x:Name="HorizontalProgressBar"
                     Margin="12"
                     HorizontalOptions="Center"
                     Progress="{Binding Source={x:Reference ValueSlider}, Path=Value}"
                     VerticalOptions="Center" />
-                <controls:VerticalProgressBar
+                <controls:ProgressBar
+                    WidthRequest="18"
+                    HeightRequest="120"
+                    IsVertical="True"
                     x:Name="VerticalProgressBar"
                     Grid.Column="1"
                     Margin="12"
