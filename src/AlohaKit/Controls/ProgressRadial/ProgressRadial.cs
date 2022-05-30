@@ -42,6 +42,22 @@
             animation.Commit(this, "ProgressAngle", length: (uint)250);
         }
 
+        public new static readonly BindableProperty BackgroundColorProperty =
+          BindableProperty.Create(nameof(BackgroundColor), typeof(Color), typeof(ProgressRadial), Colors.White,
+              propertyChanged: (bindableObject, oldValue, newValue) =>
+              {
+                  if (newValue != null && bindableObject is ProgressRadial progressRadial)
+                  {
+                      progressRadial.UpdateBackgroundColor();
+                  }
+              });
+
+        public new Color BackgroundColor
+        {
+            get => (Color)GetValue(BackgroundColorProperty);
+            set => SetValue(BackgroundColorProperty, value);
+        }
+
         public static readonly BindableProperty StrokeColorProperty =
           BindableProperty.Create(nameof(StrokeColor), typeof(Color), typeof(ProgressRadial), Colors.LightGray,
               propertyChanged: (bindableObject, oldValue, newValue) =>
@@ -51,7 +67,6 @@
                       progressRadial.UpdateStrokeColor();
                   }
               });
-
 
         public Color StrokeColor
         {
