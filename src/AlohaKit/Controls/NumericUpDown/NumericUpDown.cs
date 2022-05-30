@@ -78,8 +78,8 @@ namespace AlohaKit.Controls
         {
             get { return (Brush)GetValue(MaximumColorProperty); }
             set { SetValue(MaximumColorProperty, value); }
-        }        
-        
+        }
+
         public static readonly BindableProperty MinimumTextColorProperty =
             BindableProperty.Create(nameof(MinimumTextColor), typeof(Color), typeof(NumericUpDown), null,
                 propertyChanged: (bindableObject, oldValue, newValue) =>
@@ -94,8 +94,8 @@ namespace AlohaKit.Controls
         {
             get { return (Color)GetValue(MinimumTextColorProperty); }
             set { SetValue(MinimumTextColorProperty, value); }
-        }        
-        
+        }
+
         public static readonly BindableProperty MaximumTextColorProperty =
             BindableProperty.Create(nameof(MaximumTextColor), typeof(Color), typeof(NumericUpDown), null,
                 propertyChanged: (bindableObject, oldValue, newValue) =>
@@ -169,7 +169,7 @@ namespace AlohaKit.Controls
 
         public static readonly BindableProperty MaximumProperty =
             BindableProperty.Create(nameof(Maximum), typeof(double), typeof(NumericUpDown), 100d,
-                validateValue: (bindable, value) => (double)value > ((Stepper)bindable).Minimum,
+                validateValue: (bindable, value) => (double)value > ((NumericUpDown)bindable).Minimum,
                 coerceValue: (bindable, value) =>
                 {
                     var numericUpDown = (NumericUpDown)bindable;
@@ -272,8 +272,8 @@ namespace AlohaKit.Controls
             NumericUpDownDrawable.MaximumColorPaint = MaximumColor;
 
             Invalidate();
-        }        
-        
+        }
+
         void UpdateMinimumTextColor()
         {
             if (NumericUpDownDrawable == null)
@@ -282,8 +282,8 @@ namespace AlohaKit.Controls
             NumericUpDownDrawable.MinimumTextColor = MinimumTextColor;
 
             Invalidate();
-        }        
-        
+        }
+
         void UpdateMaximumTextColor()
         {
             if (NumericUpDownDrawable == null)
@@ -356,10 +356,10 @@ namespace AlohaKit.Controls
 
             NumericUpDownDrawable.TouchPoint = point;
 
-            if (NumericUpDownDrawable.MinusRectangle.Contains(point))
+            if (NumericUpDownDrawable.MinusRectangle.Contains(point) && (Value - Interval) >= Minimum)
                 Value -= Interval;
 
-            if (NumericUpDownDrawable.PlusRectangle.Contains(point))
+            if (NumericUpDownDrawable.PlusRectangle.Contains(point) && (Value + Interval) <= Maximum)
                 Value += Interval;
         }
     }
