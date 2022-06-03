@@ -1,0 +1,12 @@
+root = true
+
+[*]
+end_of_line = crlf
+indent_size = 4
+indent_style = tab
+
+[*.xaml]
+indent_size = 2
+
+[*{.props,.targets}]
+indent_size = 2

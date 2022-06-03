@@ -1,0 +1,39 @@
+name: Build Package
+
+on:
+	push:
+		branches: [main]
+	pull_request:
+		branches: [main]
+
+jobs:
+	build:
+	name: Build AlohaKit
+	runs-on: windows-latest
+	env:
+		DOTNET_CLI_TELEMETRY_OPTOUT: 1
+	steps:
+		- name: Checkout
+			uses: actions/checkout@v3
+			with:
+				fetch-depth: 0
+
+		- name: Setup .NET Core 6.0
+			uses: actions/setup-dotnet@v2
+			with:
+				dotnet-version: '6.0.x'
+
+		- name: Install .NET MAUI Workload
+			run: dotnet workload install maui
+
+		- name: NuGet Restore
+			run: dotnet restore ./src/AlohaKit
+
+		- name: DotNet Build
+			run: dotnet build ./src/AlohaKit -c Release
+
+		- name: Upload Artifacts
+			uses: actions/upload-artifact@v3
+			with:
+				name: NuGet
+				path: Artifacts/

@@ -2,15 +2,61 @@
 {
     public class ProgressRadial : GraphicsView
     {
+        private ProgressRadialDrawable ProgressRadialDrawable { get; set; }
+        private bool IsInitialized = false;
         public ProgressRadial()
         {
             HeightRequest = 150;
             WidthRequest = 150;
-
+            Opacity = 0;
             Drawable = ProgressRadialDrawable = new ProgressRadialDrawable();
+            Loaded += BarChartView_Loaded;
         }
 
-        public ProgressRadialDrawable ProgressRadialDrawable { get; set; }
+        private void BarChartView_Loaded(object sender, EventArgs e)
+        {
+            ProgressRadialDrawable.IsAnimating = true;
+            IsInitialized = true;
+            this.FadeTo(1, 1000, Easing.SinIn);
+            AnimateProgress(Value);
+        }
+
+
+        void AnimateProgress(int progress)
+        {
+            var animation = new Animation(v =>
+            {
+                var minimumDegree = 0;
+                var maximumDegree = 270;
+                var differenceDegree = maximumDegree - minimumDegree;
+                var difference = Maximum - Minimum;
+                var progressStep = (float)differenceDegree / difference;
+
+                var tmpEnd = (int)v * progressStep;
+                ProgressRadialDrawable.ProgressAngle = tmpEnd >= maximumDegree ? 269.99f : tmpEnd;
+                ProgressRadialDrawable.ProgressText = ((int)v).ToString();
+                Invalidate();
+
+                ProgressRadialDrawable.IsAnimating = false;
+            }, 0, progress, easing: Easing.SinInOut);
+            animation.Commit(this, "ProgressAngle", length: (uint)250);
+        }
+
+        public new static readonly BindableProperty BackgroundColorProperty =
+          BindableProperty.Create(nameof(BackgroundColor), typeof(Color), typeof(ProgressRadial), Colors.White,
+              propertyChanged: (bindableObject, oldValue, newValue) =>
+              {
+                  if (newValue != null && bindableObject is ProgressRadial progressRadial)
+                  {
+                      progressRadial.UpdateBackgroundColor();
+                  }
+              });
+
+        public new Color BackgroundColor
+        {
+            get => (Color)GetValue(BackgroundColorProperty);
+            set => SetValue(BackgroundColorProperty, value);
+        }
 
         public static readonly BindableProperty StrokeColorProperty =
           BindableProperty.Create(nameof(StrokeColor), typeof(Color), typeof(ProgressRadial), Colors.LightGray,
@@ -21,7 +67,6 @@
                       progressRadial.UpdateStrokeColor();
                   }
               });
-
 
         public Color StrokeColor
         {
@@ -216,7 +261,8 @@
             ProgressRadialDrawable.ProgressAngle = Value * progressStep;
             ProgressRadialDrawable.ProgressText = Value.ToString();
 
-            Invalidate();
+            if (!ProgressRadialDrawable.IsAnimating && IsInitialized)
+                AnimateProgress(Value);
         }
     }
 }

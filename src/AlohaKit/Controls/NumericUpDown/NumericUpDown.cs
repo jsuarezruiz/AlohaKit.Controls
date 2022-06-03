@@ -7,7 +7,7 @@ namespace AlohaKit.Controls
         public NumericUpDown()
         {
             HeightRequest = 48;
-            WidthRequest= 120;
+            WidthRequest = 120;
 
             Drawable = NumericUpDownDrawable = new NumericUpDownDrawable();
 
@@ -16,8 +16,8 @@ namespace AlohaKit.Controls
 
         public NumericUpDownDrawable NumericUpDownDrawable { get; set; }
 
-        public static readonly new BindableProperty BackgroundProperty =  
-            BindableProperty.Create(nameof(Background), typeof(Brush), typeof(Button), null,   
+        public static readonly new BindableProperty BackgroundProperty =
+            BindableProperty.Create(nameof(Background), typeof(Brush), typeof(Button), null,
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is NumericUpDown numericUpDown)
@@ -32,8 +32,8 @@ namespace AlohaKit.Controls
             set => SetValue(BackgroundProperty, value);
         }
 
-        public static readonly BindableProperty ColorProperty =  
-            BindableProperty.Create(nameof(Color), typeof(Color), typeof(NumericUpDown), Colors.Black, 
+        public static readonly BindableProperty ColorProperty =
+            BindableProperty.Create(nameof(Color), typeof(Color), typeof(NumericUpDown), Colors.Black,
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is NumericUpDown numericUpDown)
@@ -46,6 +46,70 @@ namespace AlohaKit.Controls
         {
             get { return (Color)GetValue(ColorProperty); }
             set { SetValue(ColorProperty, value); }
+        }
+
+        public static readonly BindableProperty MinimumColorProperty =
+            BindableProperty.Create(nameof(MinimumColor), typeof(Brush), typeof(NumericUpDown), null,
+                propertyChanged: (bindableObject, oldValue, newValue) =>
+                {
+                    if (newValue != null && bindableObject is NumericUpDown numericUpDown)
+                    {
+                        numericUpDown.UpdateMinimumColor();
+                    }
+                });
+
+        public Brush MinimumColor
+        {
+            get { return (Brush)GetValue(MinimumColorProperty); }
+            set { SetValue(MinimumColorProperty, value); }
+        }
+
+        public static readonly BindableProperty MaximumColorProperty =
+            BindableProperty.Create(nameof(MaximumColor), typeof(Brush), typeof(NumericUpDown), null,
+                propertyChanged: (bindableObject, oldValue, newValue) =>
+                {
+                    if (newValue != null && bindableObject is NumericUpDown numericUpDown)
+                    {
+                        numericUpDown.UpdateMaximumColor();
+                    }
+                });
+
+        public Brush MaximumColor
+        {
+            get { return (Brush)GetValue(MaximumColorProperty); }
+            set { SetValue(MaximumColorProperty, value); }
+        }
+
+        public static readonly BindableProperty MinimumTextColorProperty =
+            BindableProperty.Create(nameof(MinimumTextColor), typeof(Color), typeof(NumericUpDown), null,
+                propertyChanged: (bindableObject, oldValue, newValue) =>
+                {
+                    if (newValue != null && bindableObject is NumericUpDown numericUpDown)
+                    {
+                        numericUpDown.UpdateMinimumTextColor();
+                    }
+                });
+
+        public Color MinimumTextColor
+        {
+            get { return (Color)GetValue(MinimumTextColorProperty); }
+            set { SetValue(MinimumTextColorProperty, value); }
+        }
+
+        public static readonly BindableProperty MaximumTextColorProperty =
+            BindableProperty.Create(nameof(MaximumTextColor), typeof(Color), typeof(NumericUpDown), null,
+                propertyChanged: (bindableObject, oldValue, newValue) =>
+                {
+                    if (newValue != null && bindableObject is NumericUpDown numericUpDown)
+                    {
+                        numericUpDown.UpdateMaximumTextColor();
+                    }
+                });
+
+        public Color MaximumTextColor
+        {
+            get { return (Color)GetValue(MaximumTextColorProperty); }
+            set { SetValue(MaximumTextColorProperty, value); }
         }
 
         public static readonly BindableProperty TextColorProperty =
@@ -80,8 +144,8 @@ namespace AlohaKit.Controls
             set { SetValue(FontSizeProperty, value); }
         }
 
-        public static readonly BindableProperty MinimumProperty =    
-            BindableProperty.Create(nameof(Minimum), typeof(double), typeof(NumericUpDown), 0d,   
+        public static readonly BindableProperty MinimumProperty =
+            BindableProperty.Create(nameof(Minimum), typeof(double), typeof(NumericUpDown), 0d,
                 validateValue: (bindable, value) => (double)value < ((NumericUpDown)bindable).Maximum,
                 coerceValue: (bindable, value) =>
                 {
@@ -89,7 +153,7 @@ namespace AlohaKit.Controls
                     numericUpDown.Value = numericUpDown.Value.Clamp((double)value, numericUpDown.Maximum);
                     return value;
                 },
-                propertyChanged: (bindableObject, oldValue, newValue) => 
+                propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is NumericUpDown numericUpDown)
                     {
@@ -104,8 +168,8 @@ namespace AlohaKit.Controls
         }
 
         public static readonly BindableProperty MaximumProperty =
-            BindableProperty.Create(nameof(Maximum), typeof(double), typeof(NumericUpDown), 100d,  
-                validateValue: (bindable, value) => (double)value > ((Stepper)bindable).Minimum,
+            BindableProperty.Create(nameof(Maximum), typeof(double), typeof(NumericUpDown), 100d,
+                validateValue: (bindable, value) => (double)value > ((NumericUpDown)bindable).Minimum,
                 coerceValue: (bindable, value) =>
                 {
                     var numericUpDown = (NumericUpDown)bindable;
@@ -135,8 +199,8 @@ namespace AlohaKit.Controls
             set { SetValue(IntervalProperty, value); }
         }
 
-        public static readonly BindableProperty ValueProperty =  
-            BindableProperty.Create(nameof(Value), typeof(double), typeof(NumericUpDown), 0d,   
+        public static readonly BindableProperty ValueProperty =
+            BindableProperty.Create(nameof(Value), typeof(double), typeof(NumericUpDown), 0d,
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is NumericUpDown numericUpDown)
@@ -186,6 +250,46 @@ namespace AlohaKit.Controls
                 return;
 
             NumericUpDownDrawable.Color = Color;
+
+            Invalidate();
+        }
+
+        void UpdateMinimumColor()
+        {
+            if (NumericUpDownDrawable == null)
+                return;
+
+            NumericUpDownDrawable.MinimumColorPaint = MinimumColor;
+
+            Invalidate();
+        }
+
+        void UpdateMaximumColor()
+        {
+            if (NumericUpDownDrawable == null)
+                return;
+
+            NumericUpDownDrawable.MaximumColorPaint = MaximumColor;
+
+            Invalidate();
+        }
+
+        void UpdateMinimumTextColor()
+        {
+            if (NumericUpDownDrawable == null)
+                return;
+
+            NumericUpDownDrawable.MinimumTextColor = MinimumTextColor;
+
+            Invalidate();
+        }
+
+        void UpdateMaximumTextColor()
+        {
+            if (NumericUpDownDrawable == null)
+                return;
+
+            NumericUpDownDrawable.MaximumTextColor = MaximumTextColor;
 
             Invalidate();
         }
@@ -252,10 +356,10 @@ namespace AlohaKit.Controls
 
             NumericUpDownDrawable.TouchPoint = point;
 
-            if (NumericUpDownDrawable.MinusRectangle.Contains(point))
+            if (NumericUpDownDrawable.MinusRectangle.Contains(point) && (Value - Interval) >= Minimum)
                 Value -= Interval;
-            
-            if (NumericUpDownDrawable.PlusRectangle.Contains(point))
+
+            if (NumericUpDownDrawable.PlusRectangle.Contains(point) && (Value + Interval) <= Maximum)
                 Value += Interval;
         }
     }

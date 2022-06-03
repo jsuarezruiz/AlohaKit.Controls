@@ -12,6 +12,8 @@
         public float ProgressAngle { get; set; }
         public ProgressRadialDirection Direction { get; set; }
 
+        public bool IsAnimating { get; set; }
+
         public void Draw(ICanvas canvas, RectF dirtyRect)
         {
             canvas.Antialias = true;
