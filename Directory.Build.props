@@ -1,0 +1,45 @@
+<Project>
+
+	<PropertyGroup>
+		<NeutralLanguage>en</NeutralLanguage>
+		<Company>Javier Suárez Ruiz</Company>
+		<Description>A set of .NET MAUI drawn controls.</Description>
+		<PackageProjectUrl>https://github.com/jsuarezruiz/AlohaKit</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/jsuarezruiz/AlohaKit</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>dotnet,dotnet-maui,maui, controls,drawn-controls,graphics</PackageTags>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<Copyright>Javier Suárez Ruiz</Copyright>
+		<Authors>Javier Suárez Ruiz</Authors>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<PackageOutputPath>$(MSBuildThisFileDirectory)Artifacts</PackageOutputPath>
+		<IncludeSymbols>True</IncludeSymbols>
+		<IncludeSource>True</IncludeSource>
+		<ContinuousIntegrationBuild>$(CI)</ContinuousIntegrationBuild>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<VSTestLogger>trx%3bLogFileName=$(MSBuildProjectName).trx</VSTestLogger>
+		<VSTestResultsDirectory>$(MSBuildThisFileDirectory)TestResults</VSTestResultsDirectory>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="$(MSBuildThisFileDirectory)icon.png" Pack="true" PackagePath="\" />
+		<None Include="$(MSBuildThisFileDirectory)LICENSE" Pack="true" PackagePath="\" />
+		<None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Nerdbank.GitVersioning" 
+											Version="3.5.107"
+											PrivateAssets="all" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub"
+											Version="1.1.1"
+											PrivateAssets="all" />
+	</ItemGroup>
+</Project>
