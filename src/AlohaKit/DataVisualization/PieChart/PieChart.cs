@@ -1,5 +1,7 @@
 ﻿namespace AlohaKit.Controls
 {
+	// TODO:
+	// - Add option to detect when a slice is tapped.
 	public class PieChart : GraphicsView
 	{
 		public PieChart()
