@@ -21,8 +21,11 @@ namespace AlohaKit.Gallery.ViewModels
 
             new SectionModel(typeof(NumericUpDownView), "NumericUpDown",
                 " NumericUpDown control provides up and down repeat buttons to increase and decrease values."),
-              
-            new SectionModel(typeof(PulseIconView), "PulseIcon",
+				
+			new SectionModel(typeof(PieChartView), "PieChart",
+				"The PieChart visualizes its data points using radial coordinate system."),
+
+			new SectionModel(typeof(PulseIconView), "PulseIcon",
                 "PulseIcon generates pulsation relative to your icon."),
 
             new SectionModel(typeof(ProgressBarView), "ProgressBar",
