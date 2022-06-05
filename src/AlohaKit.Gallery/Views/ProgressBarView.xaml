@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage 
+<ContentPage
+    x:Class="AlohaKit.Gallery.ProgressBarView"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="AlohaKit.Gallery.ProgressBarView"
     xmlns:controls="clr-namespace:AlohaKit.Controls;assembly=AlohaKit"
     Title="ProgressBar">
     <ContentPage.Resources>
@@ -27,133 +27,153 @@
 
         </ResourceDictionary>
     </ContentPage.Resources>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <!-- DESCRIPTION -->
-        <StackLayout
-            Style="{StaticResource SectionContainerStyle}">
-            <Label          
-                Text="The ProgressBar visually represents progress as a horizontal or vertical bar that is filled to a percentage represented by a float value."/>
-        </StackLayout>
-        <!-- FEATURES -->
-        <StackLayout    
-            Grid.Row="1"
-            BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundSecondaryColor}, Dark={StaticResource DarkBackgroundSecondaryColor}}"
-            Style="{StaticResource SectionContainerStyle}">
-            <Label 
-                Text="Features"
-                Style="{StaticResource SectionTitleStyle}"/>
-            <Label        
-                Text="- Can use horizontal or vertical bar."/>
-            <Label   
-                Text="- All the colors can be customized supporting gradients."/>
-            <Label   
-                Text="- Can easily animate the progress."/>
-        </StackLayout>
-        <!-- SETTINGS -->
-        <StackLayout
-            Grid.Row="2"
-            Style="{StaticResource SectionContainerStyle}">
-            <Label 
-                Text="Settings"
-                Style="{StaticResource SectionTitleStyle}"/>
+    <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <!--  DESCRIPTION  -->
+            <StackLayout Style="{StaticResource SectionContainerStyle}">
+                <Label Text="The ProgressBar visually represents progress as a horizontal or vertical bar that is filled to a percentage represented by a float value." />
+            </StackLayout>
+            <!--  FEATURES  -->
             <StackLayout
-                Orientation="Horizontal"
-                Margin="0, 6">
-                <Grid 
-                    RowDefinitions="Auto, *"
-                    Style="{StaticResource SettingsSectionLayoutStyle}">
-                    <Label
-                        Text="Value"
-                        Style="{StaticResource SettingsTextStyle}"/>
-                    <Grid
-                        ColumnDefinitions="*, Auto">
-                        <Slider     
-                            x:Name="ValueSlider"
-                            Grid.Row="1"
-                            Minimum="0"
-                            Value="0.5"
-                            Maximum="1"
-                            Style="{StaticResource SettingsSliderStyle}"/>
+                Grid.Row="1"
+                BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundSecondaryColor},
+                                                  Dark={StaticResource DarkBackgroundSecondaryColor}}"
+                Style="{StaticResource SectionContainerStyle}">
+                <Label Style="{StaticResource SectionTitleStyle}" Text="Features" />
+                <Label Text="- Can use horizontal or vertical bar." />
+                <Label Text="- All the colors can be customized supporting gradients." />
+                <Label Text="- Can easily animate the progress." />
+            </StackLayout>
+            <!--  SETTINGS  -->
+            <StackLayout Grid.Row="2" Style="{StaticResource SectionContainerStyle}">
+                <Label Style="{StaticResource SectionTitleStyle}" Text="Settings" />
+                <StackLayout Margin="0,6" Orientation="Horizontal">
+                    <Grid RowDefinitions="Auto, *" Style="{StaticResource SettingsSectionLayoutStyle}">
                         <Label
-                            Grid.Column="1"
-                            VerticalOptions="Center"
-                            Text="{Binding Source={x:Reference ValueSlider}, Path=Value, StringFormat='{0:F2}'}"/>
+                            Grid.Row="0"
+                            Style="{StaticResource SettingsTextStyle}"
+                            Text="Value" />
+                        <Grid Grid.Row="1" ColumnDefinitions="*, Auto">
+                            <Slider
+                                x:Name="ValueSlider"
+                                Grid.Row="1"
+                                Maximum="1"
+                                Minimum="0"
+                                Style="{StaticResource SettingsSliderStyle}"
+                                Value="0.5" />
+                            <Label
+                                Grid.Column="1"
+                                Text="{Binding Source={x:Reference ValueSlider}, Path=Value, StringFormat='{0:F2}'}"
+                                VerticalOptions="Center" />
+                        </Grid>
                     </Grid>
-                </Grid>
+                    <StackLayout
+                        Margin="25,0,0,0"
+                        Orientation="Horizontal"
+                        Spacing="5">
+                        <Label Text="Style:" VerticalOptions="Start" />
+                        <Picker
+                            x:Name="StylePicker"
+                            Margin="0,-10,0,0"
+                            SelectedIndexChanged="stylePicker_SelectedIndexChanged"
+                            TextColor="Black"
+                            WidthRequest="100">
+                            <Picker.Items>
+                                <x:String>Rounded</x:String>
+                                <x:String>Square</x:String>
+                            </Picker.Items>
+                        </Picker>
+
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout
+                    Margin="0"
+                    Padding="0"
+                    Orientation="Horizontal"
+                    Spacing="0">
+                    <Label Text="Animate" VerticalOptions="Center" />
+                    <CheckBox
+                        x:Name="CheckAnimate"
+                        CheckedChanged="CheckAnimate_CheckedChanged"
+                        VerticalOptions="Start" />
+                </StackLayout>
+                <StackLayout Margin="0,6" Orientation="Horizontal">
+                    <Label
+                        Style="{StaticResource SettingsTextStyle}"
+                        Text="Background Start Color"
+                        VerticalOptions="Center" />
+                    <Entry
+                        x:Name="BackgroundStartColorEntry"
+                        Placeholder="Background Color"
+                        Style="{StaticResource SettingsEntryStyle}"
+                        Text="#EE9CA7"
+                        TextChanged="OnBackgroundStartColorEntryTextChanged" />
+                    <Label
+                        Style="{StaticResource SettingsTextStyle}"
+                        Text="Background End Color"
+                        VerticalOptions="Center" />
+                    <Entry
+                        x:Name="BackgroundEndColorEntry"
+                        Placeholder="Color"
+                        Style="{StaticResource SettingsEntryStyle}"
+                        Text="#FFDDE1"
+                        TextChanged="OnBackgroundEndColorEntryTextChanged" />
+                </StackLayout>
+                <StackLayout Margin="0,6" Orientation="Horizontal">
+                    <Label
+                        Style="{StaticResource SettingsTextStyle}"
+                        Text="Progress Start Color"
+                        VerticalOptions="Center" />
+                    <Entry
+                        x:Name="ProgressStartEntry"
+                        Placeholder="Background Color"
+                        Style="{StaticResource SettingsEntryStyle}"
+                        Text="#CC2B5E"
+                        TextChanged="OnProgressStartColorEntryTextChanged" />
+                    <Label
+                        Style="{StaticResource SettingsTextStyle}"
+                        Text="Progress End Color"
+                        VerticalOptions="Center" />
+                    <Entry
+                        x:Name="ProgressEndEntry"
+                        Placeholder="Color"
+                        Style="{StaticResource SettingsEntryStyle}"
+                        Text="#753A88"
+                        TextChanged="OnProgressEndColorEntryTextChanged" />
+                </StackLayout>
             </StackLayout>
-            <StackLayout
-                Orientation="Horizontal"
-                Margin="0, 6">
-                <Label 
-                    Text="Background Start Color"
-                    VerticalOptions="Center"
-                    Style="{StaticResource SettingsTextStyle}"/>
-                <Entry
-                    x:Name="BackgroundStartColorEntry"
-                    Placeholder="Background Color"
-                    Text="#EE9CA7"
-                    TextChanged="OnBackgroundStartColorEntryTextChanged"
-                    Style="{StaticResource SettingsEntryStyle}"/>
-                <Label 
-                    Text="Background End Color"
-                    VerticalOptions="Center"
-                    Style="{StaticResource SettingsTextStyle}"/>
-                <Entry 
-                    x:Name="BackgroundEndColorEntry"
-                    Placeholder="Color"
-                    Text="#FFDDE1"
-                    TextChanged="OnBackgroundEndColorEntryTextChanged"
-                    Style="{StaticResource SettingsEntryStyle}"/>
-            </StackLayout>
-            <StackLayout
-                Orientation="Horizontal"
-                Margin="0, 6">
-                <Label 
-                    Text="Progress Start Color"
-                    VerticalOptions="Center"
-                    Style="{StaticResource SettingsTextStyle}"/>
-                <Entry
-                    x:Name="ProgressStartEntry"
-                    Placeholder="Background Color"
-                    Text="#CC2B5E"
-                    TextChanged="OnProgressStartColorEntryTextChanged"
-                    Style="{StaticResource SettingsEntryStyle}"/>
-                <Label 
-                    Text="Progress End Color"
-                    VerticalOptions="Center"
-                    Style="{StaticResource SettingsTextStyle}"/>
-                <Entry 
-                    x:Name="ProgressEndEntry"
-                    Placeholder="Color"
-                    Text="#753A88"
-                    TextChanged="OnProgressEndColorEntryTextChanged"
-                    Style="{StaticResource SettingsEntryStyle}"/>
-            </StackLayout>
-        </StackLayout>
-        <Grid
-            Grid.Row="3"
-            ColumnDefinitions="Auto, Auto"
-            HorizontalOptions="Center"
-            VerticalOptions="Center">
-            <controls:HorizontalProgressBar  
-                x:Name="HorizontalProgressBar"
-                Progress="{Binding Source={x:Reference ValueSlider}, Path=Value}"
+           
+            <Grid
+                Grid.Row="3"
+                ColumnDefinitions="Auto, Auto"
                 HorizontalOptions="Center"
-                VerticalOptions="Center"
-                Margin="12"/>
-            <controls:VerticalProgressBar
-                Grid.Column="1"
-                x:Name="VerticalProgressBar"
-                Progress="{Binding Source={x:Reference ValueSlider}, Path=Value}"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                Margin="12"/>
+                VerticalOptions="Center">
+                <controls:ProgressBar
+                    IsVertical="False"
+                    WidthRequest="120"
+                    HeightRequest="18"
+                    x:Name="HorizontalProgressBar"
+                    Margin="12"
+                    HorizontalOptions="Center"
+                    Progress="{Binding Source={x:Reference ValueSlider}, Path=Value}"
+                    VerticalOptions="Center" />
+                <controls:ProgressBar
+                    WidthRequest="18"
+                    HeightRequest="120"
+                    IsVertical="True"
+                    x:Name="VerticalProgressBar"
+                    Grid.Column="1"
+                    Margin="12"
+                    HorizontalOptions="Center"
+                    Progress="{Binding Source={x:Reference ValueSlider}, Path=Value}"
+                    VerticalOptions="Center" />
+            </Grid>
         </Grid>
-    </Grid>
+    </ScrollView>
 </ContentPage>
