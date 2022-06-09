@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AlohaKit.Gallery.PieChartView"
+    xmlns:controls="clr-namespace:AlohaKit.Controls;assembly=AlohaKit"
+    Title="PieChart">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+
+			<Style x:Key="SettingsCheckBoxStyle" TargetType="CheckBox">
+				<Setter Property="VerticalOptions" Value="Center" />
+				<Setter Property="Color" Value="{AppThemeBinding Light={StaticResource LightAccentColor}, Dark={StaticResource DarkAccentColor}}" />
+			</Style>
+					
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<!-- DESCRIPTION -->
+		<StackLayout
+            Style="{StaticResource SectionContainerStyle}">
+			<Label          
+                Text="The PieChart visualizes its data points using radial coordinate system."/>
+		</StackLayout>
+		<!-- FEATURES -->
+		<StackLayout    
+            Grid.Row="1"
+            BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundSecondaryColor}, Dark={StaticResource DarkBackgroundSecondaryColor}}"
+            Style="{StaticResource SectionContainerStyle}">
+			<Label 
+                Text="Features"
+                Style="{StaticResource SectionTitleStyle}"/>
+			<Label   
+                Text="- Dynamic data source."/>
+			<Label   
+                Text="- Can manage whether to display text or not."/>
+		</StackLayout>
+		<!-- SETTINGS -->
+		<StackLayout
+            Grid.Row="2"
+            Style="{StaticResource SectionContainerStyle}">
+			<Label 
+                Text="Settings"
+                Style="{StaticResource SectionTitleStyle}"/>
+			<StackLayout
+                Orientation="Horizontal"
+                Margin="0, 6">
+				<Grid 
+                    RowDefinitions="Auto, *"
+                    Style="{StaticResource SettingsSectionLayoutStyle}">
+					<Label
+                        Text="ShowLabels"
+                        Style="{StaticResource SettingsTextStyle}"/>
+					<CheckBox        
+                        x:Name="HasShowLabels"  
+                        Grid.Row="1"
+                        IsChecked="True"
+                        Style="{StaticResource SettingsCheckBoxStyle}" />
+				</Grid>
+			</StackLayout>
+		</StackLayout>
+		<Grid
+            Grid.Row="3"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+			<controls:PieChart 
+				x:Name="PieChart"
+				ItemsSource="{Binding Items}"
+				ShowLabels="{Binding Source={x:Reference HasShowLabels}, Path=IsChecked}"/>
+		</Grid>
+	</Grid>
+</ContentPage>
