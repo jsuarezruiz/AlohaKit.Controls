@@ -128,6 +128,22 @@
             set => SetValue(ThumbBrushProperty, value);
         }
 
+        public static readonly BindableProperty ThumbShapeProperty =
+            BindableProperty.Create(nameof(ThumbShape), typeof(ThumbShape), typeof(Slider), ThumbShape.Circle,
+                propertyChanged: (bindableObject, oldValue, newValue) =>
+                {
+                    if (newValue != null && bindableObject is Slider slider)
+                    {
+                        slider.UpdateThumbShape();
+                    }
+                });        
+
+        public ThumbShape ThumbShape
+        {
+            get => (ThumbShape)GetValue(ThumbShapeProperty);
+            set => SetValue(ThumbShapeProperty, value);
+        }
+
         public event EventHandler<ValueChangedEventArgs> ValueChanged;
 
         protected override void OnParentSet()
@@ -143,6 +159,7 @@
                 UpdateMinimumBrush();
                 UpdateMaximumBrush(); 
                 UpdateThumbBrush();
+                UpdateThumbShape();
             }
         }
 
@@ -212,6 +229,16 @@
                 return;
 
             SliderDrawable.ThumbPaint = ThumbBrush;
+
+            Invalidate();
+        }
+
+        private void UpdateThumbShape()
+        {
+            if (SliderDrawable == null)
+                return;
+
+            SliderDrawable.ThumbShape = ThumbShape;
 
             Invalidate();
         }

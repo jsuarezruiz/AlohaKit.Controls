@@ -4,6 +4,7 @@ namespace AlohaKit.Controls
 {
     public class SliderDrawable : IDrawable
 	{
+		const int cornerRadius = 5;
 		public Paint BackgroundPaint { get; set; }
 		public double Minimum { get; set; }
 		public double Maximum { get; set; }
@@ -11,8 +12,9 @@ namespace AlohaKit.Controls
 		public Paint MinimumPaint { get; set; }
 		public Paint MaximumPaint { get; set; }
 		public Paint ThumbPaint { get; set; }
+        public ThumbShape ThumbShape { get; set; }
 
-		public void Draw(ICanvas canvas, RectF dirtyRect)
+        public void Draw(ICanvas canvas, RectF dirtyRect)
 		{
 			DrawBackground(canvas, dirtyRect);
 			DrawTrackBackground(canvas, dirtyRect);
@@ -96,9 +98,20 @@ namespace AlohaKit.Controls
 			if (ThumbPaint != null)
 				canvas.SetFillPaint(ThumbPaint, dirtyRect);
 
-			canvas.FillEllipse(x, y, ThumbSize, ThumbSize);
+            switch (ThumbShape)
+            {
+                case ThumbShape.Circle:
+                    canvas.FillEllipse(x, y, ThumbSize, ThumbSize);
+                    break;
+                case ThumbShape.Rectangle:
+					canvas.FillRectangle(x, y, ThumbSize, ThumbSize);
+                    break;
+                case ThumbShape.RoundedRectangle:
+					canvas.FillRoundedRectangle(x, y, ThumbSize, ThumbSize, cornerRadius);
+                    break;                
+            }            
 
 			canvas.RestoreState();
-		}
+		}        
 	}
 }
