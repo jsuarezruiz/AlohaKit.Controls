@@ -20,7 +20,23 @@ namespace AlohaKit.Controls
 
         public ButtonDrawable ButtonDrawable { get; set; }
 
-        public static readonly new BindableProperty BackgroundProperty =
+		public static readonly new BindableProperty BackgroundColorProperty =
+			BindableProperty.Create(nameof(BackgroundColor), typeof(Color), typeof(Button), null,
+				propertyChanged: (bindableObject, oldValue, newValue) =>
+				{
+					if (newValue != null && bindableObject is Button button)
+					{
+						button.UpdateBackground();
+					}
+				});
+
+		public new Color BackgroundColor
+		{
+			get => (Color)GetValue(BackgroundColorProperty);
+			set => SetValue(BackgroundColorProperty, value);
+		}
+
+		public static readonly new BindableProperty BackgroundProperty =
             BindableProperty.Create(nameof(Background), typeof(Brush), typeof(Button), null,
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
@@ -263,15 +279,21 @@ namespace AlohaKit.Controls
             }
         }
 
-        void UpdateBackground()
-        {
-            if (ButtonDrawable == null)
-                return;
+		void UpdateBackground()
+		{
+			if (ButtonDrawable == null)
+				return;
 
-            ButtonDrawable.BackgroundPaint = Background;
+			if (Background != null)
+				ButtonDrawable.BackgroundPaint = Background;
+			else
+			{
+				var background = new SolidPaint { Color = BackgroundColor };
+				ButtonDrawable.BackgroundPaint = background;
+			}
 
-            Invalidate();
-        }
+			Invalidate();
+		}
 
         void UpdateStroke()
         {
