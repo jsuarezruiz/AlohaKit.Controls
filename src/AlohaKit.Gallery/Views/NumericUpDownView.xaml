@@ -92,7 +92,7 @@
                     <Entry
                         x:Name="MaximumColorEntry"
                         Placeholder="Maximum Color"
-                        Text="#ff2b2b"
+                        Text="#FF2B2B"
                         TextChanged="OnMaximumColorEntryTextChanged"
                         Style="{StaticResource SettingsEntryStyle}"/>
                 </StackLayout>
@@ -106,7 +106,7 @@
                     <Entry
                         x:Name="MinimumColorEntry"
                         Placeholder="Minimum Color"
-                        Text="#07a649"
+                        Text="#07A649"
                         TextChanged="OnMinimumColorEntryTextChanged"
                         Style="{StaticResource SettingsEntryStyle}"/>
                 </StackLayout>
@@ -120,7 +120,7 @@
                     <Entry
                         x:Name="MaximumTextColorEntry"
                         Placeholder="Maximum Text Color"
-                        Text="#000000"
+                        Text="#FFFFFF"
                         TextChanged="OnMaximumTextColorEntryTextChanged"
                         Style="{StaticResource SettingsEntryStyle}"/>
                 </StackLayout>
@@ -134,7 +134,7 @@
                     <Entry
                         x:Name="MinimumTextColorEntry"
                         Placeholder="Minimum Text Color"
-                        Text="#ffffff"
+                        Text="#FFFFFF"
                         TextChanged="OnMinimumTextColorTextChanged"
                         Style="{StaticResource SettingsEntryStyle}"/>
                 </StackLayout>

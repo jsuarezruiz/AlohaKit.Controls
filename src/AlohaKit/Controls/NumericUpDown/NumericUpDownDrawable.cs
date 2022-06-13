@@ -84,19 +84,24 @@
 
             MinusRectangle = new Rect(cX - radius, cY - radius, radius * 2, radius * 2);
 
-            canvas.RestoreState();
+			canvas.RestoreState();
 
-            canvas.SaveState();
+			canvas.SaveState();
 
-            canvas.FillColor = Colors.Red;
-            canvas.FontColor = MinimumTextColor;
+			const string minusIcon = "M0,0L32,0 32,5.3 0,5.3z";
 
-            canvas.FontSize = 24.0f;
+			var vBuilder = new PathBuilder();
+			var path = vBuilder.BuildPath(minusIcon).AsScaledPath(0.5f);
 
-            canvas.DrawString("-", cX, cY + margin, HorizontalAlignment.Center);
+			canvas.FillColor = MinimumTextColor;
 
-            canvas.RestoreState();
-        }
+			Point center = new Point(MinusRectangle.X + MinusRectangle.Width / 2, MinusRectangle.Y + MinusRectangle.Height / 2);
+			canvas.Translate((float)center.X - path.Bounds.Width / 2, (float)center.Y - path.Bounds.Height / 2);
+
+			canvas.FillPath(path);
+
+			canvas.RestoreState();
+		}
 
         void DrawMaximum(ICanvas canvas, RectF dirtyRect)
         {
@@ -124,13 +129,19 @@
 
             canvas.SaveState();
 
-            canvas.FontColor = MaximumTextColor;
+			const string plusIcon = "M13.55896,0L18.461914,0 18.461914,13.557983 32,13.557983 32,18.481018 18.5,18.481018 18.5,32 13.55896,32 13.55896,18.481018 0,18.481018 0,13.557983 13.55896,13.557983z";
 
-            canvas.FontSize = 24.0f;
+			var vBuilder = new PathBuilder();
+			var path = vBuilder.BuildPath(plusIcon).AsScaledPath(0.5f);
 
-            canvas.DrawString("+", cX, cY + margin, HorizontalAlignment.Center);
+			canvas.FillColor = MaximumTextColor;
 
-            canvas.RestoreState();
+			Point center = new Point(PlusRectangle.X + PlusRectangle.Width / 2, PlusRectangle.Y + PlusRectangle.Height / 2);
+			canvas.Translate((float)center.X - path.Bounds.Width / 2, (float)center.Y - path.Bounds.Height / 2);
+
+			canvas.FillPath(path);
+
+			canvas.RestoreState();
         }
 
         void DrawValue(ICanvas canvas, RectF dirtyRect)
