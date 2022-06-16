@@ -1,0 +1,24 @@
+name: Start NuGet Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: avantipoint/workflow-templates/.github/workflows/dotnet-build.yml@master
+    permissions:
+      statuses: write
+      checks: write
+    with:
+      name: AlohaKit
+      solution-path: ./src/AlohaKit
+      install-workload: maui
+      run-tests: false
+
+  release:
+    uses: avantipoint/workflow-templates/.github/workflows/generate-release.yml@master
+    needs: [build]
+    permissions:
+      contents: write
+    with:
+      package-name: AlohaKit
