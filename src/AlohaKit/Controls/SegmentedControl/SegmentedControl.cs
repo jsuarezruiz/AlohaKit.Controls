@@ -1,5 +1,6 @@
 ﻿using AlohaKit.Extensions;
 using System.Collections;
+using System.Windows.Input;
 
 namespace AlohaKit.Controls
 {
@@ -160,6 +161,15 @@ namespace AlohaKit.Controls
 			set { SetValue(CornerRadiusProperty, value); }
 		}
 
+		public static readonly BindableProperty SelectedIndexChangedCommandProperty =	
+			BindableProperty.Create(nameof(SelectedIndexChangedCommand), typeof(ICommand), typeof(SegmentedControl), null);
+
+		public ICommand SelectedIndexChangedCommand
+		{
+			get { return (ICommand)GetValue(SelectedIndexChangedCommandProperty); }
+			set { SetValue(SelectedIndexChangedCommandProperty, value); }
+		}
+
 		public event EventHandler<SelectedIndexEventArgs> SelectedIndexChanged;
 
         protected override void OnParentSet()
@@ -177,7 +187,6 @@ namespace AlohaKit.Controls
                 UpdateFontSize();
                 UpdateActiveFontSize();
 				UpdateCornerRadius();
-
 			}
         }
 
@@ -292,9 +301,15 @@ namespace AlohaKit.Controls
                     && positionX <= (tabPositionX + tabItemWidth))
                 {
                     SelectedIndex = i;
-                    SelectedIndexChanged?.Invoke(this, new SelectedIndexEventArgs(SelectedIndex));
-                }
+					OnSelectedIndexChanged(SelectedIndex);
+				}
             }
         }
-    }
+
+		void OnSelectedIndexChanged(int selectedIndex)
+		{
+			SelectedIndexChanged?.Invoke(this, new SelectedIndexEventArgs(selectedIndex));
+			SelectedIndexChangedCommand?.Execute(selectedIndex);
+		}
+	}
 }
