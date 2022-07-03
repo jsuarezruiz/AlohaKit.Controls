@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AlohaKit.Gallery.SegmentedControlView"
+	xmlns:controls="clr-namespace:AlohaKit.Controls;assembly=AlohaKit"
+    Title="SegmentedControl">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<!-- DESCRIPTION -->
+		<StackLayout
+            Style="{StaticResource SectionContainerStyle}">
+			<Label          
+                Text="The SegmentedControl provides a simple way to choose from a linear set of two or more segments."/>
+		</StackLayout>
+		<!-- FEATURES -->
+		<StackLayout    
+            Grid.Row="1"
+            BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundSecondaryColor}, Dark={StaticResource DarkBackgroundSecondaryColor}}"
+            Style="{StaticResource SectionContainerStyle}">
+			<Label 
+                Text="Features"
+                Style="{StaticResource SectionTitleStyle}"/>
+			<Label        
+                Text="- Populates the segments from a collection of strings."/>
+			<Label   
+                Text="- Supports customizing text and other UI elements."/>
+			<Label   
+                Text="- Active segment can be customized."/>
+			<Label   
+                Text="- Available events and commands to detect the change of the selected segment."/>
+		</StackLayout>
+		<controls:SegmentedControl
+            Grid.Row="3"
+            Background="#F9F8FF"
+            ActiveBackground="#bf5f82"
+            TextColor="Black"
+            ActiveTextColor="White"
+            Margin="12">
+			<controls:SegmentedControl.ItemsSource>
+				<x:Array Type="{x:Type x:String}">
+					<x:String>Tab 1</x:String>
+					<x:String>Tab 2</x:String>
+					<x:String>Tab 3</x:String>
+				</x:Array>
+			</controls:SegmentedControl.ItemsSource>
+		</controls:SegmentedControl>
+	</Grid>
+</ContentPage>
