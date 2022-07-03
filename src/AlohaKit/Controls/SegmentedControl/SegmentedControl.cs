@@ -142,9 +142,25 @@ namespace AlohaKit.Controls
         {
             get { return (double)GetValue(ActiveFontSizeProperty); }
             set { SetValue(ActiveFontSizeProperty, value); }
-        }
+		}
 
-        public event EventHandler<SelectedIndexEventArgs> SelectedIndexChanged;
+		public static readonly BindableProperty CornerRadiusProperty =
+			BindableProperty.Create(nameof(CornerRadius), typeof(int), typeof(SegmentedControl), 24.0d,
+				propertyChanged: (bindableObject, oldValue, newValue) =>
+				{
+					if (newValue != null && bindableObject is SegmentedControl segmentedControl)
+					{
+						segmentedControl.UpdateCornerRadius();
+					}
+				});
+
+		public int CornerRadius
+		{
+			get { return (int)GetValue(CornerRadiusProperty); }
+			set { SetValue(CornerRadiusProperty, value); }
+		}
+
+		public event EventHandler<SelectedIndexEventArgs> SelectedIndexChanged;
 
         protected override void OnParentSet()
         {
@@ -160,7 +176,9 @@ namespace AlohaKit.Controls
                 UpdateActiveTextColor();
                 UpdateFontSize();
                 UpdateActiveFontSize();
-            }
+				UpdateCornerRadius();
+
+			}
         }
 
         protected override void OnSizeAllocated(double width, double height)
@@ -251,7 +269,17 @@ namespace AlohaKit.Controls
             Invalidate();
         }
 
-        void OnSegmentedControlStartInteraction(object sender, TouchEventArgs e)
+		void UpdateCornerRadius()
+		{
+			if (SegmentedControlDrawable == null)
+				return;
+
+			SegmentedControlDrawable.CornerRadius = CornerRadius;
+
+			Invalidate();
+		}
+
+		void OnSegmentedControlStartInteraction(object sender, TouchEventArgs e)
         {
             float positionX = e.Touches[0].X;
             var tabItemWidth = Width / ItemsSource.Count();

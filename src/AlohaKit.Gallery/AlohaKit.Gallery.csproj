@@ -14,7 +14,7 @@
 		<ApplicationTitle>AlohaKit.Gallery</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.alohakit.gallery</ApplicationId>
+		<ApplicationId>com.jsuarez.alohakit.gallery</ApplicationId>
 		<ApplicationId Condition="$(TargetFramework.Contains('-windows'))">CDFDE252-7D9A-476F-8057-BDD4E5F487A7</ApplicationId>
 
 		<!-- Versions -->
