@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AlohaKit.Gallery.LinearGaugeView"
+    xmlns:controls="clr-namespace:AlohaKit.Controls;assembly=AlohaKit"
+    Title="LinearGauge">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            
+            <Style x:Key="SettingsSliderStyle" TargetType="Slider">
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="WidthRequest" Value="100" />
+                <Setter Property="MinimumTrackColor" Value="{AppThemeBinding Light={StaticResource LightAccentColor}, Dark={StaticResource DarkAccentColor}}" />
+                <Setter Property="ThumbColor" Value="{AppThemeBinding Light={StaticResource LightAccentColor}, Dark={StaticResource DarkAccentColor}}" />
+                <Setter Property="Margin" Value="0, 0, 12, 0" />
+            </Style>
+
+            <Style x:Key="SettingsTextStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="9" />
+            </Style>
+            
+            <Style x:Key="SettingsEntryStyle" TargetType="Entry">
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="WidthRequest" Value="80" />
+                <Setter Property="Margin" Value="6, 0" />
+            </Style>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!-- DESCRIPTION -->
+        <StackLayout
+            Style="{StaticResource SectionContainerStyle}">
+            <Label          
+                Text="LinearGauge displays simple value within a specific range."/>
+        </StackLayout>
+        <!-- FEATURES -->
+        <StackLayout    
+            Grid.Row="1"
+            BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundSecondaryColor}, Dark={StaticResource DarkBackgroundSecondaryColor}}"
+            Style="{StaticResource SectionContainerStyle}">
+            <Label 
+                Text="Features"
+                Style="{StaticResource SectionTitleStyle}"/>
+            <Label        
+                Text="- Allow to customize the background with a gradient."/>
+            <Label   
+                Text="- Allow to customize the border with a color."/>
+            <Label   
+                Text="- Define the range."/>
+        </StackLayout>
+        <!-- SETTINGS -->
+        <StackLayout
+            Grid.Row="2"
+            Style="{StaticResource SectionContainerStyle}">
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="0, 6">
+                <Label 
+                    Text="Fill Start Color"
+                    VerticalOptions="Center"
+                    Style="{StaticResource SettingsTextStyle}"/>
+                <Entry
+                    x:Name="FillStartColorEntry"
+                    Placeholder="Background Color"
+                    Text="#DD5E89"
+                    TextChanged="OnFillStartColorEntryTextChanged"
+                    Style="{StaticResource SettingsEntryStyle}"/>
+                <Label 
+                    Text="Fill End Color"
+                    VerticalOptions="Center"
+                    Style="{StaticResource SettingsTextStyle}"/>
+                <Entry 
+                    x:Name="FillEndColorEntry"
+                    Placeholder="Color"
+                    Text="#F7BB97"
+                    TextChanged="OnFillEndColorEntryTextChanged"
+                    Style="{StaticResource SettingsEntryStyle}"/>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="0, 6">
+                <Grid 
+                    RowDefinitions="Auto, *">
+                    <Label
+                        Text="Value"
+                        Style="{StaticResource SettingsTextStyle}"/>
+                    <Grid
+                        ColumnDefinitions="*, Auto">
+                        <Slider     
+                            x:Name="ValueSlider"
+                            Grid.Row="1"
+                            Minimum="0"
+                            Value="50"
+                            Maximum="100"
+                            Style="{StaticResource SettingsSliderStyle}"/>
+                        <Label
+                            Grid.Column="1"
+                            VerticalOptions="Center"
+                            Text="{Binding Source={x:Reference ValueSlider}, Path=Value, StringFormat='{0:F2}'}"/>
+                    </Grid>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+        <controls:LinearGauge
+            x:Name="LinearGauge"
+            Grid.Row="3" 
+            RangeStart="0"
+            RangeEnd="100"
+            Value="{Binding Source={x:Reference ValueSlider}, Path=Value}"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+    </Grid>
+</ContentPage>
