@@ -53,7 +53,7 @@ namespace AlohaKit.Controls
         }
 
         public static readonly BindableProperty IsOnProperty =
-           BindableProperty.Create(nameof(ThumbBrush), typeof(bool), typeof(ToggleSwitch), false,
+           BindableProperty.Create(nameof(IsOn), typeof(bool), typeof(ToggleSwitch), false,
                propertyChanged: (bindableObject, oldValue, newValue) =>
                {
                    if (newValue != null && bindableObject is ToggleSwitch toggleSwitch)
