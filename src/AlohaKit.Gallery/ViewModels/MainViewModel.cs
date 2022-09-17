@@ -18,8 +18,11 @@ namespace AlohaKit.Gallery.ViewModels
            
             new SectionModel(typeof(CheckBoxView), "CheckBox",
                 "CheckBox is a type of button that can either be checked or empty."),
+				
+			new SectionModel(typeof(LinearGaugeView), "LinearGauge",
+				"LinearGauge displays simple value within a specific range."),
 
-            new SectionModel(typeof(NumericUpDownView), "NumericUpDown",
+			new SectionModel(typeof(NumericUpDownView), "NumericUpDown",
                 " NumericUpDown control provides up and down repeat buttons to increase and decrease values."),
 				
 			new SectionModel(typeof(PieChartView), "PieChart",
