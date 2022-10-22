@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AlohaKit.UI.Gallery.Views.XAML.MainPage"
+    xmlns:alohakit="clr-namespace:AlohaKit.UI;assembly=AlohaKit.UI"
+    Title="AlohaKit UI from XAML">
+    <alohakit:CanvasView>
+        <alohakit:Rectangle
+            WidthRequest="50" HeightRequest="50" 
+            X="30" Y="30" 
+            ScaleX="0.5" ScaleY="0.5"
+            Fill="Green" />
+        <alohakit:RoundRectangle
+            WidthRequest="50" HeightRequest="50" 
+            X="120" Y="10" 
+            CornerRadius="12, 0, 0, 24"
+            Fill="Orange" />
+        <alohakit:Ellipse
+            WidthRequest="50" HeightRequest="50" 
+            X="130" Y="70">
+            <alohakit:Ellipse.Fill>
+                <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="Red" />
+                        <GradientStop Color="Yellow" Offset="1" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </alohakit:Ellipse.Fill>
+        </alohakit:Ellipse>
+        <alohakit:Label
+            X="50" Y="100"
+            WidthRequest="150" HeightRequest="50"
+            Text="Label" TextColor="BlueViolet"
+            FontSize="24"/>
+        <alohakit:Line
+            X1="50" Y1="140"
+            X2="110" Y2="140"
+            Stroke="Pink"
+            StrokeThickness="4"
+            StrokeLineCap="Flat"
+            StrokeLineJoin="Round"/>
+        <alohakit:Polyline 
+            X="20" Y="200"
+            Points="0,0 10,30, 15,0 18,60 23,30 35,30 40,0 43,60 48,30 100,30"
+            Stroke="Red"
+            StrokeThickness="4" />
+        <alohakit:Polygon 
+            X="20" Y="300"
+            Points="40,10 70,80 10,50"
+            Stroke="Green"
+            StrokeThickness="5"
+            StrokeDashArray="1,1"
+            StrokeDashOffset="6" />
+        <alohakit:Path 
+            X="100" Y="200"
+            Data="M 10,100 L 100,100 100,50Z"
+            Stroke="Black" />
+    </alohakit:CanvasView>
+</ContentPage>
