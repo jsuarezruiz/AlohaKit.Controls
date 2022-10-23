@@ -12,7 +12,9 @@
     public class Element : VisualElement, IElement
     {
         IElement _parent;
+        RectF _childrenBounds;
 
+ 
         public Element()
         {
             Children = new ElementsCollection(this);

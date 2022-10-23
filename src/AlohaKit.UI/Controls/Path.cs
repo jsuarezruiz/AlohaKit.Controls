@@ -18,12 +18,12 @@ namespace AlohaKit.UI
 
         public override void Draw(ICanvas canvas, RectF bounds)
         {
-            canvas.SaveState();
-
             base.Draw(canvas, bounds);
 
             if (Stroke != null)
             {
+                canvas.SaveState();
+
                 canvas.Translate(X, Y);
 
                 if (Stroke is SolidColorBrush solidColorBrush)
@@ -39,9 +39,27 @@ namespace AlohaKit.UI
                 var path = GetPath();
 
                 canvas.DrawPath(path);
+
+                canvas.RestoreState();
             }
 
-            canvas.RestoreState();
+            if (Fill != null)
+            {
+                canvas.SaveState();
+
+                canvas.Translate(X, Y);
+
+                if (Fill is SolidColorBrush solidColorBrush)
+                    canvas.FillColor = solidColorBrush.Color;
+                else
+                    canvas.SetFillPaint(Fill, new RectF(X, Y, WidthRequest, HeightRequest));
+
+                var path = GetPath();
+
+                canvas.FillPath(path);
+                
+                canvas.RestoreState();
+            }
         }
 
         PathF GetPath()
