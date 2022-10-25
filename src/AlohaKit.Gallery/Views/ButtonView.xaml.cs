@@ -6,158 +6,172 @@ public partial class ButtonView : ContentPage
 {
 	public ButtonView()
 	{
-		InitializeComponent(); 
-        
-        UpdateBrushes();
-        UpdateShadowColor();
-    }
+		InitializeComponent();
 
-    void OnButtonClicked(object sender, EventArgs e)
-    {
-        Debug.WriteLine("Button Clicked");
-    }
+		UpdateBrushes();
+		UpdateShadowColor();
+	}
 
-    void OnBackgroundStartColorEntryTextChanged(object sender, TextChangedEventArgs e)
-    {
-        UpdateBrushes();
-    }
+	void OnButtonClicked(object sender, EventArgs e)
+	{
+		Debug.WriteLine("Button Clicked");
+	}
 
-    void OnBackgroundEndColorEntryTextChanged(object sender, TextChangedEventArgs e)
-    {
-        UpdateBrushes();
-    }
+	void OnBackgroundStartColorEntryTextChanged(object sender, TextChangedEventArgs e)
+	{
+		UpdateBrushes();
+	}
 
-    void OnStrokeStartColorEntryTextChanged(object sender, TextChangedEventArgs e)
-    {
-        UpdateBrushes();
-    }
+	void OnBackgroundEndColorEntryTextChanged(object sender, TextChangedEventArgs e)
+	{
+		UpdateBrushes();
+	}
 
-    void OnStrokeEndColorEntryTextChanged(object sender, TextChangedEventArgs e)
-    {
-        UpdateBrushes();
-    }
+	void OnStrokeStartColorEntryTextChanged(object sender, TextChangedEventArgs e)
+	{
+		UpdateBrushes();
+	}
 
-    void OnShadowColorEntryTextChanged(object sender, TextChangedEventArgs e)
-    {
-        UpdateShadowColor();
-    }
+	void OnStrokeEndColorEntryTextChanged(object sender, TextChangedEventArgs e)
+	{
+		UpdateBrushes();
+	}
 
-    void OnHorizontalAlignPickerSelectedIndexChanged(object sender, EventArgs e)
-    {
-        UpdateTextAlignment();
-    }
+	void OnShadowColorEntryTextChanged(object sender, TextChangedEventArgs e)
+	{
+		UpdateShadowColor();
+	}
 
-    void OnVerticalAlignPickerSelectedIndexChanged(object sender, EventArgs e)
-    {
-        UpdateTextAlignment();
-    }
+	void OnHorizontalAlignPickerSelectedIndexChanged(object sender, EventArgs e)
+	{
+		UpdateTextAlignment();
+	}
 
-    void UpdateBrushes()
-    {
-        var backgroundStartColor = GetColorFromString(BackgroundStartColorEntry.Text);
-        var backgroundEndColor = GetColorFromString(BackgroundEndColorEntry.Text);
+	void OnVerticalAlignPickerSelectedIndexChanged(object sender, EventArgs e)
+	{
+		UpdateTextAlignment();
+	}
 
-        if (backgroundStartColor != null && backgroundEndColor != null)
-        {
-            BackgroundStartColorEntry.BackgroundColor = backgroundStartColor;
-            BackgroundEndColorEntry.BackgroundColor = backgroundEndColor;
+	void OnFontSizeEntryTextChanged(object sender, TextChangedEventArgs e)
+	{
+		UpdateFontSize();
+	}
 
-            Button.Background = new LinearGradientBrush
-            {
-                StartPoint = new Point(0, 0),
-                EndPoint = new Point(1, 0),
-                GradientStops = new GradientStopCollection
-                {
-                    new GradientStop { Color = backgroundStartColor, Offset = 0 },
-                    new GradientStop { Color = backgroundEndColor, Offset = 1 }
-                }
-            };
-        }
+	void UpdateBrushes()
+	{
+		var backgroundStartColor = GetColorFromString(BackgroundStartColorEntry.Text);
+		var backgroundEndColor = GetColorFromString(BackgroundEndColorEntry.Text);
 
-        var strokeStartColor = GetColorFromString(StrokeStartColorEntry.Text);
-        var strokeEndColor = GetColorFromString(StrokeEndColorEntry.Text);
+		if (backgroundStartColor != null && backgroundEndColor != null)
+		{
+			BackgroundStartColorEntry.BackgroundColor = backgroundStartColor;
+			BackgroundEndColorEntry.BackgroundColor = backgroundEndColor;
 
-        if (strokeStartColor != null && strokeEndColor != null)
-        {
-            StrokeStartColorEntry.BackgroundColor = strokeStartColor;
-            StrokeEndColorEntry.BackgroundColor = strokeEndColor;
+			Button.Background = new LinearGradientBrush
+			{
+				StartPoint = new Point(0, 0),
+				EndPoint = new Point(1, 0),
+				GradientStops = new GradientStopCollection
+				{
+					new GradientStop { Color = backgroundStartColor, Offset = 0 },
+					new GradientStop { Color = backgroundEndColor, Offset = 1 }
+				}
+			};
+		}
 
-            Button.Stroke = new LinearGradientBrush
-            {
-                StartPoint = new Point(0, 0),
-                EndPoint = new Point(1, 0),
-                GradientStops = new GradientStopCollection
-                {
-                    new GradientStop { Color = strokeStartColor, Offset = 0 },
-                    new GradientStop { Color = strokeEndColor, Offset = 1 }
-                }
-            };
-        }
-    }
+		var strokeStartColor = GetColorFromString(StrokeStartColorEntry.Text);
+		var strokeEndColor = GetColorFromString(StrokeEndColorEntry.Text);
 
-    void UpdateShadowColor()
-    {
-        var shadowColor = GetColorFromString(ShadowColorEntry.Text);
+		if (strokeStartColor != null && strokeEndColor != null)
+		{
+			StrokeStartColorEntry.BackgroundColor = strokeStartColor;
+			StrokeEndColorEntry.BackgroundColor = strokeEndColor;
 
-        if (shadowColor != null)
-        {
-            Button.ShadowColor = ShadowColorEntry.BackgroundColor = shadowColor;
-        }
-    }
+			Button.Stroke = new LinearGradientBrush
+			{
+				StartPoint = new Point(0, 0),
+				EndPoint = new Point(1, 0),
+				GradientStops = new GradientStopCollection
+				{
+					new GradientStop { Color = strokeStartColor, Offset = 0 },
+					new GradientStop { Color = strokeEndColor, Offset = 1 }
+				}
+			};
+		}
+	}
 
-    void UpdateTextAlignment()
-    {
-        var horizontalAlignSelectedIndex = HorizontalAlignPicker.SelectedIndex;
+	void UpdateShadowColor()
+	{
+		var shadowColor = GetColorFromString(ShadowColorEntry.Text);
 
-        TextAlignment horizontalTextAlignment = TextAlignment.Center;
+		if (shadowColor != null)
+		{
+			Button.ShadowColor = ShadowColorEntry.BackgroundColor = shadowColor;
+		}
+	}
 
-        switch (horizontalAlignSelectedIndex)
-        {
-            case 0:
-                horizontalTextAlignment = TextAlignment.Start;
-                break;
-            case 1:
-                horizontalTextAlignment = TextAlignment.Center;
-                break;
-            case 2:
-                horizontalTextAlignment = TextAlignment.End;
-                break;
-        }
+	void UpdateTextAlignment()
+	{
+		var horizontalAlignSelectedIndex = HorizontalAlignPicker.SelectedIndex;
 
-        Button.HorizontalTextAlignment = horizontalTextAlignment; 
-        
-        var verticalAlignSelectedIndex = VerticalAlignPicker.SelectedIndex;
+		TextAlignment horizontalTextAlignment = TextAlignment.Center;
 
-        TextAlignment verticalTextAlignment = TextAlignment.Center;
+		switch (horizontalAlignSelectedIndex)
+		{
+			case 0:
+				horizontalTextAlignment = TextAlignment.Start;
+				break;
+			case 1:
+				horizontalTextAlignment = TextAlignment.Center;
+				break;
+			case 2:
+				horizontalTextAlignment = TextAlignment.End;
+				break;
+		}
 
-        switch (verticalAlignSelectedIndex)
-        {
-            case 0:
-                verticalTextAlignment = TextAlignment.Start;
-                break;
-            case 1:
-                verticalTextAlignment = TextAlignment.Center;
-                break;
-            case 2:
-                verticalTextAlignment = TextAlignment.End;
-                break;
-        }
+		Button.HorizontalTextAlignment = horizontalTextAlignment;
 
-        Button.VerticalTextAlignment = verticalTextAlignment;
-    }
+		var verticalAlignSelectedIndex = VerticalAlignPicker.SelectedIndex;
 
-    Color GetColorFromString(string value)
-    {
-        if (string.IsNullOrEmpty(value))
-            return null;
+		TextAlignment verticalTextAlignment = TextAlignment.Center;
 
-        try
-        {
-            return Color.FromArgb(value[0].Equals('#') ? value : $"#{value}");
-        }
-        catch (Exception)
-        {
-            return null;
-        }
-    }
+		switch (verticalAlignSelectedIndex)
+		{
+			case 0:
+				verticalTextAlignment = TextAlignment.Start;
+				break;
+			case 1:
+				verticalTextAlignment = TextAlignment.Center;
+				break;
+			case 2:
+				verticalTextAlignment = TextAlignment.End;
+				break;
+		}
+
+		Button.VerticalTextAlignment = verticalTextAlignment;
+	}
+
+	void UpdateFontSize()
+	{
+		if (float.TryParse(FontSizeEntry.Text, out var fontSize))
+		{
+			Button.FontSize = fontSize;
+		}
+	}
+
+
+	Color GetColorFromString(string value)
+	{
+		if (string.IsNullOrEmpty(value))
+			return null;
+
+		try
+		{
+			return Color.FromArgb(value[0].Equals('#') ? value : $"#{value}");
+		}
+		catch (Exception)
+		{
+			return null;
+		}
+	}
 }

@@ -42,18 +42,4 @@
 											Version="1.1.1"
 											PrivateAssets="all" />
 	</ItemGroup>
-
-	<ItemGroup>
-		<!--
-			HACK: This is a bug in MAUI GA/SR1 which will be fixed in SR2
-			This will remove these dependencies from being added to the generated NuGet package
-			preventing dependency issues when future versions of MAUI are released.
-			-->
-		<PackageReference Include="Microsoft.Maui.Dependencies" Version="$(MauiVersion)">
-			<PrivateAssets>All</PrivateAssets>
-		</PackageReference>
-		<PackageReference Include="Microsoft.Maui.Extensions" Version="$(MauiVersion)">
-			<PrivateAssets>All</PrivateAssets>
-		</PackageReference>
-	</ItemGroup>
 </Project>
