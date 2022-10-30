@@ -144,7 +144,8 @@
             </Border>
         </Grid>
         <!-- LOADING -->
-        <Grid>
+        <Grid
+            InputTransparent="True">
             <ActivityIndicator
                 IsRunning="{Binding IsGenerating}"/>
         </Grid>
