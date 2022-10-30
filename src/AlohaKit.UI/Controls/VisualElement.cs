@@ -3,6 +3,7 @@
     public interface IVisualElement
     {
         bool IsVisible { get; set; }
+        double Opacity { get; set; }
 
         float X { get; set; }
         float Y { get; set; }
@@ -23,6 +24,10 @@
     {
         public static readonly BindableProperty IsVisibleProperty =
             BindableProperty.Create(nameof(IsVisible), typeof(bool), typeof(VisualElement), true,
+                propertyChanged: InvalidatePropertyChanged);
+
+        public static readonly BindableProperty OpacityProperty = 
+            BindableProperty.Create(nameof(Opacity), typeof(double), typeof(VisualElement), 1d,
                 propertyChanged: InvalidatePropertyChanged);
 
         public static readonly BindableProperty XProperty =
@@ -64,6 +69,12 @@
         {
             get => (bool)GetValue(IsVisibleProperty);
             set => SetValue(IsVisibleProperty, value);
+        }
+
+        public double Opacity
+        {
+            get { return (double)GetValue(OpacityProperty); }
+            set { SetValue(OpacityProperty, value); }
         }
 
         public float X
