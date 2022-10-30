@@ -40,7 +40,10 @@
         {
             foreach (var child in Children)
             {
-                child.Draw(canvas, bounds);
+                if (child.IsVisible)
+                {
+                    child.Draw(canvas, bounds);
+                }
             }
         }
     }

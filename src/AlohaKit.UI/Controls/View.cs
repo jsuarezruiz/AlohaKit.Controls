@@ -43,6 +43,7 @@ namespace AlohaKit.UI
                     canvas.FillRectangle(bounds);
                 }
 
+                canvas.Alpha = (float)Opacity;
                 canvas.Transform(TranslationX, TranslationY, ScaleX, ScaleY);
 
                 base.Draw(canvas, bounds);
