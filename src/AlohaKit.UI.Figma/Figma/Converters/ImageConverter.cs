@@ -4,7 +4,6 @@ using FigmaSharp.Models;
 using FigmaSharp.Services;
 using System.Globalization;
 using System.Text;
-using System.Xml.Linq;
 
 namespace AlohaKit.UI.Figma.Converters
 {
@@ -42,7 +41,13 @@ namespace AlohaKit.UI.Figma.Converters
             builder.AppendLine($"\tWidthRequest=\"{bounds.Width.ToString(nfi)}\"");
             builder.AppendLine($"\tHeightRequest=\"{bounds.Height.ToString(nfi)}\"");
 
-            if(figmaVector.fillGeometry.Length > 0)
+            if (figmaVector.opacity != 1)
+                builder.AppendLine($"\tOpacity=\"{figmaVector.opacity.ToString(nfi)}\"");
+
+            if (!figmaVector.visible)
+                builder.AppendLine($"\tIsVisible=\"{figmaVector.visible}\"");
+
+            if (figmaVector.fillGeometry.Length > 0)
             {
                 var geometry = figmaVector.fillGeometry[0];
                 builder.AppendLine($"\tData=\"{geometry.path}\"");
@@ -92,6 +97,22 @@ namespace AlohaKit.UI.Figma.Converters
                         builder.AppendLine("\t\t<SolidColorBrush Color=\"White\" />");
 
                     builder.AppendLine("\t</alohakit:Path.Fill>");
+                }
+            }
+
+            if (figmaVector.effects != null && figmaVector.effects.Length > 0)
+            {
+                var dropShadow = figmaVector.effects
+                    .Where(e => e.type.Equals("DROP_SHADOW", StringComparison.CurrentCultureIgnoreCase))
+                    .FirstOrDefault();
+
+                if (dropShadow != null)
+                {
+                    builder.AppendLine("\t<alohakit:Path.Shadow>");
+
+                    builder.AppendLine($"{dropShadow.ToShadow()}");
+
+                    builder.AppendLine("\t</alohakit:Path.Shadow>");
                 }
             }
 

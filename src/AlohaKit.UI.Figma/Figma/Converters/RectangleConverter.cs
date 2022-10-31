@@ -18,7 +18,12 @@ namespace AlohaKit.UI.Figma.Converters
 
             StringBuilder builder = new StringBuilder();
 
-            builder.AppendLine("<alohakit:Rectangle");
+            string rectangle = "Rectangle";
+
+            if (rectangleVector.cornerRadius > 0)
+                rectangle = "RoundRectangle";
+
+            builder.AppendLine($"<alohakit:{rectangle}");
 
             var bounds = rectangleVector.absoluteBoundingBox;
 
@@ -32,6 +37,15 @@ namespace AlohaKit.UI.Figma.Converters
 
             builder.AppendLine($"\tWidthRequest=\"{bounds.Width.ToString(nfi)}\"");
             builder.AppendLine($"\tHeightRequest=\"{bounds.Height.ToString(nfi)}\"");
+
+            if (rectangleVector.opacity != 1)
+                builder.AppendLine($"\tOpacity=\"{rectangleVector.opacity.ToString(nfi)}\"");
+
+            if (!rectangleVector.visible)
+                builder.AppendLine($"\tIsVisible=\"{rectangleVector.visible}\"");
+           
+            if (rectangleVector.cornerRadius > 0)
+                builder.AppendLine($"\tCornerRadius=\"{rectangleVector.cornerRadius.ToString(nfi)}\"");
 
             if (rectangleVector.HasStrokes)
             {
@@ -49,6 +63,22 @@ namespace AlohaKit.UI.Figma.Converters
                 }
             }
 
+            if (rectangleVector.effects != null && rectangleVector.effects.Length > 0)
+            {
+                var dropShadow = rectangleVector.effects
+                    .Where(e => e.type.Equals("DROP_SHADOW", StringComparison.CurrentCultureIgnoreCase))
+                    .FirstOrDefault();
+
+                if (dropShadow != null)
+                {
+                    builder.AppendLine($"\t<alohakit:{rectangle}.Shadow>");
+
+                    builder.AppendLine($"{dropShadow.ToShadow()}");
+
+                    builder.AppendLine($"\t</alohakit:{rectangle}.Shadow>");
+                }
+            }
+
             builder.Append("\t>");
 
             if (rectangleVector.HasFills)
@@ -57,7 +87,7 @@ namespace AlohaKit.UI.Figma.Converters
 
                 if (backgroundPaint != null && backgroundPaint.visible)
                 {
-                    builder.AppendLine("\n\t<alohakit:Rectangle.Fill>");
+                    builder.AppendLine($"\n\t<alohakit:{rectangle}.Fill>");
 
                     if (backgroundPaint.color != null)
                     {
@@ -76,11 +106,11 @@ namespace AlohaKit.UI.Figma.Converters
                     if (backgroundPaint.imageRef != null)
                         builder.AppendLine("\t\t<SolidColorBrush Color=\"White\" />");
 
-                    builder.AppendLine("\t</alohakit:Rectangle.Fill>");
+                    builder.AppendLine($"\t</alohakit:{rectangle}.Fill>");
                 }
             }
 
-            builder.AppendLine("</alohakit:Rectangle>");
+            builder.AppendLine($"</alohakit:{rectangle}> ");
 
             return builder.ToString();
         }

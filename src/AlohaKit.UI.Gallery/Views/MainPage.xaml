@@ -8,11 +8,14 @@
         <StackLayout
             Padding="12">
             <Button 
-                Text="C#"
+                Text="Using C#"
                 Clicked="OnCSharpButtonClicked"/>
             <Button
-                Text="XAML"
+                Text="Using XAML"
                 Clicked="OnXamlButtonClicked"/>
+            <Button
+                Text="Custom Drawn Controls"
+                Clicked="OnCustomControlsButtonClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

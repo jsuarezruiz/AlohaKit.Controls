@@ -10,6 +10,8 @@
         float WidthRequest { get; set; }
         float HeightRequest { get; set; }
 
+        Shadow Shadow { get; set; }
+
         float TranslationX { get; set; }
         float TranslationY { get; set; }
         float ScaleX { get; set; }
@@ -44,6 +46,10 @@
 
         public static readonly BindableProperty HeightRequestProperty =
             BindableProperty.Create(nameof(HeightRequest), typeof(float), typeof(VisualElement), float.NaN,
+                propertyChanged: InvalidatePropertyChanged);
+
+        public static readonly BindableProperty ShadowProperty =
+            BindableProperty.Create(nameof(Shadow), typeof(Shadow), typeof(VisualElement), null,
                 propertyChanged: InvalidatePropertyChanged);
 
         public static readonly BindableProperty TranslationXProperty =
@@ -99,6 +105,12 @@
         {
             get => (float)GetValue(HeightRequestProperty);
             set => SetValue(HeightRequestProperty, value);
+        }
+
+        public Shadow Shadow
+        {
+            get => (Shadow)GetValue(ShadowProperty);
+            set => SetValue(ShadowProperty, value);
         }
 
         public float TranslationX

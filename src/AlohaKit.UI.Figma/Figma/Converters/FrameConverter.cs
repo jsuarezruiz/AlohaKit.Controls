@@ -33,9 +33,15 @@ namespace AlohaKit.UI.Figma.Converters
             builder.AppendLine($"\tWidthRequest=\"{bounds.Width.ToString(nfi)}\"");
             builder.AppendLine($"\tHeightRequest=\"{bounds.Height.ToString(nfi)}\"");
 
+            if (frameNode.opacity != 1)
+                builder.AppendLine($"\tOpacity=\"{frameNode.opacity.ToString(nfi)}\"");
+
+            if (!frameNode.visible)
+                builder.AppendLine($"\tIsVisible=\"{frameNode.visible}\"");
+
             var cornerRadius = frameNode.cornerRadius;
             builder.AppendLine($"\tCornerRadius=\"{cornerRadius.ToString(nfi)}\"");
-
+            
             if (frameNode.HasStrokes)
             {
                 var strokePaint = frameNode.strokes.FirstOrDefault();
@@ -80,6 +86,22 @@ namespace AlohaKit.UI.Figma.Converters
                         builder.AppendLine("\t\t<SolidColorBrush Color=\"White\" />");
 
                     builder.AppendLine("\t</alohakit:RoundRectangle.Fill>");
+                }
+            }
+
+            if (frameNode.effects != null && frameNode.effects.Length > 0)
+            {
+                var dropShadow = frameNode.effects
+                    .Where(e => e.type.Equals("DROP_SHADOW", StringComparison.CurrentCultureIgnoreCase))
+                    .FirstOrDefault();
+
+                if (dropShadow != null)
+                {
+                    builder.AppendLine("\t<alohakit:RoundRectangle.Shadow>");
+
+                    builder.AppendLine($"{dropShadow.ToShadow()}");
+
+                    builder.AppendLine("\t</alohakit:RoundRectangle.Shadow>");
                 }
             }
 

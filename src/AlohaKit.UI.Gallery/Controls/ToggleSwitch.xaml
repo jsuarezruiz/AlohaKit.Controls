@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AlohaKit.UI.Gallery.Controls.ToggleSwitch"
+    xmlns:alohakit="clr-namespace:AlohaKit.UI;assembly=AlohaKit.UI">
+    <alohakit:CanvasView
+        x:Name="CanvasView"
+        HeightRequest="100"
+        WidthRequest="200"
+        HorizontalOptions="Start">
+        <!-- BACKGROUND -->
+        <alohakit:RoundRectangle
+	        X="0"
+	        Y="-1.7763568E-15"
+	        WidthRequest="80"
+	        HeightRequest="40"
+	        CornerRadius="0" />
+        <alohakit:RoundRectangle
+	        X="0"
+	        Y="-1.7763568E-15"
+	        WidthRequest="80"
+	        HeightRequest="40"
+	        CornerRadius="250">
+            <alohakit:RoundRectangle.Fill>
+                <SolidColorBrush Color="#2277DD" />
+            </alohakit:RoundRectangle.Fill>
+        </alohakit:RoundRectangle>
+        <alohakit:RoundRectangle
+	        X="43.2"
+	        Y="3.2"
+	        WidthRequest="32.8"
+	        HeightRequest="32.8"
+	        CornerRadius="0">
+        </alohakit:RoundRectangle>
+        <!-- WIFI ICON -->
+        <alohakit:Path
+	        X="9.73335"
+	        Y="11.24082"
+	        WidthRequest="21.333351"
+	        HeightRequest="17.086243"
+	        Data="M12.16 13.4554C13.0133 14.3097 13.0133 15.5912 12.16 16.4455C11.7333 16.8727 11.2 17.0862 10.6667 17.0862C10.1333 17.0862 9.60001 16.8727 9.17334 16.4455C8.32001 15.5912 8.32001 14.3097 9.17334 13.4554C10.0267 12.6011 11.3067 12.6011 12.16 13.4554ZM10.6667 8.54312C12.3733 8.54312 13.9733 9.18386 15.1467 10.4653C15.5733 10.8925 15.5733 11.5332 15.1467 11.9604C14.9333 12.1739 14.6133 12.2807 14.4 12.2807C14.1257 12.2807 13.9298 12.2023 13.7451 12.0454L13.6533 11.9604C12.0533 10.3585 9.38667 10.3585 7.78667 11.9604C7.36001 12.3875 6.72 12.3875 6.29334 11.9604C5.89949 11.5661 5.8692 10.9898 6.20245 10.5675L6.29334 10.4653C7.36001 9.18386 8.96001 8.54312 10.6667 8.54312ZM10.6667 4.27156C13.44 4.27156 16.1067 5.33945 18.0267 7.36844C18.4533 7.7956 18.4533 8.43633 18.0267 8.86349C17.8133 9.07707 17.6 9.18386 17.28 9.18386C17.0057 9.18386 16.8098 9.1054 16.6251 8.94848L16.5333 8.86349C14.9333 7.26165 12.9067 6.40734 10.6667 6.40734C8.42667 6.40734 6.4 7.26165 4.8 8.86349C4.37334 9.29064 3.73334 9.29064 3.30667 8.86349C2.88 8.43633 2.88 7.7956 3.30667 7.36844C5.22667 5.33945 7.89334 4.27156 10.6667 4.27156ZM10.6667 0C14.6133 0 18.24 1.60184 21.0133 4.37835C21.44 4.80551 21.44 5.44624 21.0133 5.8734C20.8 6.08697 20.5867 6.19376 20.2667 6.19376C19.9467 6.19376 19.7333 6.08697 19.52 5.8734C17.1733 3.41725 13.9733 2.13578 10.6667 2.13578C7.36001 2.13578 4.16 3.41725 1.81333 5.8734C1.38667 6.30055 0.746667 6.30055 0.32 5.8734C-0.106667 5.44624 -0.106667 4.80551 0.32 4.37835C3.09334 1.60184 6.72001 0 10.6667 0Z">
+            <alohakit:Path.Fill>
+                <SolidColorBrush Color="#FFFFFF" />
+            </alohakit:Path.Fill>
+        </alohakit:Path>
+        <!-- THUMB -->
+        <alohakit:Path
+            x:Name="ThumbBorder"
+	        X="43.2"
+	        Y="3.2"
+	        WidthRequest="32.8"
+	        HeightRequest="32.8"
+	        Data="M32.8 16.4C32.8 25.4575 25.4575 32.8 16.4 32.8C7.34253 32.8 0 25.4575 0 16.4C0 7.34253 7.34253 0 16.4 0C25.4575 0 32.8 7.34253 32.8 16.4Z">
+            <alohakit:Path.Fill>
+                <SolidColorBrush Color="#FFFFFF" />
+            </alohakit:Path.Fill>
+        </alohakit:Path>
+        <alohakit:Path
+            x:Name="Thumb"
+	        X="43.6"
+	        Y="3.6"
+	        WidthRequest="32"
+	        HeightRequest="31.999998"
+	        Data="M32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16Z">
+            <alohakit:Path.Fill>
+                <LinearGradientBrush>
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Offset="0" Color= "#F5F5F5" />
+                        <GradientStop Offset="1" Color= "#DDDDDD" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </alohakit:Path.Fill>
+            <alohakit:Path.Shadow>
+                <alohakit:Shadow Offset="5, 5" Radius="20" Color= "#000000" />
+            </alohakit:Path.Shadow>
+        </alohakit:Path>
+    </alohakit:CanvasView>
+</ContentView>
