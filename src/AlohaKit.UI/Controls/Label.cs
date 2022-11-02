@@ -1,4 +1,6 @@
-﻿namespace AlohaKit.UI
+﻿using AlohaKit.UI.Extensions;
+
+namespace AlohaKit.UI
 {
     public class Label : View
     {
@@ -14,7 +16,15 @@
            BindableProperty.Create(nameof(FontSize), typeof(double), typeof(Label), 12.0d,
                propertyChanged: InvalidatePropertyChanged);
 
-        public string Text
+		public static readonly BindableProperty HorizontalTextAlignmentProperty =
+            BindableProperty.Create(nameof(HorizontalTextAlignment), typeof(TextAlignment), typeof(Label), TextAlignment.Start,
+                propertyChanged: InvalidatePropertyChanged);
+
+		public static readonly BindableProperty VerticalTextAlignmentProperty =
+            BindableProperty.Create(nameof(VerticalTextAlignment), typeof(TextAlignment), typeof(Label), TextAlignment.Start,
+                propertyChanged: InvalidatePropertyChanged);
+
+		public string Text
         {
             get => (string)GetValue(TextProperty);
             set => SetValue(TextProperty, value);
@@ -32,7 +42,19 @@
             set => SetValue(FontSizeProperty, value);
         }
 
-        public override void Draw(ICanvas canvas, RectF bounds)
+		public TextAlignment HorizontalTextAlignment
+		{
+			get { return (TextAlignment)GetValue(HorizontalTextAlignmentProperty); }
+			set { SetValue(HorizontalTextAlignmentProperty, value); }
+		}
+
+		public TextAlignment VerticalTextAlignment
+		{
+			get { return (TextAlignment)GetValue(VerticalTextAlignmentProperty); }
+			set { SetValue(VerticalTextAlignmentProperty, value); }
+		}
+
+		public override void Draw(ICanvas canvas, RectF bounds)
         {
             canvas.SaveState();
 
@@ -43,7 +65,7 @@
                 canvas.FontColor = TextColor;
                 canvas.FontSize = (float)FontSize;
 
-                canvas.DrawString(Text, new Rect(X, Y, WidthRequest, HeightRequest), HorizontalAlignment.Left, VerticalAlignment.Top);
+                canvas.DrawString(Text, new Rect(X, Y, WidthRequest, HeightRequest), HorizontalTextAlignment.ToHorizontalAlignment(), VerticalTextAlignment.ToVerticalAlignment());
             }
 
             canvas.RestoreState();

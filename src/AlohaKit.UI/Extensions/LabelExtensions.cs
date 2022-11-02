@@ -21,6 +21,36 @@
             label.FontSize = fontSize;
 
             return label;
-        }
-    }
+		}
+
+		public static HorizontalAlignment ToHorizontalAlignment(this TextAlignment textAlignment)
+		{
+			switch(textAlignment)
+            {
+                case TextAlignment.Start:
+                    return HorizontalAlignment.Left;
+				case TextAlignment.Center:
+					return HorizontalAlignment.Center;
+				case TextAlignment.End:
+					return HorizontalAlignment.Right;
+                default:
+					return HorizontalAlignment.Left;
+			}
+		}
+
+		public static VerticalAlignment ToVerticalAlignment(this TextAlignment textAlignment)
+		{
+			switch (textAlignment)
+			{
+				case TextAlignment.Start:
+					return VerticalAlignment.Top;
+				case TextAlignment.Center:
+					return VerticalAlignment.Center;
+				case TextAlignment.End:
+					return VerticalAlignment.Bottom;
+				default:
+					return VerticalAlignment.Top;
+			}
+		}
+	}
 }
