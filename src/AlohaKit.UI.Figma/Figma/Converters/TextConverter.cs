@@ -33,6 +33,13 @@ namespace AlohaKit.UI.Figma.Converters
             builder.AppendLine($"\tWidthRequest=\"{bounds.Width.ToString(nfi)}\"");
             builder.AppendLine($"\tHeightRequest=\"{bounds.Height.ToString(nfi)}\"");
 
+            if (textNode.opacity != 1)
+                builder.AppendLine($"\tOpacity=\"{textNode.opacity.ToString(nfi)}\"");
+
+            if (!textNode.visible)
+                builder.AppendLine($"\tIsVisible=\"{textNode.visible}\"");
+
+
             if (textNode.HasFills)
             {
                 var textPaint = textNode.fills.FirstOrDefault();

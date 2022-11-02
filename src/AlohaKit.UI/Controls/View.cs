@@ -35,18 +35,37 @@ namespace AlohaKit.UI
             {
                 if (_drawBackground)
                 {
-                    if (Background is SolidColorBrush solidColorBrush)
-                        canvas.FillColor = solidColorBrush.Color;
-                    else
-                        canvas.SetFillPaint(Background, bounds);
-
-                    canvas.FillRectangle(bounds);
+                    DrawBackground(canvas, bounds);
                 }
 
                 canvas.Alpha = (float)Opacity;
                 canvas.Transform(TranslationX, TranslationY, ScaleX, ScaleY);
+                
+                DrawShadow(canvas, bounds);
 
-                base.Draw(canvas, bounds);
+                base.Draw(canvas, bounds); 
+            }
+        }
+
+        void DrawBackground(ICanvas canvas, RectF bounds)
+        {
+            if (Background is SolidColorBrush solidColorBrush)
+                canvas.FillColor = solidColorBrush.Color;
+            else
+                canvas.SetFillPaint(Background, bounds);
+
+            canvas.FillRectangle(bounds);
+        }
+
+        void DrawShadow(ICanvas canvas, RectF bounds)
+        {
+            if (Shadow != null)
+            {
+                var offset = new SizeF((float)Shadow.Offset.X, (float)Shadow.Offset.Y);
+                var radius = Shadow.Radius;
+                var color = Shadow.Color;
+
+                canvas.SetShadow(offset, radius, color);
             }
         }
     }

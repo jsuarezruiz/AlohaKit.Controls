@@ -33,6 +33,12 @@ namespace AlohaKit.UI.Figma.Converters
             builder.AppendLine($"\tWidthRequest=\"{bounds.Width.ToString(nfi)}\"");
             builder.AppendLine($"\tHeightRequest=\"{bounds.Height.ToString(nfi)}\"");
 
+            if (elipseNode.opacity != 1)
+                builder.AppendLine($"\tOpacity=\"{elipseNode.opacity.ToString(nfi)}\"");
+
+            if (!elipseNode.visible)
+                builder.AppendLine($"\tIsVisible=\"{elipseNode.visible}\"");
+
             if (elipseNode.HasStrokes)
             {
                 var strokePaint = elipseNode.strokes.FirstOrDefault();
@@ -79,7 +85,23 @@ namespace AlohaKit.UI.Figma.Converters
                     builder.AppendLine("\t</alohakit:Ellipse.Fill>");
                 }
             }
-              
+
+            if (elipseNode.effects != null && elipseNode.effects.Length > 0)
+            {
+                var dropShadow = elipseNode.effects
+                    .Where(e => e.type.Equals("DROP_SHADOW", StringComparison.CurrentCultureIgnoreCase))
+                    .FirstOrDefault();
+
+                if (dropShadow != null)
+                {
+                    builder.AppendLine("\t<alohakit:Ellipse.Shadow>");
+
+                    builder.AppendLine($"{dropShadow.ToShadow()}");
+
+                    builder.AppendLine("\t</alohakit:Ellipse.Shadow>");
+                }
+            }
+
             builder.AppendLine("</alohakit:Ellipse>");
 
             return builder.ToString();

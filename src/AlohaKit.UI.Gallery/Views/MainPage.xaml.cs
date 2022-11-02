@@ -7,14 +7,19 @@
 			InitializeComponent ();
 		}
 
-        private void OnCSharpButtonClicked(object sender, EventArgs e)
+        void OnCSharpButtonClicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new CSharp.MainPage());
         }
 
-        private void OnXamlButtonClicked(object sender, EventArgs e)
+        void OnXamlButtonClicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new XAML.MainPage());
+        }
+
+        void OnCustomControlsButtonClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CustomControlsPage());
         }
     }
 }

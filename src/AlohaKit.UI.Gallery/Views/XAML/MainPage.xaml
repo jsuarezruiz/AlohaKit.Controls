@@ -40,7 +40,13 @@
             Stroke="Pink"
             StrokeThickness="4"
             StrokeLineCap="Flat"
-            StrokeLineJoin="Round"/>
+            StrokeLineJoin="Round">
+            <alohakit:Line.Shadow>
+                <alohakit:Shadow
+                    Offset="6, 6" Radius="12"
+                    Color="Black" />
+            </alohakit:Line.Shadow>
+        </alohakit:Line>
         <alohakit:Polyline 
             X="20" Y="200"
             Points="0,0 10,30, 15,0 18,60 23,30 35,30 40,0 43,60 48,30 100,30"

@@ -58,6 +58,22 @@ namespace AlohaKit.UI.Figma.Extensions
             return builder.ToString();
         }
 
+        public static string ToShadow(this FigmaEffect dropShadow)
+        {
+            StringBuilder builder = new StringBuilder();
+
+            var offset = dropShadow.offset;
+
+            var radius = dropShadow.radius;
+
+            var color = dropShadow.color;
+            string hexColor = color.ToCodeString();
+
+            builder.AppendLine($"\t\t<alohakit:Shadow Offset=\"{offset.x}, {offset.y}\" Radius=\"{radius}\" Color= \"{hexColor}\" />");
+
+            return builder.ToString();
+        }
+
         public static string ToCodeString(this float[] values)
         {
             StringBuilder builder = new StringBuilder();
