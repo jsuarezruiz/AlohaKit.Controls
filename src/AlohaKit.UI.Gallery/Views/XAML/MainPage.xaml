@@ -28,6 +28,10 @@
                     </LinearGradientBrush.GradientStops>
                 </LinearGradientBrush>
             </alohakit:Ellipse.Fill>
+          <alohakit:Ellipse.GestureRecognizers>
+            <alohakit:TapGestureRecognizer
+              Tapped="OnEllipseTapped" />
+          </alohakit:Ellipse.GestureRecognizers>
         </alohakit:Ellipse>
         <alohakit:Label
             X="50" Y="100"

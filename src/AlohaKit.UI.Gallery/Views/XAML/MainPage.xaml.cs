@@ -6,5 +6,10 @@
         {
             InitializeComponent();
         }
-    }
+
+		void OnEllipseTapped(object sender, EventArgs e)
+		{
+            DisplayAlert("Gestures", "Ellipse tapped.", "Ok");
+		}
+	}
 }
