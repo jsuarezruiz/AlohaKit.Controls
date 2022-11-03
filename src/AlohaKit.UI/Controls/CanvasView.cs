@@ -1,4 +1,6 @@
-﻿namespace AlohaKit.UI
+﻿using AlohaKit.UI.Extensions;
+
+namespace AlohaKit.UI
 {
     class CanvasViewDrawable : IDrawable
     {
@@ -27,6 +29,8 @@
             Children = new ElementsCollection();
 
             Drawable = new CanvasViewDrawable(this);
+
+            StartInteraction += OnCanvasViewStartInteraction;
         }
 
         public ElementsCollection Children { get; internal set; }
@@ -43,6 +47,23 @@
                 if (child.IsVisible)
                 {
                     child.Draw(canvas, bounds);
+                }
+            }
+        }
+
+        void OnCanvasViewStartInteraction(object sender, TouchEventArgs e)
+        {
+            var touchPoint = e.Touches[0];
+
+            foreach (var child in Children)
+            {
+                if (child.IsVisible && child is View view && view.TouchInside(touchPoint))
+                {
+                    foreach (var gesture in view.GestureRecognizers)
+                    {
+                        if (gesture is TapGestureRecognizer tapGestureRecognizer)
+                            tapGestureRecognizer.SendTapped(view);
+                    }
                 }
             }
         }

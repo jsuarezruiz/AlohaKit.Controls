@@ -1,5 +1,7 @@
 ﻿using AlohaKit.UI.Extensions;
 using Microsoft.Maui.Graphics.Converters;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.ComponentModel;
 
 namespace AlohaKit.UI
@@ -12,6 +14,48 @@ namespace AlohaKit.UI
     public class View : Element, IView
     {
         protected bool _drawBackground;
+
+		readonly ObservableCollection<GestureRecognizer> _gestureRecognizers = new ObservableCollection<GestureRecognizer>();
+
+		protected internal View()
+		{
+			_gestureRecognizers.CollectionChanged += (sender, args) =>
+			{
+				void AddItems()
+				{
+					foreach (IElement item in args.NewItems.OfType<Element>())
+					{
+						item.Parent = this;
+					}
+				}
+
+				void RemoveItems()
+				{
+					foreach (IElement item in args.OldItems.OfType<IElement>())
+					{
+						item.Parent = null;
+					}
+				}
+
+				switch (args.Action)
+				{
+					case NotifyCollectionChangedAction.Add:
+						AddItems();
+						break;
+					case NotifyCollectionChangedAction.Remove:
+						RemoveItems();
+						break;
+					case NotifyCollectionChangedAction.Replace:
+						AddItems();
+						RemoveItems();
+						break;
+					case NotifyCollectionChangedAction.Reset:
+						foreach (IElement item in _gestureRecognizers.OfType<Element>())
+							item.Parent = this;
+						break;
+				}
+			};
+		}
 
         public static readonly BindableProperty BackgroundProperty =
             BindableProperty.Create(nameof(Background), typeof(Brush), typeof(View), null, propertyChanged: BackgroundPropertyChanged);
@@ -29,7 +73,9 @@ namespace AlohaKit.UI
             set => SetValue(BackgroundProperty, value);
         }
 
-        public override void Draw(ICanvas canvas, RectF bounds)
+		public IList<GestureRecognizer> GestureRecognizers => _gestureRecognizers;
+
+		public override void Draw(ICanvas canvas, RectF bounds)
         {
             if (IsVisible)
             {
