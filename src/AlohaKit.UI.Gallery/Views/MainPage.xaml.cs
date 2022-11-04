@@ -20,6 +20,11 @@
         void OnCustomControlsButtonClicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new CustomControlsPage());
-        }
-    }
+		}
+
+		void OnBenchmarkButtonClicked(object sender, EventArgs e)
+		{
+			Navigation.PushAsync(new LolBenchmarkPage());
+		}
+	}
 }

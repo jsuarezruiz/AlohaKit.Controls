@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  x:Class="AlohaKit.UI.Gallery.Views.LolBenchmarkPage"
+  xmlns:alohakit="clr-namespace:AlohaKit.UI;assembly=AlohaKit.UI"
+  Title="AlohaKit UI LOL's Benchmark">
+  <Grid>
+    <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          <RowDefinition Height="60" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <alohakit:CanvasView 
+          x:Name="CanvasView"
+          Grid.Row="0" 
+          Grid.RowSpan="2" 
+          Grid.Column="0" />
+      <Grid 
+          x:Name="GridLayout" 
+          Grid.Row="0" 
+          Grid.RowSpan="2" 
+          Grid.Column="0">
+          <Grid.RowDefinitions>
+              <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+      </Grid>
+      <Label 
+          x:Name="LolLabel" 
+          Grid.Row="0" Grid.Column="0"
+          Margin="0,20,0,0" 
+          Padding="7,7,7,7" 
+          BackgroundColor="Red"
+          TextColor="White"  
+          VerticalOptions="Start"
+          HorizontalOptions="Center" 
+          Text="Warming up..." 
+          IsVisible="False"/>
+      <HorizontalStackLayout 
+          x:Name="ButtonsLayout" 
+          Grid.Row="1" 
+          Grid.Column="0" 
+          VerticalOptions="End"
+          HorizontalOptions="Center"
+          Margin="6">
+          <Button 
+              x:Name="StopButton"
+              Text="Stop" 
+              BackgroundColor="Red"
+              HorizontalOptions="Center"
+              IsVisible="False"
+              Clicked="OnStopButtonClicked"/>
+          <Button
+              x:Name="StartButton"
+              Text="Start" 
+              BackgroundColor="Green"
+              Clicked="OnStartButtonClicked"/>
+      </HorizontalStackLayout>
+  </Grid>
+</ContentPage>

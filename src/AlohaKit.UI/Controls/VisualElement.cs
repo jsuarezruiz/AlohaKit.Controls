@@ -1,4 +1,6 @@
-﻿namespace AlohaKit.UI
+﻿using Microsoft.Maui.Devices.Sensors;
+
+namespace AlohaKit.UI
 {
     public interface IVisualElement
     {
@@ -51,6 +53,10 @@
         public static readonly BindableProperty ShadowProperty =
             BindableProperty.Create(nameof(Shadow), typeof(Shadow), typeof(VisualElement), null,
                 propertyChanged: InvalidatePropertyChanged);
+
+		public static readonly BindableProperty RotationProperty =
+			BindableProperty.Create(nameof(Rotation), typeof(float), typeof(VisualElement), 0f,
+				propertyChanged: InvalidatePropertyChanged);
 
         public static readonly BindableProperty TranslationXProperty =
             BindableProperty.Create(nameof(TranslationX), typeof(float), typeof(VisualElement), 0f,
@@ -112,6 +118,12 @@
             get => (Shadow)GetValue(ShadowProperty);
             set => SetValue(ShadowProperty, value);
         }
+
+		public float Rotation
+		{
+			get => (float)GetValue(RotationProperty);
+			set => SetValue(RotationProperty, value);
+		}
 
         public float TranslationX
         {
