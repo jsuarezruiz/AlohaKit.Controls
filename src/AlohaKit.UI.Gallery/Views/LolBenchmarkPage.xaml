@@ -13,7 +13,7 @@
       <Grid.ColumnDefinitions>
           <ColumnDefinition Width="*" />
       </Grid.ColumnDefinitions>
-      <alohakit:SkiaCanvasView 
+      <alohakit:CanvasView 
           x:Name="CanvasView"
           Grid.Row="0" 
           Grid.RowSpan="2" 
