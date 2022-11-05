@@ -16,6 +16,9 @@
             <Button
                 Text="Custom Drawn Controls"
                 Clicked="OnCustomControlsButtonClicked"/>
+          <Button
+                Text="LOL/s Benchmark"
+                Clicked="OnBenchmarkButtonClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

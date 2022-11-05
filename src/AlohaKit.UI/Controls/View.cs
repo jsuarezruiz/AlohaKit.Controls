@@ -85,7 +85,7 @@ namespace AlohaKit.UI
                 }
 
                 canvas.Alpha = (float)Opacity;
-                canvas.Transform(TranslationX, TranslationY, ScaleX, ScaleY);
+                canvas.Transform(Rotation, TranslationX, TranslationY, ScaleX, ScaleY);
                 
                 DrawShadow(canvas, bounds);
 
