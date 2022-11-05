@@ -25,4 +25,8 @@
 	  <Folder Include="Platforms\Windows\" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Maui.Graphics.Skia" Version="6.0.501" />
+	</ItemGroup>
+
 </Project>

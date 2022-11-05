@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using AlohaKit.UI.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace AlohaKit.UI.Gallery
 {
@@ -7,8 +8,10 @@ namespace AlohaKit.UI.Gallery
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
+
             builder
-                .UseMauiApp<App>();
+                .ConfigureAlohaKitUI()
+				.UseMauiApp<App>();
 
 #if DEBUG
 		builder.Logging.AddDebug();
