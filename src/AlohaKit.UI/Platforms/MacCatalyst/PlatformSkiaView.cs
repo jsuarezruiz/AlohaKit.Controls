@@ -15,7 +15,8 @@ namespace AlohaKit.UI
 
 		public PlatformSkiaView(IDrawable drawable = null) : base(drawable)
 		{
-
+			Opaque = false;
+			BackgroundColor = null;
 		}
 
 		public override void LayoutSubviews()

@@ -15,7 +15,7 @@ namespace AlohaKit.UI
             handler.PlatformView?.UpdateDrawable(graphicsView);
         }
 
-        public static void MapInvalidate(SkiaGraphicsViewHandler handler, ISkiaGraphicsView graphicsView, object? arg)
+        public static void MapInvalidate(SkiaGraphicsViewHandler handler, ISkiaGraphicsView graphicsView, object arg)
         {
             handler.PlatformView?.Invalidate();
         }
