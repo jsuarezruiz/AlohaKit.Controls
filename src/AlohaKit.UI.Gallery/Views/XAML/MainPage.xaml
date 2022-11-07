@@ -67,5 +67,12 @@
             X="100" Y="200"
             Data="M 10,100 L 100,100 100,50Z"
             Stroke="Black" />
+        <alohakit:Button 
+            X="250" Y="200"
+            Background="Blue"
+            WidthRequest="150"
+            Text="Button"
+            TextColor="White"
+            Clicked="OnButtonClicked"/>
     </alohakit:CanvasView>
 </ContentPage>

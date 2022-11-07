@@ -9,7 +9,15 @@ namespace AlohaKit.UI
     public interface IView : IElement
     {
         Brush Background { get; set; }
-    }
+
+		void StartHoverInteraction(PointF[] points);
+		void MoveHoverInteraction(PointF[] points);
+		void EndHoverInteraction();
+		void StartInteraction(PointF[] points);
+		void DragInteraction(PointF[] points);
+		void EndInteraction(PointF[] points, bool isInsideBounds);
+		void CancelInteraction();
+	}
 
     public class View : Element, IView
     {
@@ -58,7 +66,8 @@ namespace AlohaKit.UI
 		}
 
         public static readonly BindableProperty BackgroundProperty =
-            BindableProperty.Create(nameof(Background), typeof(Brush), typeof(View), null, propertyChanged: BackgroundPropertyChanged);
+            BindableProperty.Create(nameof(Background), typeof(Brush), typeof(View), null,
+                propertyChanged: BackgroundPropertyChanged);
 
         public static void BackgroundPropertyChanged(BindableObject bindableObject, object oldValue, object newValue)
         {
@@ -93,7 +102,21 @@ namespace AlohaKit.UI
             }
         }
 
-        void DrawBackground(ICanvas canvas, RectF bounds)
+		public virtual void CancelInteraction() { }
+
+		public virtual void DragInteraction(PointF[] points) { }
+
+		public virtual void EndHoverInteraction() { }
+
+		public virtual void EndInteraction(PointF[] points, bool isInsideBounds) { }
+
+		public virtual void StartHoverInteraction(PointF[] points) { }
+
+		public virtual void MoveHoverInteraction(PointF[] points) { }
+
+		public virtual void StartInteraction(PointF[] points) { }
+
+		void DrawBackground(ICanvas canvas, RectF bounds)
         {
             if (Background is SolidColorBrush solidColorBrush)
                 canvas.FillColor = solidColorBrush.Color;

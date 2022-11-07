@@ -21,19 +21,27 @@ namespace AlohaKit.UI
         }
     }
 
+    public interface ICanvasView
+    {
+        void Draw(ICanvas canvas, RectF bounds);
+        void Invalidate();
+	}
+
     [ContentProperty(nameof(Children))]
-    public class CanvasView : GraphicsView
+    public class CanvasView : GraphicsView, ICanvasView, IDisposable
     {
         public CanvasView()
         {
-            Children = new ElementsCollection();
+            Children = new ElementsCollection(this);
 
             Drawable = new CanvasViewDrawable(this);
 
             StartInteraction += OnCanvasViewStartInteraction;
-        }
+            EndInteraction += OnCanvasViewEndInteraction;
+            CancelInteraction += OnCanvasViewCancelInteraction;
+		}
 
-        public ElementsCollection Children { get; internal set; }
+		public ElementsCollection Children { get; internal set; }
 
         internal void DrawCore(ICanvas canvas, RectF bounds)
         {
@@ -51,14 +59,23 @@ namespace AlohaKit.UI
             }
         }
 
+		void IDisposable.Dispose()
+		{
+			StartInteraction -= OnCanvasViewStartInteraction;
+			EndInteraction -= OnCanvasViewEndInteraction;
+			CancelInteraction -= OnCanvasViewCancelInteraction;
+		}
+
         void OnCanvasViewStartInteraction(object sender, TouchEventArgs e)
         {
             var touchPoint = e.Touches[0];
 
             foreach (var child in Children)
             {
-                if (child.IsVisible && child is View view && view.TouchInside(touchPoint))
+                if (child.IsVisible && child is View view && view.IsInsideBounds(touchPoint))
                 {
+                    view.StartInteraction(e.Touches);
+
                     foreach (var gesture in view.GestureRecognizers)
                     {
                         if (gesture is TapGestureRecognizer tapGestureRecognizer)
@@ -67,5 +84,29 @@ namespace AlohaKit.UI
                 }
             }
         }
-    }
+
+        void OnCanvasViewEndInteraction(object sender, TouchEventArgs e)
+		{
+			var touchPoint = e.Touches[0];
+
+			foreach (var child in Children)
+            {
+                if (child.IsVisible && child is View view && view.IsInsideBounds(touchPoint))
+                {
+                    view.EndInteraction(e.Touches, e.IsInsideBounds);
+                }
+            }
+		}
+
+        void OnCanvasViewCancelInteraction(object sender, EventArgs e)
+		{
+			foreach (var child in Children)
+			{
+				if (child.IsVisible && child is View view)
+				{
+					view.CancelInteraction();
+				}
+			}
+		}
+	}
 }
