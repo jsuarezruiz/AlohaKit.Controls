@@ -20,10 +20,17 @@ public partial class MultiBarChartView : ContentPage
 				{new ChartItem(){ Value= 300, GroupId = 3, StyleId = 4} },
 				{new ChartItem(){ Value= 400, GroupId = 3, StyleId = 5} },
 				{new ChartItem(){ Value= 900, GroupId = 3, StyleId = 6} },
+
+                  //Group #3 |ID = 4 
+				{new ChartItem(){ Value= 90, GroupId = 4, StyleId = 2} },
+				{new ChartItem(){ Value= 150, GroupId = 4, StyleId = 3} },
+				{new ChartItem(){ Value= 200, GroupId = 4, StyleId = 4} },
+				{new ChartItem(){ Value= 120, GroupId = 4, StyleId = 5} },
+				{new ChartItem(){ Value= 750, GroupId = 4, StyleId = 6} },
 			};
 
 	ObservableCollection<string> _columnNames = new ObservableCollection<string>()
-	{"Value 1","Value 2","Value 3","Value 4","Value 5" };
+	{"Value 1","Value 2" , "Value 3"};
 
 	ObservableCollection<ChartGroupStyle> _groupsStyles = new ObservableCollection<ChartGroupStyle>()
 	{
@@ -31,7 +38,7 @@ public partial class MultiBarChartView : ContentPage
 		new ChartGroupStyle(){Id= 3 , BackgroundColor = Colors.Blue},
 		new ChartGroupStyle(){Id = 4, BackgroundColor = Colors.Red},
 		new ChartGroupStyle(){Id = 5, BackgroundColor = Colors.Brown},
-		new ChartGroupStyle(){Id = 6, BackgroundColor = Colors.Yellow},
+		new ChartGroupStyle(){Id = 6, BackgroundColor = Colors.Black},
 	};
 
 	public ObservableCollection<ChartItem> MultiSeriesChartCollection

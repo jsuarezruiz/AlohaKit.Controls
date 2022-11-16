@@ -600,7 +600,7 @@ namespace AlohaKit.Controls
         /// Gets the size for labels container rectangle by measuring text length
         /// </summary>
         /// <returns>Array with labels rectangle containers</returns>
-        protected SizeF[] MeasureLabels()
+        protected virtual SizeF[] MeasureLabels()
         {
             return Entries?.Select(entry =>
             {
