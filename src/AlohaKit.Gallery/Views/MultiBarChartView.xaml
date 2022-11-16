@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:cv="clr-namespace:AlohaKit.Controls;assembly=AlohaKit"
+	x:Name="thisView"
+	BackgroundColor="{DynamicResource WhiteColor}"
+	x:Class="AlohaKit.Gallery.Views.MultiBarChartView">
+	<ScrollView
+		HorizontalOptions="FillAndExpand"
+		Orientation="Vertical"
+		VerticalOptions="FillAndExpand">
+		<StackLayout
+			HorizontalOptions="Fill"
+			Orientation="Vertical"
+			VerticalOptions="Fill">
+
+			<cv:MultiBarChart
+				Margin="5,0,5,0"
+				AxisLinesColor="LightGray"
+				AxisLinesFontSize="11"
+				AxisLinesStrokeSize="0.9"
+				ChartMargin="0"
+				ColumnNames="{Binding Source={x:Reference thisView}, Path=ColumnNames}"
+				DisplayHorizontalAxisLines="True"
+				DisplayVerticalAxisLines="True"
+				EnableEntryAnimations="True"
+				Entries="{Binding Source={x:Reference thisView}, Path=MultiSeriesChartCollection}"
+				FooterLabelsMargin="8"
+				FooterLabelsTextSize="10"
+				GroupStyles="{Binding Source={x:Reference thisView}, Path=MultiSeriesChartStyles}"
+				HeaderValuesMargin="20"
+				HeightRequest="200"
+				HorizontalOptions="FillAndExpand"
+				IsLabelTextTruncationEnabled="True"
+				PathsColorOpacity="0.6"
+				ReanimateOnPropertyChanged="True"
+				VerticalOptions="Start" />
+		</StackLayout>
+	</ScrollView>
+</ContentPage>
