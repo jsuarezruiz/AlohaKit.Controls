@@ -8,18 +8,18 @@ public partial class MultiLineChartView : ContentPage
 	ObservableCollection<ChartItem> _multiSeriesCollection = new ObservableCollection<ChartItem>()
 			{
 				//Group #1 |ID = 2
-				{new ChartItem(){ Value= 100, GroupId = 2, IsLabelBold = true} },
-				{new ChartItem(){ Value= 150, GroupId = 2}},
+				{new ChartItem(){ Value= 200, GroupId = 2, IsLabelBold = true} },
+				{new ChartItem(){ Value= 190, GroupId = 2}},
 				{new ChartItem(){ Value= 200, GroupId = 2} },
-				{new ChartItem(){ Value= 300, GroupId = 2} },
-				{new ChartItem(){ Value= 900, GroupId = 2} },
+				{new ChartItem(){ Value= 400, GroupId = 2} },
+				{new ChartItem(){ Value= 600, GroupId = 2} },
 
                 //Group #2 |ID = 3
-				{new ChartItem(){ Value= 200, GroupId = 3} },
-				{new ChartItem(){ Value= 250, GroupId = 3} },
 				{new ChartItem(){ Value= 300, GroupId = 3} },
+				{new ChartItem(){ Value= 150, GroupId = 3} },
 				{new ChartItem(){ Value= 400, GroupId = 3} },
-				{new ChartItem(){ Value= 900, GroupId = 3} },
+				{new ChartItem(){ Value= 100, GroupId = 3} },
+				{new ChartItem(){ Value= 700, GroupId = 3} },
 			};
 
 	ObservableCollection<string> _columnNames = new ObservableCollection<string>()
