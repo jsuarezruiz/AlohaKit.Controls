@@ -63,6 +63,33 @@
 	  <ProjectReference Include="..\AlohaKit\AlohaKit.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Views\MultiLineChartView.xaml.cs">
+	    <DependentUpon>MultiLineChartView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\MultiBarChartView.xaml.cs">
+	    <DependentUpon>MultiBarChart.Viewxaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\LineChartView.xaml.cs">
+	    <DependentUpon>LineChartView.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\MultiBarChartView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MultiLineChartView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\LineChartView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\BarChartView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
 		<OutputType>WinExe</OutputType>
 		<RuntimeIdentifier>win10-x64</RuntimeIdentifier>
