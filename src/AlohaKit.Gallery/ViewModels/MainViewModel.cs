@@ -50,7 +50,6 @@ namespace AlohaKit.Gallery.ViewModels
 			new SectionModel(typeof(ToggleSwitchView), "ToggleSwitch",
 				"The ToggleSwitch is a horizontal toggle button that can be manipulated by the user to toggle between on and off states."),
 
-
 			new SectionModel(typeof(BarChartView), "BarChart",
 				"The BarChart is a control that provides a way of showing data represented as vertical bars."),
 
