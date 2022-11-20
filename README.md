@@ -30,6 +30,12 @@ Features:
 - Allow to customize the background with a gradient.
 - Allow to customize the fill with a gradient.
 
+### BarChart 
+
+The BarChart is a control that provides a way of showing data represented as vertical bars.
+
+![BarChart](https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-barchart.png)
+
 ### Button
 
 The Button responds to a tap or click.
@@ -66,7 +72,31 @@ Features:
 - Defines the Brush applied to the control when it is checked.
 - Defines the Brush applied to the control when it is unchecked.
 - Exposes Commands that allows you to manage actions when Checkbox state changes.
-      
+
+### LinearGauge
+
+LinearGauge displays simple value within a specific range.
+
+![LinearGauge](https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-lineargauge.png)
+
+### LineChart
+
+The LineChart is a control that provides a way of showing data represented as a line.
+
+![LineChart](https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-linechart.png)
+
+### MultiBarChart
+
+The MultiBarChart is a control that provides a way of showing groups of data represented as vertical bars.
+
+![MultiBarChart](https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-multibar.png)
+
+### MultiLineChart
+
+The MultiLineChart is a control that provides a way of showing groups of data represented as multiple lines.
+
+![MultiLineChart](https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-multiline.png)
+
 ### PulseIcon
 
 PulseIcon generates pulsation relative to your icon.
