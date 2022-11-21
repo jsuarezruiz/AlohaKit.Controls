@@ -3,7 +3,7 @@
 <div align="center">
    <a href="https://www.nuget.org/packages/AlohaKit"><img src="https://img.shields.io/nuget/v/AlohaKit?color=blue&style=flat-square&logo=nuget"></a>
    <a href="https://www.nuget.org/packages/AlohaKit"><img src="https://img.shields.io/nuget/dt/AlohaKit.svg?style=flat-square"></a>
-   <a href="./LICENSE"><img src="https://img.shields.io/github/license/jsuarezruiz/AlohaKit"></a>
+   <a href="./LICENSE"><img src="https://img.shields.io/github/license/jsuarezruiz/AlohaKit?style=flat-square"></a>
 </div>
 
 ![AlohaKit](https://raw.githubusercontent.com/jsuarezruiz/AlohaKit/main/images/alohakit-promo.png)
