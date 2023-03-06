@@ -12,7 +12,11 @@
 				<Setter Property="VerticalOptions" Value="Center" />
 				<Setter Property="Color" Value="{AppThemeBinding Light={StaticResource LightAccentColor}, Dark={StaticResource DarkAccentColor}}" />
 			</Style>
-					
+
+			<Style x:Key="SettingsTextStyle" TargetType="Label">
+				<Setter Property="FontSize" Value="9" />
+			</Style>
+
 		</ResourceDictionary>
 	</ContentPage.Resources>
 	<Grid>
