@@ -65,26 +65,6 @@ public partial class ProgressBarView : ContentPage
 				}
 			};
 		}
-
-
-
-		/*
-		var backgroundColor = Colors.Gray;
-
-		if (backgroundColor != null)
-		{
-			HorizontalProgressBar.BackgroundColor = backgroundColor;
-			VerticalProgressBar.BackgroundColor = backgroundColor;
-		}
-
-		var progressColor = Colors.Red;
-
-		if (progressColor != null)
-		{
-			HorizontalProgressBar.ProgressColor = progressColor;
-			VerticalProgressBar.ProgressColor = progressColor;
-		}*/
-
 	}
 
 	Color GetColorFromString(string value)
