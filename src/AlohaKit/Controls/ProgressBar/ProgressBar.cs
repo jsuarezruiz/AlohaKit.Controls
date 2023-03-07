@@ -8,42 +8,44 @@ namespace AlohaKit.Controls
 {
     public class ProgressBar : GraphicsView
     {
-        protected BaseProgressBarDrawable ProgressBarDrawable { get; set; }
+        protected ProgressBarDrawable ProgressBarDrawable { get; set; }
+		private bool IsInitialized = false;
 
-        public ProgressBar()
-        {
-            if (IsVertical)
-            {
-                Drawable = ProgressBarDrawable = new VerticalProgressBarDrawable();
-            }
-        }
+		public ProgressBar()
+		{
+			Opacity = 0;
+			Drawable = ProgressBarDrawable = new ProgressBarDrawable();
+			Loaded += ProgressBar_Loaded;
 
-        public static readonly BindableProperty IsVerticalProperty = BindableProperty.Create(nameof(IsVertical), typeof(bool), typeof(ProgressBar), true,
-        propertyChanged: (bindableObject, oldValue, newValue) =>
-        {
-            if (newValue != null && bindableObject is ProgressBar progressBar)
-            {
-                if ((bool)newValue)
-                {
-                    progressBar.Drawable = progressBar.ProgressBarDrawable = new VerticalProgressBarDrawable();
-                }
-                else
-                {
-                    progressBar.Drawable = progressBar.ProgressBarDrawable = new HorizontalProgressBarDrawable();
-                }
+		}
+		private void ProgressBar_Loaded(object sender, EventArgs e)
+		{
+			ProgressBarDrawable.IsAnimating = true;
+			IsInitialized = true;
+			this.FadeTo(1, 1000, Easing.SinIn);
+			AnimateProgress(Value);
+		}
 
-                progressBar.Invalidate();
-            }
-        });
+		public static readonly BindableProperty IsVerticalProperty = BindableProperty.Create(nameof(IsVertical), typeof(bool), typeof(ProgressBar), false,
+		propertyChanged: (bindableObject, oldValue, newValue) =>
+		{
+			if (newValue != null && bindableObject is ProgressBar progressBar)
+			{
+				progressBar.UpdateIsVertical();
+				
+				progressBar.Invalidate();
+			}
+		});
 
-        public bool IsVertical
-        {
-            get => (bool)GetValue(IsVerticalProperty);
-            set => SetValue(IsVerticalProperty, value);
-        }
+		public bool IsVertical
+		{
+			get => (bool)GetValue(IsVerticalProperty);
+			set => SetValue(IsVerticalProperty, value);
+		}
 
-        public static readonly BindableProperty EasingProperty = BindableProperty.Create(nameof(Easing), typeof(Easing), typeof(ProgressBar), Easing.BounceOut);
-        public Easing Easing
+		public static readonly BindableProperty EasingProperty = BindableProperty.Create(nameof(Easing), typeof(Easing), typeof(ProgressBar), Easing.BounceOut);
+        
+		public Easing Easing
         {
             get => (Easing)GetValue(EasingProperty);
             set => SetValue(EasingProperty, value);
@@ -81,7 +83,7 @@ namespace AlohaKit.Controls
         }
 
         public static readonly BindableProperty CornerRadiusProperty =
-    BindableProperty.Create(nameof(CornerRadius), typeof(float), typeof(ProgressBar), 6f,
+    BindableProperty.Create(nameof(CornerRadius), typeof(CornerRadius), typeof(ProgressBar), new CornerRadius(6f),
         propertyChanged: (bindableObject, oldValue, newValue) =>
         {
             if (newValue != null && bindableObject is ProgressBar progressBar)
@@ -90,53 +92,74 @@ namespace AlohaKit.Controls
             }
         });
 
-        public float CornerRadius
+        public CornerRadius CornerRadius
         {
-            get { return (float)GetValue(CornerRadiusProperty); }
+            get { return (CornerRadius)GetValue(CornerRadiusProperty); }
             set { SetValue(CornerRadiusProperty, value); }
         }
 
-        public static readonly BindableProperty ProgressBrushProperty =
-            BindableProperty.Create(nameof(ProgressBrush), typeof(Brush), typeof(ProgressBar), new SolidColorBrush(Colors.Blue),
-                propertyChanged: (bindableObject, oldValue, newValue) =>
-                {
-                    if (newValue != null && bindableObject is ProgressBar progressBar)
-                    {
-                        progressBar.UpdateBrush();
-                    }
-                });
+		public static readonly BindableProperty ProgressBrushProperty =
+			BindableProperty.Create(nameof(ProgressBrush), typeof(Brush), typeof(ProgressBar), new SolidColorBrush(Colors.Blue),
+				propertyChanged: (bindableObject, oldValue, newValue) =>
+				{
+					if (newValue != null && bindableObject is ProgressBar progressBar)
+					{
+						progressBar.UpdateProgressBrush();
+					}
+				});
 
-        public Brush ProgressBrush
-        {
-            get { return (Brush)GetValue(ProgressBrushProperty); }
-            set { SetValue(ProgressBrushProperty, value); }
-        }
+		public Brush ProgressBrush
+		{
+			get { return (Brush)GetValue(ProgressBrushProperty); }
+			set { SetValue(ProgressBrushProperty, value); }
+		}
 
-        public static readonly BindableProperty ProgressProperty =
-            BindableProperty.Create(nameof(Progress), typeof(double), typeof(ProgressBar), 0d,
-                propertyChanged: (bindableObject, oldValue, newValue) =>
-                {
-                    if (newValue != null && bindableObject is ProgressBar progressBar)
-                    {
-                        progressBar.UpdateProgress();
-                    }
-                });
+		public static readonly BindableProperty StrokeBrushProperty =
+			BindableProperty.Create(nameof(StrokeBrush), typeof(Brush), typeof(ProgressBar), new SolidColorBrush(Colors.Gray),
+				propertyChanged: (bindableObject, oldValue, newValue) =>
+				{
+					if (newValue != null && bindableObject is ProgressBar progressBar)
+					{
+						progressBar.UpdateStrokeBrush();
+					}
+				});
 
-        public double Progress
-        {
-            get { return (double)GetValue(ProgressProperty); }
-            set { SetValue(ProgressProperty, value); }
-        }
+		public Brush StrokeBrush
+		{
+			get { return (Brush)GetValue(StrokeBrushProperty); }
+			set { SetValue(StrokeBrushProperty, value); }
+		}
 
-        void AnimateProgress(double progress)
+		public static readonly BindableProperty ValueProperty =
+			BindableProperty.Create(nameof(Value), typeof(double), typeof(ProgressBar), 0.0, BindingMode.TwoWay,
+				propertyChanged: (bindableObject, oldValue, newValue) =>
+				{
+					if (newValue != null && bindableObject is ProgressBar progressBar)
+					{
+						progressBar.UpdateValue();
+						progressBar.ValueChanged?.Invoke(progressBar, new ValueChangedEventArgs((double)oldValue, (double)newValue));
+					}
+				});
+
+		public double Value
+		{
+			get => (double)GetValue(ValueProperty);
+			set => SetValue(ValueProperty, value);
+		}
+
+		public event EventHandler<ValueChangedEventArgs> ValueChanged;
+
+		void AnimateProgress(double progress)
         {
             var animation = new Animation(v =>
             {
                 ProgressBarDrawable.Progress = v;
-                Invalidate();
-            }, 0, progress, easing: Easing);
+				Invalidate();
 
-            animation.Commit(this, "Progress", length: (uint)EasingInterval);
+				ProgressBarDrawable.IsAnimating = false;
+			}, 0, progress, easing: Easing);
+
+            animation.Commit(this, "Progress", length: (uint)250);
         }
 
         protected override void OnParentChanged()
@@ -144,24 +167,41 @@ namespace AlohaKit.Controls
             base.OnParentChanged();
 
             if (Parent != null)
-            {
-                UpdateBrush();
-                UpdateProgress();
-            }
+			{
+				UpdateIsVertical();
+				UpdateStrokeBrush();
+				UpdateProgressBrush();
+				UpdateValue();
+			}
         }
 
-        protected void UpdateBrush()
-        {
-            if (ProgressBarDrawable == null)
-                return;
+		void UpdateIsVertical()
+		{
+			if (ProgressBarDrawable == null)
+				return;
 
-            ProgressBarDrawable.BackgroundPaint = Background;
-            ProgressBarDrawable.ProgressPaint = ProgressBrush;
+			ProgressBarDrawable.IsVertical = IsVertical;
+			Invalidate();
+		}
 
-            Invalidate();
-        }
+		void UpdateStrokeBrush()
+		{
+			if (ProgressBarDrawable == null)
+				return;
 
-        protected void UpdateCornerRadius()
+			ProgressBarDrawable.StrokePaint = StrokeBrush;
+			Invalidate();
+		}
+
+		void UpdateProgressBrush()
+		{
+			if (ProgressBarDrawable == null)
+				return;
+
+			ProgressBarDrawable.ProgressPaint = ProgressBrush;
+			Invalidate();
+		}
+		protected void UpdateCornerRadius()
         {
             if (ProgressBarDrawable == null)
                 return;
@@ -180,19 +220,16 @@ namespace AlohaKit.Controls
             Invalidate();
         }
 
-        protected void UpdateProgress()
+        protected void UpdateValue()
         {
             if (ProgressBarDrawable == null)
                 return;
 
 
-            if (EnableAnimations)
-                AnimateProgress(Progress);
-            else
-            {
-                ProgressBarDrawable.Progress = Progress;
-                Invalidate();
-            }
-        }
+			ProgressBarDrawable.Progress = Value;
+
+			if (!ProgressBarDrawable.IsAnimating && IsInitialized)
+				AnimateProgress(Value);
+		}
     }
 }
