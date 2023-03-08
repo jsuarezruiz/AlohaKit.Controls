@@ -9,6 +9,7 @@ namespace AlohaKit.Controls
     public class ProgressBar : GraphicsView
     {
         protected ProgressBarDrawable ProgressBarDrawable { get; set; }
+
 		private bool IsInitialized = false;
 
 		public ProgressBar()
@@ -22,7 +23,7 @@ namespace AlohaKit.Controls
 		{
 			IsInitialized = true;
 			this.FadeTo(1, 1000, Easing.SinIn);
-			UpdateValue();
+			UpdateProgress();
 		}
 
 		public static readonly BindableProperty IsVerticalProperty = BindableProperty.Create(nameof(IsVertical), typeof(bool), typeof(ProgressBar), false,
@@ -129,21 +130,21 @@ namespace AlohaKit.Controls
 			set { SetValue(StrokeBrushProperty, value); }
 		}
 
-		public static readonly BindableProperty ValueProperty =
-			BindableProperty.Create(nameof(Value), typeof(double), typeof(ProgressBar), 0.0, BindingMode.TwoWay,
+		public static readonly BindableProperty ProgressProperty =
+			BindableProperty.Create(nameof(Progress), typeof(double), typeof(ProgressBar), 0.0, BindingMode.TwoWay,
 				propertyChanged: (bindableObject, oldValue, newValue) =>
 				{
 					if (newValue != null && bindableObject is ProgressBar progressBar)
 					{
-						progressBar.UpdateValue();
+						progressBar.UpdateProgress();
 						progressBar.ValueChanged?.Invoke(progressBar, new ValueChangedEventArgs((double)oldValue, (double)newValue));
 					}
 				});
 
-		public double Value
+		public double Progress
 		{
-			get => (double)GetValue(ValueProperty);
-			set => SetValue(ValueProperty, value);
+			get => (double)GetValue(ProgressProperty);
+			set => SetValue(ProgressProperty, value);
 		}
 
 		public event EventHandler<ValueChangedEventArgs> ValueChanged;
@@ -172,7 +173,7 @@ namespace AlohaKit.Controls
 				UpdateIsVertical();
 				UpdateStrokeBrush();
 				UpdateProgressBrush();
-				UpdateValue();
+				UpdateProgress();
 			}
         }
 
@@ -221,16 +222,16 @@ namespace AlohaKit.Controls
             Invalidate();
         }
 
-        protected void UpdateValue()
+        protected void UpdateProgress()
         {
             if (ProgressBarDrawable == null)
                 return;
 
 
-			ProgressBarDrawable.Progress = Value;
+			ProgressBarDrawable.Progress = Progress;
 
 			if (EnableAnimations && !ProgressBarDrawable.IsAnimating && IsInitialized)
-				AnimateProgress(Value);
+				AnimateProgress(Progress);
 			else if(!EnableAnimations)
 				Invalidate();
 		}

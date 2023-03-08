@@ -166,7 +166,7 @@
                     x:Name="HorizontalProgressBar"
                     Margin="12"
                     HorizontalOptions="Center"
-                    Value="{Binding Source={x:Reference ValueSlider}, Path=Value}"
+                    Progress="{Binding Source={x:Reference ValueSlider}, Path=Value}"
                     VerticalOptions="Center" />
                 <controls:ProgressBar
                     WidthRequest="18"
@@ -176,7 +176,7 @@
                     Grid.Column="1"
                     Margin="12"
                     HorizontalOptions="Center"
-                    Value="{Binding Source={x:Reference ValueSlider}, Path=Value}"
+                    Progress="{Binding Source={x:Reference ValueSlider}, Path=Value}"
                     VerticalOptions="Center" />
             </Grid>
         </Grid>
