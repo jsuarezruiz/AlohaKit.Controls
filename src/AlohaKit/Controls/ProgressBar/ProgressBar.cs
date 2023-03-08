@@ -20,10 +20,9 @@ namespace AlohaKit.Controls
 		}
 		private void ProgressBar_Loaded(object sender, EventArgs e)
 		{
-			ProgressBarDrawable.IsAnimating = true;
 			IsInitialized = true;
 			this.FadeTo(1, 1000, Easing.SinIn);
-			AnimateProgress(Value);
+			UpdateValue();
 		}
 
 		public static readonly BindableProperty IsVerticalProperty = BindableProperty.Create(nameof(IsVertical), typeof(bool), typeof(ProgressBar), false,
@@ -151,6 +150,8 @@ namespace AlohaKit.Controls
 
 		void AnimateProgress(double progress)
         {
+			ProgressBarDrawable.IsAnimating = true;
+
             var animation = new Animation(v =>
             {
                 ProgressBarDrawable.Progress = v;
@@ -228,8 +229,10 @@ namespace AlohaKit.Controls
 
 			ProgressBarDrawable.Progress = Value;
 
-			if (!ProgressBarDrawable.IsAnimating && IsInitialized)
+			if (EnableAnimations && !ProgressBarDrawable.IsAnimating && IsInitialized)
 				AnimateProgress(Value);
+			else if(!EnableAnimations)
+				Invalidate();
 		}
     }
 }
