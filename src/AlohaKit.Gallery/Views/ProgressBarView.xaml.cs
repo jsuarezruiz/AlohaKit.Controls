@@ -31,13 +31,16 @@ public partial class ProgressBarView : ContentPage
         UpdateBrushes();
     }
 
-    void UpdateBrushes()
+	void UpdateBrushes()
 	{
 		var backgroundStartColor = GetColorFromString(BackgroundStartColorEntry.Text);
 		var backgroundEndColor = GetColorFromString(BackgroundEndColorEntry.Text);
 
 		if (backgroundStartColor != null && backgroundEndColor != null)
 		{
+			BackgroundStartColorEntry.BackgroundColor = backgroundStartColor;
+			BackgroundEndColorEntry.BackgroundColor = backgroundEndColor;
+
 			HorizontalProgressBar.StrokeBrush = VerticalProgressBar.StrokeBrush = new LinearGradientBrush
 			{
 				StartPoint = new Point(0, 0),
@@ -54,6 +57,9 @@ public partial class ProgressBarView : ContentPage
 
 		if (progressStartColor != null && progressEndColor != null)
 		{
+			ProgressStartEntry.BackgroundColor = progressStartColor;
+			ProgressEndEntry.BackgroundColor = progressEndColor;
+
 			HorizontalProgressBar.ProgressBrush = VerticalProgressBar.ProgressBrush = new LinearGradientBrush
 			{
 				StartPoint = new Point(0, 0),
