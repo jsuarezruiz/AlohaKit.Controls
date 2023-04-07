@@ -16,6 +16,9 @@ namespace AlohaKit.Gallery.ViewModels
 
 			new SectionModel(typeof(ButtonView), "Button",
 				"The Button responds to a tap or click."),
+			
+			new SectionModel(typeof(CaptchaView), "Captcha",
+				"Displays a distorted word."),
 
 			new SectionModel(typeof(CheckBoxView), "CheckBox",
 				"CheckBox is a type of button that can either be checked or empty."),
