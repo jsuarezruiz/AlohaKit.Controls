@@ -19,6 +19,12 @@
                 <Setter Property="FontSize" Value="9" />
             </Style>
 
+
+            <Style x:Key="SettingsCheckBoxStyle" TargetType="CheckBox">
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource LightAccentColor}, Dark={StaticResource DarkAccentColor}}" />
+            </Style>
+
             <Style x:Key="SettingsEntryStyle" TargetType="Entry">
                 <Setter Property="VerticalOptions" Value="Center" />
                 <Setter Property="WidthRequest" Value="80" />
@@ -148,14 +154,13 @@
                         TextChanged="OnProgressEndColorEntryTextChanged" />
                 </StackLayout>
             </StackLayout>
-           
+
             <Grid
                 Grid.Row="3"
                 ColumnDefinitions="Auto, Auto"
                 HorizontalOptions="Center"
                 VerticalOptions="Center">
                 <controls:ProgressBar
-                    IsVertical="False"
                     WidthRequest="120"
                     HeightRequest="18"
                     x:Name="HorizontalProgressBar"

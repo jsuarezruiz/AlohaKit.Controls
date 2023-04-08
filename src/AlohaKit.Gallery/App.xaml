@@ -30,6 +30,10 @@
             <Color x:Key="DarkBorderColor">#ff77a9</Color>
             
             <!-- STYLES -->
+            <Style x:Key="SettingsSectionLayoutStyle" TargetType="Layout">
+                <Setter Property="Padding" Value="12" />
+            </Style>
+
             <Style x:Key="SectionTitleStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="Small" />
                 <Setter Property="FontFamily" Value="Segoe UI" />
