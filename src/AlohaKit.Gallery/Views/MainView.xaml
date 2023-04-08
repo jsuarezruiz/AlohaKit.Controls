@@ -121,7 +121,7 @@
             <!-- FOOTER -->
             <Label
                 Grid.Row="2"
-                Text="AlohaKit 2022"
+                Text="AlohaKit 2023"
                 Style="{StaticResource FooterStyle}" />
         </Grid>
     </ScrollView>
