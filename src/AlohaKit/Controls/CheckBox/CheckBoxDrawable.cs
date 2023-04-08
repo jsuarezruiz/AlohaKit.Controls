@@ -14,7 +14,7 @@
             DrawCheck(canvas, dirtyRect);
         }
 
-        void DrawBackground(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawBackground(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -56,7 +56,7 @@
             canvas.RestoreState();
         }
 
-        void DrawCheck(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawCheck(ICanvas canvas, RectF dirtyRect)
         {
             if (IsChecked)
             {

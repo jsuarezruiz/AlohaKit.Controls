@@ -1,10 +1,8 @@
-﻿
-namespace AlohaKit.Controls
+﻿namespace AlohaKit.Controls
 {
-    public class ProgressBarDrawable : IDrawable
+	public class ProgressBarDrawable : IDrawable
 	{
 		public Paint StrokePaint { get; set; }
-
 		public Paint ProgressPaint { get; set; }
 
 		public double Progress { get; set; }
@@ -13,19 +11,15 @@ namespace AlohaKit.Controls
 		public bool IsAnimating { get; set; }
 		public bool IsVertical { get; set; }
 
-		public void DrawChart(ICanvas canvas, RectF dirtyRect)
-        {
-            canvas.Antialias = true;
-
-            DrawTrack(canvas, dirtyRect);
-
-            DrawProgress(canvas, dirtyRect);
-        }
-
 		public void Draw(ICanvas canvas, RectF dirtyRect)
-		{ 
-			DrawChart(canvas, dirtyRect); 
+		{
+			canvas.Antialias = true;
+
+			DrawTrack(canvas, dirtyRect);
+
+			DrawProgress(canvas, dirtyRect);
 		}
+
 		public virtual void DrawTrack(ICanvas canvas, RectF dirtyRect)
 		{
 			canvas.SaveState();
@@ -40,7 +34,7 @@ namespace AlohaKit.Controls
 					CornerRadius.TopRight,
 					CornerRadius.BottomLeft,
 					CornerRadius.BottomRight);
-			
+
 			canvas.RestoreState();
 		}
 
@@ -49,9 +43,9 @@ namespace AlohaKit.Controls
 			canvas.SaveState();
 
 			RectF rect;
+
 			if (IsVertical)
 			{
-
 				var progressHeight = dirtyRect.Height * Progress;
 				var progressY = dirtyRect.Y + dirtyRect.Height - progressHeight;
 

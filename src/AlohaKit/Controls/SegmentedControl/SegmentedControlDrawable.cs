@@ -13,7 +13,7 @@ namespace AlohaKit.Controls
         public Color ActiveTextColor { get; set; }
         public float FontSize { get; set; }
         public float ActiveFontSize { get; set; }
-		public int CornerRadius { get; set; }
+		public double CornerRadius { get; set; }
 
 		public void Draw(ICanvas canvas, RectF dirtyRect)
         {
@@ -22,7 +22,7 @@ namespace AlohaKit.Controls
             DrawTabs(canvas, dirtyRect);
         }
 
-        void DrawBackground(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawBackground(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -30,13 +30,13 @@ namespace AlohaKit.Controls
             {
                 canvas.SetFillPaint(BackgroundPaint, dirtyRect);
 
-                canvas.FillRoundedRectangle(0, 0, dirtyRect.Width, dirtyRect.Height, CornerRadius);
+                canvas.FillRoundedRectangle(0, 0, dirtyRect.Width, dirtyRect.Height, (float)CornerRadius);
             }
 
             canvas.RestoreState();
         }
 
-        void DrawActiveTab(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawActiveTab(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -46,13 +46,13 @@ namespace AlohaKit.Controls
 
                 canvas.SetFillPaint(ActiveBackgroundPaint, dirtyRect);
 
-                canvas.FillRoundedRectangle(SelectedIndex * tabItemWidth, 0, tabItemWidth, dirtyRect.Height, CornerRadius);
+                canvas.FillRoundedRectangle(SelectedIndex * tabItemWidth, 0, tabItemWidth, dirtyRect.Height, (float)CornerRadius);
             }
 
             canvas.RestoreState();
         }
 
-        void DrawTabs(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawTabs(ICanvas canvas, RectF dirtyRect)
         {
             var tabItemWidth = dirtyRect.Width / ItemsSource.Count();
 

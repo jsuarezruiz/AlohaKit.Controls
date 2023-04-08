@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AlohaKit.Controls
+﻿namespace AlohaKit.Controls
 {
-    public enum ProgressBarStyle
+	public enum ProgressBarStyle
     {
         Square = default,
         Rounded = 1

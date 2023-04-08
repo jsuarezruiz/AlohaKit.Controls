@@ -29,7 +29,7 @@
 			DrawLabels(canvas, dirtyRect);
 		}
 
-		public void DrawBackground(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawBackground(ICanvas canvas, RectF dirtyRect)
 		{
 			canvas.SaveState();
 
@@ -43,7 +43,7 @@
 			canvas.RestoreState();
 		}
 
-		public void DrawSlices(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawSlices(ICanvas canvas, RectF dirtyRect)
 		{
 			if (ItemsSource == null)
 				return;
@@ -87,7 +87,7 @@
 			canvas.RestoreState();
 		}
 
-		public void DrawLabels(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawLabels(ICanvas canvas, RectF dirtyRect)
 		{
 			if (!ShowLabels || ItemsSource == null)
 				return;

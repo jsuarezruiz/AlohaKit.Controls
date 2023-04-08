@@ -27,7 +27,7 @@
             DrawValue(canvas, dirtyRect);
         }
 
-        void DrawBackground(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawBackground(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -41,7 +41,7 @@
             canvas.RestoreState();
         }
 
-        void DrawBorder(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawBorder(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -62,7 +62,7 @@
             canvas.RestoreState();
         }
 
-        void DrawMinus(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawMinus(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -103,7 +103,7 @@
 			canvas.RestoreState();
 		}
 
-        void DrawMaximum(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawMaximum(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -144,7 +144,7 @@
 			canvas.RestoreState();
         }
 
-        void DrawValue(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawValue(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 

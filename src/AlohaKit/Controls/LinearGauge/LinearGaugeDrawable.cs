@@ -22,7 +22,7 @@ namespace AlohaKit.Controls
 			DrawTicks(canvas, dirtyRect);
 		}
 
-		void DrawBackground(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawBackground(ICanvas canvas, RectF dirtyRect)
 		{
 			canvas.SaveState();
 
@@ -42,7 +42,7 @@ namespace AlohaKit.Controls
 			canvas.RestoreState();
 		}
 
-		void DrawProgress(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawProgress(ICanvas canvas, RectF dirtyRect)
 		{
 			if (BackgroundPaint != null)
 			{
@@ -79,7 +79,7 @@ namespace AlohaKit.Controls
 			}
 		}
 
-		void DrawTicks(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawTicks(ICanvas canvas, RectF dirtyRect)
 		{
 			int steps = 10;
 
