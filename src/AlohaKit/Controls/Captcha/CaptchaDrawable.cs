@@ -12,7 +12,7 @@
 			DrawArtifacts(canvas, dirtyRect);
 		}
 
-		void DrawText(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawText(ICanvas canvas, RectF dirtyRect)
 		{
 			canvas.SaveState();
 
@@ -44,7 +44,7 @@
 			canvas.RestoreState();
 		}
 
-		void DrawArtifacts(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawArtifacts(ICanvas canvas, RectF dirtyRect)
 		{
 			canvas.SaveState();
 			

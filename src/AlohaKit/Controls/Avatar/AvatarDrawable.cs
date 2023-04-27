@@ -47,7 +47,7 @@
             canvas.RestoreState();
         }
 
-        void DrawInitials(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawInitials(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 

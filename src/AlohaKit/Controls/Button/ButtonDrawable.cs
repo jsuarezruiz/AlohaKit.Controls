@@ -39,7 +39,7 @@ namespace AlohaKit.Controls
 			DrawRippleEffect(canvas, dirtyRect);
 		}
 
-		void DrawShadow(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawShadow(ICanvas canvas, RectF dirtyRect)
 		{
 			if (HasShadow)
 			{
@@ -69,7 +69,7 @@ namespace AlohaKit.Controls
 			}
 		}
 
-		void DrawBackground(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawBackground(ICanvas canvas, RectF dirtyRect)
 		{
 			canvas.SaveState();
 
@@ -111,7 +111,7 @@ namespace AlohaKit.Controls
 			canvas.RestoreState();
 		}
 
-		void DrawStroke(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawStroke(ICanvas canvas, RectF dirtyRect)
 		{
 			if (StrokePaint != null && StrokeThickness > 0)
 			{
@@ -143,7 +143,7 @@ namespace AlohaKit.Controls
 			}
 		}
 
-		void DrawText(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawText(ICanvas canvas, RectF dirtyRect)
 		{
 			canvas.SaveState();
 
@@ -198,7 +198,7 @@ namespace AlohaKit.Controls
 			canvas.RestoreState();
 		}
 
-		void DrawRippleEffect(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawRippleEffect(ICanvas canvas, RectF dirtyRect)
 		{
 			if (dirtyRect.Contains(TouchPoint))
 			{

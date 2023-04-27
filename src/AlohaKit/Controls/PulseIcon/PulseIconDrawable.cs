@@ -15,7 +15,7 @@
             DrawIcon(canvas, dirtyRect);
         }
 
-        void DrawPulse(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawPulse(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -38,7 +38,7 @@
             canvas.RestoreState();
         }
 
-        void DrawBackground(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawBackground(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 
@@ -55,7 +55,7 @@
             canvas.RestoreState();
         }
 
-        void DrawIcon(ICanvas canvas, RectF dirtyRect)
+		public virtual void DrawIcon(ICanvas canvas, RectF dirtyRect)
         {
             canvas.SaveState();
 

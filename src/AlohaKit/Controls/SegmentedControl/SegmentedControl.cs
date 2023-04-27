@@ -146,7 +146,7 @@ namespace AlohaKit.Controls
 		}
 
 		public static readonly BindableProperty CornerRadiusProperty =
-			BindableProperty.Create(nameof(CornerRadius), typeof(int), typeof(SegmentedControl), 24.0d,
+			BindableProperty.Create(nameof(CornerRadius), typeof(double), typeof(SegmentedControl), 24.0d,
 				propertyChanged: (bindableObject, oldValue, newValue) =>
 				{
 					if (newValue != null && bindableObject is SegmentedControl segmentedControl)
@@ -155,9 +155,9 @@ namespace AlohaKit.Controls
 					}
 				});
 
-		public int CornerRadius
+		public double CornerRadius
 		{
-			get { return (int)GetValue(CornerRadiusProperty); }
+			get { return (double)GetValue(CornerRadiusProperty); }
 			set { SetValue(CornerRadiusProperty, value); }
 		}
 
