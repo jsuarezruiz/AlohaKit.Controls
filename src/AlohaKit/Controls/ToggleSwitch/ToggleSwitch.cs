@@ -134,6 +134,8 @@ namespace AlohaKit.Controls
             Toggled?.Invoke(this, new ToggledEventArgs(IsOn));
 
             Invalidate();
+
+            AnimateToggle();
         }
 
         void UpdateHasShadow()
@@ -148,9 +150,10 @@ namespace AlohaKit.Controls
 
         void OnToggleSwitchStartInteraction(object sender, TouchEventArgs e)
         {
-            IsOn = !IsOn;
-
-            AnimateToggle();
+            if (IsEnabled)
+            {
+                IsOn = !IsOn;
+            }
         }
 
         void AnimateToggle()
