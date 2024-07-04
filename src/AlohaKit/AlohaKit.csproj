@@ -4,12 +4,7 @@
 		<TargetFrameworks>net8.0;net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows')) and '$(MSBuildRuntimeType)' == 'Full'">$(TargetFrameworks);net8.0-windows10.0.19041</TargetFrameworks>
 		<UseMaui>true</UseMaui>
-		<SingleProject>true</SingleProject>
-		<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'ios'">14.2</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'android'">21.0</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</SupportedOSPlatformVersion>
-		<TargetPlatformMinVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</TargetPlatformMinVersion>
+		<SingleProject>true</SingleProject>		
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>AlohaKit</Title>
 		<PackageId>AlohaKit</PackageId>
@@ -34,16 +29,5 @@
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.61" />
-	  <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.61" />
-	  <PackageReference Include="Nerdbank.GitVersioning" Version="3.6.139" />
-	</ItemGroup>
-	<ItemGroup>
-	  <PackageReference Update="Microsoft.SourceLink.GitHub" Version="8.0.0" />
-	  <PackageReference Update="Nerdbank.GitVersioning" Version="3.6.139" />
-	</ItemGroup>
-
+	</ItemGroup>	
 </Project>
