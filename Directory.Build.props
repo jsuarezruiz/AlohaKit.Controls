@@ -28,6 +28,17 @@
 		<VSTestResultsDirectory>$(MSBuildThisFileDirectory)TestResults</VSTestResultsDirectory>
 	</PropertyGroup>
 
+	<PropertyGroup>
+	  <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</SupportedOSPlatformVersion>		
+		<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'ios'">14.2</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'android'">21.0</SupportedOSPlatformVersion>	
+		<TargetPlatformMinVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</TargetPlatformMinVersion>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<None Include="$(MSBuildThisFileDirectory)icon.png" Pack="true" PackagePath="\" />
 		<None Include="$(MSBuildThisFileDirectory)LICENSE" Pack="true" PackagePath="\" />
@@ -35,11 +46,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Nerdbank.GitVersioning" 
-											Version="3.5.107"
-											PrivateAssets="all" />
-		<PackageReference Include="Microsoft.SourceLink.GitHub"
-											Version="1.1.1"
-											PrivateAssets="all" />
+		<PackageReference Include="Nerdbank.GitVersioning" Version="3.6.139" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.61" PrivateAssets="all" />	 
 	</ItemGroup>
 </Project>
