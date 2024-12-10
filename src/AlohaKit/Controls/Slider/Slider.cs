@@ -198,6 +198,7 @@
             if (SliderDrawable == null)
                 return;
 
+            Value = Math.Clamp(Value, Minimum, Maximum);
             SliderDrawable.Value = Value;
 
             Invalidate();
