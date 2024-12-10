@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage 
+<ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AlohaKit.Gallery.SliderView"
@@ -7,7 +7,7 @@
     Title="Slider">
     <ContentPage.Resources>
         <ResourceDictionary>
-            
+
             <Style x:Key="SettingsTextStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="9" />
             </Style>
@@ -17,7 +17,7 @@
                 <Setter Property="WidthRequest" Value="80" />
                 <Setter Property="Margin" Value="6, 0" />
             </Style>
-            
+
         </ResourceDictionary>
     </ContentPage.Resources>
     <Grid>
@@ -34,7 +34,7 @@
                 Text="Slider is a horizontal bar that can be manipulated by the user to select a double value from a continuous range."/>
         </StackLayout>
         <!-- FEATURES -->
-        <StackLayout    
+        <StackLayout
             Grid.Row="1"
             BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundSecondaryColor}, Dark={StaticResource DarkBackgroundSecondaryColor}}"
             Style="{StaticResource SectionContainerStyle}">
@@ -48,7 +48,7 @@
         <StackLayout
             Grid.Row="2"
             Style="{StaticResource SectionContainerStyle}">
-            <Label 
+                <Label
                 Text="Settings"
                 Style="{StaticResource SectionTitleStyle}"/>
             <StackLayout
@@ -64,11 +64,11 @@
                     Text="#DD5E89"
                     TextChanged="OnMinimumBrushStartColorEntryTextChanged"
                     Style="{StaticResource SettingsEntryStyle}"/>
-                <Label 
+                <Label
                     Text="MinimumBrush End Color"
                     VerticalOptions="Center"
                     Style="{StaticResource SettingsTextStyle}"/>
-                <Entry 
+                <Entry
                     x:Name="MinimumBrushEndColorEntry"
                     Placeholder="MinimumBrush"
                     Text="#F7BB97"
@@ -78,7 +78,7 @@
             <StackLayout
                 Orientation="Horizontal"
                 Margin="0, 6">
-                <Label 
+                <Label
                     Text="MaximumBrush Start Color"
                     VerticalOptions="Center"
                     Style="{StaticResource SettingsTextStyle}"/>
@@ -88,11 +88,11 @@
                     Text="#CC2B5E"
                     TextChanged="OnMaximumBrushStartColorEntryTextChanged"
                     Style="{StaticResource SettingsEntryStyle}"/>
-                <Label 
+                <Label
                     Text="MaximumBrush End Color"
                     VerticalOptions="Center"
                     Style="{StaticResource SettingsTextStyle}"/>
-                <Entry 
+                <Entry
                     x:Name="MaximumBrushEndColorEntry"
                     Placeholder="Color"
                     Text="#753A88"
@@ -102,7 +102,7 @@
             <StackLayout
                 Orientation="Horizontal"
                 Margin="0, 6">
-                <Label 
+                <Label
                     Text="ThumbBrush Start Color"
                     VerticalOptions="Center"
                     Style="{StaticResource SettingsTextStyle}"/>
@@ -112,11 +112,11 @@
                     Text="#CCCCCC"
                     TextChanged="OnThumbBrushStartColorEntryTextChanged"
                     Style="{StaticResource SettingsEntryStyle}"/>
-                <Label 
+                <Label
                     Text="ThumbBrush End Color"
                     VerticalOptions="Center"
                     Style="{StaticResource SettingsTextStyle}"/>
-                <Entry 
+                <Entry
                     x:Name="ThumbBrushEndColorEntry"
                     Placeholder="ThumbBrush"
                     Text="#BDC3C7"
@@ -124,8 +124,9 @@
                     Style="{StaticResource SettingsEntryStyle}"/>
             </StackLayout>
         </StackLayout>
-        <controls:Slider
-            Grid.Row="3"
-            x:Name="Slider" />
+        <VerticalStackLayout Grid.Row="3">
+            <Label HorizontalOptions="Center" Text="{Binding Source={x:Reference Slider}, Path=Value}" />
+            <controls:Slider x:Name="Slider" />
+        </VerticalStackLayout>
     </Grid>
 </ContentPage>
