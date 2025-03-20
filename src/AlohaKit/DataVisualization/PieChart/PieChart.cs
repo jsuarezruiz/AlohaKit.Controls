@@ -1,9 +1,13 @@
 ﻿namespace AlohaKit.Controls
 {
-	// TODO:
-	// - Add option to detect when a slice is tapped.
+	/// <summary>
+	/// The PieChart is a drawn control for rendering pie charts to visually represent data as portions of a circle.
+	/// </summary>
 	public class PieChart : GraphicsView
 	{
+		// TODO:
+		// - Add option to detect when a slice is tapped.
+
 		public PieChart()
 		{
 			HeightRequest = 300;

@@ -1,6 +1,10 @@
 ﻿namespace AlohaKit.Controls
 {
-    public class ProgressRadial : GraphicsView
+	/// <summary>
+	/// The ProgressRadial is a drawn control designed to visually represent progress in a circular or radial form. 
+	/// It can be used to display percentages or completion statuses, such as task progress, loading indicators, or performance metrics.
+	/// </summary>
+	public class ProgressRadial : GraphicsView
     {
         private ProgressRadialDrawable ProgressRadialDrawable { get; set; }
         private bool IsInitialized = false;

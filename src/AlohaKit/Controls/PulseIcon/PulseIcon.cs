@@ -1,14 +1,18 @@
-﻿using Microsoft.Maui.Dispatching;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
 namespace AlohaKit.Controls
 {
-    // TODO:
-    // - Render Source Image
-    // - Include PulseCount BindableProperty.
-    public class PulseIcon : GraphicsView
+	/// <summary>
+	/// The PulseIcon is a drawn control that creates an animated pulsing effect around an icon. 
+	/// This control is particularly useful for drawing attention to specific elements in your user interface, such as notifications, interactive features, or status indicators.
+	/// </summary>
+	public class PulseIcon : GraphicsView
     {
-        readonly Stopwatch _stopwatch;
+		// TODO:
+		// - Render Source Image
+		// - Include PulseCount BindableProperty.
+
+		readonly Stopwatch _stopwatch;
         readonly float[] _pulses;
         readonly double _cycleTime;
 

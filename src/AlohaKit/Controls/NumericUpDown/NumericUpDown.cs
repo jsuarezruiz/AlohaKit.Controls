@@ -2,7 +2,11 @@
 
 namespace AlohaKit.Controls
 {
-    public class NumericUpDown : GraphicsView
+	/// <summary>
+	/// The NumericUpDown is a drawn control for selecting numeric values by incrementing or decrementing them with 
+	/// interactive buttons or input.
+	/// </summary>
+	public class NumericUpDown : GraphicsView
     {
         public NumericUpDown()
         {

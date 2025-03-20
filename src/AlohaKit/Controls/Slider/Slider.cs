@@ -1,6 +1,10 @@
 ﻿namespace AlohaKit.Controls
 {
-    public class Slider : GraphicsView
+	/// <summary>
+	/// The Slider class is a graphical control that allows users to select a value from a continuous or discrete range by dragging a thumb along a track. 
+	/// This versatile control is widely used for adjusting settings like volume, brightness, or custom application parameters.
+	/// </summary>
+	public class Slider : GraphicsView
     {
         public Slider()
         {

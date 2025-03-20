@@ -4,6 +4,11 @@ using System.Windows.Input;
 
 namespace AlohaKit.Controls
 {
+	/// <summary>
+	/// The Button represents a customizable drawn button control. 
+	/// It allows developers to create interactive buttons with highly customizable designs, 
+	/// leveraging the power of lightweight graphics rendering.
+	/// </summary>
 	public class Button : GraphicsView
 	{
 		IAnimationManager _animationManager;

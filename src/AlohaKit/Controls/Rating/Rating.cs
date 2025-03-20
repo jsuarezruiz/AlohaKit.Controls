@@ -1,11 +1,16 @@
 ﻿namespace AlohaKit.Controls
 {
-    // TODO:
-    // - Include ItemSize BindableProperty.
-    // - Include ItemSpacing BindableProperty.
-    public class Rating : GraphicsView
+	/// <summary>
+	/// The Rating is a drawn control that allows users to rate items or entities, typically using a star-based system or other graphical representation. 
+	/// This control is perfect for scenarios where users need to provide feedback, score performance, or indicate preferences in an intuitive visual format.
+	/// </summary>
+	public class Rating : GraphicsView
     {
-        public Rating()
+		// TODO:
+		// - Include ItemSize BindableProperty.
+		// - Include ItemSpacing BindableProperty.
+
+		public Rating()
         {
             HeightRequest = 30;
             WidthRequest = 150;

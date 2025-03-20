@@ -1,0 +1,356 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlohaKit.Controls.AvatarSize
+  commentId: T:AlohaKit.Controls.AvatarSize
+  id: AvatarSize
+  parent: AlohaKit.Controls
+  children:
+  - AlohaKit.Controls.AvatarSize.Large
+  - AlohaKit.Controls.AvatarSize.Small
+  - AlohaKit.Controls.AvatarSize.XXLarge
+  langs:
+  - csharp
+  - vb
+  name: AvatarSize
+  nameWithType: AvatarSize
+  fullName: AlohaKit.Controls.AvatarSize
+  type: Enum
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Avatar/AvatarSize.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: AvatarSize
+    path: ../src/AlohaKit/Controls/Avatar/AvatarSize.cs
+    startLine: 6
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: >-
+    The AvatarSize enumeration represents predefined sizes for an avatar,
+
+    providing a standardized way to specify dimensions across an application.
+  example: []
+  syntax:
+    content: public enum AvatarSize
+    content.vb: Public Enum AvatarSize
+  extensionMethods:
+  - AlohaKit.Controls.AvatarSize.AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorIconScale
+  - AlohaKit.Controls.AvatarSize.AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorSize
+  - AlohaKit.Controls.AvatarSize.AlohaKit.Controls.AvatarSizeExtensions.GetAvatarSize
+  - AlohaKit.Controls.AvatarSize.AlohaKit.Controls.AvatarSizeExtensions.GetInitialsFontSize
+- uid: AlohaKit.Controls.AvatarSize.Small
+  commentId: F:AlohaKit.Controls.AvatarSize.Small
+  id: Small
+  parent: AlohaKit.Controls.AvatarSize
+  langs:
+  - csharp
+  - vb
+  name: Small
+  nameWithType: AvatarSize.Small
+  fullName: AlohaKit.Controls.AvatarSize.Small
+  type: Field
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Avatar/AvatarSize.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Small
+    path: ../src/AlohaKit/Controls/Avatar/AvatarSize.cs
+    startLine: 8
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: Small = 0
+    return:
+      type: AlohaKit.Controls.AvatarSize
+- uid: AlohaKit.Controls.AvatarSize.Large
+  commentId: F:AlohaKit.Controls.AvatarSize.Large
+  id: Large
+  parent: AlohaKit.Controls.AvatarSize
+  langs:
+  - csharp
+  - vb
+  name: Large
+  nameWithType: AvatarSize.Large
+  fullName: AlohaKit.Controls.AvatarSize.Large
+  type: Field
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Avatar/AvatarSize.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Large
+    path: ../src/AlohaKit/Controls/Avatar/AvatarSize.cs
+    startLine: 9
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: Large = 1
+    return:
+      type: AlohaKit.Controls.AvatarSize
+- uid: AlohaKit.Controls.AvatarSize.XXLarge
+  commentId: F:AlohaKit.Controls.AvatarSize.XXLarge
+  id: XXLarge
+  parent: AlohaKit.Controls.AvatarSize
+  langs:
+  - csharp
+  - vb
+  name: XXLarge
+  nameWithType: AvatarSize.XXLarge
+  fullName: AlohaKit.Controls.AvatarSize.XXLarge
+  type: Field
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Avatar/AvatarSize.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: XXLarge
+    path: ../src/AlohaKit/Controls/Avatar/AvatarSize.cs
+    startLine: 10
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: XXLarge = 2
+    return:
+      type: AlohaKit.Controls.AvatarSize
+references:
+- uid: AlohaKit.Controls
+  commentId: N:AlohaKit.Controls
+  href: AlohaKit.html
+  name: AlohaKit.Controls
+  nameWithType: AlohaKit.Controls
+  fullName: AlohaKit.Controls
+  spec.csharp:
+  - uid: AlohaKit
+    name: AlohaKit
+    href: AlohaKit.html
+  - name: .
+  - uid: AlohaKit.Controls
+    name: Controls
+    href: AlohaKit.Controls.html
+  spec.vb:
+  - uid: AlohaKit
+    name: AlohaKit
+    href: AlohaKit.html
+  - name: .
+  - uid: AlohaKit.Controls
+    name: Controls
+    href: AlohaKit.Controls.html
+- uid: AlohaKit.Controls.AvatarSize.AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorIconScale
+  commentId: M:AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorIconScale(AlohaKit.Controls.AvatarSize)
+  parent: AlohaKit.Controls.AvatarSizeExtensions
+  definition: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorIconScale(AlohaKit.Controls.AvatarSize)
+  href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarIndicatorIconScale_AlohaKit_Controls_AvatarSize_
+  name: GetAvatarIndicatorIconScale(AvatarSize)
+  nameWithType: AvatarSizeExtensions.GetAvatarIndicatorIconScale(AvatarSize)
+  fullName: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorIconScale(AlohaKit.Controls.AvatarSize)
+  spec.csharp:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorIconScale(AlohaKit.Controls.AvatarSize)
+    name: GetAvatarIndicatorIconScale
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarIndicatorIconScale_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+  spec.vb:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorIconScale(AlohaKit.Controls.AvatarSize)
+    name: GetAvatarIndicatorIconScale
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarIndicatorIconScale_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+- uid: AlohaKit.Controls.AvatarSize.AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorSize
+  commentId: M:AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorSize(AlohaKit.Controls.AvatarSize)
+  parent: AlohaKit.Controls.AvatarSizeExtensions
+  definition: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorSize(AlohaKit.Controls.AvatarSize)
+  href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarIndicatorSize_AlohaKit_Controls_AvatarSize_
+  name: GetAvatarIndicatorSize(AvatarSize)
+  nameWithType: AvatarSizeExtensions.GetAvatarIndicatorSize(AvatarSize)
+  fullName: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorSize(AlohaKit.Controls.AvatarSize)
+  spec.csharp:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorSize(AlohaKit.Controls.AvatarSize)
+    name: GetAvatarIndicatorSize
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarIndicatorSize_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+  spec.vb:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorSize(AlohaKit.Controls.AvatarSize)
+    name: GetAvatarIndicatorSize
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarIndicatorSize_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+- uid: AlohaKit.Controls.AvatarSize.AlohaKit.Controls.AvatarSizeExtensions.GetAvatarSize
+  commentId: M:AlohaKit.Controls.AvatarSizeExtensions.GetAvatarSize(AlohaKit.Controls.AvatarSize)
+  parent: AlohaKit.Controls.AvatarSizeExtensions
+  definition: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarSize(AlohaKit.Controls.AvatarSize)
+  href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarSize_AlohaKit_Controls_AvatarSize_
+  name: GetAvatarSize(AvatarSize)
+  nameWithType: AvatarSizeExtensions.GetAvatarSize(AvatarSize)
+  fullName: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarSize(AlohaKit.Controls.AvatarSize)
+  spec.csharp:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarSize(AlohaKit.Controls.AvatarSize)
+    name: GetAvatarSize
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarSize_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+  spec.vb:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarSize(AlohaKit.Controls.AvatarSize)
+    name: GetAvatarSize
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarSize_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+- uid: AlohaKit.Controls.AvatarSize.AlohaKit.Controls.AvatarSizeExtensions.GetInitialsFontSize
+  commentId: M:AlohaKit.Controls.AvatarSizeExtensions.GetInitialsFontSize(AlohaKit.Controls.AvatarSize)
+  parent: AlohaKit.Controls.AvatarSizeExtensions
+  definition: AlohaKit.Controls.AvatarSizeExtensions.GetInitialsFontSize(AlohaKit.Controls.AvatarSize)
+  href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetInitialsFontSize_AlohaKit_Controls_AvatarSize_
+  name: GetInitialsFontSize(AvatarSize)
+  nameWithType: AvatarSizeExtensions.GetInitialsFontSize(AvatarSize)
+  fullName: AlohaKit.Controls.AvatarSizeExtensions.GetInitialsFontSize(AlohaKit.Controls.AvatarSize)
+  spec.csharp:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetInitialsFontSize(AlohaKit.Controls.AvatarSize)
+    name: GetInitialsFontSize
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetInitialsFontSize_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+  spec.vb:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetInitialsFontSize(AlohaKit.Controls.AvatarSize)
+    name: GetInitialsFontSize
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetInitialsFontSize_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+- uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorIconScale(AlohaKit.Controls.AvatarSize)
+  commentId: M:AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorIconScale(AlohaKit.Controls.AvatarSize)
+  href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarIndicatorIconScale_AlohaKit_Controls_AvatarSize_
+  name: GetAvatarIndicatorIconScale(AvatarSize)
+  nameWithType: AvatarSizeExtensions.GetAvatarIndicatorIconScale(AvatarSize)
+  fullName: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorIconScale(AlohaKit.Controls.AvatarSize)
+  spec.csharp:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorIconScale(AlohaKit.Controls.AvatarSize)
+    name: GetAvatarIndicatorIconScale
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarIndicatorIconScale_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+  spec.vb:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorIconScale(AlohaKit.Controls.AvatarSize)
+    name: GetAvatarIndicatorIconScale
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarIndicatorIconScale_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+- uid: AlohaKit.Controls.AvatarSizeExtensions
+  commentId: T:AlohaKit.Controls.AvatarSizeExtensions
+  parent: AlohaKit.Controls
+  href: AlohaKit.Controls.AvatarSizeExtensions.html
+  name: AvatarSizeExtensions
+  nameWithType: AvatarSizeExtensions
+  fullName: AlohaKit.Controls.AvatarSizeExtensions
+- uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorSize(AlohaKit.Controls.AvatarSize)
+  commentId: M:AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorSize(AlohaKit.Controls.AvatarSize)
+  href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarIndicatorSize_AlohaKit_Controls_AvatarSize_
+  name: GetAvatarIndicatorSize(AvatarSize)
+  nameWithType: AvatarSizeExtensions.GetAvatarIndicatorSize(AvatarSize)
+  fullName: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorSize(AlohaKit.Controls.AvatarSize)
+  spec.csharp:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorSize(AlohaKit.Controls.AvatarSize)
+    name: GetAvatarIndicatorSize
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarIndicatorSize_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+  spec.vb:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarIndicatorSize(AlohaKit.Controls.AvatarSize)
+    name: GetAvatarIndicatorSize
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarIndicatorSize_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+- uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarSize(AlohaKit.Controls.AvatarSize)
+  commentId: M:AlohaKit.Controls.AvatarSizeExtensions.GetAvatarSize(AlohaKit.Controls.AvatarSize)
+  href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarSize_AlohaKit_Controls_AvatarSize_
+  name: GetAvatarSize(AvatarSize)
+  nameWithType: AvatarSizeExtensions.GetAvatarSize(AvatarSize)
+  fullName: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarSize(AlohaKit.Controls.AvatarSize)
+  spec.csharp:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarSize(AlohaKit.Controls.AvatarSize)
+    name: GetAvatarSize
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarSize_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+  spec.vb:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetAvatarSize(AlohaKit.Controls.AvatarSize)
+    name: GetAvatarSize
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetAvatarSize_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+- uid: AlohaKit.Controls.AvatarSizeExtensions.GetInitialsFontSize(AlohaKit.Controls.AvatarSize)
+  commentId: M:AlohaKit.Controls.AvatarSizeExtensions.GetInitialsFontSize(AlohaKit.Controls.AvatarSize)
+  href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetInitialsFontSize_AlohaKit_Controls_AvatarSize_
+  name: GetInitialsFontSize(AvatarSize)
+  nameWithType: AvatarSizeExtensions.GetInitialsFontSize(AvatarSize)
+  fullName: AlohaKit.Controls.AvatarSizeExtensions.GetInitialsFontSize(AlohaKit.Controls.AvatarSize)
+  spec.csharp:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetInitialsFontSize(AlohaKit.Controls.AvatarSize)
+    name: GetInitialsFontSize
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetInitialsFontSize_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+  spec.vb:
+  - uid: AlohaKit.Controls.AvatarSizeExtensions.GetInitialsFontSize(AlohaKit.Controls.AvatarSize)
+    name: GetInitialsFontSize
+    href: AlohaKit.Controls.AvatarSizeExtensions.html#AlohaKit_Controls_AvatarSizeExtensions_GetInitialsFontSize_AlohaKit_Controls_AvatarSize_
+  - name: (
+  - uid: AlohaKit.Controls.AvatarSize
+    name: AvatarSize
+    href: AlohaKit.Controls.AvatarSize.html
+  - name: )
+- uid: AlohaKit.Controls.AvatarSize
+  commentId: T:AlohaKit.Controls.AvatarSize
+  parent: AlohaKit.Controls
+  href: AlohaKit.Controls.AvatarSize.html
+  name: AvatarSize
+  nameWithType: AvatarSize
+  fullName: AlohaKit.Controls.AvatarSize

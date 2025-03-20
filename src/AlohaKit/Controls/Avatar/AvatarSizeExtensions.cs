@@ -1,6 +1,11 @@
 ﻿namespace AlohaKit.Controls
 {
-    public static class AvatarSizeExtensions
+	/// <summary>
+	/// The AvatarSizeExtensions class provides extension methods for the AvatarSize enumeration, 
+	/// allowing developers to retrieve various sizing details for avatars based on their size 
+	/// (e.g., dimensions, indicator sizes, font sizes).
+	/// </summary>
+	public static class AvatarSizeExtensions
     {
         public static int GetAvatarSize(this AvatarSize avatarSize)
         {

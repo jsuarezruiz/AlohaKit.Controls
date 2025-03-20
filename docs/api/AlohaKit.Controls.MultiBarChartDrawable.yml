@@ -1,0 +1,1420 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlohaKit.Controls.MultiBarChartDrawable
+  commentId: T:AlohaKit.Controls.MultiBarChartDrawable
+  id: MultiBarChartDrawable
+  parent: AlohaKit.Controls
+  children:
+  - AlohaKit.Controls.MultiBarChartDrawable.AutoCalculateItemSeparationMargin
+  - AlohaKit.Controls.MultiBarChartDrawable.BarsCornerRadius
+  - AlohaKit.Controls.MultiBarChartDrawable.BarsFillColor
+  - AlohaKit.Controls.MultiBarChartDrawable.ColumnNames
+  - AlohaKit.Controls.MultiBarChartDrawable.Dispose
+  - AlohaKit.Controls.MultiBarChartDrawable.DrawChart(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  - AlohaKit.Controls.MultiBarChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],System.Single,System.Single)
+  - AlohaKit.Controls.MultiBarChartDrawable.Entry_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  - AlohaKit.Controls.MultiBarChartDrawable.GroupStyles
+  langs:
+  - csharp
+  - vb
+  name: MultiBarChartDrawable
+  nameWithType: MultiBarChartDrawable
+  fullName: AlohaKit.Controls.MultiBarChartDrawable
+  type: Class
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: MultiBarChartDrawable
+    path: ../src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+    startLine: 6
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: 'public sealed class MultiBarChartDrawable : BaseChartDrawable, IDrawable, IDisposable'
+    content.vb: Public NotInheritable Class MultiBarChartDrawable Inherits BaseChartDrawable Implements IDrawable, IDisposable
+  inheritance:
+  - System.Object
+  - AlohaKit.Controls.BaseChartDrawable
+  implements:
+  - Microsoft.Maui.Graphics.IDrawable
+  - System.IDisposable
+  inheritedMembers:
+  - AlohaKit.Controls.BaseChartDrawable.IsInitialized
+  - AlohaKit.Controls.BaseChartDrawable.IsAnimating
+  - AlohaKit.Controls.BaseChartDrawable.ColorBrush
+  - AlohaKit.Controls.BaseChartDrawable.AxisDashPattern
+  - AlohaKit.Controls.BaseChartDrawable.DisplayHeaderValues
+  - AlohaKit.Controls.BaseChartDrawable.PathsColorOpacity
+  - AlohaKit.Controls.BaseChartDrawable.DisplayHorizontalAxisLines
+  - AlohaKit.Controls.BaseChartDrawable.DisplayVerticalAxisLines
+  - AlohaKit.Controls.BaseChartDrawable.AnimationProgress
+  - AlohaKit.Controls.BaseChartDrawable.IsLabelTextTruncationEnabled
+  - AlohaKit.Controls.BaseChartDrawable.DisplayValueLabelsOnTop
+  - AlohaKit.Controls.BaseChartDrawable.StrokeSize
+  - AlohaKit.Controls.BaseChartDrawable.AxisLinesStrokeSize
+  - AlohaKit.Controls.BaseChartDrawable.AxisLinesColor
+  - AlohaKit.Controls.BaseChartDrawable.StrokeColor
+  - AlohaKit.Controls.BaseChartDrawable.ItemSeparationMargin
+  - AlohaKit.Controls.BaseChartDrawable.FooterLabelsTextSize
+  - AlohaKit.Controls.BaseChartDrawable.FooterLabelsMargin
+  - AlohaKit.Controls.BaseChartDrawable.HeaderValuesMargin
+  - AlohaKit.Controls.BaseChartDrawable.FillColor
+  - AlohaKit.Controls.BaseChartDrawable.Font
+  - AlohaKit.Controls.BaseChartDrawable.Entries
+  - AlohaKit.Controls.BaseChartDrawable.FontSize
+  - AlohaKit.Controls.BaseChartDrawable.AxisFontSize
+  - AlohaKit.Controls.BaseChartDrawable.Margin
+  - AlohaKit.Controls.BaseChartDrawable.FontColor
+  - AlohaKit.Controls.BaseChartDrawable.FooterLabelsFontColor
+  - AlohaKit.Controls.BaseChartDrawable.EnableAntialias
+  - AlohaKit.Controls.BaseChartDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  - AlohaKit.Controls.BaseChartDrawable.ClearBackground(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.SizeF,Microsoft.Maui.Graphics.Color)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AlohaKit.Controls.MultiBarChartDrawable.AutoCalculateItemSeparationMargin
+  commentId: P:AlohaKit.Controls.MultiBarChartDrawable.AutoCalculateItemSeparationMargin
+  id: AutoCalculateItemSeparationMargin
+  parent: AlohaKit.Controls.MultiBarChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: AutoCalculateItemSeparationMargin
+  nameWithType: MultiBarChartDrawable.AutoCalculateItemSeparationMargin
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.AutoCalculateItemSeparationMargin
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: AutoCalculateItemSeparationMargin
+    path: ../src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+    startLine: 18
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Indicates if control will calculate by itself left and right bar margins based on the group entries.
+  example: []
+  syntax:
+    content: public bool AutoCalculateItemSeparationMargin { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property AutoCalculateItemSeparationMargin As Boolean
+  overload: AlohaKit.Controls.MultiBarChartDrawable.AutoCalculateItemSeparationMargin*
+- uid: AlohaKit.Controls.MultiBarChartDrawable.BarsCornerRadius
+  commentId: P:AlohaKit.Controls.MultiBarChartDrawable.BarsCornerRadius
+  id: BarsCornerRadius
+  parent: AlohaKit.Controls.MultiBarChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: BarsCornerRadius
+  nameWithType: MultiBarChartDrawable.BarsCornerRadius
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.BarsCornerRadius
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: BarsCornerRadius
+    path: ../src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+    startLine: 31
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Border radius to use when drawing each bar
+  example: []
+  syntax:
+    content: public float BarsCornerRadius { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property BarsCornerRadius As Single
+  overload: AlohaKit.Controls.MultiBarChartDrawable.BarsCornerRadius*
+- uid: AlohaKit.Controls.MultiBarChartDrawable.GroupStyles
+  commentId: P:AlohaKit.Controls.MultiBarChartDrawable.GroupStyles
+  id: GroupStyles
+  parent: AlohaKit.Controls.MultiBarChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: GroupStyles
+  nameWithType: MultiBarChartDrawable.GroupStyles
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.GroupStyles
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: GroupStyles
+    path: ../src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+    startLine: 41
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public ObservableCollection<ChartGroupStyle> GroupStyles { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{AlohaKit.Models.ChartGroupStyle}
+    content.vb: Public Property GroupStyles As ObservableCollection(Of ChartGroupStyle)
+  overload: AlohaKit.Controls.MultiBarChartDrawable.GroupStyles*
+- uid: AlohaKit.Controls.MultiBarChartDrawable.ColumnNames
+  commentId: P:AlohaKit.Controls.MultiBarChartDrawable.ColumnNames
+  id: ColumnNames
+  parent: AlohaKit.Controls.MultiBarChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: ColumnNames
+  nameWithType: MultiBarChartDrawable.ColumnNames
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.ColumnNames
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: ColumnNames
+    path: ../src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+    startLine: 58
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public ObservableCollection<string> ColumnNames { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{System.String}
+    content.vb: Public Property ColumnNames As ObservableCollection(Of String)
+  overload: AlohaKit.Controls.MultiBarChartDrawable.ColumnNames*
+- uid: AlohaKit.Controls.MultiBarChartDrawable.BarsFillColor
+  commentId: P:AlohaKit.Controls.MultiBarChartDrawable.BarsFillColor
+  id: BarsFillColor
+  parent: AlohaKit.Controls.MultiBarChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: BarsFillColor
+  nameWithType: MultiBarChartDrawable.BarsFillColor
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.BarsFillColor
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: BarsFillColor
+    path: ../src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+    startLine: 73
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets the color to use when drawing each bar
+  example: []
+  syntax:
+    content: public Color BarsFillColor { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Graphics.Color
+    content.vb: Public Property BarsFillColor As Color
+  overload: AlohaKit.Controls.MultiBarChartDrawable.BarsFillColor*
+- uid: AlohaKit.Controls.MultiBarChartDrawable.Entry_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:AlohaKit.Controls.MultiBarChartDrawable.Entry_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  id: Entry_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  parent: AlohaKit.Controls.MultiBarChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: Entry_PropertyChanged(object, PropertyChangedEventArgs)
+  nameWithType: MultiBarChartDrawable.Entry_PropertyChanged(object, PropertyChangedEventArgs)
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.Entry_PropertyChanged(object, System.ComponentModel.PropertyChangedEventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Entry_PropertyChanged
+    path: ../src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+    startLine: 85
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  example: []
+  syntax:
+    content: protected override void Entry_PropertyChanged(object sender, PropertyChangedEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.ComponentModel.PropertyChangedEventArgs
+    content.vb: Protected Overrides Sub Entry_PropertyChanged(sender As Object, e As PropertyChangedEventArgs)
+  overridden: AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  overload: AlohaKit.Controls.MultiBarChartDrawable.Entry_PropertyChanged*
+  nameWithType.vb: MultiBarChartDrawable.Entry_PropertyChanged(Object, PropertyChangedEventArgs)
+  fullName.vb: AlohaKit.Controls.MultiBarChartDrawable.Entry_PropertyChanged(Object, System.ComponentModel.PropertyChangedEventArgs)
+  name.vb: Entry_PropertyChanged(Object, PropertyChangedEventArgs)
+- uid: AlohaKit.Controls.MultiBarChartDrawable.DrawChart(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  commentId: M:AlohaKit.Controls.MultiBarChartDrawable.DrawChart(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  id: DrawChart(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  parent: AlohaKit.Controls.MultiBarChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: DrawChart(ICanvas, RectF)
+  nameWithType: MultiBarChartDrawable.DrawChart(ICanvas, RectF)
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.DrawChart(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.RectF)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: DrawChart
+    path: ../src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+    startLine: 94
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Calculates and draws the current chart with the Entries[] data
+  example: []
+  syntax:
+    content: public override void DrawChart(ICanvas canvas, RectF dirtyRect)
+    parameters:
+    - id: canvas
+      type: Microsoft.Maui.Graphics.ICanvas
+      description: Current canvas
+    - id: dirtyRect
+      type: Microsoft.Maui.Graphics.RectF
+      description: Current canvas rect
+    content.vb: Public Overrides Sub DrawChart(canvas As ICanvas, dirtyRect As RectF)
+  overridden: AlohaKit.Controls.BaseChartDrawable.DrawChart(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  overload: AlohaKit.Controls.MultiBarChartDrawable.DrawChart*
+- uid: AlohaKit.Controls.MultiBarChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],System.Single,System.Single)
+  commentId: M:AlohaKit.Controls.MultiBarChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],System.Single,System.Single)
+  id: DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],System.Single,System.Single)
+  parent: AlohaKit.Controls.MultiBarChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: DrawVerticalStepLines(ICanvas, PointF[], float, float)
+  nameWithType: MultiBarChartDrawable.DrawVerticalStepLines(ICanvas, PointF[], float, float)
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.PointF[], float, float)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: DrawVerticalStepLines
+    path: ../src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+    startLine: 170
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  example: []
+  syntax:
+    content: protected override void DrawVerticalStepLines(ICanvas canvas, PointF[] points, float origin, float maxPositiveValue)
+    parameters:
+    - id: canvas
+      type: Microsoft.Maui.Graphics.ICanvas
+    - id: points
+      type: Microsoft.Maui.Graphics.PointF[]
+    - id: origin
+      type: System.Single
+    - id: maxPositiveValue
+      type: System.Single
+    content.vb: Protected Overrides Sub DrawVerticalStepLines(canvas As ICanvas, points As PointF(), origin As Single, maxPositiveValue As Single)
+  overridden: AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],System.Single,System.Single)
+  overload: AlohaKit.Controls.MultiBarChartDrawable.DrawVerticalStepLines*
+  nameWithType.vb: MultiBarChartDrawable.DrawVerticalStepLines(ICanvas, PointF(), Single, Single)
+  fullName.vb: AlohaKit.Controls.MultiBarChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.PointF(), Single, Single)
+  name.vb: DrawVerticalStepLines(ICanvas, PointF(), Single, Single)
+- uid: AlohaKit.Controls.MultiBarChartDrawable.Dispose
+  commentId: M:AlohaKit.Controls.MultiBarChartDrawable.Dispose
+  id: Dispose
+  parent: AlohaKit.Controls.MultiBarChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: MultiBarChartDrawable.Dispose()
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Dispose
+    path: ../src/AlohaKit/DataVisualization/MultiBarChart/MultiBarChartDrawable.cs
+    startLine: 247
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public override void Dispose()
+    content.vb: Public Overrides Sub Dispose()
+  overridden: AlohaKit.Controls.BaseChartDrawable.Dispose
+  overload: AlohaKit.Controls.MultiBarChartDrawable.Dispose*
+references:
+- uid: AlohaKit.Controls
+  commentId: N:AlohaKit.Controls
+  href: AlohaKit.html
+  name: AlohaKit.Controls
+  nameWithType: AlohaKit.Controls
+  fullName: AlohaKit.Controls
+  spec.csharp:
+  - uid: AlohaKit
+    name: AlohaKit
+    href: AlohaKit.html
+  - name: .
+  - uid: AlohaKit.Controls
+    name: Controls
+    href: AlohaKit.Controls.html
+  spec.vb:
+  - uid: AlohaKit
+    name: AlohaKit
+    href: AlohaKit.html
+  - name: .
+  - uid: AlohaKit.Controls
+    name: Controls
+    href: AlohaKit.Controls.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AlohaKit.Controls.BaseChartDrawable
+  commentId: T:AlohaKit.Controls.BaseChartDrawable
+  parent: AlohaKit.Controls
+  href: AlohaKit.Controls.BaseChartDrawable.html
+  name: BaseChartDrawable
+  nameWithType: BaseChartDrawable
+  fullName: AlohaKit.Controls.BaseChartDrawable
+- uid: Microsoft.Maui.Graphics.IDrawable
+  commentId: T:Microsoft.Maui.Graphics.IDrawable
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.idrawable
+  name: IDrawable
+  nameWithType: IDrawable
+  fullName: Microsoft.Maui.Graphics.IDrawable
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: AlohaKit.Controls.BaseChartDrawable.IsInitialized
+  commentId: F:AlohaKit.Controls.BaseChartDrawable.IsInitialized
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_IsInitialized
+  name: IsInitialized
+  nameWithType: BaseChartDrawable.IsInitialized
+  fullName: AlohaKit.Controls.BaseChartDrawable.IsInitialized
+- uid: AlohaKit.Controls.BaseChartDrawable.IsAnimating
+  commentId: F:AlohaKit.Controls.BaseChartDrawable.IsAnimating
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_IsAnimating
+  name: IsAnimating
+  nameWithType: BaseChartDrawable.IsAnimating
+  fullName: AlohaKit.Controls.BaseChartDrawable.IsAnimating
+- uid: AlohaKit.Controls.BaseChartDrawable.ColorBrush
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.ColorBrush
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_ColorBrush
+  name: ColorBrush
+  nameWithType: BaseChartDrawable.ColorBrush
+  fullName: AlohaKit.Controls.BaseChartDrawable.ColorBrush
+- uid: AlohaKit.Controls.BaseChartDrawable.AxisDashPattern
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.AxisDashPattern
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_AxisDashPattern
+  name: AxisDashPattern
+  nameWithType: BaseChartDrawable.AxisDashPattern
+  fullName: AlohaKit.Controls.BaseChartDrawable.AxisDashPattern
+- uid: AlohaKit.Controls.BaseChartDrawable.DisplayHeaderValues
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.DisplayHeaderValues
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DisplayHeaderValues
+  name: DisplayHeaderValues
+  nameWithType: BaseChartDrawable.DisplayHeaderValues
+  fullName: AlohaKit.Controls.BaseChartDrawable.DisplayHeaderValues
+- uid: AlohaKit.Controls.BaseChartDrawable.PathsColorOpacity
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.PathsColorOpacity
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_PathsColorOpacity
+  name: PathsColorOpacity
+  nameWithType: BaseChartDrawable.PathsColorOpacity
+  fullName: AlohaKit.Controls.BaseChartDrawable.PathsColorOpacity
+- uid: AlohaKit.Controls.BaseChartDrawable.DisplayHorizontalAxisLines
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.DisplayHorizontalAxisLines
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DisplayHorizontalAxisLines
+  name: DisplayHorizontalAxisLines
+  nameWithType: BaseChartDrawable.DisplayHorizontalAxisLines
+  fullName: AlohaKit.Controls.BaseChartDrawable.DisplayHorizontalAxisLines
+- uid: AlohaKit.Controls.BaseChartDrawable.DisplayVerticalAxisLines
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.DisplayVerticalAxisLines
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DisplayVerticalAxisLines
+  name: DisplayVerticalAxisLines
+  nameWithType: BaseChartDrawable.DisplayVerticalAxisLines
+  fullName: AlohaKit.Controls.BaseChartDrawable.DisplayVerticalAxisLines
+- uid: AlohaKit.Controls.BaseChartDrawable.AnimationProgress
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.AnimationProgress
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_AnimationProgress
+  name: AnimationProgress
+  nameWithType: BaseChartDrawable.AnimationProgress
+  fullName: AlohaKit.Controls.BaseChartDrawable.AnimationProgress
+- uid: AlohaKit.Controls.BaseChartDrawable.IsLabelTextTruncationEnabled
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.IsLabelTextTruncationEnabled
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_IsLabelTextTruncationEnabled
+  name: IsLabelTextTruncationEnabled
+  nameWithType: BaseChartDrawable.IsLabelTextTruncationEnabled
+  fullName: AlohaKit.Controls.BaseChartDrawable.IsLabelTextTruncationEnabled
+- uid: AlohaKit.Controls.BaseChartDrawable.DisplayValueLabelsOnTop
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.DisplayValueLabelsOnTop
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DisplayValueLabelsOnTop
+  name: DisplayValueLabelsOnTop
+  nameWithType: BaseChartDrawable.DisplayValueLabelsOnTop
+  fullName: AlohaKit.Controls.BaseChartDrawable.DisplayValueLabelsOnTop
+- uid: AlohaKit.Controls.BaseChartDrawable.StrokeSize
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.StrokeSize
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_StrokeSize
+  name: StrokeSize
+  nameWithType: BaseChartDrawable.StrokeSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.StrokeSize
+- uid: AlohaKit.Controls.BaseChartDrawable.AxisLinesStrokeSize
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.AxisLinesStrokeSize
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_AxisLinesStrokeSize
+  name: AxisLinesStrokeSize
+  nameWithType: BaseChartDrawable.AxisLinesStrokeSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.AxisLinesStrokeSize
+- uid: AlohaKit.Controls.BaseChartDrawable.AxisLinesColor
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.AxisLinesColor
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_AxisLinesColor
+  name: AxisLinesColor
+  nameWithType: BaseChartDrawable.AxisLinesColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.AxisLinesColor
+- uid: AlohaKit.Controls.BaseChartDrawable.StrokeColor
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.StrokeColor
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_StrokeColor
+  name: StrokeColor
+  nameWithType: BaseChartDrawable.StrokeColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.StrokeColor
+- uid: AlohaKit.Controls.BaseChartDrawable.ItemSeparationMargin
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.ItemSeparationMargin
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_ItemSeparationMargin
+  name: ItemSeparationMargin
+  nameWithType: BaseChartDrawable.ItemSeparationMargin
+  fullName: AlohaKit.Controls.BaseChartDrawable.ItemSeparationMargin
+- uid: AlohaKit.Controls.BaseChartDrawable.FooterLabelsTextSize
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.FooterLabelsTextSize
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_FooterLabelsTextSize
+  name: FooterLabelsTextSize
+  nameWithType: BaseChartDrawable.FooterLabelsTextSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.FooterLabelsTextSize
+- uid: AlohaKit.Controls.BaseChartDrawable.FooterLabelsMargin
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.FooterLabelsMargin
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_FooterLabelsMargin
+  name: FooterLabelsMargin
+  nameWithType: BaseChartDrawable.FooterLabelsMargin
+  fullName: AlohaKit.Controls.BaseChartDrawable.FooterLabelsMargin
+- uid: AlohaKit.Controls.BaseChartDrawable.HeaderValuesMargin
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.HeaderValuesMargin
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_HeaderValuesMargin
+  name: HeaderValuesMargin
+  nameWithType: BaseChartDrawable.HeaderValuesMargin
+  fullName: AlohaKit.Controls.BaseChartDrawable.HeaderValuesMargin
+- uid: AlohaKit.Controls.BaseChartDrawable.FillColor
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.FillColor
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_FillColor
+  name: FillColor
+  nameWithType: BaseChartDrawable.FillColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.FillColor
+- uid: AlohaKit.Controls.BaseChartDrawable.Font
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.Font
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Font
+  name: Font
+  nameWithType: BaseChartDrawable.Font
+  fullName: AlohaKit.Controls.BaseChartDrawable.Font
+- uid: AlohaKit.Controls.BaseChartDrawable.Entries
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.Entries
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Entries
+  name: Entries
+  nameWithType: BaseChartDrawable.Entries
+  fullName: AlohaKit.Controls.BaseChartDrawable.Entries
+- uid: AlohaKit.Controls.BaseChartDrawable.FontSize
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.FontSize
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_FontSize
+  name: FontSize
+  nameWithType: BaseChartDrawable.FontSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.FontSize
+- uid: AlohaKit.Controls.BaseChartDrawable.AxisFontSize
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.AxisFontSize
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_AxisFontSize
+  name: AxisFontSize
+  nameWithType: BaseChartDrawable.AxisFontSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.AxisFontSize
+- uid: AlohaKit.Controls.BaseChartDrawable.Margin
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.Margin
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Margin
+  name: Margin
+  nameWithType: BaseChartDrawable.Margin
+  fullName: AlohaKit.Controls.BaseChartDrawable.Margin
+- uid: AlohaKit.Controls.BaseChartDrawable.FontColor
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.FontColor
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_FontColor
+  name: FontColor
+  nameWithType: BaseChartDrawable.FontColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.FontColor
+- uid: AlohaKit.Controls.BaseChartDrawable.FooterLabelsFontColor
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.FooterLabelsFontColor
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_FooterLabelsFontColor
+  name: FooterLabelsFontColor
+  nameWithType: BaseChartDrawable.FooterLabelsFontColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.FooterLabelsFontColor
+- uid: AlohaKit.Controls.BaseChartDrawable.EnableAntialias
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.EnableAntialias
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_EnableAntialias
+  name: EnableAntialias
+  nameWithType: BaseChartDrawable.EnableAntialias
+  fullName: AlohaKit.Controls.BaseChartDrawable.EnableAntialias
+- uid: AlohaKit.Controls.BaseChartDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  isExternal: true
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Draw_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_RectF_
+  name: Draw(ICanvas, RectF)
+  nameWithType: BaseChartDrawable.Draw(ICanvas, RectF)
+  fullName: AlohaKit.Controls.BaseChartDrawable.Draw(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.RectF)
+  spec.csharp:
+  - uid: AlohaKit.Controls.BaseChartDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+    name: Draw
+    href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Draw_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_RectF_
+  - name: (
+  - uid: Microsoft.Maui.Graphics.ICanvas
+    name: ICanvas
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.RectF
+    name: RectF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.rectf
+  - name: )
+  spec.vb:
+  - uid: AlohaKit.Controls.BaseChartDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+    name: Draw
+    href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Draw_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_RectF_
+  - name: (
+  - uid: Microsoft.Maui.Graphics.ICanvas
+    name: ICanvas
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.RectF
+    name: RectF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.rectf
+  - name: )
+- uid: AlohaKit.Controls.BaseChartDrawable.ClearBackground(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.SizeF,Microsoft.Maui.Graphics.Color)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.ClearBackground(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.SizeF,Microsoft.Maui.Graphics.Color)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  isExternal: true
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_ClearBackground_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_SizeF_Microsoft_Maui_Graphics_Color_
+  name: ClearBackground(ICanvas, SizeF, Color)
+  nameWithType: BaseChartDrawable.ClearBackground(ICanvas, SizeF, Color)
+  fullName: AlohaKit.Controls.BaseChartDrawable.ClearBackground(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.SizeF, Microsoft.Maui.Graphics.Color)
+  spec.csharp:
+  - uid: AlohaKit.Controls.BaseChartDrawable.ClearBackground(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.SizeF,Microsoft.Maui.Graphics.Color)
+    name: ClearBackground
+    href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_ClearBackground_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_SizeF_Microsoft_Maui_Graphics_Color_
+  - name: (
+  - uid: Microsoft.Maui.Graphics.ICanvas
+    name: ICanvas
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.SizeF
+    name: SizeF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.sizef
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.color
+  - name: )
+  spec.vb:
+  - uid: AlohaKit.Controls.BaseChartDrawable.ClearBackground(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.SizeF,Microsoft.Maui.Graphics.Color)
+    name: ClearBackground
+    href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_ClearBackground_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_SizeF_Microsoft_Maui_Graphics_Color_
+  - name: (
+  - uid: Microsoft.Maui.Graphics.ICanvas
+    name: ICanvas
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.SizeF
+    name: SizeF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.sizef
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.color
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Maui.Graphics
+  commentId: N:Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Maui.Graphics
+  nameWithType: Microsoft.Maui.Graphics
+  fullName: Microsoft.Maui.Graphics
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Maui
+    name: Maui
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui
+  - name: .
+  - uid: Microsoft.Maui.Graphics
+    name: Graphics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Maui
+    name: Maui
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui
+  - name: .
+  - uid: Microsoft.Maui.Graphics
+    name: Graphics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics
+- uid: AlohaKit.Controls.MultiBarChartDrawable.AutoCalculateItemSeparationMargin*
+  commentId: Overload:AlohaKit.Controls.MultiBarChartDrawable.AutoCalculateItemSeparationMargin
+  href: AlohaKit.Controls.MultiBarChartDrawable.html#AlohaKit_Controls_MultiBarChartDrawable_AutoCalculateItemSeparationMargin
+  name: AutoCalculateItemSeparationMargin
+  nameWithType: MultiBarChartDrawable.AutoCalculateItemSeparationMargin
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.AutoCalculateItemSeparationMargin
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AlohaKit.Controls.MultiBarChartDrawable.BarsCornerRadius*
+  commentId: Overload:AlohaKit.Controls.MultiBarChartDrawable.BarsCornerRadius
+  href: AlohaKit.Controls.MultiBarChartDrawable.html#AlohaKit_Controls_MultiBarChartDrawable_BarsCornerRadius
+  name: BarsCornerRadius
+  nameWithType: MultiBarChartDrawable.BarsCornerRadius
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.BarsCornerRadius
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: AlohaKit.Controls.MultiBarChartDrawable.GroupStyles*
+  commentId: Overload:AlohaKit.Controls.MultiBarChartDrawable.GroupStyles
+  href: AlohaKit.Controls.MultiBarChartDrawable.html#AlohaKit_Controls_MultiBarChartDrawable_GroupStyles
+  name: GroupStyles
+  nameWithType: MultiBarChartDrawable.GroupStyles
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.GroupStyles
+- uid: System.Collections.ObjectModel.ObservableCollection{AlohaKit.Models.ChartGroupStyle}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{AlohaKit.Models.ChartGroupStyle}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<ChartGroupStyle>
+  nameWithType: ObservableCollection<ChartGroupStyle>
+  fullName: System.Collections.ObjectModel.ObservableCollection<AlohaKit.Models.ChartGroupStyle>
+  nameWithType.vb: ObservableCollection(Of ChartGroupStyle)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of AlohaKit.Models.ChartGroupStyle)
+  name.vb: ObservableCollection(Of ChartGroupStyle)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: AlohaKit.Models.ChartGroupStyle
+    name: ChartGroupStyle
+    href: AlohaKit.Models.ChartGroupStyle.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AlohaKit.Models.ChartGroupStyle
+    name: ChartGroupStyle
+    href: AlohaKit.Models.ChartGroupStyle.html
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: AlohaKit.Controls.MultiBarChartDrawable.ColumnNames*
+  commentId: Overload:AlohaKit.Controls.MultiBarChartDrawable.ColumnNames
+  href: AlohaKit.Controls.MultiBarChartDrawable.html#AlohaKit_Controls_MultiBarChartDrawable_ColumnNames
+  name: ColumnNames
+  nameWithType: MultiBarChartDrawable.ColumnNames
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.ColumnNames
+- uid: System.Collections.ObjectModel.ObservableCollection{System.String}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{System.String}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<string>
+  nameWithType: ObservableCollection<string>
+  fullName: System.Collections.ObjectModel.ObservableCollection<string>
+  nameWithType.vb: ObservableCollection(Of String)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of String)
+  name.vb: ObservableCollection(Of String)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: AlohaKit.Controls.MultiBarChartDrawable.BarsFillColor*
+  commentId: Overload:AlohaKit.Controls.MultiBarChartDrawable.BarsFillColor
+  href: AlohaKit.Controls.MultiBarChartDrawable.html#AlohaKit_Controls_MultiBarChartDrawable_BarsFillColor
+  name: BarsFillColor
+  nameWithType: MultiBarChartDrawable.BarsFillColor
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.BarsFillColor
+- uid: Microsoft.Maui.Graphics.Color
+  commentId: T:Microsoft.Maui.Graphics.Color
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.color
+  name: Color
+  nameWithType: Color
+  fullName: Microsoft.Maui.Graphics.Color
+- uid: AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  isExternal: true
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Entry_PropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  name: Entry_PropertyChanged(object, PropertyChangedEventArgs)
+  nameWithType: BaseChartDrawable.Entry_PropertyChanged(object, PropertyChangedEventArgs)
+  fullName: AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged(object, System.ComponentModel.PropertyChangedEventArgs)
+  nameWithType.vb: BaseChartDrawable.Entry_PropertyChanged(Object, PropertyChangedEventArgs)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged(Object, System.ComponentModel.PropertyChangedEventArgs)
+  name.vb: Entry_PropertyChanged(Object, PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+    name: Entry_PropertyChanged
+    href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Entry_PropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+    name: Entry_PropertyChanged
+    href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Entry_PropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: AlohaKit.Controls.MultiBarChartDrawable.Entry_PropertyChanged*
+  commentId: Overload:AlohaKit.Controls.MultiBarChartDrawable.Entry_PropertyChanged
+  href: AlohaKit.Controls.MultiBarChartDrawable.html#AlohaKit_Controls_MultiBarChartDrawable_Entry_PropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  name: Entry_PropertyChanged
+  nameWithType: MultiBarChartDrawable.Entry_PropertyChanged
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.Entry_PropertyChanged
+- uid: System.ComponentModel.PropertyChangedEventArgs
+  commentId: T:System.ComponentModel.PropertyChangedEventArgs
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  name: PropertyChangedEventArgs
+  nameWithType: PropertyChangedEventArgs
+  fullName: System.ComponentModel.PropertyChangedEventArgs
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: AlohaKit.Controls.BaseChartDrawable.DrawChart(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.DrawChart(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  isExternal: true
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DrawChart_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_RectF_
+  name: DrawChart(ICanvas, RectF)
+  nameWithType: BaseChartDrawable.DrawChart(ICanvas, RectF)
+  fullName: AlohaKit.Controls.BaseChartDrawable.DrawChart(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.RectF)
+  spec.csharp:
+  - uid: AlohaKit.Controls.BaseChartDrawable.DrawChart(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+    name: DrawChart
+    href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DrawChart_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_RectF_
+  - name: (
+  - uid: Microsoft.Maui.Graphics.ICanvas
+    name: ICanvas
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.RectF
+    name: RectF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.rectf
+  - name: )
+  spec.vb:
+  - uid: AlohaKit.Controls.BaseChartDrawable.DrawChart(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+    name: DrawChart
+    href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DrawChart_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_RectF_
+  - name: (
+  - uid: Microsoft.Maui.Graphics.ICanvas
+    name: ICanvas
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.RectF
+    name: RectF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.rectf
+  - name: )
+- uid: AlohaKit.Controls.MultiBarChartDrawable.DrawChart*
+  commentId: Overload:AlohaKit.Controls.MultiBarChartDrawable.DrawChart
+  href: AlohaKit.Controls.MultiBarChartDrawable.html#AlohaKit_Controls_MultiBarChartDrawable_DrawChart_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_RectF_
+  name: DrawChart
+  nameWithType: MultiBarChartDrawable.DrawChart
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.DrawChart
+- uid: Microsoft.Maui.Graphics.ICanvas
+  commentId: T:Microsoft.Maui.Graphics.ICanvas
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: Microsoft.Maui.Graphics.ICanvas
+- uid: Microsoft.Maui.Graphics.RectF
+  commentId: T:Microsoft.Maui.Graphics.RectF
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.rectf
+  name: RectF
+  nameWithType: RectF
+  fullName: Microsoft.Maui.Graphics.RectF
+- uid: AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],System.Single,System.Single)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],System.Single,System.Single)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  isExternal: true
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DrawVerticalStepLines_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_PointF___System_Single_System_Single_
+  name: DrawVerticalStepLines(ICanvas, PointF[], float, float)
+  nameWithType: BaseChartDrawable.DrawVerticalStepLines(ICanvas, PointF[], float, float)
+  fullName: AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.PointF[], float, float)
+  nameWithType.vb: BaseChartDrawable.DrawVerticalStepLines(ICanvas, PointF(), Single, Single)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.PointF(), Single, Single)
+  name.vb: DrawVerticalStepLines(ICanvas, PointF(), Single, Single)
+  spec.csharp:
+  - uid: AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],System.Single,System.Single)
+    name: DrawVerticalStepLines
+    href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DrawVerticalStepLines_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_PointF___System_Single_System_Single_
+  - name: (
+  - uid: Microsoft.Maui.Graphics.ICanvas
+    name: ICanvas
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.PointF
+    name: PointF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.pointf
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],System.Single,System.Single)
+    name: DrawVerticalStepLines
+    href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DrawVerticalStepLines_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_PointF___System_Single_System_Single_
+  - name: (
+  - uid: Microsoft.Maui.Graphics.ICanvas
+    name: ICanvas
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.PointF
+    name: PointF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.pointf
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: AlohaKit.Controls.MultiBarChartDrawable.DrawVerticalStepLines*
+  commentId: Overload:AlohaKit.Controls.MultiBarChartDrawable.DrawVerticalStepLines
+  href: AlohaKit.Controls.MultiBarChartDrawable.html#AlohaKit_Controls_MultiBarChartDrawable_DrawVerticalStepLines_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_PointF___System_Single_System_Single_
+  name: DrawVerticalStepLines
+  nameWithType: MultiBarChartDrawable.DrawVerticalStepLines
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.DrawVerticalStepLines
+- uid: Microsoft.Maui.Graphics.PointF[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.pointf
+  name: PointF[]
+  nameWithType: PointF[]
+  fullName: Microsoft.Maui.Graphics.PointF[]
+  nameWithType.vb: PointF()
+  fullName.vb: Microsoft.Maui.Graphics.PointF()
+  name.vb: PointF()
+  spec.csharp:
+  - uid: Microsoft.Maui.Graphics.PointF
+    name: PointF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.pointf
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.Maui.Graphics.PointF
+    name: PointF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.pointf
+  - name: (
+  - name: )
+- uid: AlohaKit.Controls.BaseChartDrawable.Dispose
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.Dispose
+  parent: AlohaKit.Controls.BaseChartDrawable
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Dispose
+  name: Dispose()
+  nameWithType: BaseChartDrawable.Dispose()
+  fullName: AlohaKit.Controls.BaseChartDrawable.Dispose()
+  spec.csharp:
+  - uid: AlohaKit.Controls.BaseChartDrawable.Dispose
+    name: Dispose
+    href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AlohaKit.Controls.BaseChartDrawable.Dispose
+    name: Dispose
+    href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Dispose
+  - name: (
+  - name: )
+- uid: AlohaKit.Controls.MultiBarChartDrawable.Dispose*
+  commentId: Overload:AlohaKit.Controls.MultiBarChartDrawable.Dispose
+  href: AlohaKit.Controls.MultiBarChartDrawable.html#AlohaKit_Controls_MultiBarChartDrawable_Dispose
+  name: Dispose
+  nameWithType: MultiBarChartDrawable.Dispose
+  fullName: AlohaKit.Controls.MultiBarChartDrawable.Dispose

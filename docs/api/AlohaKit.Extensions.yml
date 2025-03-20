@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlohaKit.Extensions
+  commentId: N:AlohaKit.Extensions
+  id: AlohaKit.Extensions
+  children:
+  - AlohaKit.Extensions.ChartExtensions
+  - AlohaKit.Extensions.IEnumerableExtensions
+  - AlohaKit.Extensions.NumericExtensions
+  langs:
+  - csharp
+  - vb
+  name: AlohaKit.Extensions
+  nameWithType: AlohaKit.Extensions
+  fullName: AlohaKit.Extensions
+  type: Namespace
+  assemblies:
+  - AlohaKit
+references:
+- uid: AlohaKit.Extensions.ChartExtensions
+  commentId: T:AlohaKit.Extensions.ChartExtensions
+  href: AlohaKit.Extensions.ChartExtensions.html
+  name: ChartExtensions
+  nameWithType: ChartExtensions
+  fullName: AlohaKit.Extensions.ChartExtensions
+- uid: AlohaKit.Extensions.IEnumerableExtensions
+  commentId: T:AlohaKit.Extensions.IEnumerableExtensions
+  href: AlohaKit.Extensions.IEnumerableExtensions.html
+  name: IEnumerableExtensions
+  nameWithType: IEnumerableExtensions
+  fullName: AlohaKit.Extensions.IEnumerableExtensions
+- uid: AlohaKit.Extensions.NumericExtensions
+  commentId: T:AlohaKit.Extensions.NumericExtensions
+  href: AlohaKit.Extensions.NumericExtensions.html
+  name: NumericExtensions
+  nameWithType: NumericExtensions
+  fullName: AlohaKit.Extensions.NumericExtensions

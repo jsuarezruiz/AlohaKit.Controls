@@ -1,11 +1,15 @@
-﻿using Microsoft.Maui.Platform;
-
-namespace AlohaKit.Controls
-{    
-    // TODO: Include the Orientation property 
-    public class LinearGauge : GraphicsView
+﻿namespace AlohaKit.Controls
+{
+	/// <summary>
+	/// The LinearGauge is a drawn control for rendering a linear gauge. 
+	/// A linear gauge is a visual representation of data along a straight or horizontal/vertical axis, commonly used to 
+	/// display values such as progress, measurements, or performance indicators. 
+	/// </summary>
+	public class LinearGauge : GraphicsView
     {
-        public LinearGauge()
+		// TODO: Include the Orientation property 
+
+		public LinearGauge()
         {
             HeightRequest = 200;
             WidthRequest = 60;

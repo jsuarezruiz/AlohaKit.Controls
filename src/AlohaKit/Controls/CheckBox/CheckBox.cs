@@ -2,7 +2,11 @@
 
 namespace AlohaKit.Controls
 {
-    public class CheckBox : GraphicsView
+	/// <summary>
+	/// The CheckBox is a custom drawn control that represents a checkbox for selecting or deselecting options. 
+	/// It is highly customizable while maintaining efficient rendering capabilities.
+	/// </summary>
+	public class CheckBox : GraphicsView
     {
         public CheckBox()
         {
