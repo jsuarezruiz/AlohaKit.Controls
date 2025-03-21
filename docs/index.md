@@ -2,10 +2,16 @@
 _layout: landing
 ---
 
-# This is the **HOMEPAGE**.
+# AlohaKit.Controls
 
-Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
+A set of .NET MAUI drawn controls.
 
-## Quick Start Notes:
+![AlohaKit.Controls](https://raw.githubusercontent.com/jsuarezruiz/TemplateMAUI/main/images/templatemaui-promo.png)
 
-1. Add images to the *images* folder if the file is referencing an image.
+### Contribution
+
+We welcome contributions from the community! If you have any suggestions, improvements, or new control ideas, feel free to open an issue or submit a pull request.
+
+### License
+
+AlohaKit.Controls is released under the MIT license. For more details, please refer to the LICENSE file included in the repository.
