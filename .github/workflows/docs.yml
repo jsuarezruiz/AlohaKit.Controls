@@ -30,8 +30,7 @@ jobs:
       with:
         dotnet-version: 9.x
 
-    - run: cd ..
-    - run: dotnet workload restore AlohaKit.Controls.sln
+    - run: dotnet workload restore
     - run: dotnet tool update -g docfx
     - run: docfx docs/docfx.json
 
