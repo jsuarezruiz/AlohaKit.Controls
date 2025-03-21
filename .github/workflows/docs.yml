@@ -30,14 +30,10 @@ jobs:
       with:
         dotnet-version: 9.x
 
-    - name: Restore Workloads
-    run: |
-      cd AlohaKit.Controls
-      dotnet workload restore AlohaKit.Controls.sln
-    - name: Update Docs
-    - run: |
-      dotnet tool update -g docfx
-    - docfx docs/docfx.json
+    - run: cd AlohaKit.Controls
+    - run: dotnet workload restore AlohaKit.Controls.sln
+    - run: dotnet tool update -g docfx
+    - run: docfx docs/docfx.json
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
