@@ -1,0 +1,887 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlohaKit.Controls.RatingDrawable
+  commentId: T:AlohaKit.Controls.RatingDrawable
+  id: RatingDrawable
+  parent: AlohaKit.Controls
+  children:
+  - AlohaKit.Controls.RatingDrawable.BackgroundPaint
+  - AlohaKit.Controls.RatingDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  - AlohaKit.Controls.RatingDrawable.DrawBackground(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  - AlohaKit.Controls.RatingDrawable.DrawRatingItem(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF,System.Int32)
+  - AlohaKit.Controls.RatingDrawable.ItemsCount
+  - AlohaKit.Controls.RatingDrawable.SelectedFillColor
+  - AlohaKit.Controls.RatingDrawable.SelectedStrokeColor
+  - AlohaKit.Controls.RatingDrawable.SelectedStrokeWidth
+  - AlohaKit.Controls.RatingDrawable.UnSelectedFillColor
+  - AlohaKit.Controls.RatingDrawable.UnSelectedStrokeColor
+  - AlohaKit.Controls.RatingDrawable.UnSelectedStrokeWidth
+  - AlohaKit.Controls.RatingDrawable.Value
+  langs:
+  - csharp
+  - vb
+  name: RatingDrawable
+  nameWithType: RatingDrawable
+  fullName: AlohaKit.Controls.RatingDrawable
+  type: Class
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Rating/RatingDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: RatingDrawable
+    path: ../src/AlohaKit/Controls/Rating/RatingDrawable.cs
+    startLine: 2
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: 'public class RatingDrawable : IDrawable'
+    content.vb: Public Class RatingDrawable Implements IDrawable
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Maui.Graphics.IDrawable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AlohaKit.Controls.RatingDrawable.ItemsCount
+  commentId: P:AlohaKit.Controls.RatingDrawable.ItemsCount
+  id: ItemsCount
+  parent: AlohaKit.Controls.RatingDrawable
+  langs:
+  - csharp
+  - vb
+  name: ItemsCount
+  nameWithType: RatingDrawable.ItemsCount
+  fullName: AlohaKit.Controls.RatingDrawable.ItemsCount
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Rating/RatingDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: ItemsCount
+    path: ../src/AlohaKit/Controls/Rating/RatingDrawable.cs
+    startLine: 4
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public int ItemsCount { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ItemsCount As Integer
+  overload: AlohaKit.Controls.RatingDrawable.ItemsCount*
+- uid: AlohaKit.Controls.RatingDrawable.Value
+  commentId: P:AlohaKit.Controls.RatingDrawable.Value
+  id: Value
+  parent: AlohaKit.Controls.RatingDrawable
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: RatingDrawable.Value
+  fullName: AlohaKit.Controls.RatingDrawable.Value
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Rating/RatingDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Value
+    path: ../src/AlohaKit/Controls/Rating/RatingDrawable.cs
+    startLine: 5
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public int Value { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Value As Integer
+  overload: AlohaKit.Controls.RatingDrawable.Value*
+- uid: AlohaKit.Controls.RatingDrawable.BackgroundPaint
+  commentId: P:AlohaKit.Controls.RatingDrawable.BackgroundPaint
+  id: BackgroundPaint
+  parent: AlohaKit.Controls.RatingDrawable
+  langs:
+  - csharp
+  - vb
+  name: BackgroundPaint
+  nameWithType: RatingDrawable.BackgroundPaint
+  fullName: AlohaKit.Controls.RatingDrawable.BackgroundPaint
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Rating/RatingDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: BackgroundPaint
+    path: ../src/AlohaKit/Controls/Rating/RatingDrawable.cs
+    startLine: 6
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public Paint BackgroundPaint { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Graphics.Paint
+    content.vb: Public Property BackgroundPaint As Paint
+  overload: AlohaKit.Controls.RatingDrawable.BackgroundPaint*
+- uid: AlohaKit.Controls.RatingDrawable.SelectedFillColor
+  commentId: P:AlohaKit.Controls.RatingDrawable.SelectedFillColor
+  id: SelectedFillColor
+  parent: AlohaKit.Controls.RatingDrawable
+  langs:
+  - csharp
+  - vb
+  name: SelectedFillColor
+  nameWithType: RatingDrawable.SelectedFillColor
+  fullName: AlohaKit.Controls.RatingDrawable.SelectedFillColor
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Rating/RatingDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: SelectedFillColor
+    path: ../src/AlohaKit/Controls/Rating/RatingDrawable.cs
+    startLine: 7
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public Color SelectedFillColor { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Graphics.Color
+    content.vb: Public Property SelectedFillColor As Color
+  overload: AlohaKit.Controls.RatingDrawable.SelectedFillColor*
+- uid: AlohaKit.Controls.RatingDrawable.UnSelectedFillColor
+  commentId: P:AlohaKit.Controls.RatingDrawable.UnSelectedFillColor
+  id: UnSelectedFillColor
+  parent: AlohaKit.Controls.RatingDrawable
+  langs:
+  - csharp
+  - vb
+  name: UnSelectedFillColor
+  nameWithType: RatingDrawable.UnSelectedFillColor
+  fullName: AlohaKit.Controls.RatingDrawable.UnSelectedFillColor
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Rating/RatingDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: UnSelectedFillColor
+    path: ../src/AlohaKit/Controls/Rating/RatingDrawable.cs
+    startLine: 8
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public Color UnSelectedFillColor { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Graphics.Color
+    content.vb: Public Property UnSelectedFillColor As Color
+  overload: AlohaKit.Controls.RatingDrawable.UnSelectedFillColor*
+- uid: AlohaKit.Controls.RatingDrawable.SelectedStrokeColor
+  commentId: P:AlohaKit.Controls.RatingDrawable.SelectedStrokeColor
+  id: SelectedStrokeColor
+  parent: AlohaKit.Controls.RatingDrawable
+  langs:
+  - csharp
+  - vb
+  name: SelectedStrokeColor
+  nameWithType: RatingDrawable.SelectedStrokeColor
+  fullName: AlohaKit.Controls.RatingDrawable.SelectedStrokeColor
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Rating/RatingDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: SelectedStrokeColor
+    path: ../src/AlohaKit/Controls/Rating/RatingDrawable.cs
+    startLine: 9
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public Color SelectedStrokeColor { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Graphics.Color
+    content.vb: Public Property SelectedStrokeColor As Color
+  overload: AlohaKit.Controls.RatingDrawable.SelectedStrokeColor*
+- uid: AlohaKit.Controls.RatingDrawable.UnSelectedStrokeColor
+  commentId: P:AlohaKit.Controls.RatingDrawable.UnSelectedStrokeColor
+  id: UnSelectedStrokeColor
+  parent: AlohaKit.Controls.RatingDrawable
+  langs:
+  - csharp
+  - vb
+  name: UnSelectedStrokeColor
+  nameWithType: RatingDrawable.UnSelectedStrokeColor
+  fullName: AlohaKit.Controls.RatingDrawable.UnSelectedStrokeColor
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Rating/RatingDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: UnSelectedStrokeColor
+    path: ../src/AlohaKit/Controls/Rating/RatingDrawable.cs
+    startLine: 10
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public Color UnSelectedStrokeColor { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Graphics.Color
+    content.vb: Public Property UnSelectedStrokeColor As Color
+  overload: AlohaKit.Controls.RatingDrawable.UnSelectedStrokeColor*
+- uid: AlohaKit.Controls.RatingDrawable.SelectedStrokeWidth
+  commentId: P:AlohaKit.Controls.RatingDrawable.SelectedStrokeWidth
+  id: SelectedStrokeWidth
+  parent: AlohaKit.Controls.RatingDrawable
+  langs:
+  - csharp
+  - vb
+  name: SelectedStrokeWidth
+  nameWithType: RatingDrawable.SelectedStrokeWidth
+  fullName: AlohaKit.Controls.RatingDrawable.SelectedStrokeWidth
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Rating/RatingDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: SelectedStrokeWidth
+    path: ../src/AlohaKit/Controls/Rating/RatingDrawable.cs
+    startLine: 11
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public double SelectedStrokeWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property SelectedStrokeWidth As Double
+  overload: AlohaKit.Controls.RatingDrawable.SelectedStrokeWidth*
+- uid: AlohaKit.Controls.RatingDrawable.UnSelectedStrokeWidth
+  commentId: P:AlohaKit.Controls.RatingDrawable.UnSelectedStrokeWidth
+  id: UnSelectedStrokeWidth
+  parent: AlohaKit.Controls.RatingDrawable
+  langs:
+  - csharp
+  - vb
+  name: UnSelectedStrokeWidth
+  nameWithType: RatingDrawable.UnSelectedStrokeWidth
+  fullName: AlohaKit.Controls.RatingDrawable.UnSelectedStrokeWidth
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Rating/RatingDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: UnSelectedStrokeWidth
+    path: ../src/AlohaKit/Controls/Rating/RatingDrawable.cs
+    startLine: 12
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public double UnSelectedStrokeWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property UnSelectedStrokeWidth As Double
+  overload: AlohaKit.Controls.RatingDrawable.UnSelectedStrokeWidth*
+- uid: AlohaKit.Controls.RatingDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  commentId: M:AlohaKit.Controls.RatingDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  id: Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  parent: AlohaKit.Controls.RatingDrawable
+  langs:
+  - csharp
+  - vb
+  name: Draw(ICanvas, RectF)
+  nameWithType: RatingDrawable.Draw(ICanvas, RectF)
+  fullName: AlohaKit.Controls.RatingDrawable.Draw(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.RectF)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Rating/RatingDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Draw
+    path: ../src/AlohaKit/Controls/Rating/RatingDrawable.cs
+    startLine: 14
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  example: []
+  syntax:
+    content: public void Draw(ICanvas canvas, RectF dirtyRect)
+    parameters:
+    - id: canvas
+      type: Microsoft.Maui.Graphics.ICanvas
+    - id: dirtyRect
+      type: Microsoft.Maui.Graphics.RectF
+    content.vb: Public Sub Draw(canvas As ICanvas, dirtyRect As RectF)
+  overload: AlohaKit.Controls.RatingDrawable.Draw*
+  implements:
+  - Microsoft.Maui.Graphics.IDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+- uid: AlohaKit.Controls.RatingDrawable.DrawBackground(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  commentId: M:AlohaKit.Controls.RatingDrawable.DrawBackground(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  id: DrawBackground(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  parent: AlohaKit.Controls.RatingDrawable
+  langs:
+  - csharp
+  - vb
+  name: DrawBackground(ICanvas, RectF)
+  nameWithType: RatingDrawable.DrawBackground(ICanvas, RectF)
+  fullName: AlohaKit.Controls.RatingDrawable.DrawBackground(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.RectF)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Rating/RatingDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: DrawBackground
+    path: ../src/AlohaKit/Controls/Rating/RatingDrawable.cs
+    startLine: 25
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public virtual void DrawBackground(ICanvas canvas, RectF dirtyRect)
+    parameters:
+    - id: canvas
+      type: Microsoft.Maui.Graphics.ICanvas
+    - id: dirtyRect
+      type: Microsoft.Maui.Graphics.RectF
+    content.vb: Public Overridable Sub DrawBackground(canvas As ICanvas, dirtyRect As RectF)
+  overload: AlohaKit.Controls.RatingDrawable.DrawBackground*
+- uid: AlohaKit.Controls.RatingDrawable.DrawRatingItem(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF,System.Int32)
+  commentId: M:AlohaKit.Controls.RatingDrawable.DrawRatingItem(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF,System.Int32)
+  id: DrawRatingItem(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF,System.Int32)
+  parent: AlohaKit.Controls.RatingDrawable
+  langs:
+  - csharp
+  - vb
+  name: DrawRatingItem(ICanvas, RectF, int)
+  nameWithType: RatingDrawable.DrawRatingItem(ICanvas, RectF, int)
+  fullName: AlohaKit.Controls.RatingDrawable.DrawRatingItem(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.RectF, int)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/Controls/Rating/RatingDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: DrawRatingItem
+    path: ../src/AlohaKit/Controls/Rating/RatingDrawable.cs
+    startLine: 39
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public virtual void DrawRatingItem(ICanvas canvas, RectF dirtyRect, int index)
+    parameters:
+    - id: canvas
+      type: Microsoft.Maui.Graphics.ICanvas
+    - id: dirtyRect
+      type: Microsoft.Maui.Graphics.RectF
+    - id: index
+      type: System.Int32
+    content.vb: Public Overridable Sub DrawRatingItem(canvas As ICanvas, dirtyRect As RectF, index As Integer)
+  overload: AlohaKit.Controls.RatingDrawable.DrawRatingItem*
+  nameWithType.vb: RatingDrawable.DrawRatingItem(ICanvas, RectF, Integer)
+  fullName.vb: AlohaKit.Controls.RatingDrawable.DrawRatingItem(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.RectF, Integer)
+  name.vb: DrawRatingItem(ICanvas, RectF, Integer)
+references:
+- uid: AlohaKit.Controls
+  commentId: N:AlohaKit.Controls
+  href: AlohaKit.html
+  name: AlohaKit.Controls
+  nameWithType: AlohaKit.Controls
+  fullName: AlohaKit.Controls
+  spec.csharp:
+  - uid: AlohaKit
+    name: AlohaKit
+    href: AlohaKit.html
+  - name: .
+  - uid: AlohaKit.Controls
+    name: Controls
+    href: AlohaKit.Controls.html
+  spec.vb:
+  - uid: AlohaKit
+    name: AlohaKit
+    href: AlohaKit.html
+  - name: .
+  - uid: AlohaKit.Controls
+    name: Controls
+    href: AlohaKit.Controls.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Maui.Graphics.IDrawable
+  commentId: T:Microsoft.Maui.Graphics.IDrawable
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.idrawable
+  name: IDrawable
+  nameWithType: IDrawable
+  fullName: Microsoft.Maui.Graphics.IDrawable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Maui.Graphics
+  commentId: N:Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Maui.Graphics
+  nameWithType: Microsoft.Maui.Graphics
+  fullName: Microsoft.Maui.Graphics
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Maui
+    name: Maui
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui
+  - name: .
+  - uid: Microsoft.Maui.Graphics
+    name: Graphics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Maui
+    name: Maui
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui
+  - name: .
+  - uid: Microsoft.Maui.Graphics
+    name: Graphics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics
+- uid: AlohaKit.Controls.RatingDrawable.ItemsCount*
+  commentId: Overload:AlohaKit.Controls.RatingDrawable.ItemsCount
+  href: AlohaKit.Controls.RatingDrawable.html#AlohaKit_Controls_RatingDrawable_ItemsCount
+  name: ItemsCount
+  nameWithType: RatingDrawable.ItemsCount
+  fullName: AlohaKit.Controls.RatingDrawable.ItemsCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AlohaKit.Controls.RatingDrawable.Value*
+  commentId: Overload:AlohaKit.Controls.RatingDrawable.Value
+  href: AlohaKit.Controls.RatingDrawable.html#AlohaKit_Controls_RatingDrawable_Value
+  name: Value
+  nameWithType: RatingDrawable.Value
+  fullName: AlohaKit.Controls.RatingDrawable.Value
+- uid: AlohaKit.Controls.RatingDrawable.BackgroundPaint*
+  commentId: Overload:AlohaKit.Controls.RatingDrawable.BackgroundPaint
+  href: AlohaKit.Controls.RatingDrawable.html#AlohaKit_Controls_RatingDrawable_BackgroundPaint
+  name: BackgroundPaint
+  nameWithType: RatingDrawable.BackgroundPaint
+  fullName: AlohaKit.Controls.RatingDrawable.BackgroundPaint
+- uid: Microsoft.Maui.Graphics.Paint
+  commentId: T:Microsoft.Maui.Graphics.Paint
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.paint
+  name: Paint
+  nameWithType: Paint
+  fullName: Microsoft.Maui.Graphics.Paint
+- uid: AlohaKit.Controls.RatingDrawable.SelectedFillColor*
+  commentId: Overload:AlohaKit.Controls.RatingDrawable.SelectedFillColor
+  href: AlohaKit.Controls.RatingDrawable.html#AlohaKit_Controls_RatingDrawable_SelectedFillColor
+  name: SelectedFillColor
+  nameWithType: RatingDrawable.SelectedFillColor
+  fullName: AlohaKit.Controls.RatingDrawable.SelectedFillColor
+- uid: Microsoft.Maui.Graphics.Color
+  commentId: T:Microsoft.Maui.Graphics.Color
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.color
+  name: Color
+  nameWithType: Color
+  fullName: Microsoft.Maui.Graphics.Color
+- uid: AlohaKit.Controls.RatingDrawable.UnSelectedFillColor*
+  commentId: Overload:AlohaKit.Controls.RatingDrawable.UnSelectedFillColor
+  href: AlohaKit.Controls.RatingDrawable.html#AlohaKit_Controls_RatingDrawable_UnSelectedFillColor
+  name: UnSelectedFillColor
+  nameWithType: RatingDrawable.UnSelectedFillColor
+  fullName: AlohaKit.Controls.RatingDrawable.UnSelectedFillColor
+- uid: AlohaKit.Controls.RatingDrawable.SelectedStrokeColor*
+  commentId: Overload:AlohaKit.Controls.RatingDrawable.SelectedStrokeColor
+  href: AlohaKit.Controls.RatingDrawable.html#AlohaKit_Controls_RatingDrawable_SelectedStrokeColor
+  name: SelectedStrokeColor
+  nameWithType: RatingDrawable.SelectedStrokeColor
+  fullName: AlohaKit.Controls.RatingDrawable.SelectedStrokeColor
+- uid: AlohaKit.Controls.RatingDrawable.UnSelectedStrokeColor*
+  commentId: Overload:AlohaKit.Controls.RatingDrawable.UnSelectedStrokeColor
+  href: AlohaKit.Controls.RatingDrawable.html#AlohaKit_Controls_RatingDrawable_UnSelectedStrokeColor
+  name: UnSelectedStrokeColor
+  nameWithType: RatingDrawable.UnSelectedStrokeColor
+  fullName: AlohaKit.Controls.RatingDrawable.UnSelectedStrokeColor
+- uid: AlohaKit.Controls.RatingDrawable.SelectedStrokeWidth*
+  commentId: Overload:AlohaKit.Controls.RatingDrawable.SelectedStrokeWidth
+  href: AlohaKit.Controls.RatingDrawable.html#AlohaKit_Controls_RatingDrawable_SelectedStrokeWidth
+  name: SelectedStrokeWidth
+  nameWithType: RatingDrawable.SelectedStrokeWidth
+  fullName: AlohaKit.Controls.RatingDrawable.SelectedStrokeWidth
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: AlohaKit.Controls.RatingDrawable.UnSelectedStrokeWidth*
+  commentId: Overload:AlohaKit.Controls.RatingDrawable.UnSelectedStrokeWidth
+  href: AlohaKit.Controls.RatingDrawable.html#AlohaKit_Controls_RatingDrawable_UnSelectedStrokeWidth
+  name: UnSelectedStrokeWidth
+  nameWithType: RatingDrawable.UnSelectedStrokeWidth
+  fullName: AlohaKit.Controls.RatingDrawable.UnSelectedStrokeWidth
+- uid: AlohaKit.Controls.RatingDrawable.Draw*
+  commentId: Overload:AlohaKit.Controls.RatingDrawable.Draw
+  href: AlohaKit.Controls.RatingDrawable.html#AlohaKit_Controls_RatingDrawable_Draw_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_RectF_
+  name: Draw
+  nameWithType: RatingDrawable.Draw
+  fullName: AlohaKit.Controls.RatingDrawable.Draw
+- uid: Microsoft.Maui.Graphics.IDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  commentId: M:Microsoft.Maui.Graphics.IDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  parent: Microsoft.Maui.Graphics.IDrawable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.idrawable.draw
+  name: Draw(ICanvas, RectF)
+  nameWithType: IDrawable.Draw(ICanvas, RectF)
+  fullName: Microsoft.Maui.Graphics.IDrawable.Draw(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.RectF)
+  spec.csharp:
+  - uid: Microsoft.Maui.Graphics.IDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+    name: Draw
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.idrawable.draw
+  - name: (
+  - uid: Microsoft.Maui.Graphics.ICanvas
+    name: ICanvas
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.RectF
+    name: RectF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.rectf
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.Graphics.IDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+    name: Draw
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.idrawable.draw
+  - name: (
+  - uid: Microsoft.Maui.Graphics.ICanvas
+    name: ICanvas
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.RectF
+    name: RectF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.rectf
+  - name: )
+- uid: Microsoft.Maui.Graphics.ICanvas
+  commentId: T:Microsoft.Maui.Graphics.ICanvas
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: Microsoft.Maui.Graphics.ICanvas
+- uid: Microsoft.Maui.Graphics.RectF
+  commentId: T:Microsoft.Maui.Graphics.RectF
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.rectf
+  name: RectF
+  nameWithType: RectF
+  fullName: Microsoft.Maui.Graphics.RectF
+- uid: AlohaKit.Controls.RatingDrawable.DrawBackground*
+  commentId: Overload:AlohaKit.Controls.RatingDrawable.DrawBackground
+  href: AlohaKit.Controls.RatingDrawable.html#AlohaKit_Controls_RatingDrawable_DrawBackground_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_RectF_
+  name: DrawBackground
+  nameWithType: RatingDrawable.DrawBackground
+  fullName: AlohaKit.Controls.RatingDrawable.DrawBackground
+- uid: AlohaKit.Controls.RatingDrawable.DrawRatingItem*
+  commentId: Overload:AlohaKit.Controls.RatingDrawable.DrawRatingItem
+  href: AlohaKit.Controls.RatingDrawable.html#AlohaKit_Controls_RatingDrawable_DrawRatingItem_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_RectF_System_Int32_
+  name: DrawRatingItem
+  nameWithType: RatingDrawable.DrawRatingItem
+  fullName: AlohaKit.Controls.RatingDrawable.DrawRatingItem

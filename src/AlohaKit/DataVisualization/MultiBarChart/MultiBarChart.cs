@@ -3,7 +3,13 @@ using AlohaKit.Models;
 
 namespace AlohaKit.Controls
 {
-    public sealed class MultiBarChart : BaseChart
+	/// <summary>
+	/// The MultiBarChart is a drawn control designed to display multiple bar charts within a single charting view. 
+	/// It enables the visualization of grouped or stacked data, making it an ideal tool for comparing multiple datasets across categories. 
+	/// 
+	/// This class inherits from BaseChart, leveraging core charting functionality while adding features specific to bar chart rendering.
+	/// </summary>
+	public sealed class MultiBarChart : BaseChart
     {
         private MultiBarChartDrawable _currentChart = new MultiBarChartDrawable();
 

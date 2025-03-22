@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AlohaKit.Enums
+﻿namespace AlohaKit.Enums
 {
 	public class ChartEnums
 	{
 		/// <summary>
-		/// LineChart style
+		/// The LineChartStyle enumeration specifies the style used for rendering a line chart. 
+		/// It defines whether the chart should display straight lines or smooth curves to connect the data points.
 		/// </summary>
 		public enum LineChartStyle
 		{

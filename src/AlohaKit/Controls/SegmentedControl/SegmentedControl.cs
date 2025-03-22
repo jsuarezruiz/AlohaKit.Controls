@@ -4,6 +4,10 @@ using System.Windows.Input;
 
 namespace AlohaKit.Controls
 {
+	/// <summary>
+	/// The SegmentedControl is a drawn control that allows users to make a single selection from a set of segmented options. 
+	/// It is ideal for scenarios where a user needs to choose between mutually exclusive options, such as switching between tabs or filtering content.
+	/// </summary>
 	public class SegmentedControl : GraphicsView
 	{
 		public SegmentedControl()

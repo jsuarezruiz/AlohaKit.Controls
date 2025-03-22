@@ -1,14 +1,20 @@
 ﻿using System.Collections.ObjectModel;
-using AlohaKit.Enums;
 using AlohaKit.Models;
 using static AlohaKit.Enums.ChartEnums;
 
 namespace AlohaKit.Controls
 {
-    public sealed class MultiLineChartView : BaseChart
+	/// <summary>
+	/// The MultiLineChartView is a drawn control for displaying multiple line charts within a single view. 
+	/// This enables the visualization of multiple data series, each represented by a separate line, on a shared coordinate system. 
+	/// 
+	/// The class is derived from BaseChart, allowing it to inherit essential charting properties and behaviors while adding specialized features for multi-line visualization.
+	/// </summary>
+	public sealed class MultiLineChartView : BaseChart
     {
         private MultiLineChartDrawable _currentChart = new MultiLineChartDrawable();
-        #region DependencyProperties
+        
+		#region DependencyProperties
 
         public static readonly BindableProperty ExpandAndFillBackgroundCurvePathProperty = BindableProperty.Create(nameof(ExpandAndFillBackgroundCurvePath), typeof(bool), typeof(MultiLineChartView), false, propertyChanged: (bindableObject, oldValue, newValue) =>
        {

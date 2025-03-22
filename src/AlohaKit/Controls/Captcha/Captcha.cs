@@ -1,5 +1,11 @@
 ﻿namespace AlohaKit.Controls
 {
+	/// <summary>
+	/// The Captcha is a drawn control used to render and manage CAPTCHA (Completely Automated Public Turing test to 
+	/// tell Computers and Humans Apart) challenges. 
+	/// It leverages .NET MAUI Graphics for efficient graphical rendering and provides a flexible way to generate and validate 
+	/// CAPTCHAs in an application.
+	/// </summary>
 	public class Captcha : GraphicsView
 	{
 		public Captcha()

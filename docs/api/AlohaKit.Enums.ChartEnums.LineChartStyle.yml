@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlohaKit.Enums.ChartEnums.LineChartStyle
+  commentId: T:AlohaKit.Enums.ChartEnums.LineChartStyle
+  id: ChartEnums.LineChartStyle
+  parent: AlohaKit.Enums
+  children:
+  - AlohaKit.Enums.ChartEnums.LineChartStyle.Curve
+  - AlohaKit.Enums.ChartEnums.LineChartStyle.Line
+  langs:
+  - csharp
+  - vb
+  name: ChartEnums.LineChartStyle
+  nameWithType: ChartEnums.LineChartStyle
+  fullName: AlohaKit.Enums.ChartEnums.LineChartStyle
+  type: Enum
+  source:
+    remote:
+      path: src/AlohaKit/Enums/ChartEnums.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: LineChartStyle
+    path: ../src/AlohaKit/Enums/ChartEnums.cs
+    startLine: 8
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Enums
+  summary: >-
+    The LineChartStyle enumeration specifies the style used for rendering a line chart. 
+
+    It defines whether the chart should display straight lines or smooth curves to connect the data points.
+  example: []
+  syntax:
+    content: public enum ChartEnums.LineChartStyle
+    content.vb: Public Enum ChartEnums.LineChartStyle
+- uid: AlohaKit.Enums.ChartEnums.LineChartStyle.Line
+  commentId: F:AlohaKit.Enums.ChartEnums.LineChartStyle.Line
+  id: Line
+  parent: AlohaKit.Enums.ChartEnums.LineChartStyle
+  langs:
+  - csharp
+  - vb
+  name: Line
+  nameWithType: ChartEnums.LineChartStyle.Line
+  fullName: AlohaKit.Enums.ChartEnums.LineChartStyle.Line
+  type: Field
+  source:
+    remote:
+      path: src/AlohaKit/Enums/ChartEnums.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Line
+    path: ../src/AlohaKit/Enums/ChartEnums.cs
+    startLine: 10
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Enums
+  syntax:
+    content: Line = 0
+    return:
+      type: AlohaKit.Enums.ChartEnums.LineChartStyle
+- uid: AlohaKit.Enums.ChartEnums.LineChartStyle.Curve
+  commentId: F:AlohaKit.Enums.ChartEnums.LineChartStyle.Curve
+  id: Curve
+  parent: AlohaKit.Enums.ChartEnums.LineChartStyle
+  langs:
+  - csharp
+  - vb
+  name: Curve
+  nameWithType: ChartEnums.LineChartStyle.Curve
+  fullName: AlohaKit.Enums.ChartEnums.LineChartStyle.Curve
+  type: Field
+  source:
+    remote:
+      path: src/AlohaKit/Enums/ChartEnums.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Curve
+    path: ../src/AlohaKit/Enums/ChartEnums.cs
+    startLine: 11
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Enums
+  syntax:
+    content: Curve = 1
+    return:
+      type: AlohaKit.Enums.ChartEnums.LineChartStyle
+references:
+- uid: AlohaKit.Enums
+  commentId: N:AlohaKit.Enums
+  href: AlohaKit.html
+  name: AlohaKit.Enums
+  nameWithType: AlohaKit.Enums
+  fullName: AlohaKit.Enums
+  spec.csharp:
+  - uid: AlohaKit
+    name: AlohaKit
+    href: AlohaKit.html
+  - name: .
+  - uid: AlohaKit.Enums
+    name: Enums
+    href: AlohaKit.Enums.html
+  spec.vb:
+  - uid: AlohaKit
+    name: AlohaKit
+    href: AlohaKit.html
+  - name: .
+  - uid: AlohaKit.Enums
+    name: Enums
+    href: AlohaKit.Enums.html
+- uid: AlohaKit.Enums.ChartEnums.LineChartStyle
+  commentId: T:AlohaKit.Enums.ChartEnums.LineChartStyle
+  parent: AlohaKit.Enums
+  href: AlohaKit.Enums.ChartEnums.html
+  name: ChartEnums.LineChartStyle
+  nameWithType: ChartEnums.LineChartStyle
+  fullName: AlohaKit.Enums.ChartEnums.LineChartStyle
+  spec.csharp:
+  - uid: AlohaKit.Enums.ChartEnums
+    name: ChartEnums
+    href: AlohaKit.Enums.ChartEnums.html
+  - name: .
+  - uid: AlohaKit.Enums.ChartEnums.LineChartStyle
+    name: LineChartStyle
+    href: AlohaKit.Enums.ChartEnums.LineChartStyle.html
+  spec.vb:
+  - uid: AlohaKit.Enums.ChartEnums
+    name: ChartEnums
+    href: AlohaKit.Enums.ChartEnums.html
+  - name: .
+  - uid: AlohaKit.Enums.ChartEnums.LineChartStyle
+    name: LineChartStyle
+    href: AlohaKit.Enums.ChartEnums.LineChartStyle.html

@@ -1,11 +1,17 @@
 ﻿
 namespace AlohaKit.Controls
 {
-
-    public sealed class BarChart : BaseChart
+	/// <summary>
+	/// The BarChart is a drawn control used to render bar charts, allowing for the visualization of data as rectangular bars. 
+	/// Each bar's length or height corresponds to the value it represents. 
+	/// 
+	/// It extends the BaseChart class, providing additional functionality tailored to bar chart rendering while leveraging shared chart capabilities.
+	/// </summary>
+	public sealed class BarChart : BaseChart
     {
 
         private BarChartDrawable _currentChart = new BarChartDrawable();
+
         #region DependencyProperties
         public static readonly BindableProperty ShowBackgroundBarsProperty = BindableProperty.Create(nameof(ShowBackgroundBars), typeof(bool), typeof(BarChart), true, propertyChanged: (bindableObject, oldValue, newValue) =>
          {

@@ -1,11 +1,17 @@
-﻿using AlohaKit.Enums;
-using static AlohaKit.Enums.ChartEnums;
+﻿using static AlohaKit.Enums.ChartEnums;
 
 namespace AlohaKit.Controls
 {
-    public sealed class LineChart : BaseChart
+	/// <summary>
+	/// The LineChart provides a drawn control to visualize data as a line chart. 
+	/// It allows data points to be represented by a continuous line, making it ideal for showing trends over time or relationships between variables. 
+	///
+	/// This class inherits from BaseChart, leveraging shared charting functionality while adding line-specific rendering features.
+	/// </summary>
+	public sealed class LineChart : BaseChart
     {
         private LineChartDrawable _currentChart = new LineChartDrawable();
+
         #region DependencyProperties
 
         public static readonly BindableProperty ExpandAndFillBackgroundCurvePathProperty = BindableProperty.Create(nameof(ExpandAndFillBackgroundCurvePath), typeof(bool), typeof(LineChart), false, propertyChanged: (bindableObject, oldValue, newValue) =>
@@ -151,4 +157,3 @@ namespace AlohaKit.Controls
         }
     }
 }
-

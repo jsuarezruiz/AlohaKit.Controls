@@ -1,0 +1,3608 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlohaKit.Controls.BaseChartDrawable
+  commentId: T:AlohaKit.Controls.BaseChartDrawable
+  id: BaseChartDrawable
+  parent: AlohaKit.Controls
+  children:
+  - AlohaKit.Controls.BaseChartDrawable.AnimationProgress
+  - AlohaKit.Controls.BaseChartDrawable.AxisDashPattern
+  - AlohaKit.Controls.BaseChartDrawable.AxisFontSize
+  - AlohaKit.Controls.BaseChartDrawable.AxisLinesColor
+  - AlohaKit.Controls.BaseChartDrawable.AxisLinesStrokeSize
+  - AlohaKit.Controls.BaseChartDrawable.AxisXMargin
+  - AlohaKit.Controls.BaseChartDrawable.CalculateFooterHeight(Microsoft.Maui.Graphics.SizeF[])
+  - AlohaKit.Controls.BaseChartDrawable.CalculateHeaderHeight(Microsoft.Maui.Graphics.SizeF[])
+  - AlohaKit.Controls.BaseChartDrawable.CalculateHorizontalYLineCoordinate(System.Single,Microsoft.Maui.Graphics.SizeF,System.Single,System.Single)
+  - AlohaKit.Controls.BaseChartDrawable.CalculateItemSize(System.Collections.Generic.List{AlohaKit.Models.ChartItem},System.Single,System.Single,System.Single,System.Single)
+  - AlohaKit.Controls.BaseChartDrawable.CalculateItemSize(System.Single,System.Single,System.Single,System.Single)
+  - AlohaKit.Controls.BaseChartDrawable.CalculatePaddingForLabelValue(System.Single,Microsoft.Maui.Graphics.SizeF)
+  - AlohaKit.Controls.BaseChartDrawable.CalculatePoints(Microsoft.Maui.Graphics.SizeF,System.Single,System.Single)
+  - AlohaKit.Controls.BaseChartDrawable.CalculatePoints(System.Collections.Generic.List{AlohaKit.Models.ChartItem},Microsoft.Maui.Graphics.SizeF,System.Single,System.Single)
+  - AlohaKit.Controls.BaseChartDrawable.CalculateYOrigin(System.Single,System.Single)
+  - AlohaKit.Controls.BaseChartDrawable.ClearBackground(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.SizeF,Microsoft.Maui.Graphics.Color)
+  - AlohaKit.Controls.BaseChartDrawable.ColorBrush
+  - AlohaKit.Controls.BaseChartDrawable.DisplayHeaderValues
+  - AlohaKit.Controls.BaseChartDrawable.DisplayHorizontalAxisLines
+  - AlohaKit.Controls.BaseChartDrawable.DisplayValueLabelsOnTop
+  - AlohaKit.Controls.BaseChartDrawable.DisplayVerticalAxisLines
+  - AlohaKit.Controls.BaseChartDrawable.Dispose
+  - AlohaKit.Controls.BaseChartDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  - AlohaKit.Controls.BaseChartDrawable.DrawChart(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  - AlohaKit.Controls.BaseChartDrawable.DrawHorizontalStepLines(Microsoft.Maui.Graphics.ICanvas,System.Collections.Generic.IEnumerable{Microsoft.Maui.Graphics.PointF},System.Single,System.Single,System.Single,System.Single,System.Single)
+  - AlohaKit.Controls.BaseChartDrawable.DrawLabels(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],Microsoft.Maui.Graphics.SizeF,System.Single,System.Single,System.Single)
+  - AlohaKit.Controls.BaseChartDrawable.DrawLabels(System.Collections.Generic.List{AlohaKit.Models.ChartItem},Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],Microsoft.Maui.Graphics.SizeF,System.Single,System.Single,System.Single)
+  - AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],System.Single,System.Single)
+  - AlohaKit.Controls.BaseChartDrawable.EnableAntialias
+  - AlohaKit.Controls.BaseChartDrawable.Entries
+  - AlohaKit.Controls.BaseChartDrawable.Entries_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  - AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  - AlohaKit.Controls.BaseChartDrawable.FillColor
+  - AlohaKit.Controls.BaseChartDrawable.Font
+  - AlohaKit.Controls.BaseChartDrawable.FontColor
+  - AlohaKit.Controls.BaseChartDrawable.FontSize
+  - AlohaKit.Controls.BaseChartDrawable.FooterHeight
+  - AlohaKit.Controls.BaseChartDrawable.FooterLabelsFontColor
+  - AlohaKit.Controls.BaseChartDrawable.FooterLabelsMargin
+  - AlohaKit.Controls.BaseChartDrawable.FooterLabelsTextSize
+  - AlohaKit.Controls.BaseChartDrawable.HeaderHeight
+  - AlohaKit.Controls.BaseChartDrawable.HeaderValuesMargin
+  - AlohaKit.Controls.BaseChartDrawable.Height
+  - AlohaKit.Controls.BaseChartDrawable.IsAnimating
+  - AlohaKit.Controls.BaseChartDrawable.IsInitialized
+  - AlohaKit.Controls.BaseChartDrawable.IsLabelTextTruncationEnabled
+  - AlohaKit.Controls.BaseChartDrawable.ItemSeparationMargin
+  - AlohaKit.Controls.BaseChartDrawable.ItemSize
+  - AlohaKit.Controls.BaseChartDrawable.Margin
+  - AlohaKit.Controls.BaseChartDrawable.MaxValue
+  - AlohaKit.Controls.BaseChartDrawable.MaxYValueCoordinate
+  - AlohaKit.Controls.BaseChartDrawable.MeasureLabels
+  - AlohaKit.Controls.BaseChartDrawable.MinValue
+  - AlohaKit.Controls.BaseChartDrawable.Origin
+  - AlohaKit.Controls.BaseChartDrawable.PathsColorOpacity
+  - AlohaKit.Controls.BaseChartDrawable.Points
+  - AlohaKit.Controls.BaseChartDrawable.RequestInvalidate
+  - AlohaKit.Controls.BaseChartDrawable.StrokeColor
+  - AlohaKit.Controls.BaseChartDrawable.StrokeSize
+  - AlohaKit.Controls.BaseChartDrawable.TruncateText(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.SizeF,System.String)
+  - AlohaKit.Controls.BaseChartDrawable.ValueRange
+  - AlohaKit.Controls.BaseChartDrawable.Width
+  - AlohaKit.Controls.BaseChartDrawable._canvas
+  - AlohaKit.Controls.BaseChartDrawable._colorBrush
+  - AlohaKit.Controls.BaseChartDrawable._dirtyRect
+  - AlohaKit.Controls.BaseChartDrawable._displayHeaderValues
+  - AlohaKit.Controls.BaseChartDrawable._displayValueLabelsOnTop
+  langs:
+  - csharp
+  - vb
+  name: BaseChartDrawable
+  nameWithType: BaseChartDrawable
+  fullName: AlohaKit.Controls.BaseChartDrawable
+  type: Class
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: BaseChartDrawable
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 8
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: 'public abstract class BaseChartDrawable : IDrawable, IDisposable'
+    content.vb: Public MustInherit Class BaseChartDrawable Implements IDrawable, IDisposable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - AlohaKit.Controls.BarChartDrawable
+  - AlohaKit.Controls.LineChartDrawable
+  - AlohaKit.Controls.MultiBarChartDrawable
+  - AlohaKit.Controls.MultiLineChartDrawable
+  implements:
+  - Microsoft.Maui.Graphics.IDrawable
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AlohaKit.Controls.BaseChartDrawable._canvas
+  commentId: P:AlohaKit.Controls.BaseChartDrawable._canvas
+  id: _canvas
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: _canvas
+  nameWithType: BaseChartDrawable._canvas
+  fullName: AlohaKit.Controls.BaseChartDrawable._canvas
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: _canvas
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 12
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: protected ICanvas _canvas { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Graphics.ICanvas
+    content.vb: Protected Property _canvas As ICanvas
+  overload: AlohaKit.Controls.BaseChartDrawable._canvas*
+- uid: AlohaKit.Controls.BaseChartDrawable._displayHeaderValues
+  commentId: F:AlohaKit.Controls.BaseChartDrawable._displayHeaderValues
+  id: _displayHeaderValues
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: _displayHeaderValues
+  nameWithType: BaseChartDrawable._displayHeaderValues
+  fullName: AlohaKit.Controls.BaseChartDrawable._displayHeaderValues
+  type: Field
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: _displayHeaderValues
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 13
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: protected bool _displayHeaderValues
+    return:
+      type: System.Boolean
+    content.vb: Protected _displayHeaderValues As Boolean
+- uid: AlohaKit.Controls.BaseChartDrawable.MaxYValueCoordinate
+  commentId: F:AlohaKit.Controls.BaseChartDrawable.MaxYValueCoordinate
+  id: MaxYValueCoordinate
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: MaxYValueCoordinate
+  nameWithType: BaseChartDrawable.MaxYValueCoordinate
+  fullName: AlohaKit.Controls.BaseChartDrawable.MaxYValueCoordinate
+  type: Field
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: MaxYValueCoordinate
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 14
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: protected float MaxYValueCoordinate
+    return:
+      type: System.Single
+    content.vb: Protected MaxYValueCoordinate As Single
+- uid: AlohaKit.Controls.BaseChartDrawable.AxisXMargin
+  commentId: F:AlohaKit.Controls.BaseChartDrawable.AxisXMargin
+  id: AxisXMargin
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: AxisXMargin
+  nameWithType: BaseChartDrawable.AxisXMargin
+  fullName: AlohaKit.Controls.BaseChartDrawable.AxisXMargin
+  type: Field
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: AxisXMargin
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 15
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: protected int AxisXMargin
+    return:
+      type: System.Int32
+    content.vb: Protected AxisXMargin As Integer
+- uid: AlohaKit.Controls.BaseChartDrawable._dirtyRect
+  commentId: F:AlohaKit.Controls.BaseChartDrawable._dirtyRect
+  id: _dirtyRect
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: _dirtyRect
+  nameWithType: BaseChartDrawable._dirtyRect
+  fullName: AlohaKit.Controls.BaseChartDrawable._dirtyRect
+  type: Field
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: _dirtyRect
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 16
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: protected RectF _dirtyRect
+    return:
+      type: Microsoft.Maui.Graphics.RectF
+    content.vb: Protected _dirtyRect As RectF
+- uid: AlohaKit.Controls.BaseChartDrawable._displayValueLabelsOnTop
+  commentId: F:AlohaKit.Controls.BaseChartDrawable._displayValueLabelsOnTop
+  id: _displayValueLabelsOnTop
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: _displayValueLabelsOnTop
+  nameWithType: BaseChartDrawable._displayValueLabelsOnTop
+  fullName: AlohaKit.Controls.BaseChartDrawable._displayValueLabelsOnTop
+  type: Field
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: _displayValueLabelsOnTop
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 32
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: protected bool _displayValueLabelsOnTop
+    return:
+      type: System.Boolean
+    content.vb: Protected _displayValueLabelsOnTop As Boolean
+- uid: AlohaKit.Controls.BaseChartDrawable._colorBrush
+  commentId: F:AlohaKit.Controls.BaseChartDrawable._colorBrush
+  id: _colorBrush
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: _colorBrush
+  nameWithType: BaseChartDrawable._colorBrush
+  fullName: AlohaKit.Controls.BaseChartDrawable._colorBrush
+  type: Field
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: _colorBrush
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 43
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: protected Brush _colorBrush
+    return:
+      type: Microsoft.Maui.Controls.Brush
+    content.vb: Protected _colorBrush As Brush
+- uid: AlohaKit.Controls.BaseChartDrawable.IsInitialized
+  commentId: F:AlohaKit.Controls.BaseChartDrawable.IsInitialized
+  id: IsInitialized
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: IsInitialized
+  nameWithType: BaseChartDrawable.IsInitialized
+  fullName: AlohaKit.Controls.BaseChartDrawable.IsInitialized
+  type: Field
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: IsInitialized
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 46
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public bool IsInitialized
+    return:
+      type: System.Boolean
+    content.vb: Public IsInitialized As Boolean
+- uid: AlohaKit.Controls.BaseChartDrawable.IsAnimating
+  commentId: F:AlohaKit.Controls.BaseChartDrawable.IsAnimating
+  id: IsAnimating
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: IsAnimating
+  nameWithType: BaseChartDrawable.IsAnimating
+  fullName: AlohaKit.Controls.BaseChartDrawable.IsAnimating
+  type: Field
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: IsAnimating
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 47
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public bool IsAnimating
+    return:
+      type: System.Boolean
+    content.vb: Public IsAnimating As Boolean
+- uid: AlohaKit.Controls.BaseChartDrawable.ColorBrush
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.ColorBrush
+  id: ColorBrush
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: ColorBrush
+  nameWithType: BaseChartDrawable.ColorBrush
+  fullName: AlohaKit.Controls.BaseChartDrawable.ColorBrush
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: ColorBrush
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 48
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public Brush ColorBrush { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Controls.Brush
+    content.vb: Public Property ColorBrush As Brush
+  overload: AlohaKit.Controls.BaseChartDrawable.ColorBrush*
+- uid: AlohaKit.Controls.BaseChartDrawable.AxisDashPattern
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.AxisDashPattern
+  id: AxisDashPattern
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: AxisDashPattern
+  nameWithType: BaseChartDrawable.AxisDashPattern
+  fullName: AlohaKit.Controls.BaseChartDrawable.AxisDashPattern
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: AxisDashPattern
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 58
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public float[] AxisDashPattern { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property AxisDashPattern As Single()
+  overload: AlohaKit.Controls.BaseChartDrawable.AxisDashPattern*
+- uid: AlohaKit.Controls.BaseChartDrawable.DisplayHeaderValues
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.DisplayHeaderValues
+  id: DisplayHeaderValues
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: DisplayHeaderValues
+  nameWithType: BaseChartDrawable.DisplayHeaderValues
+  fullName: AlohaKit.Controls.BaseChartDrawable.DisplayHeaderValues
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: DisplayHeaderValues
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 68
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: public bool DisplayHeaderValues { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DisplayHeaderValues As Boolean
+  overload: AlohaKit.Controls.BaseChartDrawable.DisplayHeaderValues*
+- uid: AlohaKit.Controls.BaseChartDrawable.PathsColorOpacity
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.PathsColorOpacity
+  id: PathsColorOpacity
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: PathsColorOpacity
+  nameWithType: BaseChartDrawable.PathsColorOpacity
+  fullName: AlohaKit.Controls.BaseChartDrawable.PathsColorOpacity
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: PathsColorOpacity
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 81
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Sets the Alpha modifier value to use when drawing solid color backgrounds.Default is 0.6
+  example: []
+  syntax:
+    content: public float PathsColorOpacity { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PathsColorOpacity As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.PathsColorOpacity*
+- uid: AlohaKit.Controls.BaseChartDrawable.DisplayHorizontalAxisLines
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.DisplayHorizontalAxisLines
+  id: DisplayHorizontalAxisLines
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: DisplayHorizontalAxisLines
+  nameWithType: BaseChartDrawable.DisplayHorizontalAxisLines
+  fullName: AlohaKit.Controls.BaseChartDrawable.DisplayHorizontalAxisLines
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: DisplayHorizontalAxisLines
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 96
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: If true header labels will be hidden and chart will draw horizontal step lines.
+  example: []
+  syntax:
+    content: public bool DisplayHorizontalAxisLines { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DisplayHorizontalAxisLines As Boolean
+  overload: AlohaKit.Controls.BaseChartDrawable.DisplayHorizontalAxisLines*
+- uid: AlohaKit.Controls.BaseChartDrawable.DisplayVerticalAxisLines
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.DisplayVerticalAxisLines
+  id: DisplayVerticalAxisLines
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: DisplayVerticalAxisLines
+  nameWithType: BaseChartDrawable.DisplayVerticalAxisLines
+  fullName: AlohaKit.Controls.BaseChartDrawable.DisplayVerticalAxisLines
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: DisplayVerticalAxisLines
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 109
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: If true vertical lines will be drawn as background along with horizontal lines. DisplayHorizontalAxisLines prop needs to be true as well
+  example: []
+  syntax:
+    content: public bool DisplayVerticalAxisLines { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DisplayVerticalAxisLines As Boolean
+  overload: AlohaKit.Controls.BaseChartDrawable.DisplayVerticalAxisLines*
+- uid: AlohaKit.Controls.BaseChartDrawable.AnimationProgress
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.AnimationProgress
+  id: AnimationProgress
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: AnimationProgress
+  nameWithType: BaseChartDrawable.AnimationProgress
+  fullName: AlohaKit.Controls.BaseChartDrawable.AnimationProgress
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: AnimationProgress
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 122
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Represents the percentage of the current chart Animation from 1-100
+  example: []
+  syntax:
+    content: public int AnimationProgress { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property AnimationProgress As Integer
+  overload: AlohaKit.Controls.BaseChartDrawable.AnimationProgress*
+- uid: AlohaKit.Controls.BaseChartDrawable.IsLabelTextTruncationEnabled
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.IsLabelTextTruncationEnabled
+  id: IsLabelTextTruncationEnabled
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: IsLabelTextTruncationEnabled
+  nameWithType: BaseChartDrawable.IsLabelTextTruncationEnabled
+  fullName: AlohaKit.Controls.BaseChartDrawable.IsLabelTextTruncationEnabled
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: IsLabelTextTruncationEnabled
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 127
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: If true, chart labels text will be truncated to fit available size. Default is true
+  example: []
+  syntax:
+    content: public bool IsLabelTextTruncationEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsLabelTextTruncationEnabled As Boolean
+  overload: AlohaKit.Controls.BaseChartDrawable.IsLabelTextTruncationEnabled*
+- uid: AlohaKit.Controls.BaseChartDrawable.DisplayValueLabelsOnTop
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.DisplayValueLabelsOnTop
+  id: DisplayValueLabelsOnTop
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: DisplayValueLabelsOnTop
+  nameWithType: BaseChartDrawable.DisplayValueLabelsOnTop
+  fullName: AlohaKit.Controls.BaseChartDrawable.DisplayValueLabelsOnTop
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: DisplayValueLabelsOnTop
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 140
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: If true, chart will show value labels on top of canvas. Default is true
+  example: []
+  syntax:
+    content: public bool DisplayValueLabelsOnTop { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DisplayValueLabelsOnTop As Boolean
+  overload: AlohaKit.Controls.BaseChartDrawable.DisplayValueLabelsOnTop*
+- uid: AlohaKit.Controls.BaseChartDrawable.StrokeSize
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.StrokeSize
+  id: StrokeSize
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: StrokeSize
+  nameWithType: BaseChartDrawable.StrokeSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.StrokeSize
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: StrokeSize
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 153
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Stroke size. Default is 2.5
+  example: []
+  syntax:
+    content: public float StrokeSize { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property StrokeSize As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.StrokeSize*
+- uid: AlohaKit.Controls.BaseChartDrawable.AxisLinesStrokeSize
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.AxisLinesStrokeSize
+  id: AxisLinesStrokeSize
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: AxisLinesStrokeSize
+  nameWithType: BaseChartDrawable.AxisLinesStrokeSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.AxisLinesStrokeSize
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: AxisLinesStrokeSize
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 166
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Axis lines stroke size. Default is 0.9
+  example: []
+  syntax:
+    content: public float AxisLinesStrokeSize { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AxisLinesStrokeSize As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.AxisLinesStrokeSize*
+- uid: AlohaKit.Controls.BaseChartDrawable.AxisLinesColor
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.AxisLinesColor
+  id: AxisLinesColor
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: AxisLinesColor
+  nameWithType: BaseChartDrawable.AxisLinesColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.AxisLinesColor
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: AxisLinesColor
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 179
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Axis lines color. Default is Lightgray
+  example: []
+  syntax:
+    content: public Color AxisLinesColor { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Graphics.Color
+    content.vb: Public Property AxisLinesColor As Color
+  overload: AlohaKit.Controls.BaseChartDrawable.AxisLinesColor*
+- uid: AlohaKit.Controls.BaseChartDrawable.StrokeColor
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.StrokeColor
+  id: StrokeColor
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: StrokeColor
+  nameWithType: BaseChartDrawable.StrokeColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.StrokeColor
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: StrokeColor
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 192
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Stroke color. Default is Black
+  example: []
+  syntax:
+    content: public Color StrokeColor { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Graphics.Color
+    content.vb: Public Property StrokeColor As Color
+  overload: AlohaKit.Controls.BaseChartDrawable.StrokeColor*
+- uid: AlohaKit.Controls.BaseChartDrawable.ItemSeparationMargin
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.ItemSeparationMargin
+  id: ItemSeparationMargin
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: ItemSeparationMargin
+  nameWithType: BaseChartDrawable.ItemSeparationMargin
+  fullName: AlohaKit.Controls.BaseChartDrawable.ItemSeparationMargin
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: ItemSeparationMargin
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 205
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets the separation margin between each item. Default is 8
+  example: []
+  syntax:
+    content: public float ItemSeparationMargin { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ItemSeparationMargin As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.ItemSeparationMargin*
+- uid: AlohaKit.Controls.BaseChartDrawable.FooterLabelsTextSize
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.FooterLabelsTextSize
+  id: FooterLabelsTextSize
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: FooterLabelsTextSize
+  nameWithType: BaseChartDrawable.FooterLabelsTextSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.FooterLabelsTextSize
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: FooterLabelsTextSize
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 218
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets font size to use for footer label values. Default is 10
+  example: []
+  syntax:
+    content: public float FooterLabelsTextSize { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property FooterLabelsTextSize As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.FooterLabelsTextSize*
+- uid: AlohaKit.Controls.BaseChartDrawable.FooterLabelsMargin
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.FooterLabelsMargin
+  id: FooterLabelsMargin
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: FooterLabelsMargin
+  nameWithType: BaseChartDrawable.FooterLabelsMargin
+  fullName: AlohaKit.Controls.BaseChartDrawable.FooterLabelsMargin
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: FooterLabelsMargin
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 231
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets font margin to use when calculating footer labels coordinates. Default is 8
+  example: []
+  syntax:
+    content: public float FooterLabelsMargin { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property FooterLabelsMargin As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.FooterLabelsMargin*
+- uid: AlohaKit.Controls.BaseChartDrawable.HeaderValuesMargin
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.HeaderValuesMargin
+  id: HeaderValuesMargin
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: HeaderValuesMargin
+  nameWithType: BaseChartDrawable.HeaderValuesMargin
+  fullName: AlohaKit.Controls.BaseChartDrawable.HeaderValuesMargin
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: HeaderValuesMargin
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 244
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets font margin to use when calculating header value labels coordinates. Default is 30
+  example: []
+  syntax:
+    content: public float HeaderValuesMargin { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property HeaderValuesMargin As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.HeaderValuesMargin*
+- uid: AlohaKit.Controls.BaseChartDrawable.FillColor
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.FillColor
+  id: FillColor
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: FillColor
+  nameWithType: BaseChartDrawable.FillColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.FillColor
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: FillColor
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 257
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets the canvas default fill color. Default is transparent
+  example: []
+  syntax:
+    content: public Color FillColor { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Graphics.Color
+    content.vb: Public Property FillColor As Color
+  overload: AlohaKit.Controls.BaseChartDrawable.FillColor*
+- uid: AlohaKit.Controls.BaseChartDrawable.Font
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.Font
+  id: Font
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: Font
+  nameWithType: BaseChartDrawable.Font
+  fullName: AlohaKit.Controls.BaseChartDrawable.Font
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Font
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 270
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets the canvas default Font to use when drawing strings. [10/10/22 -&gt; GRAPHICS MISSING SUPPORT FOR CUSTOM FONTS]
+  example: []
+  syntax:
+    content: public IFont Font { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Graphics.IFont
+    content.vb: Public Property Font As IFont
+  overload: AlohaKit.Controls.BaseChartDrawable.Font*
+- uid: AlohaKit.Controls.BaseChartDrawable.Entries
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.Entries
+  id: Entries
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: Entries
+  nameWithType: BaseChartDrawable.Entries
+  fullName: AlohaKit.Controls.BaseChartDrawable.Entries
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Entries
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 283
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets the items to display within canvas
+  example: []
+  syntax:
+    content: public ObservableCollection<ChartItem> Entries { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{AlohaKit.Models.ChartItem}
+    content.vb: Public Property Entries As ObservableCollection(Of ChartItem)
+  overload: AlohaKit.Controls.BaseChartDrawable.Entries*
+- uid: AlohaKit.Controls.BaseChartDrawable.Entries_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.Entries_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  id: Entries_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: Entries_CollectionChanged(object, NotifyCollectionChangedEventArgs)
+  nameWithType: BaseChartDrawable.Entries_CollectionChanged(object, NotifyCollectionChangedEventArgs)
+  fullName: AlohaKit.Controls.BaseChartDrawable.Entries_CollectionChanged(object, System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Entries_CollectionChanged
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 301
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: protected virtual void Entries_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+    content.vb: Protected Overridable Sub Entries_CollectionChanged(sender As Object, e As NotifyCollectionChangedEventArgs)
+  overload: AlohaKit.Controls.BaseChartDrawable.Entries_CollectionChanged*
+  nameWithType.vb: BaseChartDrawable.Entries_CollectionChanged(Object, NotifyCollectionChangedEventArgs)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.Entries_CollectionChanged(Object, System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+  name.vb: Entries_CollectionChanged(Object, NotifyCollectionChangedEventArgs)
+- uid: AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  id: Entry_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: Entry_PropertyChanged(object, PropertyChangedEventArgs)
+  nameWithType: BaseChartDrawable.Entry_PropertyChanged(object, PropertyChangedEventArgs)
+  fullName: AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged(object, System.ComponentModel.PropertyChangedEventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Entry_PropertyChanged
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 306
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: protected virtual void Entry_PropertyChanged(object sender, PropertyChangedEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.ComponentModel.PropertyChangedEventArgs
+    content.vb: Protected Overridable Sub Entry_PropertyChanged(sender As Object, e As PropertyChangedEventArgs)
+  overload: AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged*
+  nameWithType.vb: BaseChartDrawable.Entry_PropertyChanged(Object, PropertyChangedEventArgs)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged(Object, System.ComponentModel.PropertyChangedEventArgs)
+  name.vb: Entry_PropertyChanged(Object, PropertyChangedEventArgs)
+- uid: AlohaKit.Controls.BaseChartDrawable.FontSize
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.FontSize
+  id: FontSize
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: FontSize
+  nameWithType: BaseChartDrawable.FontSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.FontSize
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: FontSize
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 314
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets font size to use when drawing value labels. Default is 11
+  example: []
+  syntax:
+    content: public float FontSize { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property FontSize As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.FontSize*
+- uid: AlohaKit.Controls.BaseChartDrawable.AxisFontSize
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.AxisFontSize
+  id: AxisFontSize
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: AxisFontSize
+  nameWithType: BaseChartDrawable.AxisFontSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.AxisFontSize
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: AxisFontSize
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 327
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets font size to use when drawing chart axis labels. Default is 11
+  example: []
+  syntax:
+    content: public float AxisFontSize { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AxisFontSize As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.AxisFontSize*
+- uid: AlohaKit.Controls.BaseChartDrawable.Margin
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.Margin
+  id: Margin
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: Margin
+  nameWithType: BaseChartDrawable.Margin
+  fullName: AlohaKit.Controls.BaseChartDrawable.Margin
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Margin
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 340
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets the default top and bottom internal margin to use when drawing canvas content. Default value is 15
+  example: []
+  syntax:
+    content: public float Margin { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Margin As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.Margin*
+- uid: AlohaKit.Controls.BaseChartDrawable.FontColor
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.FontColor
+  id: FontColor
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: FontColor
+  nameWithType: BaseChartDrawable.FontColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.FontColor
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: FontColor
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 353
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets the color to use when drawing value labels. Default is Black
+  example: []
+  syntax:
+    content: public Color FontColor { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Graphics.Color
+    content.vb: Public Property FontColor As Color
+  overload: AlohaKit.Controls.BaseChartDrawable.FontColor*
+- uid: AlohaKit.Controls.BaseChartDrawable.FooterLabelsFontColor
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.FooterLabelsFontColor
+  id: FooterLabelsFontColor
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: FooterLabelsFontColor
+  nameWithType: BaseChartDrawable.FooterLabelsFontColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.FooterLabelsFontColor
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: FooterLabelsFontColor
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 366
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets the color to use when drawing footer labels. Default is Black
+  example: []
+  syntax:
+    content: public Color FooterLabelsFontColor { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Graphics.Color
+    content.vb: Public Property FooterLabelsFontColor As Color
+  overload: AlohaKit.Controls.BaseChartDrawable.FooterLabelsFontColor*
+- uid: AlohaKit.Controls.BaseChartDrawable.EnableAntialias
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.EnableAntialias
+  id: EnableAntialias
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: EnableAntialias
+  nameWithType: BaseChartDrawable.EnableAntialias
+  fullName: AlohaKit.Controls.BaseChartDrawable.EnableAntialias
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: EnableAntialias
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 379
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets if the current canvas will use Antialias mode or not when drawing content. Default is true
+  example: []
+  syntax:
+    content: public bool EnableAntialias { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property EnableAntialias As Boolean
+  overload: AlohaKit.Controls.BaseChartDrawable.EnableAntialias*
+- uid: AlohaKit.Controls.BaseChartDrawable.Points
+  commentId: F:AlohaKit.Controls.BaseChartDrawable.Points
+  id: Points
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: Points
+  nameWithType: BaseChartDrawable.Points
+  fullName: AlohaKit.Controls.BaseChartDrawable.Points
+  type: Field
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Points
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 391
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: protected PointF[] Points
+    return:
+      type: Microsoft.Maui.Graphics.PointF[]
+    content.vb: Protected Points As PointF()
+- uid: AlohaKit.Controls.BaseChartDrawable.ItemSize
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.ItemSize
+  id: ItemSize
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: ItemSize
+  nameWithType: BaseChartDrawable.ItemSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.ItemSize
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: ItemSize
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 396
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets the size for each value column
+  example: []
+  syntax:
+    content: protected SizeF ItemSize { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maui.Graphics.SizeF
+    content.vb: Protected Property ItemSize As SizeF
+  overload: AlohaKit.Controls.BaseChartDrawable.ItemSize*
+- uid: AlohaKit.Controls.BaseChartDrawable.MinValue
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.MinValue
+  id: MinValue
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: MinValue
+  nameWithType: BaseChartDrawable.MinValue
+  fullName: AlohaKit.Controls.BaseChartDrawable.MinValue
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: MinValue
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 401
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets the smallest value within ChartEntries collection
+  example: []
+  syntax:
+    content: protected float MinValue { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Protected ReadOnly Property MinValue As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.MinValue*
+- uid: AlohaKit.Controls.BaseChartDrawable.MaxValue
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.MaxValue
+  id: MaxValue
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: MaxValue
+  nameWithType: BaseChartDrawable.MaxValue
+  fullName: AlohaKit.Controls.BaseChartDrawable.MaxValue
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: MaxValue
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 414
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets the greatest value within ChartEntries collection
+  example: []
+  syntax:
+    content: protected float MaxValue { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Protected ReadOnly Property MaxValue As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.MaxValue*
+- uid: AlohaKit.Controls.BaseChartDrawable.Width
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.Width
+  id: Width
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: BaseChartDrawable.Width
+  fullName: AlohaKit.Controls.BaseChartDrawable.Width
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Width
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 425
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets control Width
+  example: []
+  syntax:
+    content: protected float Width { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Protected Property Width As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.Width*
+- uid: AlohaKit.Controls.BaseChartDrawable.Height
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.Height
+  id: Height
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: BaseChartDrawable.Height
+  fullName: AlohaKit.Controls.BaseChartDrawable.Height
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Height
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 430
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets control height
+  example: []
+  syntax:
+    content: protected float Height { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Protected Property Height As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.Height*
+- uid: AlohaKit.Controls.BaseChartDrawable.Origin
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.Origin
+  id: Origin
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: BaseChartDrawable.Origin
+  fullName: AlohaKit.Controls.BaseChartDrawable.Origin
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Origin
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 435
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: gets or sets the origin in Y axis
+  example: []
+  syntax:
+    content: protected float Origin { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Protected Property Origin As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.Origin*
+- uid: AlohaKit.Controls.BaseChartDrawable.HeaderHeight
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.HeaderHeight
+  id: HeaderHeight
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: HeaderHeight
+  nameWithType: BaseChartDrawable.HeaderHeight
+  fullName: AlohaKit.Controls.BaseChartDrawable.HeaderHeight
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: HeaderHeight
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 440
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets Header height
+  example: []
+  syntax:
+    content: protected float HeaderHeight { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Protected Property HeaderHeight As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.HeaderHeight*
+- uid: AlohaKit.Controls.BaseChartDrawable.FooterHeight
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.FooterHeight
+  id: FooterHeight
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: FooterHeight
+  nameWithType: BaseChartDrawable.FooterHeight
+  fullName: AlohaKit.Controls.BaseChartDrawable.FooterHeight
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: FooterHeight
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 445
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets Footer height
+  example: []
+  syntax:
+    content: protected float FooterHeight { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Protected Property FooterHeight As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.FooterHeight*
+- uid: AlohaKit.Controls.BaseChartDrawable.ValueRange
+  commentId: P:AlohaKit.Controls.BaseChartDrawable.ValueRange
+  id: ValueRange
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: ValueRange
+  nameWithType: BaseChartDrawable.ValueRange
+  fullName: AlohaKit.Controls.BaseChartDrawable.ValueRange
+  type: Property
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: ValueRange
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 450
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets or sets chart value range by subtracting MaxValue from MinValue.
+  example: []
+  syntax:
+    content: protected float ValueRange { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Protected ReadOnly Property ValueRange As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.ValueRange*
+- uid: AlohaKit.Controls.BaseChartDrawable.RequestInvalidate
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.RequestInvalidate
+  id: RequestInvalidate
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: RequestInvalidate()
+  nameWithType: BaseChartDrawable.RequestInvalidate()
+  fullName: AlohaKit.Controls.BaseChartDrawable.RequestInvalidate()
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: RequestInvalidate
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 456
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Trigger Invalidate() method on ChartView()
+  example: []
+  syntax:
+    content: protected void RequestInvalidate()
+    content.vb: Protected Sub RequestInvalidate()
+  overload: AlohaKit.Controls.BaseChartDrawable.RequestInvalidate*
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculatePaddingForLabelValue(System.Single,Microsoft.Maui.Graphics.SizeF)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.CalculatePaddingForLabelValue(System.Single,Microsoft.Maui.Graphics.SizeF)
+  id: CalculatePaddingForLabelValue(System.Single,Microsoft.Maui.Graphics.SizeF)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: CalculatePaddingForLabelValue(float, SizeF)
+  nameWithType: BaseChartDrawable.CalculatePaddingForLabelValue(float, SizeF)
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculatePaddingForLabelValue(float, Microsoft.Maui.Graphics.SizeF)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: CalculatePaddingForLabelValue
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 464
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Calculate the center for a given rectangle
+  example: []
+  syntax:
+    content: protected virtual float CalculatePaddingForLabelValue(float coordinateX, SizeF rect)
+    parameters:
+    - id: coordinateX
+      type: System.Single
+      description: X axis coordinate
+    - id: rect
+      type: Microsoft.Maui.Graphics.SizeF
+      description: Rectangle container to be centered
+    return:
+      type: System.Single
+      description: Number indicating the center X coordinate within input rectangle
+    content.vb: Protected Overridable Function CalculatePaddingForLabelValue(coordinateX As Single, rect As SizeF) As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.CalculatePaddingForLabelValue*
+  nameWithType.vb: BaseChartDrawable.CalculatePaddingForLabelValue(Single, SizeF)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.CalculatePaddingForLabelValue(Single, Microsoft.Maui.Graphics.SizeF)
+  name.vb: CalculatePaddingForLabelValue(Single, SizeF)
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculateHorizontalYLineCoordinate(System.Single,Microsoft.Maui.Graphics.SizeF,System.Single,System.Single)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.CalculateHorizontalYLineCoordinate(System.Single,Microsoft.Maui.Graphics.SizeF,System.Single,System.Single)
+  id: CalculateHorizontalYLineCoordinate(System.Single,Microsoft.Maui.Graphics.SizeF,System.Single,System.Single)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: CalculateHorizontalYLineCoordinate(float, SizeF, float, float)
+  nameWithType: BaseChartDrawable.CalculateHorizontalYLineCoordinate(float, SizeF, float, float)
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculateHorizontalYLineCoordinate(float, Microsoft.Maui.Graphics.SizeF, float, float)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: CalculateHorizontalYLineCoordinate
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 477
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: For a given value, calculates its Y coordinate within current canvas
+  example: []
+  syntax:
+    content: protected virtual PointF CalculateHorizontalYLineCoordinate(float value, SizeF itemSize, float origin, float headerHeight)
+    parameters:
+    - id: value
+      type: System.Single
+      description: Value to calculate
+    - id: itemSize
+      type: Microsoft.Maui.Graphics.SizeF
+      description: Item available size
+    - id: origin
+      type: System.Single
+      description: Y coordinate origin coordinate
+    - id: headerHeight
+      type: System.Single
+      description: Header height
+    return:
+      type: Microsoft.Maui.Graphics.PointF
+      description: Y Coordinate of given value
+    content.vb: Protected Overridable Function CalculateHorizontalYLineCoordinate(value As Single, itemSize As SizeF, origin As Single, headerHeight As Single) As PointF
+  overload: AlohaKit.Controls.BaseChartDrawable.CalculateHorizontalYLineCoordinate*
+  nameWithType.vb: BaseChartDrawable.CalculateHorizontalYLineCoordinate(Single, SizeF, Single, Single)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.CalculateHorizontalYLineCoordinate(Single, Microsoft.Maui.Graphics.SizeF, Single, Single)
+  name.vb: CalculateHorizontalYLineCoordinate(Single, SizeF, Single, Single)
+- uid: AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],System.Single,System.Single)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],System.Single,System.Single)
+  id: DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],System.Single,System.Single)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: DrawVerticalStepLines(ICanvas, PointF[], float, float)
+  nameWithType: BaseChartDrawable.DrawVerticalStepLines(ICanvas, PointF[], float, float)
+  fullName: AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.PointF[], float, float)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: DrawVerticalStepLines
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 483
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  syntax:
+    content: protected abstract void DrawVerticalStepLines(ICanvas canvas, PointF[] points, float origin, float maxPositiveValue)
+    parameters:
+    - id: canvas
+      type: Microsoft.Maui.Graphics.ICanvas
+    - id: points
+      type: Microsoft.Maui.Graphics.PointF[]
+    - id: origin
+      type: System.Single
+    - id: maxPositiveValue
+      type: System.Single
+    content.vb: Protected MustOverride Sub DrawVerticalStepLines(canvas As ICanvas, points As PointF(), origin As Single, maxPositiveValue As Single)
+  overload: AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines*
+  nameWithType.vb: BaseChartDrawable.DrawVerticalStepLines(ICanvas, PointF(), Single, Single)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.PointF(), Single, Single)
+  name.vb: DrawVerticalStepLines(ICanvas, PointF(), Single, Single)
+- uid: AlohaKit.Controls.BaseChartDrawable.DrawHorizontalStepLines(Microsoft.Maui.Graphics.ICanvas,System.Collections.Generic.IEnumerable{Microsoft.Maui.Graphics.PointF},System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.DrawHorizontalStepLines(Microsoft.Maui.Graphics.ICanvas,System.Collections.Generic.IEnumerable{Microsoft.Maui.Graphics.PointF},System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: DrawHorizontalStepLines(Microsoft.Maui.Graphics.ICanvas,System.Collections.Generic.IEnumerable{Microsoft.Maui.Graphics.PointF},System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: DrawHorizontalStepLines(ICanvas, IEnumerable<PointF>, float, float, float, float, float)
+  nameWithType: BaseChartDrawable.DrawHorizontalStepLines(ICanvas, IEnumerable<PointF>, float, float, float, float, float)
+  fullName: AlohaKit.Controls.BaseChartDrawable.DrawHorizontalStepLines(Microsoft.Maui.Graphics.ICanvas, System.Collections.Generic.IEnumerable<Microsoft.Maui.Graphics.PointF>, float, float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: DrawHorizontalStepLines
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 495
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Draw horizontal lines in Y Axis
+  example: []
+  syntax:
+    content: protected virtual void DrawHorizontalStepLines(ICanvas canvas, IEnumerable<PointF> points, float width, float height, float origin, float originX, float finalX)
+    parameters:
+    - id: canvas
+      type: Microsoft.Maui.Graphics.ICanvas
+      description: Current canvas
+    - id: points
+      type: System.Collections.Generic.IEnumerable{Microsoft.Maui.Graphics.PointF}
+      description: Current chart calculated points
+    - id: width
+      type: System.Single
+      description: Current canvas total Width
+    - id: height
+      type: System.Single
+      description: Current Canvas total Height
+    - id: origin
+      type: System.Single
+      description: Y origin coordinate
+    - id: originX
+      type: System.Single
+      description: X coordinate that determines where the line should start
+    - id: finalX
+      type: System.Single
+      description: X coordinate that determines where the line should end
+    content.vb: Protected Overridable Sub DrawHorizontalStepLines(canvas As ICanvas, points As IEnumerable(Of PointF), width As Single, height As Single, origin As Single, originX As Single, finalX As Single)
+  overload: AlohaKit.Controls.BaseChartDrawable.DrawHorizontalStepLines*
+  nameWithType.vb: BaseChartDrawable.DrawHorizontalStepLines(ICanvas, IEnumerable(Of PointF), Single, Single, Single, Single, Single)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.DrawHorizontalStepLines(Microsoft.Maui.Graphics.ICanvas, System.Collections.Generic.IEnumerable(Of Microsoft.Maui.Graphics.PointF), Single, Single, Single, Single, Single)
+  name.vb: DrawHorizontalStepLines(ICanvas, IEnumerable(Of PointF), Single, Single, Single, Single, Single)
+- uid: AlohaKit.Controls.BaseChartDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  id: Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: Draw(ICanvas, RectF)
+  nameWithType: BaseChartDrawable.Draw(ICanvas, RectF)
+  fullName: AlohaKit.Controls.BaseChartDrawable.Draw(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.RectF)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Draw
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 579
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  example: []
+  syntax:
+    content: public void Draw(ICanvas canvas, RectF dirtyRect)
+    parameters:
+    - id: canvas
+      type: Microsoft.Maui.Graphics.ICanvas
+    - id: dirtyRect
+      type: Microsoft.Maui.Graphics.RectF
+    content.vb: Public Sub Draw(canvas As ICanvas, dirtyRect As RectF)
+  overload: AlohaKit.Controls.BaseChartDrawable.Draw*
+  implements:
+  - Microsoft.Maui.Graphics.IDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+- uid: AlohaKit.Controls.BaseChartDrawable.MeasureLabels
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.MeasureLabels
+  id: MeasureLabels
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: MeasureLabels()
+  nameWithType: BaseChartDrawable.MeasureLabels()
+  fullName: AlohaKit.Controls.BaseChartDrawable.MeasureLabels()
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: MeasureLabels
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 602
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Gets the size for labels container rectangle by measuring text length
+  example: []
+  syntax:
+    content: protected virtual SizeF[] MeasureLabels()
+    return:
+      type: Microsoft.Maui.Graphics.SizeF[]
+      description: Array with labels rectangle containers
+    content.vb: Protected Overridable Function MeasureLabels() As SizeF()
+  overload: AlohaKit.Controls.BaseChartDrawable.MeasureLabels*
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculateFooterHeight(Microsoft.Maui.Graphics.SizeF[])
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.CalculateFooterHeight(Microsoft.Maui.Graphics.SizeF[])
+  id: CalculateFooterHeight(Microsoft.Maui.Graphics.SizeF[])
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: CalculateFooterHeight(SizeF[])
+  nameWithType: BaseChartDrawable.CalculateFooterHeight(SizeF[])
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculateFooterHeight(Microsoft.Maui.Graphics.SizeF[])
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: CalculateFooterHeight
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 624
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Calculates footer total height
+  example: []
+  syntax:
+    content: protected virtual float CalculateFooterHeight(SizeF[] valueLabelSizes)
+    parameters:
+    - id: valueLabelSizes
+      type: Microsoft.Maui.Graphics.SizeF[]
+      description: Label size
+    return:
+      type: System.Single
+      description: Labels height
+    content.vb: Protected Overridable Function CalculateFooterHeight(valueLabelSizes As SizeF()) As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.CalculateFooterHeight*
+  nameWithType.vb: BaseChartDrawable.CalculateFooterHeight(SizeF())
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.CalculateFooterHeight(Microsoft.Maui.Graphics.SizeF())
+  name.vb: CalculateFooterHeight(SizeF())
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculateHeaderHeight(Microsoft.Maui.Graphics.SizeF[])
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.CalculateHeaderHeight(Microsoft.Maui.Graphics.SizeF[])
+  id: CalculateHeaderHeight(Microsoft.Maui.Graphics.SizeF[])
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: CalculateHeaderHeight(SizeF[])
+  nameWithType: BaseChartDrawable.CalculateHeaderHeight(SizeF[])
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculateHeaderHeight(Microsoft.Maui.Graphics.SizeF[])
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: CalculateHeaderHeight
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 641
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Calculates header height
+  example: []
+  syntax:
+    content: protected virtual float CalculateHeaderHeight(SizeF[] valueLabelSizes)
+    parameters:
+    - id: valueLabelSizes
+      type: Microsoft.Maui.Graphics.SizeF[]
+      description: Label size
+    return:
+      type: System.Single
+      description: Header total height
+    content.vb: Protected Overridable Function CalculateHeaderHeight(valueLabelSizes As SizeF()) As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.CalculateHeaderHeight*
+  nameWithType.vb: BaseChartDrawable.CalculateHeaderHeight(SizeF())
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.CalculateHeaderHeight(Microsoft.Maui.Graphics.SizeF())
+  name.vb: CalculateHeaderHeight(SizeF())
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculateItemSize(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.CalculateItemSize(System.Single,System.Single,System.Single,System.Single)
+  id: CalculateItemSize(System.Single,System.Single,System.Single,System.Single)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: CalculateItemSize(float, float, float, float)
+  nameWithType: BaseChartDrawable.CalculateItemSize(float, float, float, float)
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculateItemSize(float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: CalculateItemSize
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 666
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Calculates the size chart is going to use when drawing each bar
+  example: []
+  syntax:
+    content: protected virtual SizeF CalculateItemSize(float width, float height, float footerHeight, float headerHeight)
+    parameters:
+    - id: width
+      type: System.Single
+      description: Control width
+    - id: height
+      type: System.Single
+      description: Control height
+    - id: footerHeight
+      type: System.Single
+      description: Chart footer label area height
+    - id: headerHeight
+      type: System.Single
+      description: Chart header area height
+    return:
+      type: Microsoft.Maui.Graphics.SizeF
+      description: The size for each bar
+    content.vb: Protected Overridable Function CalculateItemSize(width As Single, height As Single, footerHeight As Single, headerHeight As Single) As SizeF
+  overload: AlohaKit.Controls.BaseChartDrawable.CalculateItemSize*
+  nameWithType.vb: BaseChartDrawable.CalculateItemSize(Single, Single, Single, Single)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.CalculateItemSize(Single, Single, Single, Single)
+  name.vb: CalculateItemSize(Single, Single, Single, Single)
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculateItemSize(System.Collections.Generic.List{AlohaKit.Models.ChartItem},System.Single,System.Single,System.Single,System.Single)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.CalculateItemSize(System.Collections.Generic.List{AlohaKit.Models.ChartItem},System.Single,System.Single,System.Single,System.Single)
+  id: CalculateItemSize(System.Collections.Generic.List{AlohaKit.Models.ChartItem},System.Single,System.Single,System.Single,System.Single)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: CalculateItemSize(List<ChartItem>, float, float, float, float)
+  nameWithType: BaseChartDrawable.CalculateItemSize(List<ChartItem>, float, float, float, float)
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculateItemSize(System.Collections.Generic.List<AlohaKit.Models.ChartItem>, float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: CalculateItemSize
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 682
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Calculates the size chart is going to use when drawing each bar
+  example: []
+  syntax:
+    content: protected virtual SizeF CalculateItemSize(List<ChartItem> entries, float width, float height, float footerHeight, float headerHeight)
+    parameters:
+    - id: entries
+      type: System.Collections.Generic.List{AlohaKit.Models.ChartItem}
+    - id: width
+      type: System.Single
+      description: Control width
+    - id: height
+      type: System.Single
+      description: Control height
+    - id: footerHeight
+      type: System.Single
+      description: Chart footer label area height
+    - id: headerHeight
+      type: System.Single
+      description: Chart header area height
+    return:
+      type: Microsoft.Maui.Graphics.SizeF
+      description: The size for each bar
+    content.vb: Protected Overridable Function CalculateItemSize(entries As List(Of ChartItem), width As Single, height As Single, footerHeight As Single, headerHeight As Single) As SizeF
+  overload: AlohaKit.Controls.BaseChartDrawable.CalculateItemSize*
+  nameWithType.vb: BaseChartDrawable.CalculateItemSize(List(Of ChartItem), Single, Single, Single, Single)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.CalculateItemSize(System.Collections.Generic.List(Of AlohaKit.Models.ChartItem), Single, Single, Single, Single)
+  name.vb: CalculateItemSize(List(Of ChartItem), Single, Single, Single, Single)
+- uid: AlohaKit.Controls.BaseChartDrawable.DrawChart(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.DrawChart(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  id: DrawChart(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: DrawChart(ICanvas, RectF)
+  nameWithType: BaseChartDrawable.DrawChart(ICanvas, RectF)
+  fullName: AlohaKit.Controls.BaseChartDrawable.DrawChart(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.RectF)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: DrawChart
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 695
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Calculates and draws the current chart with the Entries[] data
+  example: []
+  syntax:
+    content: public virtual void DrawChart(ICanvas canvas, RectF dirtyRect)
+    parameters:
+    - id: canvas
+      type: Microsoft.Maui.Graphics.ICanvas
+      description: Current canvas
+    - id: dirtyRect
+      type: Microsoft.Maui.Graphics.RectF
+      description: Current canvas rect
+    content.vb: Public Overridable Sub DrawChart(canvas As ICanvas, dirtyRect As RectF)
+  overload: AlohaKit.Controls.BaseChartDrawable.DrawChart*
+- uid: AlohaKit.Controls.BaseChartDrawable.ClearBackground(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.SizeF,Microsoft.Maui.Graphics.Color)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.ClearBackground(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.SizeF,Microsoft.Maui.Graphics.Color)
+  id: ClearBackground(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.SizeF,Microsoft.Maui.Graphics.Color)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: ClearBackground(ICanvas, SizeF, Color)
+  nameWithType: BaseChartDrawable.ClearBackground(ICanvas, SizeF, Color)
+  fullName: AlohaKit.Controls.BaseChartDrawable.ClearBackground(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.SizeF, Microsoft.Maui.Graphics.Color)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: ClearBackground
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 715
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Change current canvas background fill color
+  example: []
+  syntax:
+    content: public virtual void ClearBackground(ICanvas canvas, SizeF containerSize, Color fillColor)
+    parameters:
+    - id: canvas
+      type: Microsoft.Maui.Graphics.ICanvas
+      description: Current canvas
+    - id: containerSize
+      type: Microsoft.Maui.Graphics.SizeF
+      description: Canvas size
+    - id: fillColor
+      type: Microsoft.Maui.Graphics.Color
+      description: Fill color
+    content.vb: Public Overridable Sub ClearBackground(canvas As ICanvas, containerSize As SizeF, fillColor As Color)
+  overload: AlohaKit.Controls.BaseChartDrawable.ClearBackground*
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculateYOrigin(System.Single,System.Single)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.CalculateYOrigin(System.Single,System.Single)
+  id: CalculateYOrigin(System.Single,System.Single)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: CalculateYOrigin(float, float)
+  nameWithType: BaseChartDrawable.CalculateYOrigin(float, float)
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculateYOrigin(float, float)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: CalculateYOrigin
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 727
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Calculates the Y axis origin value
+  example: []
+  syntax:
+    content: protected float CalculateYOrigin(float itemHeight, float headerHeight)
+    parameters:
+    - id: itemHeight
+      type: System.Single
+      description: Each bar width
+    - id: headerHeight
+      type: System.Single
+      description: Control total height
+    return:
+      type: System.Single
+      description: Y axis origin coordinate
+    content.vb: Protected Function CalculateYOrigin(itemHeight As Single, headerHeight As Single) As Single
+  overload: AlohaKit.Controls.BaseChartDrawable.CalculateYOrigin*
+  nameWithType.vb: BaseChartDrawable.CalculateYOrigin(Single, Single)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.CalculateYOrigin(Single, Single)
+  name.vb: CalculateYOrigin(Single, Single)
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculatePoints(Microsoft.Maui.Graphics.SizeF,System.Single,System.Single)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.CalculatePoints(Microsoft.Maui.Graphics.SizeF,System.Single,System.Single)
+  id: CalculatePoints(Microsoft.Maui.Graphics.SizeF,System.Single,System.Single)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: CalculatePoints(SizeF, float, float)
+  nameWithType: BaseChartDrawable.CalculatePoints(SizeF, float, float)
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculatePoints(Microsoft.Maui.Graphics.SizeF, float, float)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: CalculatePoints
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 741
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Calculates the coordinates of each value within the chart canvas
+  example: []
+  syntax:
+    content: protected virtual PointF[] CalculatePoints(SizeF itemSize, float origin, float headerHeight)
+    parameters:
+    - id: itemSize
+      type: Microsoft.Maui.Graphics.SizeF
+      description: Item size
+    - id: origin
+      type: System.Single
+      description: Y axis origin coordinate
+    - id: headerHeight
+      type: System.Single
+      description: Chart header area height
+    return:
+      type: Microsoft.Maui.Graphics.PointF[]
+      description: Array with the points coordinates
+    content.vb: Protected Overridable Function CalculatePoints(itemSize As SizeF, origin As Single, headerHeight As Single) As PointF()
+  overload: AlohaKit.Controls.BaseChartDrawable.CalculatePoints*
+  nameWithType.vb: BaseChartDrawable.CalculatePoints(SizeF, Single, Single)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.CalculatePoints(Microsoft.Maui.Graphics.SizeF, Single, Single)
+  name.vb: CalculatePoints(SizeF, Single, Single)
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculatePoints(System.Collections.Generic.List{AlohaKit.Models.ChartItem},Microsoft.Maui.Graphics.SizeF,System.Single,System.Single)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.CalculatePoints(System.Collections.Generic.List{AlohaKit.Models.ChartItem},Microsoft.Maui.Graphics.SizeF,System.Single,System.Single)
+  id: CalculatePoints(System.Collections.Generic.List{AlohaKit.Models.ChartItem},Microsoft.Maui.Graphics.SizeF,System.Single,System.Single)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: CalculatePoints(List<ChartItem>, SizeF, float, float)
+  nameWithType: BaseChartDrawable.CalculatePoints(List<ChartItem>, SizeF, float, float)
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculatePoints(System.Collections.Generic.List<AlohaKit.Models.ChartItem>, Microsoft.Maui.Graphics.SizeF, float, float)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: CalculatePoints
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 769
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Calculates the coordinates of each value within the chart canvas
+  example: []
+  syntax:
+    content: protected virtual PointF[] CalculatePoints(List<ChartItem> entries, SizeF itemSize, float origin, float headerHeight)
+    parameters:
+    - id: entries
+      type: System.Collections.Generic.List{AlohaKit.Models.ChartItem}
+    - id: itemSize
+      type: Microsoft.Maui.Graphics.SizeF
+      description: Item size
+    - id: origin
+      type: System.Single
+      description: Y axis origin coordinate
+    - id: headerHeight
+      type: System.Single
+      description: Chart header area height
+    return:
+      type: Microsoft.Maui.Graphics.PointF[]
+      description: Array with the points coordinates
+    content.vb: Protected Overridable Function CalculatePoints(entries As List(Of ChartItem), itemSize As SizeF, origin As Single, headerHeight As Single) As PointF()
+  overload: AlohaKit.Controls.BaseChartDrawable.CalculatePoints*
+  nameWithType.vb: BaseChartDrawable.CalculatePoints(List(Of ChartItem), SizeF, Single, Single)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.CalculatePoints(System.Collections.Generic.List(Of AlohaKit.Models.ChartItem), Microsoft.Maui.Graphics.SizeF, Single, Single)
+  name.vb: CalculatePoints(List(Of ChartItem), SizeF, Single, Single)
+- uid: AlohaKit.Controls.BaseChartDrawable.DrawLabels(System.Collections.Generic.List{AlohaKit.Models.ChartItem},Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],Microsoft.Maui.Graphics.SizeF,System.Single,System.Single,System.Single)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.DrawLabels(System.Collections.Generic.List{AlohaKit.Models.ChartItem},Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],Microsoft.Maui.Graphics.SizeF,System.Single,System.Single,System.Single)
+  id: DrawLabels(System.Collections.Generic.List{AlohaKit.Models.ChartItem},Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],Microsoft.Maui.Graphics.SizeF,System.Single,System.Single,System.Single)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: DrawLabels(List<ChartItem>, ICanvas, PointF[], SizeF, float, float, float)
+  nameWithType: BaseChartDrawable.DrawLabels(List<ChartItem>, ICanvas, PointF[], SizeF, float, float, float)
+  fullName: AlohaKit.Controls.BaseChartDrawable.DrawLabels(System.Collections.Generic.List<AlohaKit.Models.ChartItem>, Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.PointF[], Microsoft.Maui.Graphics.SizeF, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: DrawLabels
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 798
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Draws footer and value labels on current canvas
+  example: []
+  syntax:
+    content: protected virtual void DrawLabels(List<ChartItem> entries, ICanvas canvas, PointF[] points, SizeF itemSize, float height, float footerHeight, float origin)
+    parameters:
+    - id: entries
+      type: System.Collections.Generic.List{AlohaKit.Models.ChartItem}
+    - id: canvas
+      type: Microsoft.Maui.Graphics.ICanvas
+      description: Canvas to draw on
+    - id: points
+      type: Microsoft.Maui.Graphics.PointF[]
+      description: Coordinates for each footer label
+    - id: itemSize
+      type: Microsoft.Maui.Graphics.SizeF
+      description: Item size
+    - id: height
+      type: System.Single
+      description: Control height
+    - id: footerHeight
+      type: System.Single
+      description: Chart footer area height
+    - id: origin
+      type: System.Single
+      description: Y axis origin coordinate
+    content.vb: Protected Overridable Sub DrawLabels(entries As List(Of ChartItem), canvas As ICanvas, points As PointF(), itemSize As SizeF, height As Single, footerHeight As Single, origin As Single)
+  overload: AlohaKit.Controls.BaseChartDrawable.DrawLabels*
+  nameWithType.vb: BaseChartDrawable.DrawLabels(List(Of ChartItem), ICanvas, PointF(), SizeF, Single, Single, Single)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.DrawLabels(System.Collections.Generic.List(Of AlohaKit.Models.ChartItem), Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.PointF(), Microsoft.Maui.Graphics.SizeF, Single, Single, Single)
+  name.vb: DrawLabels(List(Of ChartItem), ICanvas, PointF(), SizeF, Single, Single, Single)
+- uid: AlohaKit.Controls.BaseChartDrawable.DrawLabels(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],Microsoft.Maui.Graphics.SizeF,System.Single,System.Single,System.Single)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.DrawLabels(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],Microsoft.Maui.Graphics.SizeF,System.Single,System.Single,System.Single)
+  id: DrawLabels(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.PointF[],Microsoft.Maui.Graphics.SizeF,System.Single,System.Single,System.Single)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: DrawLabels(ICanvas, PointF[], SizeF, float, float, float)
+  nameWithType: BaseChartDrawable.DrawLabels(ICanvas, PointF[], SizeF, float, float, float)
+  fullName: AlohaKit.Controls.BaseChartDrawable.DrawLabels(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.PointF[], Microsoft.Maui.Graphics.SizeF, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: DrawLabels
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 905
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Draws footer and value labels on current canvas
+  example: []
+  syntax:
+    content: protected virtual void DrawLabels(ICanvas canvas, PointF[] points, SizeF itemSize, float height, float footerHeight, float origin)
+    parameters:
+    - id: canvas
+      type: Microsoft.Maui.Graphics.ICanvas
+      description: Canvas to draw on
+    - id: points
+      type: Microsoft.Maui.Graphics.PointF[]
+      description: Coordinates for each footer label
+    - id: itemSize
+      type: Microsoft.Maui.Graphics.SizeF
+      description: Item size
+    - id: height
+      type: System.Single
+      description: Control height
+    - id: footerHeight
+      type: System.Single
+      description: Chart footer area height
+    - id: origin
+      type: System.Single
+      description: Y axis origin coordinate
+    content.vb: Protected Overridable Sub DrawLabels(canvas As ICanvas, points As PointF(), itemSize As SizeF, height As Single, footerHeight As Single, origin As Single)
+  overload: AlohaKit.Controls.BaseChartDrawable.DrawLabels*
+  nameWithType.vb: BaseChartDrawable.DrawLabels(ICanvas, PointF(), SizeF, Single, Single, Single)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.DrawLabels(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.PointF(), Microsoft.Maui.Graphics.SizeF, Single, Single, Single)
+  name.vb: DrawLabels(ICanvas, PointF(), SizeF, Single, Single, Single)
+- uid: AlohaKit.Controls.BaseChartDrawable.TruncateText(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.SizeF,System.String)
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.TruncateText(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.SizeF,System.String)
+  id: TruncateText(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.SizeF,System.String)
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: TruncateText(ICanvas, SizeF, string)
+  nameWithType: BaseChartDrawable.TruncateText(ICanvas, SizeF, string)
+  fullName: AlohaKit.Controls.BaseChartDrawable.TruncateText(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.SizeF, string)
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: TruncateText
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 1009
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Allows long words to be shortened by removing characters so it can fit within the provided area
+  example: []
+  syntax:
+    content: protected string TruncateText(ICanvas canvas, SizeF availableSize, string text)
+    parameters:
+    - id: canvas
+      type: Microsoft.Maui.Graphics.ICanvas
+      description: Canvas to draw on
+    - id: availableSize
+      type: Microsoft.Maui.Graphics.SizeF
+      description: Represents the available width
+    - id: text
+      type: System.String
+      description: Text to truncate within the available area
+    return:
+      type: System.String
+      description: Truncated text
+    content.vb: Protected Function TruncateText(canvas As ICanvas, availableSize As SizeF, text As String) As String
+  overload: AlohaKit.Controls.BaseChartDrawable.TruncateText*
+  nameWithType.vb: BaseChartDrawable.TruncateText(ICanvas, SizeF, String)
+  fullName.vb: AlohaKit.Controls.BaseChartDrawable.TruncateText(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.SizeF, String)
+  name.vb: TruncateText(ICanvas, SizeF, String)
+- uid: AlohaKit.Controls.BaseChartDrawable.Dispose
+  commentId: M:AlohaKit.Controls.BaseChartDrawable.Dispose
+  id: Dispose
+  parent: AlohaKit.Controls.BaseChartDrawable
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: BaseChartDrawable.Dispose()
+  fullName: AlohaKit.Controls.BaseChartDrawable.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+      branch: main
+      repo: https://github.com/jsuarezruiz/AlohaKit.Controls.git
+    id: Dispose
+    path: ../src/AlohaKit/DataVisualization/Base/BaseChartDrawable.cs
+    startLine: 1049
+  assemblies:
+  - AlohaKit
+  namespace: AlohaKit.Controls
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public virtual void Dispose()
+    content.vb: Public Overridable Sub Dispose()
+  overload: AlohaKit.Controls.BaseChartDrawable.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: AlohaKit.Controls
+  commentId: N:AlohaKit.Controls
+  href: AlohaKit.html
+  name: AlohaKit.Controls
+  nameWithType: AlohaKit.Controls
+  fullName: AlohaKit.Controls
+  spec.csharp:
+  - uid: AlohaKit
+    name: AlohaKit
+    href: AlohaKit.html
+  - name: .
+  - uid: AlohaKit.Controls
+    name: Controls
+    href: AlohaKit.Controls.html
+  spec.vb:
+  - uid: AlohaKit
+    name: AlohaKit
+    href: AlohaKit.html
+  - name: .
+  - uid: AlohaKit.Controls
+    name: Controls
+    href: AlohaKit.Controls.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Maui.Graphics.IDrawable
+  commentId: T:Microsoft.Maui.Graphics.IDrawable
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.idrawable
+  name: IDrawable
+  nameWithType: IDrawable
+  fullName: Microsoft.Maui.Graphics.IDrawable
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Maui.Graphics
+  commentId: N:Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Maui.Graphics
+  nameWithType: Microsoft.Maui.Graphics
+  fullName: Microsoft.Maui.Graphics
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Maui
+    name: Maui
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui
+  - name: .
+  - uid: Microsoft.Maui.Graphics
+    name: Graphics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Maui
+    name: Maui
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui
+  - name: .
+  - uid: Microsoft.Maui.Graphics
+    name: Graphics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics
+- uid: AlohaKit.Controls.BaseChartDrawable._canvas*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable._canvas
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable__canvas
+  name: _canvas
+  nameWithType: BaseChartDrawable._canvas
+  fullName: AlohaKit.Controls.BaseChartDrawable._canvas
+- uid: Microsoft.Maui.Graphics.ICanvas
+  commentId: T:Microsoft.Maui.Graphics.ICanvas
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: Microsoft.Maui.Graphics.ICanvas
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Maui.Graphics.RectF
+  commentId: T:Microsoft.Maui.Graphics.RectF
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.rectf
+  name: RectF
+  nameWithType: RectF
+  fullName: Microsoft.Maui.Graphics.RectF
+- uid: Microsoft.Maui.Controls.Brush
+  commentId: T:Microsoft.Maui.Controls.Brush
+  parent: Microsoft.Maui.Controls
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.brush
+  name: Brush
+  nameWithType: Brush
+  fullName: Microsoft.Maui.Controls.Brush
+- uid: Microsoft.Maui.Controls
+  commentId: N:Microsoft.Maui.Controls
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Maui.Controls
+  nameWithType: Microsoft.Maui.Controls
+  fullName: Microsoft.Maui.Controls
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Maui
+    name: Maui
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui
+  - name: .
+  - uid: Microsoft.Maui.Controls
+    name: Controls
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.controls
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Maui
+    name: Maui
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui
+  - name: .
+  - uid: Microsoft.Maui.Controls
+    name: Controls
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.controls
+- uid: AlohaKit.Controls.BaseChartDrawable.ColorBrush*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.ColorBrush
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_ColorBrush
+  name: ColorBrush
+  nameWithType: BaseChartDrawable.ColorBrush
+  fullName: AlohaKit.Controls.BaseChartDrawable.ColorBrush
+- uid: AlohaKit.Controls.BaseChartDrawable.AxisDashPattern*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.AxisDashPattern
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_AxisDashPattern
+  name: AxisDashPattern
+  nameWithType: BaseChartDrawable.AxisDashPattern
+  fullName: AlohaKit.Controls.BaseChartDrawable.AxisDashPattern
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: AlohaKit.Controls.BaseChartDrawable.DisplayHeaderValues*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.DisplayHeaderValues
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DisplayHeaderValues
+  name: DisplayHeaderValues
+  nameWithType: BaseChartDrawable.DisplayHeaderValues
+  fullName: AlohaKit.Controls.BaseChartDrawable.DisplayHeaderValues
+- uid: AlohaKit.Controls.BaseChartDrawable.PathsColorOpacity*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.PathsColorOpacity
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_PathsColorOpacity
+  name: PathsColorOpacity
+  nameWithType: BaseChartDrawable.PathsColorOpacity
+  fullName: AlohaKit.Controls.BaseChartDrawable.PathsColorOpacity
+- uid: AlohaKit.Controls.BaseChartDrawable.DisplayHorizontalAxisLines*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.DisplayHorizontalAxisLines
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DisplayHorizontalAxisLines
+  name: DisplayHorizontalAxisLines
+  nameWithType: BaseChartDrawable.DisplayHorizontalAxisLines
+  fullName: AlohaKit.Controls.BaseChartDrawable.DisplayHorizontalAxisLines
+- uid: AlohaKit.Controls.BaseChartDrawable.DisplayVerticalAxisLines*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.DisplayVerticalAxisLines
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DisplayVerticalAxisLines
+  name: DisplayVerticalAxisLines
+  nameWithType: BaseChartDrawable.DisplayVerticalAxisLines
+  fullName: AlohaKit.Controls.BaseChartDrawable.DisplayVerticalAxisLines
+- uid: AlohaKit.Controls.BaseChartDrawable.AnimationProgress*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.AnimationProgress
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_AnimationProgress
+  name: AnimationProgress
+  nameWithType: BaseChartDrawable.AnimationProgress
+  fullName: AlohaKit.Controls.BaseChartDrawable.AnimationProgress
+- uid: AlohaKit.Controls.BaseChartDrawable.IsLabelTextTruncationEnabled*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.IsLabelTextTruncationEnabled
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_IsLabelTextTruncationEnabled
+  name: IsLabelTextTruncationEnabled
+  nameWithType: BaseChartDrawable.IsLabelTextTruncationEnabled
+  fullName: AlohaKit.Controls.BaseChartDrawable.IsLabelTextTruncationEnabled
+- uid: AlohaKit.Controls.BaseChartDrawable.DisplayValueLabelsOnTop*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.DisplayValueLabelsOnTop
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DisplayValueLabelsOnTop
+  name: DisplayValueLabelsOnTop
+  nameWithType: BaseChartDrawable.DisplayValueLabelsOnTop
+  fullName: AlohaKit.Controls.BaseChartDrawable.DisplayValueLabelsOnTop
+- uid: AlohaKit.Controls.BaseChartDrawable.StrokeSize*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.StrokeSize
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_StrokeSize
+  name: StrokeSize
+  nameWithType: BaseChartDrawable.StrokeSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.StrokeSize
+- uid: AlohaKit.Controls.BaseChartDrawable.AxisLinesStrokeSize*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.AxisLinesStrokeSize
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_AxisLinesStrokeSize
+  name: AxisLinesStrokeSize
+  nameWithType: BaseChartDrawable.AxisLinesStrokeSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.AxisLinesStrokeSize
+- uid: AlohaKit.Controls.BaseChartDrawable.AxisLinesColor*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.AxisLinesColor
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_AxisLinesColor
+  name: AxisLinesColor
+  nameWithType: BaseChartDrawable.AxisLinesColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.AxisLinesColor
+- uid: Microsoft.Maui.Graphics.Color
+  commentId: T:Microsoft.Maui.Graphics.Color
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.color
+  name: Color
+  nameWithType: Color
+  fullName: Microsoft.Maui.Graphics.Color
+- uid: AlohaKit.Controls.BaseChartDrawable.StrokeColor*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.StrokeColor
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_StrokeColor
+  name: StrokeColor
+  nameWithType: BaseChartDrawable.StrokeColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.StrokeColor
+- uid: AlohaKit.Controls.BaseChartDrawable.ItemSeparationMargin*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.ItemSeparationMargin
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_ItemSeparationMargin
+  name: ItemSeparationMargin
+  nameWithType: BaseChartDrawable.ItemSeparationMargin
+  fullName: AlohaKit.Controls.BaseChartDrawable.ItemSeparationMargin
+- uid: AlohaKit.Controls.BaseChartDrawable.FooterLabelsTextSize*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.FooterLabelsTextSize
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_FooterLabelsTextSize
+  name: FooterLabelsTextSize
+  nameWithType: BaseChartDrawable.FooterLabelsTextSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.FooterLabelsTextSize
+- uid: AlohaKit.Controls.BaseChartDrawable.FooterLabelsMargin*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.FooterLabelsMargin
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_FooterLabelsMargin
+  name: FooterLabelsMargin
+  nameWithType: BaseChartDrawable.FooterLabelsMargin
+  fullName: AlohaKit.Controls.BaseChartDrawable.FooterLabelsMargin
+- uid: AlohaKit.Controls.BaseChartDrawable.HeaderValuesMargin*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.HeaderValuesMargin
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_HeaderValuesMargin
+  name: HeaderValuesMargin
+  nameWithType: BaseChartDrawable.HeaderValuesMargin
+  fullName: AlohaKit.Controls.BaseChartDrawable.HeaderValuesMargin
+- uid: AlohaKit.Controls.BaseChartDrawable.FillColor*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.FillColor
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_FillColor
+  name: FillColor
+  nameWithType: BaseChartDrawable.FillColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.FillColor
+- uid: AlohaKit.Controls.BaseChartDrawable.Font*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.Font
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Font
+  name: Font
+  nameWithType: BaseChartDrawable.Font
+  fullName: AlohaKit.Controls.BaseChartDrawable.Font
+- uid: Microsoft.Maui.Graphics.IFont
+  commentId: T:Microsoft.Maui.Graphics.IFont
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.ifont
+  name: IFont
+  nameWithType: IFont
+  fullName: Microsoft.Maui.Graphics.IFont
+- uid: AlohaKit.Controls.BaseChartDrawable.Entries*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.Entries
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Entries
+  name: Entries
+  nameWithType: BaseChartDrawable.Entries
+  fullName: AlohaKit.Controls.BaseChartDrawable.Entries
+- uid: System.Collections.ObjectModel.ObservableCollection{AlohaKit.Models.ChartItem}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{AlohaKit.Models.ChartItem}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<ChartItem>
+  nameWithType: ObservableCollection<ChartItem>
+  fullName: System.Collections.ObjectModel.ObservableCollection<AlohaKit.Models.ChartItem>
+  nameWithType.vb: ObservableCollection(Of ChartItem)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of AlohaKit.Models.ChartItem)
+  name.vb: ObservableCollection(Of ChartItem)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: AlohaKit.Models.ChartItem
+    name: ChartItem
+    href: AlohaKit.Models.ChartItem.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AlohaKit.Models.ChartItem
+    name: ChartItem
+    href: AlohaKit.Models.ChartItem.html
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: AlohaKit.Controls.BaseChartDrawable.Entries_CollectionChanged*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.Entries_CollectionChanged
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Entries_CollectionChanged_System_Object_System_Collections_Specialized_NotifyCollectionChangedEventArgs_
+  name: Entries_CollectionChanged
+  nameWithType: BaseChartDrawable.Entries_CollectionChanged
+  fullName: AlohaKit.Controls.BaseChartDrawable.Entries_CollectionChanged
+- uid: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+  commentId: T:System.Collections.Specialized.NotifyCollectionChangedEventArgs
+  parent: System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs
+  name: NotifyCollectionChangedEventArgs
+  nameWithType: NotifyCollectionChangedEventArgs
+  fullName: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+- uid: System.Collections.Specialized
+  commentId: N:System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Specialized
+  nameWithType: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+- uid: AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Entry_PropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  name: Entry_PropertyChanged
+  nameWithType: BaseChartDrawable.Entry_PropertyChanged
+  fullName: AlohaKit.Controls.BaseChartDrawable.Entry_PropertyChanged
+- uid: System.ComponentModel.PropertyChangedEventArgs
+  commentId: T:System.ComponentModel.PropertyChangedEventArgs
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  name: PropertyChangedEventArgs
+  nameWithType: PropertyChangedEventArgs
+  fullName: System.ComponentModel.PropertyChangedEventArgs
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: AlohaKit.Controls.BaseChartDrawable.FontSize*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.FontSize
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_FontSize
+  name: FontSize
+  nameWithType: BaseChartDrawable.FontSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.FontSize
+- uid: AlohaKit.Controls.BaseChartDrawable.AxisFontSize*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.AxisFontSize
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_AxisFontSize
+  name: AxisFontSize
+  nameWithType: BaseChartDrawable.AxisFontSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.AxisFontSize
+- uid: AlohaKit.Controls.BaseChartDrawable.Margin*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.Margin
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Margin
+  name: Margin
+  nameWithType: BaseChartDrawable.Margin
+  fullName: AlohaKit.Controls.BaseChartDrawable.Margin
+- uid: AlohaKit.Controls.BaseChartDrawable.FontColor*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.FontColor
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_FontColor
+  name: FontColor
+  nameWithType: BaseChartDrawable.FontColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.FontColor
+- uid: AlohaKit.Controls.BaseChartDrawable.FooterLabelsFontColor*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.FooterLabelsFontColor
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_FooterLabelsFontColor
+  name: FooterLabelsFontColor
+  nameWithType: BaseChartDrawable.FooterLabelsFontColor
+  fullName: AlohaKit.Controls.BaseChartDrawable.FooterLabelsFontColor
+- uid: AlohaKit.Controls.BaseChartDrawable.EnableAntialias*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.EnableAntialias
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_EnableAntialias
+  name: EnableAntialias
+  nameWithType: BaseChartDrawable.EnableAntialias
+  fullName: AlohaKit.Controls.BaseChartDrawable.EnableAntialias
+- uid: Microsoft.Maui.Graphics.PointF[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.pointf
+  name: PointF[]
+  nameWithType: PointF[]
+  fullName: Microsoft.Maui.Graphics.PointF[]
+  nameWithType.vb: PointF()
+  fullName.vb: Microsoft.Maui.Graphics.PointF()
+  name.vb: PointF()
+  spec.csharp:
+  - uid: Microsoft.Maui.Graphics.PointF
+    name: PointF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.pointf
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.Maui.Graphics.PointF
+    name: PointF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.pointf
+  - name: (
+  - name: )
+- uid: AlohaKit.Controls.BaseChartDrawable.ItemSize*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.ItemSize
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_ItemSize
+  name: ItemSize
+  nameWithType: BaseChartDrawable.ItemSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.ItemSize
+- uid: Microsoft.Maui.Graphics.SizeF
+  commentId: T:Microsoft.Maui.Graphics.SizeF
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.sizef
+  name: SizeF
+  nameWithType: SizeF
+  fullName: Microsoft.Maui.Graphics.SizeF
+- uid: AlohaKit.Controls.BaseChartDrawable.MinValue*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.MinValue
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_MinValue
+  name: MinValue
+  nameWithType: BaseChartDrawable.MinValue
+  fullName: AlohaKit.Controls.BaseChartDrawable.MinValue
+- uid: AlohaKit.Controls.BaseChartDrawable.MaxValue*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.MaxValue
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_MaxValue
+  name: MaxValue
+  nameWithType: BaseChartDrawable.MaxValue
+  fullName: AlohaKit.Controls.BaseChartDrawable.MaxValue
+- uid: AlohaKit.Controls.BaseChartDrawable.Width*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.Width
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Width
+  name: Width
+  nameWithType: BaseChartDrawable.Width
+  fullName: AlohaKit.Controls.BaseChartDrawable.Width
+- uid: AlohaKit.Controls.BaseChartDrawable.Height*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.Height
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Height
+  name: Height
+  nameWithType: BaseChartDrawable.Height
+  fullName: AlohaKit.Controls.BaseChartDrawable.Height
+- uid: AlohaKit.Controls.BaseChartDrawable.Origin*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.Origin
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Origin
+  name: Origin
+  nameWithType: BaseChartDrawable.Origin
+  fullName: AlohaKit.Controls.BaseChartDrawable.Origin
+- uid: AlohaKit.Controls.BaseChartDrawable.HeaderHeight*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.HeaderHeight
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_HeaderHeight
+  name: HeaderHeight
+  nameWithType: BaseChartDrawable.HeaderHeight
+  fullName: AlohaKit.Controls.BaseChartDrawable.HeaderHeight
+- uid: AlohaKit.Controls.BaseChartDrawable.FooterHeight*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.FooterHeight
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_FooterHeight
+  name: FooterHeight
+  nameWithType: BaseChartDrawable.FooterHeight
+  fullName: AlohaKit.Controls.BaseChartDrawable.FooterHeight
+- uid: AlohaKit.Controls.BaseChartDrawable.ValueRange*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.ValueRange
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_ValueRange
+  name: ValueRange
+  nameWithType: BaseChartDrawable.ValueRange
+  fullName: AlohaKit.Controls.BaseChartDrawable.ValueRange
+- uid: AlohaKit.Controls.BaseChartDrawable.RequestInvalidate*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.RequestInvalidate
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_RequestInvalidate
+  name: RequestInvalidate
+  nameWithType: BaseChartDrawable.RequestInvalidate
+  fullName: AlohaKit.Controls.BaseChartDrawable.RequestInvalidate
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculatePaddingForLabelValue*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.CalculatePaddingForLabelValue
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_CalculatePaddingForLabelValue_System_Single_Microsoft_Maui_Graphics_SizeF_
+  name: CalculatePaddingForLabelValue
+  nameWithType: BaseChartDrawable.CalculatePaddingForLabelValue
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculatePaddingForLabelValue
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculateHorizontalYLineCoordinate*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.CalculateHorizontalYLineCoordinate
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_CalculateHorizontalYLineCoordinate_System_Single_Microsoft_Maui_Graphics_SizeF_System_Single_System_Single_
+  name: CalculateHorizontalYLineCoordinate
+  nameWithType: BaseChartDrawable.CalculateHorizontalYLineCoordinate
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculateHorizontalYLineCoordinate
+- uid: Microsoft.Maui.Graphics.PointF
+  commentId: T:Microsoft.Maui.Graphics.PointF
+  parent: Microsoft.Maui.Graphics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.pointf
+  name: PointF
+  nameWithType: PointF
+  fullName: Microsoft.Maui.Graphics.PointF
+- uid: AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DrawVerticalStepLines_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_PointF___System_Single_System_Single_
+  name: DrawVerticalStepLines
+  nameWithType: BaseChartDrawable.DrawVerticalStepLines
+  fullName: AlohaKit.Controls.BaseChartDrawable.DrawVerticalStepLines
+- uid: AlohaKit.Controls.BaseChartDrawable.DrawHorizontalStepLines*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.DrawHorizontalStepLines
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DrawHorizontalStepLines_Microsoft_Maui_Graphics_ICanvas_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PointF__System_Single_System_Single_System_Single_System_Single_System_Single_
+  name: DrawHorizontalStepLines
+  nameWithType: BaseChartDrawable.DrawHorizontalStepLines
+  fullName: AlohaKit.Controls.BaseChartDrawable.DrawHorizontalStepLines
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Maui.Graphics.PointF}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.Maui.Graphics.PointF}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PointF>
+  nameWithType: IEnumerable<PointF>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Maui.Graphics.PointF>
+  nameWithType.vb: IEnumerable(Of PointF)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.Maui.Graphics.PointF)
+  name.vb: IEnumerable(Of PointF)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.Maui.Graphics.PointF
+    name: PointF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.pointf
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.PointF
+    name: PointF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.pointf
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AlohaKit.Controls.BaseChartDrawable.Draw*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.Draw
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Draw_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_RectF_
+  name: Draw
+  nameWithType: BaseChartDrawable.Draw
+  fullName: AlohaKit.Controls.BaseChartDrawable.Draw
+- uid: Microsoft.Maui.Graphics.IDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  commentId: M:Microsoft.Maui.Graphics.IDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+  parent: Microsoft.Maui.Graphics.IDrawable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.idrawable.draw
+  name: Draw(ICanvas, RectF)
+  nameWithType: IDrawable.Draw(ICanvas, RectF)
+  fullName: Microsoft.Maui.Graphics.IDrawable.Draw(Microsoft.Maui.Graphics.ICanvas, Microsoft.Maui.Graphics.RectF)
+  spec.csharp:
+  - uid: Microsoft.Maui.Graphics.IDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+    name: Draw
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.idrawable.draw
+  - name: (
+  - uid: Microsoft.Maui.Graphics.ICanvas
+    name: ICanvas
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.RectF
+    name: RectF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.rectf
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.Graphics.IDrawable.Draw(Microsoft.Maui.Graphics.ICanvas,Microsoft.Maui.Graphics.RectF)
+    name: Draw
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.idrawable.draw
+  - name: (
+  - uid: Microsoft.Maui.Graphics.ICanvas
+    name: ICanvas
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.icanvas
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Maui.Graphics.RectF
+    name: RectF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.rectf
+  - name: )
+- uid: AlohaKit.Controls.BaseChartDrawable.MeasureLabels*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.MeasureLabels
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_MeasureLabels
+  name: MeasureLabels
+  nameWithType: BaseChartDrawable.MeasureLabels
+  fullName: AlohaKit.Controls.BaseChartDrawable.MeasureLabels
+- uid: Microsoft.Maui.Graphics.SizeF[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.sizef
+  name: SizeF[]
+  nameWithType: SizeF[]
+  fullName: Microsoft.Maui.Graphics.SizeF[]
+  nameWithType.vb: SizeF()
+  fullName.vb: Microsoft.Maui.Graphics.SizeF()
+  name.vb: SizeF()
+  spec.csharp:
+  - uid: Microsoft.Maui.Graphics.SizeF
+    name: SizeF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.sizef
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.Maui.Graphics.SizeF
+    name: SizeF
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.sizef
+  - name: (
+  - name: )
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculateFooterHeight*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.CalculateFooterHeight
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_CalculateFooterHeight_Microsoft_Maui_Graphics_SizeF___
+  name: CalculateFooterHeight
+  nameWithType: BaseChartDrawable.CalculateFooterHeight
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculateFooterHeight
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculateHeaderHeight*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.CalculateHeaderHeight
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_CalculateHeaderHeight_Microsoft_Maui_Graphics_SizeF___
+  name: CalculateHeaderHeight
+  nameWithType: BaseChartDrawable.CalculateHeaderHeight
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculateHeaderHeight
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculateItemSize*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.CalculateItemSize
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_CalculateItemSize_System_Single_System_Single_System_Single_System_Single_
+  name: CalculateItemSize
+  nameWithType: BaseChartDrawable.CalculateItemSize
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculateItemSize
+- uid: System.Collections.Generic.List{AlohaKit.Models.ChartItem}
+  commentId: T:System.Collections.Generic.List{AlohaKit.Models.ChartItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ChartItem>
+  nameWithType: List<ChartItem>
+  fullName: System.Collections.Generic.List<AlohaKit.Models.ChartItem>
+  nameWithType.vb: List(Of ChartItem)
+  fullName.vb: System.Collections.Generic.List(Of AlohaKit.Models.ChartItem)
+  name.vb: List(Of ChartItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: AlohaKit.Models.ChartItem
+    name: ChartItem
+    href: AlohaKit.Models.ChartItem.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AlohaKit.Models.ChartItem
+    name: ChartItem
+    href: AlohaKit.Models.ChartItem.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AlohaKit.Controls.BaseChartDrawable.DrawChart*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.DrawChart
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DrawChart_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_RectF_
+  name: DrawChart
+  nameWithType: BaseChartDrawable.DrawChart
+  fullName: AlohaKit.Controls.BaseChartDrawable.DrawChart
+- uid: AlohaKit.Controls.BaseChartDrawable.ClearBackground*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.ClearBackground
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_ClearBackground_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_SizeF_Microsoft_Maui_Graphics_Color_
+  name: ClearBackground
+  nameWithType: BaseChartDrawable.ClearBackground
+  fullName: AlohaKit.Controls.BaseChartDrawable.ClearBackground
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculateYOrigin*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.CalculateYOrigin
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_CalculateYOrigin_System_Single_System_Single_
+  name: CalculateYOrigin
+  nameWithType: BaseChartDrawable.CalculateYOrigin
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculateYOrigin
+- uid: AlohaKit.Controls.BaseChartDrawable.CalculatePoints*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.CalculatePoints
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_CalculatePoints_Microsoft_Maui_Graphics_SizeF_System_Single_System_Single_
+  name: CalculatePoints
+  nameWithType: BaseChartDrawable.CalculatePoints
+  fullName: AlohaKit.Controls.BaseChartDrawable.CalculatePoints
+- uid: AlohaKit.Controls.BaseChartDrawable.DrawLabels*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.DrawLabels
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_DrawLabels_System_Collections_Generic_List_AlohaKit_Models_ChartItem__Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_PointF___Microsoft_Maui_Graphics_SizeF_System_Single_System_Single_System_Single_
+  name: DrawLabels
+  nameWithType: BaseChartDrawable.DrawLabels
+  fullName: AlohaKit.Controls.BaseChartDrawable.DrawLabels
+- uid: AlohaKit.Controls.BaseChartDrawable.TruncateText*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.TruncateText
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_TruncateText_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_SizeF_System_String_
+  name: TruncateText
+  nameWithType: BaseChartDrawable.TruncateText
+  fullName: AlohaKit.Controls.BaseChartDrawable.TruncateText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AlohaKit.Controls.BaseChartDrawable.Dispose*
+  commentId: Overload:AlohaKit.Controls.BaseChartDrawable.Dispose
+  href: AlohaKit.Controls.BaseChartDrawable.html#AlohaKit_Controls_BaseChartDrawable_Dispose
+  name: Dispose
+  nameWithType: BaseChartDrawable.Dispose
+  fullName: AlohaKit.Controls.BaseChartDrawable.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

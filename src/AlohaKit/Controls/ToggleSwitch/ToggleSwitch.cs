@@ -2,11 +2,16 @@
 
 namespace AlohaKit.Controls
 {
-    // TODO:
-    // - Include ThumbImage BindableProperty.
-    public class ToggleSwitch : GraphicsView
+	/// <summary>
+	/// The ToggleSwitch is a drawn control that allows users to toggle between two states (on and off).
+	/// Designed for visual clarity and smooth interactivity, this control is ideal for enabling or disabling settings, features, or options within an application.
+	/// </summary>
+	public class ToggleSwitch : GraphicsView
     {
-        IAnimationManager _animationManager;
+		// TODO:
+		// - Include ThumbImage BindableProperty.
+
+		IAnimationManager _animationManager;
 
         public ToggleSwitch()
         {

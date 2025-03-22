@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlohaKit.Models
+  commentId: N:AlohaKit.Models
+  id: AlohaKit.Models
+  children:
+  - AlohaKit.Models.ChartGroupStyle
+  - AlohaKit.Models.ChartItem
+  langs:
+  - csharp
+  - vb
+  name: AlohaKit.Models
+  nameWithType: AlohaKit.Models
+  fullName: AlohaKit.Models
+  type: Namespace
+  assemblies:
+  - AlohaKit
+references:
+- uid: AlohaKit.Models.ChartGroupStyle
+  commentId: T:AlohaKit.Models.ChartGroupStyle
+  href: AlohaKit.Models.ChartGroupStyle.html
+  name: ChartGroupStyle
+  nameWithType: ChartGroupStyle
+  fullName: AlohaKit.Models.ChartGroupStyle
+- uid: AlohaKit.Models.ChartItem
+  commentId: T:AlohaKit.Models.ChartItem
+  href: AlohaKit.Models.ChartItem.html
+  name: ChartItem
+  nameWithType: ChartItem
+  fullName: AlohaKit.Models.ChartItem

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AlohaKit.Controls
 {
+	/// <summary>
+	/// The ProgressBar class represents a customizable control for displaying the progress of a task visually.
+	/// </summary>
 	public class ProgressBar : GraphicsView
 	{
 		protected ProgressBarDrawable ProgressBarDrawable { get; set; }

@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: AlohaKit.Enums
+  commentId: N:AlohaKit.Enums
+  id: AlohaKit.Enums
+  children:
+  - AlohaKit.Enums.ChartEnums
+  - AlohaKit.Enums.ChartEnums.LineChartStyle
+  langs:
+  - csharp
+  - vb
+  name: AlohaKit.Enums
+  nameWithType: AlohaKit.Enums
+  fullName: AlohaKit.Enums
+  type: Namespace
+  assemblies:
+  - AlohaKit
+references:
+- uid: AlohaKit.Enums.ChartEnums
+  commentId: T:AlohaKit.Enums.ChartEnums
+  href: AlohaKit.Enums.ChartEnums.html
+  name: ChartEnums
+  nameWithType: ChartEnums
+  fullName: AlohaKit.Enums.ChartEnums
+- uid: AlohaKit.Enums.ChartEnums.LineChartStyle
+  commentId: T:AlohaKit.Enums.ChartEnums.LineChartStyle
+  parent: AlohaKit.Enums
+  href: AlohaKit.Enums.ChartEnums.html
+  name: ChartEnums.LineChartStyle
+  nameWithType: ChartEnums.LineChartStyle
+  fullName: AlohaKit.Enums.ChartEnums.LineChartStyle
+  spec.csharp:
+  - uid: AlohaKit.Enums.ChartEnums
+    name: ChartEnums
+    href: AlohaKit.Enums.ChartEnums.html
+  - name: .
+  - uid: AlohaKit.Enums.ChartEnums.LineChartStyle
+    name: LineChartStyle
+    href: AlohaKit.Enums.ChartEnums.LineChartStyle.html
+  spec.vb:
+  - uid: AlohaKit.Enums.ChartEnums
+    name: ChartEnums
+    href: AlohaKit.Enums.ChartEnums.html
+  - name: .
+  - uid: AlohaKit.Enums.ChartEnums.LineChartStyle
+    name: LineChartStyle
+    href: AlohaKit.Enums.ChartEnums.LineChartStyle.html
+- uid: AlohaKit.Enums
+  commentId: N:AlohaKit.Enums
+  href: AlohaKit.html
+  name: AlohaKit.Enums
+  nameWithType: AlohaKit.Enums
+  fullName: AlohaKit.Enums
+  spec.csharp:
+  - uid: AlohaKit
+    name: AlohaKit
+    href: AlohaKit.html
+  - name: .
+  - uid: AlohaKit.Enums
+    name: Enums
+    href: AlohaKit.Enums.html
+  spec.vb:
+  - uid: AlohaKit
+    name: AlohaKit
+    href: AlohaKit.html
+  - name: .
+  - uid: AlohaKit.Enums
+    name: Enums
+    href: AlohaKit.Enums.html

@@ -1,6 +1,10 @@
 ﻿namespace AlohaKit.Controls
 {
-    public class Avatar : GraphicsView
+	/// <summary>
+	/// The Avatar is a custom drawn control that provides a flexible and efficient way to render avatar-like graphics, 
+	/// such as profile pictures, icons, or other visual representations, in an application.
+	/// </summary>
+	public class Avatar : GraphicsView
     {
         public Avatar()
         {
