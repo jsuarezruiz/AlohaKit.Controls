@@ -24,7 +24,7 @@
 		<ApplicationTitle>AlohaKit.Gallery</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.alohakit.gallery</ApplicationId>
+		<ApplicationId>com.jsuarez.alohakit.gallery</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
