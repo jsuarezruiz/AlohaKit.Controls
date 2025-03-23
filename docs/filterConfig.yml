@@ -1,5 +1,0 @@
-### YamlMime:ManagedReference
-apiRules:
-- exclude:
-    uidRegex: ^AlohaKit.*\.Gallery
-    type: Namespace
