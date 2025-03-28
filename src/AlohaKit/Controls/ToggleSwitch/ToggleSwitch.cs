@@ -26,7 +26,7 @@ namespace AlohaKit.Controls
         public ToggleSwitchDrawable ToggleSwitchDrawable { get; set; }
 
         public static readonly new BindableProperty BackgroundProperty =
-           BindableProperty.Create(nameof(Background), typeof(Brush), typeof(ToggleSwitch), null,
+           BindableProperty.Create(nameof(Background), typeof(Brush), typeof(ToggleSwitch), new SolidColorBrush(Colors.Gray),
                propertyChanged: (bindableObject, oldValue, newValue) =>
                {
                    if (newValue != null && bindableObject is ToggleSwitch toggleSwitch)
@@ -42,7 +42,7 @@ namespace AlohaKit.Controls
         }
 
         public static readonly BindableProperty ThumbBrushProperty =
-           BindableProperty.Create(nameof(ThumbBrush), typeof(Brush), typeof(ToggleSwitch), null,
+           BindableProperty.Create(nameof(ThumbBrush), typeof(Brush), typeof(ToggleSwitch), new SolidColorBrush(Colors.Pink),
                propertyChanged: (bindableObject, oldValue, newValue) =>
                {
                    if (newValue != null && bindableObject is ToggleSwitch toggleSwitch)

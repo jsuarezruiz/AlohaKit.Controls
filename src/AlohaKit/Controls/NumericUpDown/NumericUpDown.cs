@@ -53,7 +53,7 @@ namespace AlohaKit.Controls
         }
 
         public static readonly BindableProperty MinimumColorProperty =
-            BindableProperty.Create(nameof(MinimumColor), typeof(Brush), typeof(NumericUpDown), null,
+            BindableProperty.Create(nameof(MinimumColor), typeof(Brush), typeof(NumericUpDown), new SolidColorBrush(Colors.Green),
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is NumericUpDown numericUpDown)
@@ -69,7 +69,7 @@ namespace AlohaKit.Controls
         }
 
         public static readonly BindableProperty MaximumColorProperty =
-            BindableProperty.Create(nameof(MaximumColor), typeof(Brush), typeof(NumericUpDown), null,
+            BindableProperty.Create(nameof(MaximumColor), typeof(Brush), typeof(NumericUpDown), new SolidColorBrush(Colors.Red),
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is NumericUpDown numericUpDown)
@@ -235,6 +235,8 @@ namespace AlohaKit.Controls
                 UpdateMinimum();
                 UpdateMaximum();
                 UpdateValue();
+				UpdateMinimumColor();
+				UpdateMaximumColor();
             }
         }
 

@@ -22,7 +22,7 @@ namespace AlohaKit.Controls
         public SegmentedControlDrawable SegmentedControlDrawable { get; set; }
 
         public static readonly new BindableProperty BackgroundProperty =
-          BindableProperty.Create(nameof(Background), typeof(Brush), typeof(SegmentedControl), null,
+          BindableProperty.Create(nameof(Background), typeof(Brush), typeof(SegmentedControl), new SolidColorBrush(Colors.Gray),
              propertyChanged: (bindableObject, oldValue, newValue) =>
              {
                  if (newValue != null && bindableObject is SegmentedControl segmentedControl)
@@ -38,7 +38,7 @@ namespace AlohaKit.Controls
         }
 
         public static readonly BindableProperty ActiveBackgroundProperty =  
-            BindableProperty.Create(nameof(ActiveBackground), typeof(Brush), typeof(SegmentedControl), null,
+            BindableProperty.Create(nameof(ActiveBackground), typeof(Brush), typeof(SegmentedControl), new SolidColorBrush(Colors.Pink),
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is SegmentedControl segmentedControl)

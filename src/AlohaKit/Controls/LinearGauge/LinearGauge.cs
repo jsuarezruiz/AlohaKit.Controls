@@ -20,7 +20,7 @@
         public LinearGaugeDrawable LinearGaugeDrawable { get; set; }
        
         public static readonly new BindableProperty BackgroundProperty =  
-            BindableProperty.Create(nameof(Background), typeof(Brush), typeof(Button), null,
+            BindableProperty.Create(nameof(Background), typeof(Brush), typeof(Button), new SolidColorBrush(Colors.Pink),
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is LinearGauge linearGauge)
