@@ -85,7 +85,7 @@
         }
 
         public static readonly BindableProperty MinimumBrushProperty =
-            BindableProperty.Create(nameof(MinimumBrush), typeof(Brush), typeof(Slider), null,
+            BindableProperty.Create(nameof(MinimumBrush), typeof(Brush), typeof(Slider), new SolidColorBrush(Colors.Gray),
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is Slider slider)
@@ -101,7 +101,7 @@
         }
 
         public static readonly BindableProperty MaximumBrushProperty =
-            BindableProperty.Create(nameof(MaximumBrush), typeof(Brush), typeof(Slider), null,
+            BindableProperty.Create(nameof(MaximumBrush), typeof(Brush), typeof(Slider), new SolidColorBrush(Colors.Black),
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is Slider slider)
@@ -117,7 +117,7 @@
         }
 
         public static readonly BindableProperty ThumbBrushProperty =
-            BindableProperty.Create(nameof(ThumbBrush), typeof(Brush), typeof(Slider), null,
+            BindableProperty.Create(nameof(ThumbBrush), typeof(Brush), typeof(Slider), new SolidColorBrush(Colors.Pink),
                 propertyChanged: (bindableObject, oldValue, newValue) =>
                 {
                     if (newValue != null && bindableObject is Slider slider)
