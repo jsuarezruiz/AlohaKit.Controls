@@ -125,8 +125,17 @@
             </StackLayout>
         </StackLayout>
         <VerticalStackLayout Grid.Row="3">
-            <Label HorizontalOptions="Center" Text="{Binding Source={x:Reference Slider}, Path=Value}" />
-            <controls:Slider x:Name="Slider" />
+            <Label HorizontalOptions="Center"
+                   Text="{Binding Source={x:Reference Slider}, Path=Value}"/>
+            <controls:Slider x:Name="Slider"
+                             IsReversed="{Binding IsChecked, Source={x:Reference IsReversedCheckBox}, x:DataType=controls:CheckBox}"/>
+        </VerticalStackLayout>
+        <VerticalStackLayout Grid.Row="4"
+                             Margin="20"
+                             Spacing="10"
+                             HorizontalOptions="Center">
+            <Label Text="Is Reversed"/>
+            <controls:CheckBox x:Name="IsReversedCheckBox"/>
         </VerticalStackLayout>
     </Grid>
 </ContentPage>
