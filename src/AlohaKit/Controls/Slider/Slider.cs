@@ -148,6 +148,23 @@
             set => SetValue(ThumbShapeProperty, value);
         }
 
+        public static readonly BindableProperty IsReversedProperty =
+         BindableProperty.Create(nameof(IsReversed), typeof(bool), typeof(Slider), false,
+             propertyChanged: (bindableObject, oldValue, newValue) =>
+             {
+                 if (newValue != null && bindableObject is Slider slider)
+                 {
+                     slider.UpdateValue();
+                     slider.ValueChanged?.Invoke(slider, new ValueChangedEventArgs((double)oldValue, (double)newValue));
+                 }
+             });
+
+        public bool IsReversed
+        {
+            get => (bool)GetValue(IsReversedProperty);
+            set => SetValue(IsReversedProperty, value);
+        }
+
         public event EventHandler<ValueChangedEventArgs> ValueChanged;
 
         protected override void OnParentSet()
@@ -182,7 +199,7 @@
             if (SliderDrawable == null)
                 return;
 
-            SliderDrawable.Minimum = Minimum;
+            SliderDrawable.Minimum = IsReversed ? Maximum : Minimum;
 
             Invalidate();
         }
@@ -192,7 +209,7 @@
             if (SliderDrawable == null)
                 return;
 
-            SliderDrawable.Maximum = Maximum;
+            SliderDrawable.Maximum = IsReversed ? Minimum : Maximum;
 
             Invalidate();
         }
@@ -203,7 +220,15 @@
                 return;
 
             Value = Math.Clamp(Value, Minimum, Maximum);
-            SliderDrawable.Value = Value;
+
+            double adjustedValue = Value;
+
+            if (IsReversed)
+            {
+                adjustedValue = Maximum - (Value - Minimum);
+            }
+
+            SliderDrawable.Value = adjustedValue;
 
             Invalidate();
         }
@@ -262,7 +287,9 @@
 
         void UpdateValueFromInteraction(PointF touchPoint)
         {
-            Value = touchPoint.X * Maximum / Width;
+            double adjustedTouchPointX = IsReversed ? (Width - touchPoint.X) : touchPoint.X;
+
+            Value = adjustedTouchPointX * Maximum / Width;
         }
     }
 }
